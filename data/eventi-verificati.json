@@ -1,5 +1,36 @@
 {
   "versione": 1,
-  "fonti": {},
-  "eventi": []
+  "fonti": {
+    "ver-22c3db4144e1bc8f044a": {
+      "nome": "ANSA",
+      "url": "https://www.ansa.it/sito/notizie/cronaca/2026/10/22/torino-contro-il-riarmo-sabato-cortei-di-antagonisti-e-studenti_7f76524e-9dab-4468-9b48-843a0906212b.html"
+    },
+    "ver-43de533f3f91d9542cbf": {
+      "nome": "Gancio — annuncio del corteo",
+      "url": "https://gancio.cisti.org/event/torino-e-contro-il-riarmo-1"
+    }
+  },
+  "eventi": [
+    {
+      "id": "ver-b0aa2fc8ea458254f701",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Pace e spesa pubblica",
+      "place": "torino",
+      "start": "2026-10-24",
+      "end": "2026-10-24",
+      "time": "ritrovo alle 15:00",
+      "title": "Corteo \"Torino è contro il riarmo\"",
+      "who": "Coordinamento \"Torino è contro il riarmo\"",
+      "where": "Piazza Castello; percorso non ancora annunciato nelle fonti consultate",
+      "event_status": "confermato",
+      "src": [
+        "ver-22c3db4144e1bc8f044a",
+        "ver-43de533f3f91d9542cbf"
+      ]
+    }
+  ]
 }
