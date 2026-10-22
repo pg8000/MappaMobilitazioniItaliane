@@ -1,0 +1,1080 @@
+{
+  "licenza": "CC BY 4.0",
+  "snapshot": "2026-10-22",
+  "versione": "1.3",
+  "periodo": {
+    "scioperi_e_manifestazioni": {
+      "da": "2026-10-22",
+      "a": "2026-11-30"
+    },
+    "eventi_eccezionali": {
+      "da": "2026-10-01",
+      "a": "2026-11-30"
+    }
+  },
+  "fonti": {
+    "mit": {
+      "nome": "Calendario scioperi MIT",
+      "url": "https://scioperi.mit.gov.it/mit2/public/scioperi"
+    },
+    "meteo": {
+      "nome": "Meteo.it, 20/10/2026",
+      "url": "https://www.meteo.it/notizie/scioperi-novembre-2026-calendario-treni-aerei-e-mezzi-pubblici-6ad722d5"
+    },
+    "studenti": {
+      "nome": "Studenti.it, 19/10/2026",
+      "url": "https://www.studenti.it/scioperi-novembre-2026-date-orari.html"
+    },
+    "virgilio": {
+      "nome": "Virgilio Motori",
+      "url": "https://www.virgilio.it/motori/info-utili/scioperi/sciopero-trasporti-date-orari-citta-ottobre-2026/350069/"
+    },
+    "scuolainf": {
+      "nome": "Scuolainforma",
+      "url": "https://www.scuolainforma.news/scioperi-dal-20-al-25-ottobre-2026-nessuno-stop-nella-scuola-ma-attenzione-ai-trasporti/"
+    },
+    "qlazio": {
+      "nome": "Il Quotidiano del Lazio",
+      "url": "https://www.ilquotidianodellazio.it/roma-sabato-24-ottobre-cortei-e-proteste-attesi-10mila-manifestanti-strade-chiuse-e-bus-deviati.html"
+    },
+    "fanpage": {
+      "nome": "Fanpage, 22/10/2026",
+      "url": "https://www.fanpage.it/roma/roma-sabato-di-cortei-e-proteste-confermata-la-manifestazione-ai-fori-incognita-circo-massimo/"
+    },
+    "ansaScuola": {
+      "nome": "ANSA, 19/10/2026",
+      "url": "https://www.ansa.it/canale_legalita_scuola/notizie/2026/10/19/le-prossime-date-calde-il-30-ottobre-ancora-in-piazza_2a60599a-28a3-4e27-aa23-4fad27a4ecf3.html"
+    },
+    "usbRoma": {
+      "nome": "USB, comunicato",
+      "url": "https://www.usb.it/leggi-notizia/sciopero-generale-30-ottobre-a-roma-appuntamento-ore-1030-piazza-dei-cinquecento-1634.html"
+    },
+    "usb": {
+      "nome": "USB, comunicato",
+      "url": "https://www.usb.it/leggi-notizia/30-ottobre-e-sciopero-generale-0817.html"
+    },
+    "lentepa": {
+      "nome": "Lentepubblica.it",
+      "url": "https://lentepubblica.it/cittadini-e-imprese/sciopero-generale-30-ottobre-scuole-treni-e-ospedali-ecco-chi-si-ferma/"
+    },
+    "ferrovie": {
+      "nome": "Ferrovie.info",
+      "url": "https://www.ferrovie.info/treni-reali/sciopero-treni-29-e-30-ottobre-2026-a-rischio-alta-velocita-intercity-regionali-e-trenord.html"
+    },
+    "canale10": {
+      "nome": "Canale Dieci, 19/10/2026",
+      "url": "https://canaledieci.it/2026/10/19/scioperi-novembre-2026-a-roma-e-nel-lazio-le-date-i-trasporti-coinvolti-e-gli-stop-nazionali/"
+    },
+    "ansaCgil": {
+      "nome": "ANSA, 17/10/2026",
+      "url": "https://www.ansa.it/sito/notizie/politica/2026/10/17/cgil-in-piazza-siamo-100mila-il-20-novembre-sciopero-generale_c4547ea9-f018-4e78-adda-67ad7af8e7d0.html"
+    },
+    "studentiDate": {
+      "nome": "Studenti.it, 20/10/2026",
+      "url": "https://www.studenti.it/scioperi-scuola-studenti-date-calde-ottobre-novembre-2026.html"
+    },
+    "ansa16": {
+      "nome": "ANSA, 16/10/2026",
+      "url": "https://ansa.it/sito/notizie/cronaca/2026/10/16/gli-studenti-in-piazza-cortei-in-tutta-italia.-a-torino-lancio-di-sassi-contro_1e152b63-e67e-4efd-9ec7-0ca3507f55e3.html"
+    },
+    "ilpost17": {
+      "nome": "Il Post, 17/10/2026",
+      "url": "https://www.ilpost.it/2026/10/17/scontri-milano-manifestazione-carovita/"
+    },
+    "ilpost19": {
+      "nome": "Il Post, 19/10/2026",
+      "url": "https://www.ilpost.it/2026/10/19/milano-devastazioni-saccheggi-scontri-negozi-polizia-manifestazione/"
+    },
+    "tgcom17": {
+      "nome": "Tgcom24, 17/10/2026",
+      "url": "https://www.tgcom24.mediaset.it/cronaca/cortei-italia-in-piazza-sabato-17-ottobre-milano-genova-bologna-roma-torino_117789892-202602k.shtml"
+    },
+    "sky18": {
+      "nome": "Sky TG24, 18/10/2026",
+      "url": "https://tg24.sky.it/cronaca/2026/10/18/scontri-guerriglia-milano-torino-bologna-cosa-e-successo"
+    },
+    "ansa18": {
+      "nome": "ANSA, 18/10/2026",
+      "url": "https://www.ansa.it/sito/notizie/cronaca/2026/10/18/centinaia-di-giovani-a-gruppetti-in-piazza-duomo-50-portati-in-questura_57da2060-1834-4ed4-a7a9-19a0843c94bd.html"
+    },
+    "giorno22": {
+      "nome": "Il Giorno, 22/10/2026",
+      "url": "https://www.ilgiorno.it/milano/cronaca/sala-timori-scontri-sabato-ajsaaid3"
+    }
+  },
+  "promotori": {
+    "cgil": {
+      "nome": "CGIL (confederale)",
+      "famiglia": "CGIL"
+    },
+    "filt-cgil": {
+      "nome": "Filt-Cgil",
+      "famiglia": "CGIL"
+    },
+    "fp-cgil": {
+      "nome": "Fp-Cgil",
+      "famiglia": "CGIL"
+    },
+    "filcams-cgil": {
+      "nome": "Filcams-Cgil",
+      "famiglia": "CGIL"
+    },
+    "fit-cisl": {
+      "nome": "Fit-Cisl",
+      "famiglia": "CISL"
+    },
+    "fisascat-cisl": {
+      "nome": "Fisascat-Cisl",
+      "famiglia": "CISL"
+    },
+    "uiltrasporti": {
+      "nome": "Uiltrasporti",
+      "famiglia": "UIL"
+    },
+    "uiltucs": {
+      "nome": "Uiltucs",
+      "famiglia": "UIL"
+    },
+    "ugl": {
+      "nome": "UGL (categorie trasporti)",
+      "famiglia": "UGL"
+    },
+    "usb": {
+      "nome": "USB",
+      "famiglia": "Sindacati di base"
+    },
+    "cub": {
+      "nome": "CUB",
+      "famiglia": "Sindacati di base"
+    },
+    "sgb": {
+      "nome": "SGB",
+      "famiglia": "Sindacati di base"
+    },
+    "usi-cit": {
+      "nome": "USI-CIT",
+      "famiglia": "Sindacati di base"
+    },
+    "adl-cobas": {
+      "nome": "ADL-Cobas",
+      "famiglia": "Sindacati di base"
+    },
+    "cobas": {
+      "nome": "Cobas",
+      "famiglia": "Sindacati di base"
+    },
+    "sial-cobas": {
+      "nome": "SIAL-Cobas",
+      "famiglia": "Sindacati di base"
+    },
+    "al-cobas": {
+      "nome": "AL-Cobas",
+      "famiglia": "Sindacati di base"
+    },
+    "clap": {
+      "nome": "CLAP",
+      "famiglia": "Sindacati di base"
+    },
+    "cib-unicobas": {
+      "nome": "CIB-Unicobas",
+      "famiglia": "Sindacati di base"
+    },
+    "faisa-cisal": {
+      "nome": "Faisa-Cisal",
+      "famiglia": "Sindacati autonomi"
+    },
+    "orsa-ferrovie": {
+      "nome": "Orsa Ferrovie",
+      "famiglia": "Sindacati autonomi"
+    },
+    "fast-confsal": {
+      "nome": "Fast-Confsal",
+      "famiglia": "Sindacati autonomi"
+    },
+    "fast-mobilita": {
+      "nome": "Fast Mobilità",
+      "famiglia": "Sindacati autonomi"
+    },
+    "fuori-guerra": {
+      "nome": "Campagna \"Fuori l'Italia dalla guerra\"",
+      "famiglia": "Altri promotori"
+    },
+    "azione-universitaria": {
+      "nome": "Azione Universitaria",
+      "famiglia": "Altri promotori"
+    },
+    "azione-studentesca": {
+      "nome": "Azione Studentesca",
+      "famiglia": "Altri promotori"
+    },
+    "osa": {
+      "nome": "Collettivo OSA",
+      "famiglia": "Altri promotori"
+    },
+    "rete-studenti": {
+      "nome": "Rete degli Studenti",
+      "famiglia": "Altri promotori"
+    },
+    "italia-in-piazza": {
+      "nome": "\"Italia in piazza\"",
+      "famiglia": "Altri promotori"
+    },
+    "movimento-17-ottobre": {
+      "nome": "\"Movimento 17 ottobre\"",
+      "famiglia": "Altri promotori"
+    },
+    "blocco-studentesco": {
+      "nome": "Blocco Studentesco",
+      "famiglia": "Altri promotori"
+    },
+    "non-identificato": {
+      "nome": "Nessuna sigla identificata",
+      "famiglia": "Promotore non identificato"
+    }
+  },
+  "luoghi": {
+    "roma": {
+      "name": "Roma",
+      "lon": 12.5,
+      "lat": 41.9
+    },
+    "bari": {
+      "name": "Bari",
+      "lon": 16.87,
+      "lat": 41.12
+    },
+    "napoli": {
+      "name": "Napoli",
+      "lon": 14.25,
+      "lat": 40.85
+    },
+    "bologna": {
+      "name": "Bologna",
+      "lon": 11.34,
+      "lat": 44.49
+    },
+    "milano": {
+      "name": "Milano",
+      "lon": 9.19,
+      "lat": 45.46,
+      "excOff": [
+        0,
+        19
+      ]
+    },
+    "malpensa": {
+      "name": "Malpensa",
+      "lon": 8.72,
+      "lat": 45.63,
+      "side": "l"
+    },
+    "venezia": {
+      "name": "Venezia",
+      "lon": 12.34,
+      "lat": 45.44,
+      "side": "l",
+      "dy": 6
+    },
+    "sandona": {
+      "name": "San Donà (ATVO)",
+      "lon": 12.57,
+      "lat": 45.63,
+      "dy": -4
+    },
+    "firenze": {
+      "name": "Firenze",
+      "lon": 11.25,
+      "lat": 43.77,
+      "dy": 4
+    },
+    "pisa": {
+      "name": "Pisa",
+      "lon": 10.4,
+      "lat": 43.72,
+      "side": "l"
+    },
+    "grottammare": {
+      "name": "Grottammare",
+      "lon": 13.87,
+      "lat": 42.99
+    },
+    "a1": {
+      "name": "A1 Incisa–Sasso Marconi",
+      "lon": 11.24,
+      "lat": 44.02,
+      "dy": -3
+    },
+    "torino": {
+      "name": "Torino",
+      "lon": 7.68,
+      "lat": 45.07,
+      "side": "l"
+    },
+    "bergamo": {
+      "name": "Bergamo",
+      "lon": 9.67,
+      "lat": 45.7
+    }
+  },
+  "eventi": [
+    {
+      "id": "torino-16",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Studenti",
+      "place": "torino",
+      "start": "2026-10-16",
+      "end": "2026-10-16",
+      "time": "mattina",
+      "title": "Corteo studentesco non preavvisato con scontri",
+      "who": "Studenti medi e universitari",
+      "where": "Piazza Castello, Prefettura, Città metropolitana",
+      "exc": {
+        "kind": "Non preavvisato · scontri",
+        "note": "La Questura riferisce che il corteo non era preavvisato. Lancio di sassi, torce e bottiglie; idranti e lacrimogeni (ANSA)."
+      },
+      "src": [
+        "ansa16"
+      ]
+    },
+    {
+      "id": "milano-17",
+      "orgs": [
+        "italia-in-piazza"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Caro vita",
+      "place": "milano",
+      "start": "2026-10-17",
+      "end": "2026-10-17",
+      "time": "dalle 15:00",
+      "title": "\"Italia in piazza\": scontri e saccheggi in centro",
+      "who": "\"Italia in piazza\", convocazione online",
+      "where": "Piazza Duomo, via Broletto, corso Vittorio Emanuele II, San Babila",
+      "exc": {
+        "kind": "Scontri",
+        "note": "Sassaiole e bombe carta, cariche e idranti, negozi saccheggiati (Il Post, Sky TG24)."
+      },
+      "src": [
+        "ilpost17",
+        "tgcom17",
+        "sky18"
+      ]
+    },
+    {
+      "id": "torino-17",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Caro vita",
+      "place": "torino",
+      "start": "2026-10-17",
+      "end": "2026-10-17",
+      "time": "pomeriggio",
+      "title": "Corteo contro il caro vita con scontri",
+      "who": "Comitati di cittadini; poi collettivi e centri sociali",
+      "where": "Piazza Castello, stazione Porta Nuova, via Po",
+      "exc": {
+        "kind": "Scontri",
+        "note": "Lancio di oggetti, lacrimogeni e idranti; danneggiata la libreria della stazione Porta Nuova (Sky TG24)."
+      },
+      "src": [
+        "sky18",
+        "tgcom17"
+      ]
+    },
+    {
+      "id": "bologna-17",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Caro vita",
+      "place": "bologna",
+      "start": "2026-10-17",
+      "end": "2026-10-17",
+      "time": "pomeriggio",
+      "title": "Corteo non autorizzato con scontri alla stazione",
+      "who": "Non indicato dalle fonti",
+      "where": "Zona stazione centrale",
+      "exc": {
+        "kind": "Non autorizzato · scontri",
+        "note": "Il sindaco ha dichiarato che la manifestazione non era autorizzata. Fumogeni, sassi e transenne; idranti e lacrimogeni (Sky TG24)."
+      },
+      "src": [
+        "sky18",
+        "tgcom17"
+      ]
+    },
+    {
+      "id": "bergamo-17",
+      "orgs": [
+        "italia-in-piazza"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Caro vita",
+      "place": "bergamo",
+      "start": "2026-10-17",
+      "end": "2026-10-17",
+      "time": "pomeriggio",
+      "title": "Corteo contro il caro vita con sassaiole",
+      "who": "\"Italia in piazza\"",
+      "exc": {
+        "kind": "Scontri",
+        "note": "Sassaiole e petardi contro la polizia (Sky TG24)."
+      },
+      "src": [
+        "sky18"
+      ]
+    },
+    {
+      "id": "milano-18",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Caro vita",
+      "place": "milano",
+      "start": "2026-10-18",
+      "end": "2026-10-18",
+      "time": "dalle 17:00 circa",
+      "title": "Secondo giorno di scontri e saccheggi in centro",
+      "who": "Gruppi di giovani senza convocazione nota",
+      "where": "Piazza Duomo, via Torino, piazza Castello, Galleria, Moscova",
+      "exc": {
+        "kind": "Scontri · nessuna manifestazione convocata",
+        "note": "Lancio di sassi e petardi, idranti e lacrimogeni, negozi assaltati (ANSA, Il Post)."
+      },
+      "src": [
+        "ansa18",
+        "ilpost19"
+      ]
+    },
+    {
+      "id": "roma-circo",
+      "orgs": [
+        "movimento-17-ottobre"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Caro vita",
+      "place": "roma",
+      "start": "2026-10-24",
+      "end": "2026-10-24",
+      "time": "15:00",
+      "title": "Raduno contro il caro vita al Circo Massimo",
+      "who": "\"Movimento 17 ottobre\" (convocato sui social)",
+      "where": "Circo Massimo, percorso non confermato",
+      "tbc": true,
+      "exc": {
+        "kind": "Non preavvisato",
+        "note": "Al 22 ottobre gli organizzatori non hanno presentato richiesta; Questura in attesa di decidere (Fanpage)."
+      },
+      "src": [
+        "fanpage",
+        "qlazio"
+      ]
+    },
+    {
+      "id": "milano-anarchici",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Carceri e repressione",
+      "place": "milano",
+      "start": "2026-10-24",
+      "end": "2026-10-24",
+      "time": "data indicata come probabile",
+      "title": "Corteo anarchico verso San Vittore",
+      "who": "Area anarchica",
+      "where": "Conciliazione → carcere di San Vittore",
+      "tbc": true,
+      "exc": {
+        "kind": "Non preavvisato",
+        "note": "Descritto come non preavvisato ma previsto da tempo; la data del 24 è dedotta dalla fonte. Il centro storico dovrebbe essere vietato alle manifestazioni (Il Giorno)."
+      },
+      "src": [
+        "giorno22"
+      ]
+    },
+    {
+      "id": "milano-blocco",
+      "orgs": [
+        "blocco-studentesco"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Caro vita",
+      "place": "milano",
+      "start": "2026-10-24",
+      "end": "2026-10-24",
+      "time": "data indicata come probabile",
+      "title": "Raduno del Blocco Studentesco all'Arco della Pace",
+      "who": "Blocco Studentesco",
+      "where": "Arco della Pace",
+      "tbc": true,
+      "exc": {
+        "kind": "Probabile divieto",
+        "note": "Secondo Il Giorno il divieto di manifestare in centro dovrebbe valere anche per questo raduno."
+      },
+      "src": [
+        "giorno22"
+      ]
+    },
+    {
+      "id": "fse-bari",
+      "orgs": [
+        "filt-cgil",
+        "fit-cisl",
+        "uiltrasporti",
+        "faisa-cisal"
+      ],
+      "type": "sciopero",
+      "scope": "locale",
+      "sector": "Trasporto locale",
+      "place": "bari",
+      "start": "2026-10-23",
+      "end": "2026-10-23",
+      "time": "19:45–23:45",
+      "title": "Ferrovie Sud Est: operatori di esercizio e personale GOA",
+      "who": "Filt-Cgil, Fit-Cisl, Uiltrasporti, Faisa-Cisal",
+      "src": [
+        "mit",
+        "scuolainf"
+      ]
+    },
+    {
+      "id": "anffas",
+      "orgs": [
+        "fp-cgil"
+      ],
+      "type": "sciopero",
+      "scope": "locale",
+      "sector": "Sanità e assistenza",
+      "place": "grottammare",
+      "start": "2026-10-23",
+      "end": "2026-10-23",
+      "time": "intera giornata",
+      "title": "Anffas Grottammare",
+      "who": "Fp-Cgil",
+      "src": [
+        "scuolainf"
+      ]
+    },
+    {
+      "id": "roma-guerra",
+      "orgs": [
+        "fuori-guerra"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Pace e spesa pubblica",
+      "place": "roma",
+      "start": "2026-10-24",
+      "end": "2026-10-24",
+      "time": "ritrovo 14:00, corteo 15:00–19:00",
+      "title": "Corteo nazionale \"Fuori l'Italia dalla guerra\"",
+      "who": "Campagna \"Fuori l'Italia dalla guerra\"",
+      "where": "Piazza della Repubblica → Via dei Fori Imperiali",
+      "src": [
+        "qlazio",
+        "fanpage"
+      ]
+    },
+    {
+      "id": "roma-sblocchiamo",
+      "orgs": [
+        "azione-universitaria",
+        "azione-studentesca"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Studenti",
+      "place": "roma",
+      "start": "2026-10-24",
+      "end": "2026-10-24",
+      "time": "10:30",
+      "title": "Corteo studentesco \"Sblocchiamo tutto\"",
+      "who": "Azione Universitaria, Azione Studentesca",
+      "where": "Piazza della Libertà → Piazza Risorgimento",
+      "src": [
+        "fanpage",
+        "ansaScuola"
+      ]
+    },
+    {
+      "id": "a1-gsa",
+      "orgs": [
+        "sgb"
+      ],
+      "type": "sciopero",
+      "scope": "locale",
+      "sector": "Autostrade",
+      "place": "a1",
+      "area": "Tratta A1 Incisa–Sasso Marconi; il punto è a metà tratta",
+      "start": "2026-10-27",
+      "end": "2026-10-27",
+      "time": "8:00–12:00 e 20:00–24:00",
+      "title": "GSA, sorveglianza antincendio e sicurezza stradale sull'A1",
+      "who": "OSP SGB",
+      "src": [
+        "mit",
+        "virgilio"
+      ]
+    },
+    {
+      "id": "air-campania",
+      "orgs": [
+        "filt-cgil",
+        "fit-cisl",
+        "uiltrasporti",
+        "ugl",
+        "faisa-cisal"
+      ],
+      "type": "sciopero",
+      "scope": "regionale",
+      "sector": "Trasporto locale",
+      "place": "napoli",
+      "area": "Servizio regionale Air Campania; punto su Napoli",
+      "start": "2026-10-28",
+      "end": "2026-10-28",
+      "time": "8:00–16:00",
+      "title": "Air Campania, trasporto pubblico locale",
+      "who": "Filt-Cgil, Fit-Cisl, Uilt-Uil, Ugl, Faisa-Cisal",
+      "src": [
+        "mit",
+        "virgilio"
+      ]
+    },
+    {
+      "id": "trenitalia-er",
+      "orgs": [
+        "filt-cgil",
+        "fit-cisl",
+        "uiltrasporti",
+        "orsa-ferrovie"
+      ],
+      "type": "sciopero",
+      "scope": "regionale",
+      "sector": "Treni",
+      "place": "bologna",
+      "area": "Tutta l'Emilia-Romagna (sedi di Bologna, Reggio Emilia, AV Mediopadana, Rimini); punto su Bologna",
+      "start": "2026-10-28",
+      "end": "2026-10-29",
+      "time": "dalle 21:00 del 28 alle 21:00 del 29",
+      "title": "Trenitalia Customer Operations Emilia-Romagna",
+      "who": "Filt-Cgil, Fit-Cisl, Uilt-Uil, Orsa Ferrovie",
+      "src": [
+        "mit",
+        "virgilio"
+      ]
+    },
+    {
+      "id": "toscana-usicit",
+      "orgs": [
+        "usi-cit",
+        "cub"
+      ],
+      "type": "sciopero",
+      "scope": "regionale",
+      "sector": "Generale",
+      "place": "firenze",
+      "area": "Tutta la Toscana; punto su Firenze",
+      "start": "2026-10-30",
+      "end": "2026-10-30",
+      "time": "intera giornata",
+      "title": "Sciopero generale regionale, settori pubblico e privato. Esclusi aereo, ferrovie, trasporto locale e marittimo",
+      "who": "USI-CIT, con adesione CUB Firenze",
+      "src": [
+        "mit",
+        "virgilio"
+      ]
+    },
+    {
+      "id": "toscana-aeroporti",
+      "orgs": [
+        "usb"
+      ],
+      "type": "sciopero",
+      "scope": "locale",
+      "sector": "Trasporto aereo",
+      "place": "pisa",
+      "area": "Aeroporti di Pisa e Firenze; punto su Pisa",
+      "start": "2026-10-30",
+      "end": "2026-10-30",
+      "time": "24 ore",
+      "title": "Toscana Aeroporti, GH Toscana e Consulta",
+      "who": "USB Lavoro Privato",
+      "src": [
+        "mit",
+        "virgilio"
+      ]
+    },
+    {
+      "id": "usb-roma",
+      "orgs": [
+        "usb"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Generale",
+      "place": "roma",
+      "start": "2026-10-30",
+      "end": "2026-10-30",
+      "time": "10:30",
+      "title": "Piazza dello sciopero generale USB",
+      "who": "USB",
+      "where": "Piazza dei Cinquecento",
+      "src": [
+        "usbRoma"
+      ]
+    },
+    {
+      "id": "lazio-commercio",
+      "orgs": [
+        "filcams-cgil",
+        "fisascat-cisl",
+        "uiltucs"
+      ],
+      "type": "sciopero",
+      "scope": "regionale",
+      "sector": "Commercio",
+      "place": "roma",
+      "area": "Tutto il Lazio; punto su Roma",
+      "start": "2026-11-01",
+      "end": "2026-11-01",
+      "time": "intera giornata",
+      "title": "Commercio e distribuzione nel Lazio, lavoro nei festivi",
+      "who": "Filcams-Cgil, Fisascat-Cisl, Uiltucs",
+      "src": [
+        "canale10"
+      ]
+    },
+    {
+      "id": "enav-bari",
+      "orgs": [
+        "fast-confsal"
+      ],
+      "type": "sciopero",
+      "scope": "locale",
+      "sector": "Trasporto aereo",
+      "place": "bari",
+      "area": "Aeroporto di Bari",
+      "start": "2026-11-06",
+      "end": "2026-11-06",
+      "time": "13:00–17:00",
+      "title": "ENAV, aeroporto di Bari",
+      "who": "RSA Fast-Confsal-AV",
+      "src": [
+        "mit",
+        "meteo"
+      ]
+    },
+    {
+      "id": "atm-milano",
+      "orgs": [
+        "al-cobas"
+      ],
+      "type": "sciopero",
+      "scope": "locale",
+      "sector": "Trasporto locale",
+      "place": "milano",
+      "start": "2026-11-13",
+      "end": "2026-11-13",
+      "time": "24 ore, con fasce di garanzia",
+      "title": "ATM Milano: metro, tram e bus",
+      "who": "AL-Cobas",
+      "src": [
+        "mit",
+        "studenti"
+      ]
+    },
+    {
+      "id": "atvo",
+      "orgs": [
+        "sgb",
+        "fast-mobilita"
+      ],
+      "type": "sciopero",
+      "scope": "locale",
+      "sector": "Trasporto locale",
+      "place": "sandona",
+      "area": "Area servita da ATVO (Venezia orientale); punto su San Donà di Piave",
+      "start": "2026-11-13",
+      "end": "2026-11-13",
+      "time": "24 ore",
+      "title": "ATVO, autobus area veneziana",
+      "who": "SGB, Fast Mobilità",
+      "src": [
+        "mit",
+        "meteo"
+      ]
+    },
+    {
+      "id": "amtab",
+      "orgs": [
+        "filt-cgil",
+        "fit-cisl",
+        "uiltrasporti",
+        "ugl"
+      ],
+      "type": "sciopero",
+      "scope": "locale",
+      "sector": "Trasporto locale",
+      "place": "bari",
+      "start": "2026-11-14",
+      "end": "2026-11-14",
+      "time": "00:00–24:00",
+      "title": "AMTAB Bari",
+      "who": "Filt-Cgil, Fit-Cisl, Uilt-Uil, Ugl Autoferro",
+      "src": [
+        "mit",
+        "meteo"
+      ]
+    },
+    {
+      "id": "anm",
+      "orgs": [
+        "filt-cgil",
+        "fit-cisl",
+        "uiltrasporti",
+        "ugl",
+        "faisa-cisal"
+      ],
+      "type": "sciopero",
+      "scope": "locale",
+      "sector": "Trasporto locale",
+      "place": "napoli",
+      "start": "2026-11-16",
+      "end": "2026-11-16",
+      "time": "11:00–15:00",
+      "title": "ANM Napoli: metropolitane, funicolari, bus",
+      "who": "Filt-Cgil, Fit-Cisl, Uilt-Uil, Ugl-FNA, Faisa-Cisal",
+      "src": [
+        "mit",
+        "meteo"
+      ]
+    },
+    {
+      "id": "enav-mxp",
+      "orgs": [
+        "fast-confsal"
+      ],
+      "type": "sciopero",
+      "scope": "locale",
+      "sector": "Trasporto aereo",
+      "place": "malpensa",
+      "area": "Aeroporto di Milano Malpensa",
+      "start": "2026-11-22",
+      "end": "2026-11-22",
+      "time": "00:01–24:00",
+      "title": "ENAV, aeroporto di Milano Malpensa",
+      "who": "RSA Fast-Confsal-AV",
+      "src": [
+        "mit",
+        "meteo"
+      ]
+    },
+    {
+      "id": "vce-sicuritalia",
+      "orgs": [
+        "fisascat-cisl"
+      ],
+      "type": "sciopero",
+      "scope": "locale",
+      "sector": "Trasporto aereo",
+      "place": "venezia",
+      "area": "Aeroporto Marco Polo di Venezia",
+      "start": "2026-11-22",
+      "end": "2026-11-22",
+      "time": "00:00–23:59",
+      "title": "Sicuritalia IVRI, aeroporto Marco Polo",
+      "who": "Fisascat-Cisl",
+      "src": [
+        "mit",
+        "meteo"
+      ]
+    },
+    {
+      "id": "usb-generale",
+      "orgs": [
+        "usb"
+      ],
+      "type": "sciopero",
+      "scope": "nazionale",
+      "sector": "Generale",
+      "start": "2026-10-29",
+      "end": "2026-10-30",
+      "time": "intera giornata del 30; treni dalle 21:00 del 29 alle 20:59 del 30; autostrade dalle 22:00 del 29; aerei e taxi tutto il 30; trasporto locale con orari decisi città per città",
+      "title": "Sciopero generale di tutte le categorie pubbliche e private, senza esclusioni",
+      "who": "USB",
+      "src": [
+        "mit",
+        "usb",
+        "ferrovie"
+      ]
+    },
+    {
+      "id": "base-adl",
+      "orgs": [
+        "adl-cobas",
+        "clap",
+        "sial-cobas",
+        "cobas"
+      ],
+      "type": "sciopero",
+      "scope": "nazionale",
+      "sector": "Generale",
+      "start": "2026-10-30",
+      "end": "2026-10-30",
+      "time": "00:01–23:59",
+      "title": "Sciopero generale. Esclusi aereo, ferrovie e appalti, marittimo, trasporto locale, taxi, circolazione stradale",
+      "who": "ADL-Cobas, CLAP, SIAL-Cobas, Cobas",
+      "src": [
+        "mit",
+        "virgilio"
+      ]
+    },
+    {
+      "id": "base-cib",
+      "orgs": [
+        "cib-unicobas"
+      ],
+      "type": "sciopero",
+      "scope": "nazionale",
+      "sector": "Generale",
+      "start": "2026-10-30",
+      "end": "2026-10-30",
+      "time": "intera giornata",
+      "title": "Sciopero generale. Escluso l'intero settore trasporti",
+      "who": "CIB-Unicobas",
+      "src": [
+        "mit",
+        "virgilio"
+      ]
+    },
+    {
+      "id": "usb-porti",
+      "orgs": [
+        "usb"
+      ],
+      "type": "sciopero",
+      "scope": "nazionale",
+      "sector": "Porti",
+      "start": "2026-10-30",
+      "end": "2026-10-30",
+      "time": "24 ore",
+      "title": "Porti: imprese portuali, Autorità di sistema portuale e CCNL Porti",
+      "who": "USB Lavoro Privato",
+      "src": [
+        "mit",
+        "virgilio"
+      ]
+    },
+    {
+      "id": "sbb-cargo",
+      "orgs": [
+        "filt-cgil"
+      ],
+      "type": "sciopero",
+      "scope": "nazionale",
+      "sector": "Treni",
+      "start": "2026-11-10",
+      "end": "2026-11-11",
+      "time": "dalle 21:00 del 10 alle 4:59 dell'11",
+      "title": "SBB Cargo Italia, trasporto merci su ferro",
+      "who": "Filt-Cgil",
+      "src": [
+        "mit",
+        "meteo"
+      ]
+    },
+    {
+      "id": "cgil-generale",
+      "orgs": [
+        "cgil"
+      ],
+      "type": "sciopero",
+      "scope": "nazionale",
+      "sector": "Generale",
+      "start": "2026-11-20",
+      "end": "2026-11-20",
+      "time": "intera giornata di lavoro",
+      "title": "Sciopero generale dei settori pubblici e privati, anche in appalto",
+      "who": "CGIL",
+      "src": [
+        "mit",
+        "ansaCgil"
+      ]
+    },
+    {
+      "id": "studenti-20",
+      "orgs": [
+        "osa",
+        "rete-studenti"
+      ],
+      "type": "manifestazione",
+      "scope": "nazionale",
+      "sector": "Studenti",
+      "start": "2026-11-20",
+      "end": "2026-11-20",
+      "time": "giornata di mobilitazione",
+      "pending": "città e orari non ancora annunciati",
+      "title": "Sciopero studentesco, insieme allo sciopero CGIL",
+      "who": "Collettivo OSA, Generazione Fuoriclasse (Rete degli Studenti)",
+      "src": [
+        "studentiDate",
+        "ansaScuola"
+      ]
+    },
+    {
+      "id": "cub-treni",
+      "orgs": [
+        "cub",
+        "sgb"
+      ],
+      "type": "sciopero",
+      "scope": "multiregionale",
+      "sector": "Treni",
+      "start": "2026-11-20",
+      "end": "2026-11-21",
+      "time": "treni dalle 21:00 del 20 alle 20:00 del 21; trasporto locale per tutto il turno del 21",
+      "title": "Ferrovie e merci su rotaia, più alcune aziende di trasporto locale (GTT, EAV, Ferrovie Sud Est e altre)",
+      "who": "CUB Trasporti, SGB Ferrovie",
+      "src": [
+        "mit",
+        "meteo"
+      ]
+    },
+    {
+      "id": "enav-naz",
+      "orgs": [
+        "filt-cgil",
+        "ugl"
+      ],
+      "type": "sciopero",
+      "scope": "nazionale",
+      "sector": "Trasporto aereo",
+      "start": "2026-11-21",
+      "end": "2026-11-21",
+      "time": "13:00–17:00",
+      "title": "ENAV, controllo del traffico aereo",
+      "who": "Filt-Cgil, UGL Trasporto Aereo",
+      "src": [
+        "mit",
+        "meteo"
+      ]
+    }
+  ]
+}

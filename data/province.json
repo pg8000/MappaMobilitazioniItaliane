@@ -1,0 +1,433 @@
+{
+ "_nota": "Coordinate approssimate del capoluogo, usate per i punti sulla mappa. Chiave = nome della provincia come nel calendario MIT.",
+ "province": {
+  "Agrigento": {
+   "lon": 13.58,
+   "lat": 37.31
+  },
+  "Alessandria": {
+   "lon": 8.61,
+   "lat": 44.91
+  },
+  "Ancona": {
+   "lon": 13.52,
+   "lat": 43.62
+  },
+  "Aosta": {
+   "lon": 7.32,
+   "lat": 45.74
+  },
+  "Arezzo": {
+   "lon": 11.88,
+   "lat": 43.46
+  },
+  "Ascoli Piceno": {
+   "lon": 13.58,
+   "lat": 42.85
+  },
+  "Asti": {
+   "lon": 8.21,
+   "lat": 44.9
+  },
+  "Avellino": {
+   "lon": 14.79,
+   "lat": 40.91
+  },
+  "Bari": {
+   "lon": 16.87,
+   "lat": 41.12
+  },
+  "Barletta-Andria-Trani": {
+   "lon": 16.28,
+   "lat": 41.32
+  },
+  "Belluno": {
+   "lon": 12.22,
+   "lat": 46.14
+  },
+  "Benevento": {
+   "lon": 14.78,
+   "lat": 41.13
+  },
+  "Bergamo": {
+   "lon": 9.67,
+   "lat": 45.7
+  },
+  "Biella": {
+   "lon": 8.05,
+   "lat": 45.57
+  },
+  "Bologna": {
+   "lon": 11.34,
+   "lat": 44.49
+  },
+  "Bolzano": {
+   "lon": 11.35,
+   "lat": 46.5
+  },
+  "Brescia": {
+   "lon": 10.22,
+   "lat": 45.54
+  },
+  "Brindisi": {
+   "lon": 17.94,
+   "lat": 40.63
+  },
+  "Cagliari": {
+   "lon": 9.11,
+   "lat": 39.22
+  },
+  "Caltanissetta": {
+   "lon": 14.06,
+   "lat": 37.49
+  },
+  "Campobasso": {
+   "lon": 14.66,
+   "lat": 41.56
+  },
+  "Caserta": {
+   "lon": 14.33,
+   "lat": 41.07
+  },
+  "Catania": {
+   "lon": 15.09,
+   "lat": 37.5
+  },
+  "Catanzaro": {
+   "lon": 16.59,
+   "lat": 38.91
+  },
+  "Chieti": {
+   "lon": 14.17,
+   "lat": 42.35
+  },
+  "Como": {
+   "lon": 9.09,
+   "lat": 45.81
+  },
+  "Cosenza": {
+   "lon": 16.25,
+   "lat": 39.3
+  },
+  "Cremona": {
+   "lon": 10.02,
+   "lat": 45.13
+  },
+  "Crotone": {
+   "lon": 17.12,
+   "lat": 39.08
+  },
+  "Cuneo": {
+   "lon": 7.55,
+   "lat": 44.39
+  },
+  "Enna": {
+   "lon": 14.28,
+   "lat": 37.57
+  },
+  "Fermo": {
+   "lon": 13.72,
+   "lat": 43.16
+  },
+  "Ferrara": {
+   "lon": 11.62,
+   "lat": 44.84
+  },
+  "Firenze": {
+   "lon": 11.25,
+   "lat": 43.77
+  },
+  "Foggia": {
+   "lon": 15.55,
+   "lat": 41.46
+  },
+  "Forlì-Cesena": {
+   "lon": 12.04,
+   "lat": 44.22
+  },
+  "Frosinone": {
+   "lon": 13.35,
+   "lat": 41.64
+  },
+  "Genova": {
+   "lon": 8.93,
+   "lat": 44.41
+  },
+  "Gorizia": {
+   "lon": 13.62,
+   "lat": 45.94
+  },
+  "Grosseto": {
+   "lon": 11.11,
+   "lat": 42.76
+  },
+  "Imperia": {
+   "lon": 8.03,
+   "lat": 43.89
+  },
+  "Isernia": {
+   "lon": 14.23,
+   "lat": 41.59
+  },
+  "La Spezia": {
+   "lon": 9.82,
+   "lat": 44.1
+  },
+  "L'Aquila": {
+   "lon": 13.4,
+   "lat": 42.35
+  },
+  "Latina": {
+   "lon": 12.9,
+   "lat": 41.47
+  },
+  "Lecce": {
+   "lon": 18.17,
+   "lat": 40.35
+  },
+  "Lecco": {
+   "lon": 9.4,
+   "lat": 45.86
+  },
+  "Livorno": {
+   "lon": 10.31,
+   "lat": 43.55
+  },
+  "Lodi": {
+   "lon": 9.5,
+   "lat": 45.31
+  },
+  "Lucca": {
+   "lon": 10.5,
+   "lat": 43.84
+  },
+  "Macerata": {
+   "lon": 13.45,
+   "lat": 43.3
+  },
+  "Mantova": {
+   "lon": 10.79,
+   "lat": 45.16
+  },
+  "Massa-Carrara": {
+   "lon": 10.14,
+   "lat": 44.04
+  },
+  "Matera": {
+   "lon": 16.6,
+   "lat": 40.67
+  },
+  "Messina": {
+   "lon": 15.55,
+   "lat": 38.19
+  },
+  "Milano": {
+   "lon": 9.19,
+   "lat": 45.46
+  },
+  "Modena": {
+   "lon": 10.93,
+   "lat": 44.65
+  },
+  "Monza e Brianza": {
+   "lon": 9.27,
+   "lat": 45.58
+  },
+  "Napoli": {
+   "lon": 14.25,
+   "lat": 40.85
+  },
+  "Novara": {
+   "lon": 8.62,
+   "lat": 45.45
+  },
+  "Nuoro": {
+   "lon": 9.33,
+   "lat": 40.32
+  },
+  "Oristano": {
+   "lon": 8.59,
+   "lat": 39.9
+  },
+  "Padova": {
+   "lon": 11.88,
+   "lat": 45.41
+  },
+  "Palermo": {
+   "lon": 13.36,
+   "lat": 38.12
+  },
+  "Parma": {
+   "lon": 10.33,
+   "lat": 44.8
+  },
+  "Pavia": {
+   "lon": 9.16,
+   "lat": 45.19
+  },
+  "Perugia": {
+   "lon": 12.39,
+   "lat": 43.11
+  },
+  "Pesaro e Urbino": {
+   "lon": 12.91,
+   "lat": 43.91
+  },
+  "Pescara": {
+   "lon": 14.21,
+   "lat": 42.46
+  },
+  "Piacenza": {
+   "lon": 9.7,
+   "lat": 45.05
+  },
+  "Pisa": {
+   "lon": 10.4,
+   "lat": 43.72
+  },
+  "Pistoia": {
+   "lon": 10.92,
+   "lat": 43.93
+  },
+  "Pordenone": {
+   "lon": 12.66,
+   "lat": 45.96
+  },
+  "Potenza": {
+   "lon": 15.8,
+   "lat": 40.64
+  },
+  "Prato": {
+   "lon": 11.1,
+   "lat": 43.88
+  },
+  "Ragusa": {
+   "lon": 14.73,
+   "lat": 36.93
+  },
+  "Ravenna": {
+   "lon": 12.2,
+   "lat": 44.42
+  },
+  "Reggio Calabria": {
+   "lon": 15.65,
+   "lat": 38.11
+  },
+  "Reggio Emilia": {
+   "lon": 10.63,
+   "lat": 44.7
+  },
+  "Rieti": {
+   "lon": 12.86,
+   "lat": 42.4
+  },
+  "Rimini": {
+   "lon": 12.57,
+   "lat": 44.06
+  },
+  "Roma": {
+   "lon": 12.5,
+   "lat": 41.9
+  },
+  "Rovigo": {
+   "lon": 11.79,
+   "lat": 45.07
+  },
+  "Salerno": {
+   "lon": 14.77,
+   "lat": 40.68
+  },
+  "Sassari": {
+   "lon": 8.56,
+   "lat": 40.73
+  },
+  "Savona": {
+   "lon": 8.48,
+   "lat": 44.31
+  },
+  "Siena": {
+   "lon": 11.33,
+   "lat": 43.32
+  },
+  "Siracusa": {
+   "lon": 15.29,
+   "lat": 37.08
+  },
+  "Sondrio": {
+   "lon": 9.87,
+   "lat": 46.17
+  },
+  "Sud Sardegna": {
+   "lon": 8.52,
+   "lat": 39.17
+  },
+  "Taranto": {
+   "lon": 17.24,
+   "lat": 40.47
+  },
+  "Teramo": {
+   "lon": 13.7,
+   "lat": 42.66
+  },
+  "Terni": {
+   "lon": 12.64,
+   "lat": 42.56
+  },
+  "Torino": {
+   "lon": 7.68,
+   "lat": 45.07
+  },
+  "Trapani": {
+   "lon": 12.51,
+   "lat": 38.02
+  },
+  "Trento": {
+   "lon": 11.12,
+   "lat": 46.07
+  },
+  "Treviso": {
+   "lon": 12.24,
+   "lat": 45.67
+  },
+  "Trieste": {
+   "lon": 13.78,
+   "lat": 45.65
+  },
+  "Udine": {
+   "lon": 13.24,
+   "lat": 46.06
+  },
+  "Varese": {
+   "lon": 8.83,
+   "lat": 45.82
+  },
+  "Venezia": {
+   "lon": 12.34,
+   "lat": 45.44
+  },
+  "Verbano-Cusio-Ossola": {
+   "lon": 8.55,
+   "lat": 45.92
+  },
+  "Vercelli": {
+   "lon": 8.42,
+   "lat": 45.32
+  },
+  "Verona": {
+   "lon": 10.99,
+   "lat": 45.44
+  },
+  "Vibo Valentia": {
+   "lon": 16.1,
+   "lat": 38.68
+  },
+  "Vicenza": {
+   "lon": 11.55,
+   "lat": 45.55
+  },
+  "Viterbo": {
+   "lon": 12.11,
+   "lat": 42.42
+  }
+ }
+}
