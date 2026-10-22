@@ -1,0 +1,40 @@
+name: Segnala un errore o un evento mancante
+description: Correggi un dato della mappa o proponi un evento da aggiungere
+title: "[Correzione] "
+labels: ["correzione"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie! Ogni segnalazione viene verificata prima di modificare la mappa.
+        Non inserire dati personali (nomi, foto, indirizzi di persone).
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo di segnalazione
+      options:
+        - Dato sbagliato in un evento esistente
+        - Evento revocato o rinviato
+        - Evento mancante
+        - Altro
+    validations:
+      required: true
+  - type: input
+    id: evento
+    attributes:
+      label: Evento (titolo, data e luogo come appaiono sulla mappa)
+      placeholder: "es. ATM Milano: metro, tram e bus — ven 13 nov"
+  - type: textarea
+    id: dettagli
+    attributes:
+      label: Cosa va corretto o aggiunto
+    validations:
+      required: true
+  - type: input
+    id: fonte
+    attributes:
+      label: Link alla fonte
+      description: Comunicato ufficiale, calendario del Ministero dei Trasporti o articolo di una testata. Senza fonte la segnalazione non può essere accolta.
+      placeholder: https://
+    validations:
+      required: true
