@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Mappa di scioperi, manifestazioni ed eventi eccezionali in Italia, con la fonte di ogni evento.">
+<title>Piazze e scioperi d'Italia</title>
+
+<style>
+/* Layout: testata stretta, poi mappa a sinistra + pannello dettagli a destra; sotto, fascia nazionale e agenda. Su telefono tutto in colonna. */
+:root{
+  --bg:#f3f4f2; --surface:#ffffff; --ink:#1b1f1d; --muted:#5d6661; --line:#d5d9d5;
+  --land:#e4e7e2; --land-edge:#a9b1ab;
+  --strike:#b3261e; --strike-soft:#f6dcd9; --demo:#1f5fa8; --demo-soft:#dbe6f4;
+  --exc:#8f4e00; --exc-fill:#f2a93b; --exc-soft:#fbead0; --focus:#1f5fa8;
+  --f-display:"Avenir Next Condensed","Roboto Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-body:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --f-mono:ui-monospace,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#131615; --surface:#1b1f1d; --ink:#e8ebe8; --muted:#9aa39e; --line:#2f3532;
+  --land:#262b28; --land-edge:#4c5550;
+  --strike:#ef7b6f; --strike-soft:#3d2321; --demo:#7fb0ec; --demo-soft:#1d2b3d;
+  --exc:#f3b955; --exc-fill:#d98f1f; --exc-soft:#36280f; --focus:#7fb0ec; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#131615; --surface:#1b1f1d; --ink:#e8ebe8; --muted:#9aa39e; --line:#2f3532;
+  --land:#262b28; --land-edge:#4c5550;
+  --strike:#ef7b6f; --strike-soft:#3d2321; --demo:#7fb0ec; --demo-soft:#1d2b3d;
+  --exc:#f3b955; --exc-fill:#d98f1f; --exc-soft:#36280f; --focus:#7fb0ec; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 40px}
+.wrap{max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+header{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px;border-bottom:2px solid var(--ink);padding-bottom:12px}
+h1{font-family:var(--f-display);font-weight:700;font-size:clamp(28px,4.5vw,44px);line-height:1;margin:0;letter-spacing:-.01em;text-wrap:balance}
+.sub{margin:6px 0 0;color:var(--muted);max-width:66ch}
+.stamp{font-family:var(--f-mono);font-size:12.5px;color:var(--muted);text-align:right}
+.stamp b{color:var(--ink);font-weight:500}
+.count{margin:-8px 0 0;font-size:13.5px;color:var(--muted)}.count b{color:var(--ink);font-weight:600}
+.filters{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center}
+.fgroup{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.flabel{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-right:2px}
+.chip{font:inherit;font-size:13.5px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:4px 12px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.chip[aria-pressed="true"]{border-color:var(--ink);background:var(--ink);color:var(--bg)}
+.chip:focus-visible,button:focus-visible,select:focus-visible,a:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block;flex:none}
+.dot.s{background:var(--strike)} .dot.m{background:var(--demo)}
+.dia{width:11px;height:11px;display:inline-block;flex:none;background:var(--exc-fill);border:1.5px solid var(--exc);transform:rotate(45deg)}
+select{font:inherit;font-size:13.5px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:6px;padding:4px 8px}
+.main{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:20px;align-items:start}
+@media (max-width:820px){.main{grid-template-columns:minmax(0,1fr)}}
+.mapbox{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:8px;position:relative}
+.mapbox svg{display:block;width:100%;height:auto;max-height:78vh}
+.land{fill:var(--land);stroke:var(--land-edge);stroke-width:.8;stroke-linejoin:round}
+.marker{cursor:pointer}
+.marker .ring{fill:var(--surface);stroke-width:2.5}
+.marker .exc{fill:var(--exc-fill);stroke:var(--exc);stroke-width:2}
+.marker text{font-family:var(--f-mono);font-size:11px;font-weight:600;fill:var(--ink);pointer-events:none}
+.marker text.on-exc{fill:#1b1f1d}
+.marker .lbl{font-family:var(--f-body);font-size:11.5px;font-weight:600;paint-order:stroke;stroke:var(--surface);stroke-width:3px;fill:var(--ink)}
+.marker:hover .ring,.marker.sel .ring{stroke-width:4}
+.marker:hover .exc,.marker.sel .exc{stroke-width:3.5}
+.marker.past{opacity:.6}
+.marker:focus{outline:none}.marker:focus-visible .ring,.marker:focus-visible .exc{stroke:var(--focus)!important;stroke-width:4}
+.legend{position:absolute;left:16px;bottom:14px;font-size:12.5px;display:flex;flex-direction:column;gap:3px;background:var(--surface);padding:6px 8px;border:1px solid var(--line);border-radius:4px}
+.legend span{display:flex;align-items:center;gap:6px}
+@media (max-width:600px){.legend{position:static;margin-top:6px;border:0;padding:4px 2px}.stamp{text-align:left}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:16px;min-width:0}
+.panel h2{font-family:var(--f-display);font-size:22px;font-weight:600;margin:0 0 4px;text-wrap:balance}
+.panel h2:focus{outline:none}
+.panel .hint{color:var(--muted);margin:0}
+.back{font:inherit;font-size:13.5px;color:var(--demo);background:none;border:0;padding:0;margin:0 0 6px;cursor:pointer;text-decoration:underline;text-underline-offset:2px}
+.ev{border-top:1px solid var(--line);padding:12px 0;display:grid;gap:4px}
+.ev:first-of-type{border-top:0}
+.ev .top{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.tag{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;font-weight:600;padding:1px 7px;border-radius:3px}
+.tag.s{background:var(--strike-soft);color:var(--strike)} .tag.m{background:var(--demo-soft);color:var(--demo)}
+.tag.x{background:var(--exc-soft);color:var(--exc)}
+.tag.n{border:1px solid var(--line);color:var(--muted)} .tag.t{border:1px dashed var(--muted);color:var(--muted)}
+.excbox{background:var(--exc-soft);border-left:4px solid var(--exc);padding:6px 10px;font-size:13.5px;border-radius:0 3px 3px 0}
+.excbox b{color:var(--exc);text-transform:uppercase;letter-spacing:.06em;font-size:11.5px;display:block}
+.ev h3{margin:0;font-size:16px;font-weight:600;line-height:1.3}
+.when{font-family:var(--f-mono);font-size:13px;color:var(--ink)}
+.meta{color:var(--muted);font-size:13.5px;margin:0}
+.src{font-size:13px}.src a{color:var(--demo)}
+.national{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:16px}
+.national h2,.agenda h2{font-family:var(--f-display);font-size:22px;font-weight:600;margin:0 0 2px}
+.national>p,.agenda>p{color:var(--muted);margin:0 0 8px}
+.ngrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:0 24px}
+.agenda table{width:100%;border-collapse:collapse;font-size:14px}
+.tablebox{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:4px}
+.agenda th{text-align:left;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+.agenda td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.agenda tr:last-child td{border-bottom:0}
+.agenda tr.excrow td:first-child{box-shadow:inset 4px 0 0 var(--exc)}
+.agenda td.d{font-family:var(--f-mono);font-size:13px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.agenda td.src{white-space:nowrap;min-width:150px}
+.agenda tr.past td{color:var(--muted)}
+.agenda button.place{font:inherit;color:var(--demo);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline;text-underline-offset:2px}
+.note{font-size:13px;color:var(--muted);border-left:3px solid var(--line);padding-left:12px;max-width:80ch}
+.note a{color:var(--demo)}
+.empty{color:var(--muted);font-style:italic}
+@media (prefers-reduced-motion:no-preference){.marker .ring,.marker .exc{transition:stroke-width .15s}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Piazze e scioperi d'Italia</h1>
+      <p class="sub">Scioperi proclamati e manifestazioni annunciate dal 22 ottobre al 30 novembre 2026, più gli eventi eccezionali (manifestazioni non preavvisate o vietate, scontri) dal 1° ottobre. Tocca un punto sulla mappa per i dettagli; gli eventi nazionali sono nella fascia sotto la mappa.</p>
+    </div>
+    <div class="stamp">Dati aggiornati al <b>22 ottobre 2026</b><br><span id="todayLine"></span></div>
+  </header>
+
+  <div class="filters" role="group" aria-label="Filtri">
+    <div class="fgroup"><span class="flabel">Tipo</span>
+      <button class="chip" id="f-all" aria-pressed="true" data-type="all">Tutti</button>
+      <button class="chip" id="f-s" aria-pressed="false" data-type="sciopero"><i class="dot s"></i>Scioperi</button>
+      <button class="chip" id="f-m" aria-pressed="false" data-type="manifestazione"><i class="dot m"></i>Manifestazioni</button>
+      <button class="chip" id="f-x" aria-pressed="false" data-type="eccezionale"><i class="dia"></i>Eventi eccezionali</button>
+    </div>
+    <div class="fgroup"><label class="flabel" for="f-sector">Settore</label>
+      <select id="f-sector"><option value="all">Tutti i settori</option></select>
+    </div>
+    <div class="fgroup"><label class="flabel" for="f-org">Promotore</label>
+      <select id="f-org"><option value="all">Tutti i promotori</option></select>
+    </div>
+    <div class="fgroup"><span class="flabel">Conclusi</span>
+      <button class="chip" id="f-past" aria-pressed="true">Mostra eventi conclusi</button>
+    </div>
+  </div>
+
+  <p class="count" id="count" aria-live="polite"></p>
+
+  <div class="main">
+    <div class="mapbox">
+      <svg id="map" viewBox="0 0 560 640" role="group" aria-label="Mappa dell'Italia: ogni punto apre gli eventi di quel luogo"></svg>
+      <div class="legend">
+        <span><i class="dot s"></i>Sciopero locale o regionale</span>
+        <span><i class="dot m"></i>Manifestazione</span>
+        <span><i class="dia"></i>Evento eccezionale</span>
+        <span style="color:var(--muted)">Numero = eventi nel luogo · sbiadito = concluso</span>
+      </div>
+    </div>
+    <aside class="panel" id="panel" aria-live="polite"></aside>
+  </div>
+
+  <section class="national">
+    <h2>Eventi nazionali e multiregionali</h2>
+    <p>Riguardano tutto il Paese o più regioni, quindi non hanno un punto sulla mappa.</p>
+    <div class="ngrid" id="national"></div>
+  </section>
+
+  <section class="agenda">
+    <h2>Agenda completa</h2>
+    <p>Tutti gli eventi filtrati, in ordine di data. Gli eventi eccezionali hanno il bordo arancione.</p>
+    <div class="tablebox"><table>
+      <thead><tr><th>Data</th><th>Tipo</th><th>Evento</th><th>Dove</th><th>Fonte</th></tr></thead>
+      <tbody id="agenda"></tbody>
+    </table></div>
+  </section>
+
+  <p class="note">Gli scioperi possono essere revocati, rinviati o ridotti fino all'ultimo momento, e le manifestazioni possono cambiare percorso. Prima di partire controlla il <a href="https://scioperi.mit.gov.it/mit2/public/scioperi" target="_blank" rel="noopener">calendario scioperi del Ministero dei Trasporti</a> e gli avvisi dell'azienda di trasporto. Ogni evento riporta la fonte da cui è preso; questa pagina non esprime giudizi sulle iniziative elencate.</p>
+  <footer class="note">Progetto aperto: codice e dati su <a href="https://github.com/pg8000/MappaMobilitazioniItaliane" target="_blank" rel="noopener">GitHub</a>.
+    Hai trovato un errore o manca un evento? <a href="https://github.com/pg8000/MappaMobilitazioniItaliane/issues/new?template=correzione.yml" target="_blank" rel="noopener">Segnalalo qui</a>.
+    Codice con licenza MIT, dati con licenza CC BY 4.0. Nessun cookie, nessun tracciamento.</footer>
+</div>
+
+<script>
+// ---------- Dati (snapshot del 22/10/2026) ----------
+const SRC = {
+  mit:["Calendario scioperi MIT","https://scioperi.mit.gov.it/mit2/public/scioperi"],
+  meteo:["Meteo.it, 20/10/2026","https://www.meteo.it/notizie/scioperi-novembre-2026-calendario-treni-aerei-e-mezzi-pubblici-6ad722d5"],
+  studenti:["Studenti.it, 19/10/2026","https://www.studenti.it/scioperi-novembre-2026-date-orari.html"],
+  virgilio:["Virgilio Motori","https://www.virgilio.it/motori/info-utili/scioperi/sciopero-trasporti-date-orari-citta-ottobre-2026/350069/"],
+  scuolainf:["Scuolainforma","https://www.scuolainforma.news/scioperi-dal-20-al-25-ottobre-2026-nessuno-stop-nella-scuola-ma-attenzione-ai-trasporti/"],
+  qlazio:["Il Quotidiano del Lazio","https://www.ilquotidianodellazio.it/roma-sabato-24-ottobre-cortei-e-proteste-attesi-10mila-manifestanti-strade-chiuse-e-bus-deviati.html"],
+  fanpage:["Fanpage, 22/10/2026","https://www.fanpage.it/roma/roma-sabato-di-cortei-e-proteste-confermata-la-manifestazione-ai-fori-incognita-circo-massimo/"],
+  ansaScuola:["ANSA, 19/10/2026","https://www.ansa.it/canale_legalita_scuola/notizie/2026/10/19/le-prossime-date-calde-il-30-ottobre-ancora-in-piazza_2a60599a-28a3-4e27-aa23-4fad27a4ecf3.html"],
+  usbRoma:["USB, comunicato","https://www.usb.it/leggi-notizia/sciopero-generale-30-ottobre-a-roma-appuntamento-ore-1030-piazza-dei-cinquecento-1634.html"],
+  usb:["USB, comunicato","https://www.usb.it/leggi-notizia/30-ottobre-e-sciopero-generale-0817.html"],
+  lentepa:["Lentepubblica.it","https://lentepubblica.it/cittadini-e-imprese/sciopero-generale-30-ottobre-scuole-treni-e-ospedali-ecco-chi-si-ferma/"],
+  ferrovie:["Ferrovie.info","https://www.ferrovie.info/treni-reali/sciopero-treni-29-e-30-ottobre-2026-a-rischio-alta-velocita-intercity-regionali-e-trenord.html"],
+  canale10:["Canale Dieci, 19/10/2026","https://canaledieci.it/2026/10/19/scioperi-novembre-2026-a-roma-e-nel-lazio-le-date-i-trasporti-coinvolti-e-gli-stop-nazionali/"],
+  ansaCgil:["ANSA, 17/10/2026","https://www.ansa.it/sito/notizie/politica/2026/10/17/cgil-in-piazza-siamo-100mila-il-20-novembre-sciopero-generale_c4547ea9-f018-4e78-adda-67ad7af8e7d0.html"],
+  studentiDate:["Studenti.it, 20/10/2026","https://www.studenti.it/scioperi-scuola-studenti-date-calde-ottobre-novembre-2026.html"],
+  ansa16:["ANSA, 16/10/2026","https://ansa.it/sito/notizie/cronaca/2026/10/16/gli-studenti-in-piazza-cortei-in-tutta-italia.-a-torino-lancio-di-sassi-contro_1e152b63-e67e-4efd-9ec7-0ca3507f55e3.html"],
+  ilpost17:["Il Post, 17/10/2026","https://www.ilpost.it/2026/10/17/scontri-milano-manifestazione-carovita/"],
+  ilpost19:["Il Post, 19/10/2026","https://www.ilpost.it/2026/10/19/milano-devastazioni-saccheggi-scontri-negozi-polizia-manifestazione/"],
+  tgcom17:["Tgcom24, 17/10/2026","https://www.tgcom24.mediaset.it/cronaca/cortei-italia-in-piazza-sabato-17-ottobre-milano-genova-bologna-roma-torino_117789892-202602k.shtml"],
+  sky18:["Sky TG24, 18/10/2026","https://tg24.sky.it/cronaca/2026/10/18/scontri-guerriglia-milano-torino-bologna-cosa-e-successo"],
+  ansa18:["ANSA, 18/10/2026","https://www.ansa.it/sito/notizie/cronaca/2026/10/18/centinaia-di-giovani-a-gruppetti-in-piazza-duomo-50-portati-in-questura_57da2060-1834-4ed4-a7a9-19a0843c94bd.html"],
+  giorno22:["Il Giorno, 22/10/2026","https://www.ilgiorno.it/milano/cronaca/sala-timori-scontri-sabato-ajsaaid3"]
+};
+const PLACES = {
+  roma:{name:"Roma",lon:12.50,lat:41.90}, bari:{name:"Bari",lon:16.87,lat:41.12},
+  napoli:{name:"Napoli",lon:14.25,lat:40.85}, bologna:{name:"Bologna",lon:11.34,lat:44.49},
+  milano:{name:"Milano",lon:9.19,lat:45.46,excOff:[0,19]}, malpensa:{name:"Malpensa",lon:8.72,lat:45.63,side:"l"},
+  venezia:{name:"Venezia",lon:12.34,lat:45.44,side:"l",dy:6}, sandona:{name:"San Donà (ATVO)",lon:12.57,lat:45.63,dy:-4},
+  firenze:{name:"Firenze",lon:11.25,lat:43.77,dy:4}, pisa:{name:"Pisa",lon:10.40,lat:43.72,side:"l"},
+  grottammare:{name:"Grottammare",lon:13.87,lat:42.99}, a1:{name:"A1 Incisa–Sasso Marconi",lon:11.24,lat:44.02,dy:-3},
+  torino:{name:"Torino",lon:7.68,lat:45.07,side:"l"}, bergamo:{name:"Bergamo",lon:9.67,lat:45.70}
+};
+// Promotori: sigla normalizzata e famiglia. Le categorie della stessa confederazione si possono filtrare insieme.
+const ORGS = {
+  "cgil":["CGIL (confederale)","CGIL"],"filt-cgil":["Filt-Cgil","CGIL"],"fp-cgil":["Fp-Cgil","CGIL"],"filcams-cgil":["Filcams-Cgil","CGIL"],
+  "fit-cisl":["Fit-Cisl","CISL"],"fisascat-cisl":["Fisascat-Cisl","CISL"],
+  "uiltrasporti":["Uiltrasporti","UIL"],"uiltucs":["Uiltucs","UIL"],
+  "ugl":["UGL (categorie trasporti)","UGL"],
+  "usb":["USB","Sindacati di base"],"cub":["CUB","Sindacati di base"],"sgb":["SGB","Sindacati di base"],"usi-cit":["USI-CIT","Sindacati di base"],
+  "adl-cobas":["ADL-Cobas","Sindacati di base"],"cobas":["Cobas","Sindacati di base"],"sial-cobas":["SIAL-Cobas","Sindacati di base"],
+  "al-cobas":["AL-Cobas","Sindacati di base"],"clap":["CLAP","Sindacati di base"],"cib-unicobas":["CIB-Unicobas","Sindacati di base"],
+  "faisa-cisal":["Faisa-Cisal","Sindacati autonomi"],"orsa-ferrovie":["Orsa Ferrovie","Sindacati autonomi"],
+  "fast-confsal":["Fast-Confsal","Sindacati autonomi"],"fast-mobilita":["Fast Mobilità","Sindacati autonomi"],
+  "fuori-guerra":["Campagna \"Fuori l'Italia dalla guerra\"","Altri promotori"],"azione-universitaria":["Azione Universitaria","Altri promotori"],
+  "azione-studentesca":["Azione Studentesca","Altri promotori"],"osa":["Collettivo OSA","Altri promotori"],"rete-studenti":["Rete degli Studenti","Altri promotori"],
+  "italia-in-piazza":["\"Italia in piazza\"","Altri promotori"],"movimento-17-ottobre":["\"Movimento 17 ottobre\"","Altri promotori"],
+  "blocco-studentesco":["Blocco Studentesco","Altri promotori"],
+  "non-identificato":["Nessuna sigla identificata","Promotore non identificato"]
+};
+const FAMILIES=["CGIL","CISL","UIL","UGL","Sindacati di base","Sindacati autonomi","Altri promotori","Promotore non identificato"];
+/* Campi: type sciopero|manifestazione · scope locale|regionale|nazionale|multiregionale · place (chiave PLACES, assente se nazionale)
+   area = cosa copre davvero l'evento quando il punto è solo rappresentativo · tbc = evento non ancora confermato
+   pending = dettagli mancanti di un evento confermato · exc = evento eccezionale {kind, note} · orgs = chiavi di ORGS */
+const EVENTS = [
+  // ---- Eventi eccezionali (dal 1° ottobre) ----
+  {id:"torino-16",orgs:["non-identificato"],type:"manifestazione",scope:"locale",sector:"Studenti",place:"torino",start:"2026-10-16",end:"2026-10-16",time:"mattina",title:"Corteo studentesco non preavvisato con scontri",who:"Studenti medi e universitari",where:"Piazza Castello, Prefettura, Città metropolitana",exc:{kind:"Non preavvisato · scontri",note:"La Questura riferisce che il corteo non era preavvisato. Lancio di sassi, torce e bottiglie; idranti e lacrimogeni (ANSA)."},src:["ansa16"]},
+  {id:"milano-17",orgs:["italia-in-piazza"],type:"manifestazione",scope:"locale",sector:"Caro vita",place:"milano",start:"2026-10-17",end:"2026-10-17",time:"dalle 15:00",title:"\"Italia in piazza\": scontri e saccheggi in centro",who:"\"Italia in piazza\", convocazione online",where:"Piazza Duomo, via Broletto, corso Vittorio Emanuele II, San Babila",exc:{kind:"Scontri",note:"Sassaiole e bombe carta, cariche e idranti, negozi saccheggiati (Il Post, Sky TG24)."},src:["ilpost17","tgcom17","sky18"]},
+  {id:"torino-17",orgs:["non-identificato"],type:"manifestazione",scope:"locale",sector:"Caro vita",place:"torino",start:"2026-10-17",end:"2026-10-17",time:"pomeriggio",title:"Corteo contro il caro vita con scontri",who:"Comitati di cittadini; poi collettivi e centri sociali",where:"Piazza Castello, stazione Porta Nuova, via Po",exc:{kind:"Scontri",note:"Lancio di oggetti, lacrimogeni e idranti; danneggiata la libreria della stazione Porta Nuova (Sky TG24)."},src:["sky18","tgcom17"]},
+  {id:"bologna-17",orgs:["non-identificato"],type:"manifestazione",scope:"locale",sector:"Caro vita",place:"bologna",start:"2026-10-17",end:"2026-10-17",time:"pomeriggio",title:"Corteo non autorizzato con scontri alla stazione",who:"Non indicato dalle fonti",where:"Zona stazione centrale",exc:{kind:"Non autorizzato · scontri",note:"Il sindaco ha dichiarato che la manifestazione non era autorizzata. Fumogeni, sassi e transenne; idranti e lacrimogeni (Sky TG24)."},src:["sky18","tgcom17"]},
+  {id:"bergamo-17",orgs:["italia-in-piazza"],type:"manifestazione",scope:"locale",sector:"Caro vita",place:"bergamo",start:"2026-10-17",end:"2026-10-17",time:"pomeriggio",title:"Corteo contro il caro vita con sassaiole",who:"\"Italia in piazza\"",exc:{kind:"Scontri",note:"Sassaiole e petardi contro la polizia (Sky TG24)."},src:["sky18"]},
+  {id:"milano-18",orgs:["non-identificato"],type:"manifestazione",scope:"locale",sector:"Caro vita",place:"milano",start:"2026-10-18",end:"2026-10-18",time:"dalle 17:00 circa",title:"Secondo giorno di scontri e saccheggi in centro",who:"Gruppi di giovani senza convocazione nota",where:"Piazza Duomo, via Torino, piazza Castello, Galleria, Moscova",exc:{kind:"Scontri · nessuna manifestazione convocata",note:"Lancio di sassi e petardi, idranti e lacrimogeni, negozi assaltati (ANSA, Il Post)."},src:["ansa18","ilpost19"]},
+  {id:"roma-circo",orgs:["movimento-17-ottobre"],type:"manifestazione",scope:"locale",sector:"Caro vita",place:"roma",start:"2026-10-24",end:"2026-10-24",time:"15:00",title:"Raduno contro il caro vita al Circo Massimo",who:"\"Movimento 17 ottobre\" (convocato sui social)",where:"Circo Massimo, percorso non confermato",tbc:true,exc:{kind:"Non preavvisato",note:"Al 22 ottobre gli organizzatori non hanno presentato richiesta; Questura in attesa di decidere (Fanpage)."},src:["fanpage","qlazio"]},
+  {id:"milano-anarchici",orgs:["non-identificato"],type:"manifestazione",scope:"locale",sector:"Carceri e repressione",place:"milano",start:"2026-10-24",end:"2026-10-24",time:"data indicata come probabile",title:"Corteo anarchico verso San Vittore",who:"Area anarchica",where:"Conciliazione → carcere di San Vittore",tbc:true,exc:{kind:"Non preavvisato",note:"Descritto come non preavvisato ma previsto da tempo; la data del 24 è dedotta dalla fonte. Il centro storico dovrebbe essere vietato alle manifestazioni (Il Giorno)."},src:["giorno22"]},
+  {id:"milano-blocco",orgs:["blocco-studentesco"],type:"manifestazione",scope:"locale",sector:"Caro vita",place:"milano",start:"2026-10-24",end:"2026-10-24",time:"data indicata come probabile",title:"Raduno del Blocco Studentesco all'Arco della Pace",who:"Blocco Studentesco",where:"Arco della Pace",tbc:true,exc:{kind:"Probabile divieto",note:"Secondo Il Giorno il divieto di manifestare in centro dovrebbe valere anche per questo raduno."},src:["giorno22"]},
+  // ---- Scioperi e manifestazioni locali o regionali ----
+  {id:"fse-bari",orgs:["filt-cgil","fit-cisl","uiltrasporti","faisa-cisal"],type:"sciopero",scope:"locale",sector:"Trasporto locale",place:"bari",start:"2026-10-23",end:"2026-10-23",time:"19:45–23:45",title:"Ferrovie Sud Est: operatori di esercizio e personale GOA",who:"Filt-Cgil, Fit-Cisl, Uiltrasporti, Faisa-Cisal",src:["mit","scuolainf"]},
+  {id:"anffas",orgs:["fp-cgil"],type:"sciopero",scope:"locale",sector:"Sanità e assistenza",place:"grottammare",start:"2026-10-23",end:"2026-10-23",time:"intera giornata",title:"Anffas Grottammare",who:"Fp-Cgil",src:["scuolainf"]},
+  {id:"roma-guerra",orgs:["fuori-guerra"],type:"manifestazione",scope:"locale",sector:"Pace e spesa pubblica",place:"roma",start:"2026-10-24",end:"2026-10-24",time:"ritrovo 14:00, corteo 15:00–19:00",title:"Corteo nazionale \"Fuori l'Italia dalla guerra\"",who:"Campagna \"Fuori l'Italia dalla guerra\"",where:"Piazza della Repubblica → Via dei Fori Imperiali",src:["qlazio","fanpage"]},
+  {id:"roma-sblocchiamo",orgs:["azione-universitaria","azione-studentesca"],type:"manifestazione",scope:"locale",sector:"Studenti",place:"roma",start:"2026-10-24",end:"2026-10-24",time:"10:30",title:"Corteo studentesco \"Sblocchiamo tutto\"",who:"Azione Universitaria, Azione Studentesca",where:"Piazza della Libertà → Piazza Risorgimento",src:["fanpage","ansaScuola"]},
+  {id:"a1-gsa",orgs:["sgb"],type:"sciopero",scope:"locale",sector:"Autostrade",place:"a1",area:"Tratta A1 Incisa–Sasso Marconi; il punto è a metà tratta",start:"2026-10-27",end:"2026-10-27",time:"8:00–12:00 e 20:00–24:00",title:"GSA, sorveglianza antincendio e sicurezza stradale sull'A1",who:"OSP SGB",src:["mit","virgilio"]},
+  {id:"air-campania",orgs:["filt-cgil","fit-cisl","uiltrasporti","ugl","faisa-cisal"],type:"sciopero",scope:"regionale",sector:"Trasporto locale",place:"napoli",area:"Servizio regionale Air Campania; punto su Napoli",start:"2026-10-28",end:"2026-10-28",time:"8:00–16:00",title:"Air Campania, trasporto pubblico locale",who:"Filt-Cgil, Fit-Cisl, Uilt-Uil, Ugl, Faisa-Cisal",src:["mit","virgilio"]},
+  {id:"trenitalia-er",orgs:["filt-cgil","fit-cisl","uiltrasporti","orsa-ferrovie"],type:"sciopero",scope:"regionale",sector:"Treni",place:"bologna",area:"Tutta l'Emilia-Romagna (sedi di Bologna, Reggio Emilia, AV Mediopadana, Rimini); punto su Bologna",start:"2026-10-28",end:"2026-10-29",time:"dalle 21:00 del 28 alle 21:00 del 29",title:"Trenitalia Customer Operations Emilia-Romagna",who:"Filt-Cgil, Fit-Cisl, Uilt-Uil, Orsa Ferrovie",src:["mit","virgilio"]},
+  {id:"toscana-usicit",orgs:["usi-cit","cub"],type:"sciopero",scope:"regionale",sector:"Generale",place:"firenze",area:"Tutta la Toscana; punto su Firenze",start:"2026-10-30",end:"2026-10-30",time:"intera giornata",title:"Sciopero generale regionale, settori pubblico e privato. Esclusi aereo, ferrovie, trasporto locale e marittimo",who:"USI-CIT, con adesione CUB Firenze",src:["mit","virgilio"]},
+  {id:"toscana-aeroporti",orgs:["usb"],type:"sciopero",scope:"locale",sector:"Trasporto aereo",place:"pisa",area:"Aeroporti di Pisa e Firenze; punto su Pisa",start:"2026-10-30",end:"2026-10-30",time:"24 ore",title:"Toscana Aeroporti, GH Toscana e Consulta",who:"USB Lavoro Privato",src:["mit","virgilio"]},
+  {id:"usb-roma",orgs:["usb"],type:"manifestazione",scope:"locale",sector:"Generale",place:"roma",start:"2026-10-30",end:"2026-10-30",time:"10:30",title:"Piazza dello sciopero generale USB",who:"USB",where:"Piazza dei Cinquecento",src:["usbRoma"]},
+  {id:"lazio-commercio",orgs:["filcams-cgil","fisascat-cisl","uiltucs"],type:"sciopero",scope:"regionale",sector:"Commercio",place:"roma",area:"Tutto il Lazio; punto su Roma",start:"2026-11-01",end:"2026-11-01",time:"intera giornata",title:"Commercio e distribuzione nel Lazio, lavoro nei festivi",who:"Filcams-Cgil, Fisascat-Cisl, Uiltucs",src:["canale10"]},
+  {id:"enav-bari",orgs:["fast-confsal"],type:"sciopero",scope:"locale",sector:"Trasporto aereo",place:"bari",area:"Aeroporto di Bari",start:"2026-11-06",end:"2026-11-06",time:"13:00–17:00",title:"ENAV, aeroporto di Bari",who:"RSA Fast-Confsal-AV",src:["mit","meteo"]},
+  {id:"atm-milano",orgs:["al-cobas"],type:"sciopero",scope:"locale",sector:"Trasporto locale",place:"milano",start:"2026-11-13",end:"2026-11-13",time:"24 ore, con fasce di garanzia",title:"ATM Milano: metro, tram e bus",who:"AL-Cobas",src:["mit","studenti"]},
+  {id:"atvo",orgs:["sgb","fast-mobilita"],type:"sciopero",scope:"locale",sector:"Trasporto locale",place:"sandona",area:"Area servita da ATVO (Venezia orientale); punto su San Donà di Piave",start:"2026-11-13",end:"2026-11-13",time:"24 ore",title:"ATVO, autobus area veneziana",who:"SGB, Fast Mobilità",src:["mit","meteo"]},
+  {id:"amtab",orgs:["filt-cgil","fit-cisl","uiltrasporti","ugl"],type:"sciopero",scope:"locale",sector:"Trasporto locale",place:"bari",start:"2026-11-14",end:"2026-11-14",time:"00:00–24:00",title:"AMTAB Bari",who:"Filt-Cgil, Fit-Cisl, Uilt-Uil, Ugl Autoferro",src:["mit","meteo"]},
+  {id:"anm",orgs:["filt-cgil","fit-cisl","uiltrasporti","ugl","faisa-cisal"],type:"sciopero",scope:"locale",sector:"Trasporto locale",place:"napoli",start:"2026-11-16",end:"2026-11-16",time:"11:00–15:00",title:"ANM Napoli: metropolitane, funicolari, bus",who:"Filt-Cgil, Fit-Cisl, Uilt-Uil, Ugl-FNA, Faisa-Cisal",src:["mit","meteo"]},
+  {id:"enav-mxp",orgs:["fast-confsal"],type:"sciopero",scope:"locale",sector:"Trasporto aereo",place:"malpensa",area:"Aeroporto di Milano Malpensa",start:"2026-11-22",end:"2026-11-22",time:"00:01–24:00",title:"ENAV, aeroporto di Milano Malpensa",who:"RSA Fast-Confsal-AV",src:["mit","meteo"]},
+  {id:"vce-sicuritalia",orgs:["fisascat-cisl"],type:"sciopero",scope:"locale",sector:"Trasporto aereo",place:"venezia",area:"Aeroporto Marco Polo di Venezia",start:"2026-11-22",end:"2026-11-22",time:"00:00–23:59",title:"Sicuritalia IVRI, aeroporto Marco Polo",who:"Fisascat-Cisl",src:["mit","meteo"]},
+  // ---- Nazionali e multiregionali ----
+  {id:"usb-generale",orgs:["usb"],type:"sciopero",scope:"nazionale",sector:"Generale",start:"2026-10-29",end:"2026-10-30",time:"intera giornata del 30; treni dalle 21:00 del 29 alle 20:59 del 30; autostrade dalle 22:00 del 29; aerei e taxi tutto il 30; trasporto locale con orari decisi città per città",title:"Sciopero generale di tutte le categorie pubbliche e private, senza esclusioni",who:"USB",src:["mit","usb","ferrovie"]},
+  {id:"base-adl",orgs:["adl-cobas","clap","sial-cobas","cobas"],type:"sciopero",scope:"nazionale",sector:"Generale",start:"2026-10-30",end:"2026-10-30",time:"00:01–23:59",title:"Sciopero generale. Esclusi aereo, ferrovie e appalti, marittimo, trasporto locale, taxi, circolazione stradale",who:"ADL-Cobas, CLAP, SIAL-Cobas, Cobas",src:["mit","virgilio"]},
+  {id:"base-cib",orgs:["cib-unicobas"],type:"sciopero",scope:"nazionale",sector:"Generale",start:"2026-10-30",end:"2026-10-30",time:"intera giornata",title:"Sciopero generale. Escluso l'intero settore trasporti",who:"CIB-Unicobas",src:["mit","virgilio"]},
+  {id:"usb-porti",orgs:["usb"],type:"sciopero",scope:"nazionale",sector:"Porti",start:"2026-10-30",end:"2026-10-30",time:"24 ore",title:"Porti: imprese portuali, Autorità di sistema portuale e CCNL Porti",who:"USB Lavoro Privato",src:["mit","virgilio"]},
+  {id:"sbb-cargo",orgs:["filt-cgil"],type:"sciopero",scope:"nazionale",sector:"Treni",start:"2026-11-10",end:"2026-11-11",time:"dalle 21:00 del 10 alle 4:59 dell'11",title:"SBB Cargo Italia, trasporto merci su ferro",who:"Filt-Cgil",src:["mit","meteo"]},
+  {id:"cgil-generale",orgs:["cgil"],type:"sciopero",scope:"nazionale",sector:"Generale",start:"2026-11-20",end:"2026-11-20",time:"intera giornata di lavoro",title:"Sciopero generale dei settori pubblici e privati, anche in appalto",who:"CGIL",src:["mit","ansaCgil"]},
+  {id:"studenti-20",orgs:["osa","rete-studenti"],type:"manifestazione",scope:"nazionale",sector:"Studenti",start:"2026-11-20",end:"2026-11-20",time:"giornata di mobilitazione",pending:"città e orari non ancora annunciati",title:"Sciopero studentesco, insieme allo sciopero CGIL",who:"Collettivo OSA, Generazione Fuoriclasse (Rete degli Studenti)",src:["studentiDate","ansaScuola"]},
+  {id:"cub-treni",orgs:["cub","sgb"],type:"sciopero",scope:"multiregionale",sector:"Treni",start:"2026-11-20",end:"2026-11-21",time:"treni dalle 21:00 del 20 alle 20:00 del 21; trasporto locale per tutto il turno del 21",title:"Ferrovie e merci su rotaia, più alcune aziende di trasporto locale (GTT, EAV, Ferrovie Sud Est e altre)",who:"CUB Trasporti, SGB Ferrovie",src:["mit","meteo"]},
+  {id:"enav-naz",orgs:["filt-cgil","ugl"],type:"sciopero",scope:"nazionale",sector:"Trasporto aereo",start:"2026-11-21",end:"2026-11-21",time:"13:00–17:00",title:"ENAV, controllo del traffico aereo",who:"Filt-Cgil, UGL Trasporto Aereo",src:["mit","meteo"]}
+];
+
+// ---------- Contorno dell'Italia (semplificato, lon/lat) ----------
+const OUTLINE = {
+ mainland:[[7.53,43.79],[7.78,43.81],[8.03,43.88],[8.22,44.05],[8.48,44.31],[8.93,44.41],[9.23,44.35],[9.40,44.27],[9.83,44.10],[10.03,44.04],[10.24,43.87],[10.30,43.55],[10.52,43.25],[10.50,42.93],[10.75,42.92],[11.00,42.70],[11.10,42.42],[11.45,42.38],[11.79,42.09],[12.23,41.77],[12.62,41.45],[13.05,41.23],[13.57,41.21],[13.93,41.02],[14.08,40.82],[14.27,40.84],[14.43,40.74],[14.33,40.60],[14.60,40.63],[14.77,40.67],[14.98,40.35],[14.95,40.23],[15.28,40.03],[15.63,40.07],[15.78,39.90],[15.82,39.68],[16.03,39.36],[16.07,39.13],[16.20,38.90],[16.16,38.73],[15.83,38.62],[15.90,38.42],[15.72,38.25],[15.64,38.11],[15.75,37.92],[16.06,37.92],[16.26,38.24],[16.55,38.69],[16.62,38.82],[17.13,39.08],[17.20,39.02],[17.13,39.38],[16.85,39.55],[16.50,39.73],[16.53,39.87],[16.68,40.20],[16.82,40.37],[17.23,40.47],[17.55,40.30],[17.89,40.26],[17.99,40.06],[18.36,39.80],[18.52,40.10],[18.49,40.15],[18.25,40.45],[17.94,40.64],[17.30,40.95],[16.87,41.13],[16.29,41.32],[15.92,41.63],[16.18,41.88],[15.88,41.93],[15.35,41.92],[14.99,42.00],[14.72,42.12],[14.22,42.47],[13.96,42.75],[13.89,42.95],[13.73,43.30],[13.52,43.62],[13.22,43.72],[12.91,43.91],[12.57,44.06],[12.28,44.42],[12.40,44.80],[12.53,44.95],[12.28,45.22],[12.33,45.43],[12.64,45.50],[12.88,45.60],[13.14,45.68],[13.38,45.68],[13.53,45.80],[13.77,45.65],[13.77,45.60],[13.90,45.63],[13.62,45.94],[13.50,46.20],[13.67,46.45],[13.00,46.60],[12.40,46.70],[12.15,46.98],[11.50,47.00],[11.00,46.77],[10.47,46.85],[10.45,46.53],[10.05,46.45],[9.45,46.50],[9.25,46.30],[9.00,45.85],[8.75,46.10],[8.45,46.45],[8.05,46.26],[7.87,45.93],[7.17,45.87],[6.87,45.83],[7.00,45.50],[6.92,45.20],[6.75,44.93],[6.95,44.65],[6.90,44.42],[7.05,44.20],[7.57,44.13],[7.67,43.98]],
+ sicily:[[15.55,38.19],[15.65,38.27],[15.24,38.26],[14.75,38.16],[14.02,38.04],[13.70,37.98],[13.36,38.13],[13.10,38.20],[12.88,38.03],[12.73,38.18],[12.51,38.02],[12.44,37.80],[12.59,37.65],[13.08,37.50],[13.58,37.27],[13.94,37.10],[14.25,37.06],[14.85,36.72],[15.13,36.69],[15.29,37.07],[15.22,37.23],[15.10,37.50],[15.29,37.85]],
+ sardinia:[[9.15,41.24],[9.38,41.18],[9.50,40.92],[9.78,40.57],[9.72,40.38],[9.63,40.28],[9.70,39.94],[9.62,39.30],[9.52,39.14],[9.11,39.21],[8.98,38.98],[8.64,38.87],[8.40,39.03],[8.38,39.20],[8.43,39.45],[8.50,39.88],[8.39,40.04],[8.47,40.29],[8.31,40.56],[8.16,40.56],[8.22,40.94],[8.40,40.84],[8.71,40.91],[8.87,41.01]]
+};
+const K=58, LAT0=47.3, LON0=6.4, COSL=Math.cos(42*Math.PI/180);
+const px=(lon,lat)=>[(lon-LON0)*COSL*K+14,(LAT0-lat)*K+8];
+
+// ---------- Stato ----------
+const state={type:"all",sector:"all",org:"all",past:true,selected:null};
+const romeToday=()=>{try{return new Intl.DateTimeFormat("en-CA",{timeZone:"Europe/Rome"}).format(new Date())}catch(e){return new Date().toISOString().slice(0,10)}};
+let today=romeToday();
+const statusOf=e=>e.end<today?"concluso":(e.start<=today?"oggi":"in arrivo");
+const MESI=["gen","feb","mar","apr","mag","giu","lug","ago","set","ott","nov","dic"];
+const GIORNI=["dom","lun","mar","mer","gio","ven","sab"];
+const fmt=d=>{const[y,m,g]=d.split("-").map(Number);const wd=new Date(Date.UTC(y,m-1,g)).getUTCDay();return `${GIORNI.at(wd)} ${g} ${MESI.at(m-1)}`};
+const fmtRange=e=>e.start===e.end?fmt(e.start):`${fmt(e.start)} – ${fmt(e.end)}`;
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const safeUrl=u=>/^https:\/\//.test(u)?esc(u):"#";
+const typeMatch=e=>state.type==="all"||(state.type==="eccezionale"?!!e.exc:(e.type===state.type&&!e.exc));
+const orgMatch=e=>state.org==="all"||(state.org.startsWith("fam:")?e.orgs.some(o=>ORGS[o][1]===state.org.slice(4)):e.orgs.includes(state.org.slice(4)));
+const visible=e=>typeMatch(e)&&(state.sector==="all"||e.sector===state.sector)&&orgMatch(e)&&(state.past||statusOf(e)!=="concluso");
+const byDate=(a,b)=>a.start.localeCompare(b.start)||a.title.localeCompare(b.title);
+const srcLinks=(e,sep)=>e.src.map(s=>`<a href="${safeUrl(SRC[s][1])}" target="_blank" rel="noopener">${esc(SRC[s][0])}</a>`).join(sep);
+
+function updateToday(){document.getElementById("todayLine").textContent="Oggi: "+fmt(today)}
+updateToday();
+
+[...new Set(EVENTS.map(e=>e.sector))].sort((a,b)=>a.localeCompare(b,"it")).forEach(s=>{const o=document.createElement("option");o.value=s;o.textContent=s;document.getElementById("f-sector").appendChild(o)});
+
+// promotori: un gruppo per famiglia, con il numero di scioperi di ciascuna sigla
+(()=>{const sel=document.getElementById("f-org");
+  const nStrikes=pred=>EVENTS.filter(e=>e.type==="sciopero"&&e.orgs.some(pred)).length;
+  const nAll=pred=>EVENTS.filter(e=>e.orgs.some(pred)).length;
+  const label=(name,pred)=>{const s=nStrikes(pred),a=nAll(pred);return s?`${name} · ${s} ${s===1?"sciopero":"scioperi"}`:`${name} · ${a} ${a===1?"evento":"eventi"}`};
+  for(const fam of FAMILIES){
+    const keys=Object.keys(ORGS).filter(k=>ORGS[k][1]===fam&&EVENTS.some(e=>e.orgs.includes(k))).sort((a,b)=>ORGS[a][0].localeCompare(ORGS[b][0],"it"));
+    if(!keys.length)continue;
+    const g=document.createElement("optgroup");g.label=fam;
+    if(fam!=="Altri promotori"&&keys.length>1){const o=document.createElement("option");o.value="fam:"+fam;o.textContent=label(`${fam}: tutte le sigle`,k=>ORGS[k][1]===fam);g.appendChild(o)}
+    for(const k of keys){const o=document.createElement("option");o.value="org:"+k;o.textContent=label(ORGS[k][0],x=>x===k);g.appendChild(o)}
+    sel.appendChild(g);
+  }})();
+
+function renderCount(){
+  const evs=EVENTS.filter(visible);
+  const n=t=>evs.filter(t).length;
+  const s=n(e=>e.type==="sciopero"),m=n(e=>e.type==="manifestazione"&&!e.exc),x=n(e=>!!e.exc);
+  const parts=[`<b>${s}</b> ${s===1?"sciopero":"scioperi"}`,`<b>${m}</b> ${m===1?"manifestazione":"manifestazioni"}`,`<b>${x}</b> ${x===1?"evento eccezionale":"eventi eccezionali"}`];
+  const who=state.org==="all"?"":` per ${state.org.startsWith("fam:")?state.org.slice(4):ORGS[state.org.slice(4)][0]}`;
+  document.getElementById("count").innerHTML=`In vista${esc(who)}: ${parts.join(" · ")}`;
+}
+
+// ---------- Mappa ----------
+const svg=document.getElementById("map"), NS="http://www.w3.org/2000/svg";
+const gLand=document.createElementNS(NS,"g"), gMark=document.createElementNS(NS,"g");
+gLand.setAttribute("aria-hidden","true");
+svg.append(gLand,gMark);
+for(const ring of Object.values(OUTLINE)){
+  const p=document.createElementNS(NS,"path");
+  p.setAttribute("d","M"+ring.map(([lo,la])=>px(lo,la).map(n=>n.toFixed(1)).join(",")).join("L")+"Z");
+  p.setAttribute("class","land");gLand.appendChild(p);
+}
+
+// Un marker per luogo e categoria: "o" = scioperi/manifestazioni ordinari, "x" = eventi eccezionali
+function groups(){
+  const g={};
+  EVENTS.filter(e=>e.place&&visible(e)).forEach(e=>{const k=e.place+":"+(e.exc?"x":"o");(g[k]=g[k]||[]).push(e)});
+  return g;
+}
+function drawMarkers(){
+  gMark.innerHTML="";
+  const g=groups();
+  const keys=Object.keys(g).sort((a,b)=>PLACES[a.split(":")[0]].lat-PLACES[b.split(":")[0]].lat).reverse();
+  for(const k of keys){
+    const [pk,cat]=k.split(":"), evs=g[k], pl=PLACES[pk];
+    let [x,y]=px(pl.lon,pl.lat);
+    const hasO=!!g[pk+":o"], hasX=!!g[pk+":x"];
+    if(cat==="x"&&hasO){const o=pl.excOff||[13,-13];x+=o[0];y+=o[1]}
+    const allPast=evs.every(e=>statusOf(e)==="concluso");
+    const node=document.createElementNS(NS,"g");
+    node.setAttribute("class","marker"+(state.selected===k?" sel":"")+(allPast?" past":""));
+    node.setAttribute("tabindex","0");node.setAttribute("role","button");node.dataset.key=k;
+    node.setAttribute("aria-pressed",String(state.selected===k));
+    node.setAttribute("aria-label",`${pl.name}: ${evs.length} ${cat==="x"?(evs.length>1?"eventi eccezionali":"evento eccezionale"):(evs.length>1?"eventi":"evento")}`);
+    let inner="";
+    if(cat==="x"){
+      const r=evs.length>1?12:10;
+      inner+=`<path class="exc" d="M${x} ${y-r}L${x+r} ${y}L${x} ${y+r}L${x-r} ${y}Z"/>`;
+      inner+=`<text class="on-exc" x="${x}" y="${y+4}" text-anchor="middle">${evs.length>1?evs.length:"!"}</text>`;
+    }else{
+      const ns=evs.filter(e=>e.type==="sciopero").length, nm=evs.length-ns;
+      const color=nm&&!ns?"var(--demo)":"var(--strike)";
+      const r=evs.length>1?11:8;
+      inner+=`<circle class="ring" cx="${x}" cy="${y}" r="${r}" stroke="${color}"/>`;
+      if(ns&&nm)inner+=`<path d="M${x} ${y-r}A${r} ${r} 0 0 1 ${x} ${y+r}" fill="none" stroke="var(--demo)" stroke-width="${state.selected===k?4:2.5}"/>`;
+      inner+=evs.length>1?`<text x="${x}" y="${y+3.8}" text-anchor="middle">${evs.length}</text>`:`<circle cx="${x}" cy="${y}" r="3" fill="${color}"/>`;
+    }
+    // etichetta: una sola per luogo, sul marker ordinario se c'è
+    if(cat==="o"||!hasO){
+      const right=pl.side?pl.side!=="l":(pl.lon<14.5||pk==="napoli");
+      const off=(cat==="x"?14:13);
+      inner+=`<text class="lbl" x="${right?x+off:x-off}" y="${y+4+(pl.dy||0)}" text-anchor="${right?"start":"end"}">${esc(pl.name)}</text>`;
+    }
+    node.innerHTML=inner;
+    const pick=()=>{state.selected=k;render({focusKey:k})};
+    node.addEventListener("click",pick);
+    node.addEventListener("keydown",ev=>{if(ev.key==="Enter"||ev.key===" "){ev.preventDefault();pick()}});
+    gMark.appendChild(node);
+  }
+}
+
+function card(e,showPlace){
+  const st=statusOf(e);
+  const tags=[];
+  if(e.exc)tags.push(`<span class="tag x">evento eccezionale</span>`);
+  tags.push(`<span class="tag ${e.type==="sciopero"?"s":"m"}">${e.type}</span>`,`<span class="tag n">${esc(e.scope)}</span>`);
+  if(e.tbc)tags.push(`<span class="tag t">da confermare</span>`);
+  if(st!=="in arrivo")tags.push(`<span class="tag n">${st}</span>`);
+  return `<article class="ev"><div class="top">${tags.join("")}</div>
+    <h3>${esc(e.title)}</h3>
+    <div class="when">${fmtRange(e)} · ${esc(e.time)}</div>
+    ${e.exc?`<div class="excbox"><b>${esc(e.exc.kind)}</b>${esc(e.exc.note)}</div>`:""}
+    ${showPlace&&e.place?`<p class="meta">${esc(PLACES[e.place].name)}</p>`:""}
+    ${e.area?`<p class="meta">Area: ${esc(e.area)}</p>`:""}
+    ${e.where?`<p class="meta">Dove: ${esc(e.where)}</p>`:""}
+    ${e.pending?`<p class="meta">Dettagli in attesa: ${esc(e.pending)}</p>`:""}
+    <p class="meta">Promotori: ${esc(e.who)} · Settore: ${esc(e.sector)}</p>
+    <div class="src">Fonte: ${srcLinks(e," · ")}</div></article>`;
+}
+
+function renderPanel(){
+  const p=document.getElementById("panel");
+  if(state.selected){
+    const [pk,cat]=state.selected.split(":");
+    const evs=EVENTS.filter(e=>e.place===pk&&(cat==="x")===!!e.exc&&visible(e)).sort(byDate);
+    if(!evs.length){state.selected=null;return renderPanel()}
+    p.innerHTML=`<button class="back" id="backBtn">← Torna ai prossimi appuntamenti</button><h2 id="panelTitle" tabindex="-1">${esc(PLACES[pk].name)}${cat==="x"?" · eventi eccezionali":""}</h2>`+evs.map(e=>card(e,false)).join("");
+    document.getElementById("backBtn").addEventListener("click",()=>{state.selected=null;render({focusPanel:true})});
+  }else{
+    const next=EVENTS.filter(e=>visible(e)&&statusOf(e)!=="concluso").sort(byDate).slice(0,4);
+    p.innerHTML=`<h2 id="panelTitle" tabindex="-1">Prossimi appuntamenti</h2><p class="hint">Seleziona un punto sulla mappa per i dettagli di un luogo.</p>`+(next.length?next.map(e=>card(e,true)).join(""):`<p class="empty">Nessun evento in arrivo con i filtri attuali.</p>`);
+  }
+}
+function renderNational(){
+  const evs=EVENTS.filter(e=>!e.place&&visible(e)).sort(byDate);
+  document.getElementById("national").innerHTML=evs.length?evs.map(e=>card(e,false)).join(""):`<p class="empty">Nessun evento nazionale con i filtri attuali.</p>`;
+}
+function renderAgenda(){
+  const evs=EVENTS.filter(visible).sort(byDate);
+  const tb=document.getElementById("agenda");
+  tb.innerHTML=evs.map(e=>`<tr class="${statusOf(e)==="concluso"?"past":""}${e.exc?" excrow":""}"><td class="d">${fmtRange(e)}</td>
+    <td>${e.exc?`<span class="tag x">eccezionale</span> `:""}<span class="tag ${e.type==="sciopero"?"s":"m"}">${e.type}</span>${e.tbc?` <span class="tag t">da confermare</span>`:""}</td>
+    <td>${esc(e.title)}<br><span class="meta">${esc(e.who)}</span></td>
+    <td>${e.place?`<button class="place" data-key="${esc(e.place+":"+(e.exc?"x":"o"))}">${esc(PLACES[e.place].name)}</button>`:esc(e.scope==="nazionale"?"Tutta Italia":"Più regioni")}</td>
+    <td class="src">${srcLinks(e,"<br>")}</td></tr>`).join("")
+    ||`<tr><td colspan="5" class="empty">Nessun evento con i filtri attuali.</td></tr>`;
+}
+// delega: i pulsanti dell'agenda non perdono il gestore quando la tabella si ridisegna
+document.getElementById("agenda").addEventListener("click",ev=>{
+  const b=ev.target.closest("button.place");if(!b)return;
+  state.selected=b.dataset.key;render({focusPanel:true});
+  document.querySelector(".main").scrollIntoView({behavior:"smooth",block:"start"});
+});
+
+function render(opts={}){
+  renderCount();drawMarkers();renderPanel();renderNational();renderAgenda();
+  if(opts.focusKey){const m=gMark.querySelector(`[data-key="${CSS.escape(opts.focusKey)}"]`);if(m)m.focus()}
+  if(opts.focusPanel){const h=document.getElementById("panelTitle");if(h)h.focus({preventScroll:true})}
+}
+
+document.querySelectorAll("[data-type]").forEach(b=>b.addEventListener("click",()=>{
+  state.type=b.dataset.type;document.querySelectorAll("[data-type]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));render()}));
+document.getElementById("f-sector").addEventListener("change",ev=>{state.sector=ev.target.value;render()});
+document.getElementById("f-org").addEventListener("change",ev=>{state.org=ev.target.value;render()});
+document.getElementById("f-past").addEventListener("click",ev=>{state.past=!state.past;ev.currentTarget.setAttribute("aria-pressed",String(state.past));render()});
+svg.addEventListener("click",ev=>{if(ev.target===svg||ev.target.closest("path.land")){state.selected=null;render()}});
+// la data di Roma si aggiorna se la pagina resta aperta oltre la mezzanotte
+const refreshDay=()=>{const t=romeToday();if(t!==today){today=t;updateToday();render()}};
+document.addEventListener("visibilitychange",()=>{if(!document.hidden)refreshDay()});
+setInterval(refreshDay,60000);
+render();
+</script>
+
+</body>
+</html>
