@@ -1,41 +1,53 @@
-# Piazze e scioperi d'Italia
+# Piazze e scioperi d’Italia — archivio 2026
 
-Mappa di scioperi proclamati e manifestazioni annunciate in Italia, con gli eventi eccezionali
-(manifestazioni non preavvisate o vietate, scontri) segnalati come tali. Ogni evento riporta la fonte.
+[Apri la mappa](https://pg8000.github.io/MappaMobilitazioniItaliane/)
 
-**Sito:** https://pg8000.github.io/MappaMobilitazioniItaliane/
+Archivio dal **1° gennaio al 31 dicembre 2026**: proclamazioni del registro MIT (trasporti e mobilitazioni generali presenti nel registro), più manifestazioni ed eventi eccezionali curati a mano. Le fonti sono collegate nelle schede. Le iniziative future possono essere presenti solo quando annunciate: non è una previsione né un censimento esaustivo di tutte le manifestazioni italiane.
 
-## Cosa contiene
+## Esplorazione
 
-| Percorso | Cosa è |
+- Calendario mensile navigabile, selezione del giorno o di un intervallo; pulsanti per mese e anno intero.
+- Grafico dinamico per giorno, settimana o mese, con serie distinte e tabella accessibile. Una barra filtra il periodo.
+- Filtri per tipo, settore, promotore, eventi conclusi e stato ufficiale MIT.
+- Le revoche sono archiviate e consultabili, escluse dalla vista iniziale. Una voce assente dall’ultima verifica è distinta da una revoca.
+- Agenda paginata, mappa e schede condividono i filtri. Il calendario conta le voci attive nel giorno; il grafico conta ogni voce una volta, al primo giorno incluso nel periodo.
+- I filtri si conservano nell’URL e sono condivisibili. Una pagina aperta verifica ogni 15 minuti se esiste una nuova versione e si aggiorna conservando i filtri.
+
+Le righe MIT sono **proclamazioni distinte**, anche quando più dichiarazioni riguardano una stessa mobilitazione. I conteggi non misurano partecipanti, adesioni o disagi. Le iniziative inserite a mano non coprono sistematicamente tutti i mesi.
+
+## Dati e fonti
+
+| File | Contenuto |
 | --- | --- |
-| `index.html` | La pagina pubblicata: un solo file, senza dipendenze esterne, senza cookie né tracciamento |
-| `data/eventi.json` | Gli stessi dati in formato JSON, riutilizzabili (licenza CC BY 4.0) |
-| `docs/PIANO.md` | Piano del progetto, con i criteri di inclusione degli eventi |
-| `docs/RICERCA-E-FONTI.md` | Fonti consultate, eventi esclusi e motivazioni |
-| `data/scioperi-mit.json` | Scioperi dal calendario MIT, aggiornati ogni giorno in automatico |
-| `tools/` | Script dell'aggiornamento automatico e sorgente della pagina (`sorgente-artifact.html`) |
-| `docs/AUTOMAZIONE.md` | Come funzionano scioperi automatici, proposte di manifestazioni ed eventi eccezionali |
+| `data/eventi.json` | Iniziative curate e vecchie schede MIT conservate come riferimento |
+| `data/scioperi-mit.json` | Archivio ufficiale annuale con stato, note, provenienza e ultima verifica |
+| `data/archivio.json` | Archivio effettivo unito, dati riutilizzabili della pagina |
+| `data/aggiornamento.json` | Stato dell’ultima sincronizzazione riuscita e revisione della pagina |
+| `data/province.json` | Coordinate approssimate dei capoluoghi |
+| `tools/sorgente-artifact.html` | Sorgente dell’interfaccia; il generatore vi inserisce i dati correnti |
 
-## Criteri
+Quando l’archivio MIT annuale è disponibile, le vecchie schede manuali con fonte MIT sono sostituite dalle righe ufficiali. Non si eliminano proclamazioni solo perché hanno la stessa data, provincia o una sigla in comune.
 
-- Solo eventi in Italia con data certa, luogo, promotore (o "non identificato") e almeno una fonte apribile.
-- Scioperi verificati sul [calendario del Ministero dei Trasporti](https://scioperi.mit.gov.it/mit2/public/scioperi) quando vi compaiono.
-- Descrizioni brevi e neutre; nessun nome di persone, nessun numero di feriti, fermati o partecipanti.
+## Aggiornamento e pubblicazione automatici
 
-## Segnalare un errore
+Il workflow **Sincronizza archivio 2026** si esegue ogni giorno alle **05:30 UTC** (06:30 in Italia con ora solare, 07:30 con ora legale), su modifica dei sorgenti/dati e manualmente da Actions. Recupera l’intero 2026 dal form storico MIT, esegue test e validazione, ricostruisce la pagina, salva i risultati e richiama esplicitamente il workflow **Pubblica la mappa**. La pubblicazione non dipende da un nuovo evento `push` generato dal bot.
 
-Usa il pulsante "Segnalalo qui" in fondo alla pagina o apri una [segnalazione](../../issues/new?template=correzione.yml).
-Serve sempre il link a una fonte.
+Se il registro non è leggibile, il processo fallisce e conserva i dati e il sito dell’ultima esecuzione riuscita. Le manifestazioni vengono proposte per revisione; gli eventi eccezionali restano manuali. Vedi [AUTOMAZIONE](docs/AUTOMAZIONE.md).
 
-## Aggiornare la mappa
+## Prove locali
 
-- **Scioperi**: automatico, ogni giorno, dal calendario MIT.
-- **Manifestazioni**: l'automazione apre una issue "Proposta"; correggi la bozza e aggiungi l'etichetta `approva`.
-- **Eventi eccezionali**: sempre a mano in `data/eventi.json`.
+Python 3.12+, nessuna dipendenza Python esterna:
 
-Dettagli in [docs/AUTOMAZIONE.md](docs/AUTOMAZIONE.md). Dopo ogni modifica a `data/eventi.json` la pagina si ricostruisce da sola.
+```sh
+python tools/valida.py
+python -m unittest discover -s tools -p 'test_*.py'
+python tools/mit_scioperi.py
+python tools/build_page.py
+python tools/valida.py --archivio
+```
 
-## Licenze
+Il downloader accetta anche un file HTML MIT salvato come argomento, per una prova senza rete. Aprire `index.html` per la pagina statica; la verifica automatica delle nuove versioni richiede HTTP/HTTPS.
 
-Codice: MIT (`LICENSE`). Dati: CC BY 4.0 (`LICENSE-DATI.md`).
+[Segnala una correzione](https://github.com/pg8000/MappaMobilitazioniItaliane/issues/new?template=correzione.yml), sempre con una fonte.
+
+Codice: MIT (`LICENSE`). Dati: CC BY 4.0 (`LICENSE-DATI.md`); fonti originali attribuite nelle singole voci. Nessun cookie o tracciamento dei visitatori.

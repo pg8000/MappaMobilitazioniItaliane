@@ -1,3 +1,17 @@
+# Recupero dell’archivio annuale — 22 ottobre 2026
+
+Fonte primaria aperta e scaricata direttamente: https://scioperi.mit.gov.it/mit2/public/scioperi/ricerca . Il form dichiara che lo storico parte dal 2014 e consente di includere effettuati e revocati.
+
+Richiesta POST: `dataInizio=01/01/2026`, `dataFine=31/12/2026`, `stato=0`, `settore=0`, `rilevanza=0`, categoria/sindacato vuoti. Risposta iniziale: **494 righe**, 328 effettuate, 26 in programma e 140 revocate; distribuite in tutti i 12 mesi. Sono mantenute le dichiarazioni distinte per proclamazione/ricezione, anche con data e sigle coincidenti. Il file generato conserva categoria originale, sindacati, territorio, date di proclamazione/ricezione, note e data di verifica.
+
+Non si usa più il solo prospetto dei prossimi scioperi. Le vecchie 21 schede manuali con fonte MIT sono mantenute nel file curato per riferimento, ma non sommate alle righe ufficiali. La prima pagina annuale contiene **509 voci**: 494 ufficiali e 15 curate indipendentemente. Il conteggio normale esclude le 140 revoche.
+
+Limiti: questo recupero non costituisce un censimento retrospettivo di ogni manifestazione del 2026, né può anticipare eventi non ancora annunciati. L’assenza di voci in una categoria non significa assenza di iniziative. La pagina rende esplicita questa distinzione.
+
+---
+
+## Registro precedente (conservato)
+
 # Registro della ricerca (22 ottobre 2026, aggiornato alla v1.1)
 
 Pagine aperte e lette per costruire il dataset. Le chiavi tra parentesi sono quelle usate in `SRC` / `data/eventi.json`.

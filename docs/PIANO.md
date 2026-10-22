@@ -1,3 +1,13 @@
+# Aggiornamento di scope — archivio annuale (22 ottobre 2026)
+
+Su richiesta del proprietario, la versione 2 estende tutti i tipi di evento al periodo **1 gennaio–31 dicembre 2026**. Sono approvati recupero storico e aggiornamento automatico dal MIT, calendario con intervallo di date, grafico dinamico e pubblicazione automatica GitHub Pages. Queste decisioni sostituiscono le limitazioni temporali e il divieto di automazione del piano v1 riportato sotto come documento storico.
+
+Il registro annuale copre le proclamazioni dei trasporti e le iniziative generali che vi sono registrate, inclusi stati effettuato/revocato. Manifestazioni ed eventi eccezionali restano una raccolta curata non esaustiva; ogni iniziativa richiede una fonte. Gli eventi futuri possono entrare solo dopo l’annuncio. Sono mantenuti neutralità, assenza di dati personali e distinzione tra fonte, luogo fisico e ambito.
+
+La pagina distingue i conteggi del calendario (voci attive nel giorno) da quelli del grafico (una voce per data di inizio, o primo giorno incluso nel filtro). Le revoche sono escluse di default, senza essere cancellate dallo storico.
+
+---
+
 # Mappa manifestazioni e scioperi in Italia – Piano di progetto
 
 22 ottobre 2026

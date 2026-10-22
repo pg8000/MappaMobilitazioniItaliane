@@ -7,9 +7,11 @@ on:
 permissions:
   contents: write
   issues: write
+  pages: write
+  id-token: write
 
 concurrency:
-  group: aggiorna-mappa
+  group: archivio-mappa
   cancel-in-progress: false
 
 jobs:
@@ -38,6 +40,7 @@ jobs:
         if: steps.approva.outcome == 'success'
         run: |
           python tools/build_page.py
+          python tools/valida.py --archivio
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A data index.html
@@ -52,3 +55,7 @@ jobs:
         run: |
           gh issue comment ${{ github.event.issue.number }} --body-file "$MSG_FILE"
           gh issue edit ${{ github.event.issue.number }} --remove-label approva
+  pubblica:
+    needs: approva
+    if: needs.approva.result == 'success'
+    uses: ./.github/workflows/pubblica.yml

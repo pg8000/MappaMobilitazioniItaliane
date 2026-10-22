@@ -61,6 +61,8 @@ def candidati(prov):
             pub = email.utils.parsedate_to_datetime(it.findtext("pubDate")).date() if it.findtext("pubDate") else oggi()
             if (oggi() - pub).days > 5:
                 continue
+            if pub.year != 2026:
+                continue
             testata = (it.findtext("source") or "").strip()
             titolo_pulito = re.sub(r"\s+-\s+" + re.escape(testata) + r"$", "", titolo) if testata else titolo
             luogo = next((k for n, k in nomi if re.search(r"(?<!\w)" + re.escape(n) + r"(?!\w)", titolo_pulito, re.I)), None)
@@ -108,6 +110,8 @@ def main():
     repo, token = os.environ.get("GITHUB_REPOSITORY"), os.environ.get("GITHUB_TOKEN")
     n = 0
     for c in candidati(prov):
+        if c["data"] and c["data"].year != 2026:
+            continue
         chiavi = {"u:" + hashlib.sha1(c["link"].encode()).hexdigest()[:12]}
         if c["data"]:
             chiavi.add(f"{c['luogo']}:{c['data'].isoformat()}")

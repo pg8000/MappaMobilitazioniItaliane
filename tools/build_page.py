@@ -17,6 +17,8 @@ def js(o):
 
 
 d = unisci()
+import hashlib
+d["archive"]["revision"] = hashlib.sha256(json.dumps({"eventi": d["eventi"], "sync": d["archive"]["syncedAt"]}, sort_keys=True, ensure_ascii=False).encode()).hexdigest()[:20]
 base = d["base"]
 s = (ROOT / "tools" / "sorgente-artifact.html").read_text(encoding="utf-8")
 
@@ -28,6 +30,7 @@ nuovo = "\n".join([
     "const PLACES = " + js(d["luoghi"]) + ";",
     "const ORGS = " + js({k: [v["nome"], v["famiglia"]] for k, v in base["promotori"].items()}) + ";",
     famiglie,
+    "const ARCHIVE = " + js(d["archive"]) + ";",
     "const EVENTS = " + js(d["eventi"]) + ";",
 ])
 s = s[:i0] + nuovo + s[i1:]
@@ -48,7 +51,7 @@ assert 'fonts.googleapis' not in s
 s = s.replace('<meta name="claude:viewport-fit-sides" content="cover">\n', '')
 footer = f'''  <footer class="note">Progetto aperto: codice e dati su <a href="{REPO}" target="_blank" rel="noopener">GitHub</a>.
     Hai trovato un errore o manca un evento? <a href="{REPO}/issues/new?template=correzione.yml" target="_blank" rel="noopener">Segnalalo qui</a>.
-    Gli scioperi sono aggiornati ogni giorno dal calendario del Ministero dei Trasporti; manifestazioni ed eventi eccezionali sono verificati a mano.
+    L’archivio MIT del 2026 è sincronizzato ogni giorno, con revoche e storico; manifestazioni ed eventi eccezionali sono verificati a mano.
     Codice con licenza MIT, dati con licenza CC BY 4.0. Nessun cookie, nessun tracciamento.</footer>
 </div>
 
@@ -60,7 +63,7 @@ head = '''<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <meta name="description" content="Mappa di scioperi, manifestazioni ed eventi eccezionali in Italia, con la fonte di ogni evento.">
 '''
@@ -69,6 +72,9 @@ s = head + s[:t] + '\n' + s[t:]
 e = s.index('</style>') + len('</style>')
 s = s[:e] + '\n</head>\n<body>' + s[e:] + '\n</body>\n</html>\n'
 (ROOT / "index.html").write_text(s, encoding="utf-8")
+from comuni import salva
+salva("archivio.json", {"anno": 2026, "aggiornato": d["aggiornato"], "copertura": d["archive"], "fonti": base["fonti"], "luoghi": d["luoghi"], "promotori": base["promotori"], "eventi": d["eventi"]})
+salva("aggiornamento.json", d["archive"])
 print(f"index.html: {len(d['eventi'])} eventi ({d['n_auto']} automatici dal MIT, {len(d['doppi'])} doppioni saltati)")
 if d["da_verificare"]:
     print("ATTENZIONE: scioperi manuali con fonte MIT non più nel calendario (revocati?):", ", ".join(d["da_verificare"]))

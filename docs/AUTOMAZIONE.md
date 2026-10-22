@@ -1,46 +1,34 @@
-# Aggiornamento automatico (v2)
+# Automazione dell’archivio 2026
 
-Tre tipi di evento, tre regole diverse.
+## Percorso completo
 
-| Tipo | Come entra nella mappa | Chi decide |
-| --- | --- | --- |
-| Scioperi | Ogni giorno una GitHub Action legge il [calendario MIT](https://scioperi.mit.gov.it/mit2/public/scioperi) e li aggiunge da sola | Nessuno: è la fonte ufficiale |
-| Manifestazioni | L'Action cerca notizie e apre una *issue* "Proposta: …" con una bozza | Tu: correggi la bozza e metti l'etichetta `approva` |
-| Eventi eccezionali (non preavvisati, vietati, scontri) | Solo a mano, modificando `data/eventi.json` | Tu, sempre |
+1. `aggiorna.yml`: ogni giorno alle 05:30 UTC, oppure da Actions → Sincronizza archivio 2026 → Run workflow. Parte anche quando cambiano sorgenti e dati curati.
+2. Validazione delle iniziative manuali e test senza rete.
+3. `mit_scioperi.py`: invia al form pubblico MIT le date 01/01/2026–31/12/2026, con tutti gli stati. Legge anche gli eventi effettuati e revocati; normalizza intestazioni come `Settore*` e `Modalità`. Tre tentativi per gli errori di rete.
+4. La risposta deve avere una tabella riconoscibile e date valide. In caso contrario non sovrascrive l’archivio precedente e interrompe la pubblicazione.
+5. Le voci si identificano per data, categoria, sindacati, territorio, proclamazione e ricezione. Proclamazioni distinte restano distinte; una voce non riscontrata nella nuova risposta viene conservata con `not_in_latest`, senza inventarne la revoca.
+6. `build_data.py` usa le righe MIT per gli scioperi già riassunti a mano, conservando le altre iniziative curate. `build_page.py` genera pagina, archivio unito e metadati della sincronizzazione.
+7. `valida.py --archivio` controlla date, ID e riferimenti dell’archivio unito. Il bot salva dati e pagina nel ramo `main`.
+8. Il workflow riutilizzabile `pubblica.yml` carica solo pagina e JSON pubblici e richiama `deploy-pages`. È richiamato direttamente sia dall’aggiornamento sia dall’approvazione: i commit del bot non devono generare un secondo workflow.
 
-## Come funziona
+## Stati e conteggi
 
-- `data/eventi.json` contiene gli eventi **curati a mano**. Non viene mai riscritto dall'automazione, se non quando approvi una proposta.
-- `data/scioperi-mit.json` è generato ogni giorno da `tools/mit_scioperi.py`. Non modificarlo a mano: viene sovrascritto.
-- `tools/build_page.py` unisce i due file e rigenera `index.html`. Se uno sciopero è già in `eventi.json` (stessa data, luogo e sigla) quello manuale vince e il doppione del MIT viene saltato.
-- Se uno sciopero manuale con fonte MIT sparisce dal calendario (possibile revoca), il riepilogo dell'esecuzione (scheda *Actions*) lo segnala con "ATTENZIONE"; non viene cancellato da solo.
-- Se il calendario MIT cambia struttura e non si legge più, l'esecuzione fallisce, GitHub ti manda una mail e la mappa resta all'ultimo aggiornamento buono.
+`official_status` distingue `in programma`, `effettuato`, `revocato`. La dicitura MIT «revocato» include sospensione e differimento: non si può inferire quale dei tre sia avvenuto senza un approfondimento. `not_in_latest` significa soltanto assenza nell’ultima risposta.
 
-## Approvare una manifestazione
+La vista iniziale esclude revoche e voci da riverificare. Il grafico conta voci dell’archivio, una volta ciascuna al primo giorno compreso nel filtro. Nel calendario, invece, uno sciopero di più giorni compare in ogni giorno in cui è attivo. Le due misure sono spiegate nella pagina.
 
-1. Apri la issue "Proposta: …" (etichetta `proposta`) e la fonte collegata.
-2. Controlla data, luogo e organizzatore. Se ne manca uno, chiudi la issue.
-3. Modifica il blocco JSON nella issue: titolo neutro, `sector`, `who`, `orgs` (chiavi di `promotori` in `eventi.json`), `time`, `where`. Niente nomi di persone né numeri di partecipanti. I campi con "DA COMPILARE" bloccano l'approvazione.
-4. Aggiungi l'etichetta `approva`. Entro un minuto l'evento è in `eventi.json`, la pagina si ricostruisce e la issue si chiude con un commento. Se qualcosa non va, il commento spiega cosa correggere e l'etichetta viene tolta.
+La data di sincronizzazione indica l’ultima lettura riuscita del registro. Il timestamp non certifica la completezza delle manifestazioni curate a mano. `data/aggiornamento.json` consente a una pagina aperta di riconoscere una nuova versione ogni 15 minuti e al ritorno sulla scheda, conservando i filtri nell’URL.
 
-Solo le issue create dall'automazione o dal proprietario del repo possono essere approvate. Le proposte non hanno `exc`: una manifestazione eccezionale non si approva da qui.
+## Manifestazioni ed eventi eccezionali
 
-## Aggiungere un evento eccezionale
+Nell’esecuzione programmata si cercano anche proposte di manifestazioni tramite notizie RSS. Non diventano eventi finché non vengono verificate. Nell’avvio manuale questa ricerca è facoltativa (`cerca_proposte`, inizialmente disattivata).
 
-Apri `data/eventi.json`, copia un evento esistente con `exc` e cambia i campi. Servono: `exc.kind`, `exc.note` (cosa è successo, dove e quando, con la fonte; niente numeri di feriti o fermati, niente nomi), almeno una fonte in `src` (aggiungila prima in `fonti`) e `place` presente in `luoghi` (se manca, aggiungi coordinate). Al commit parte `valida.py`: se c'è un errore l'Action fallisce e la pagina non cambia.
+Per approvare una proposta: verificare la fonte, correggere il JSON nella issue, completare luogo/data/promotore e applicare `approva`. Il workflow controlla l’autore, rifiuta i dati incompleti, aggiunge l’evento, ricostruisce e pubblica. Gli eventi eccezionali vengono inseriti esclusivamente a mano in `data/eventi.json` con la relativa fonte; non si approvano automaticamente.
 
-## Provare in locale
+Le nuove iniziative devono ricadere nel 2026. Non si inventano date mancanti o informazioni non presenti nelle fonti.
 
-```
-python tools/valida.py
-python tools/mit_scioperi.py          # scarica il calendario MIT (o: python tools/mit_scioperi.py pagina.html)
-python tools/build_page.py            # rigenera index.html
-python tools/proposte.py              # senza GITHUB_TOKEN stampa soltanto le proposte
-```
+## Recupero da un errore
 
-## Limiti noti
+Aprire l’esecuzione fallita in Actions, correggere fonte/parser/dati e avviare di nuovo il workflow. I dati precedenti restano nel repository e su Pages. Una nuova esecuzione riuscita aggiorna la dicitura in pagina. Concorrenza serializzata fra aggiornamenti e approvazioni; pubblicazioni serializzate separatamente.
 
-- Il parser del calendario MIT è stato scritto sulla struttura descritta dalla pagina (tabella con colonne Inizio, Fine, Sindacati, Settore, …). Alla prima esecuzione controlla il riepilogo: "righe lette" deve essere simile al numero di scioperi nel calendario.
-- Gli scioperi locali sono posizionati sul capoluogo di provincia (`data/province.json`); quelli senza provincia riconosciuta finiscono nella fascia degli scioperi senza punto, con l'area nel testo.
-- Le proposte vengono da titoli di Google News: servono per accorgersi di un evento, non sostituiscono la verifica sulla fonte. Il link è quello di Google News e porta all'articolo.
-- Le sigle dei sindacati sono riconosciute da un elenco; quelle non presenti compaiono come "Nessuna sigla identificata" con il testo originale in `who`. Per aggiungerne una: `ALIAS` in `tools/mit_scioperi.py` e `promotori` in `data/eventi.json`.
+Permessi dei workflow: scrittura contenuti per i commit, issue per le proposte, Pages e token OIDC per la pubblicazione. Si usa soltanto `GITHUB_TOKEN` fornito da GitHub, senza chiavi aggiuntive nei file.

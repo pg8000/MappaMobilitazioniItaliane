@@ -26,6 +26,8 @@ def errori_evento(e, base, luoghi=None):
             err.append(f"{k} non è una data ISO (AAAA-MM-GG): {e[k]}")
     if not err and e["end"] < e["start"]:
         err.append("end precede start")
+    if not err and (e["end"] < "2026-01-01" or e["start"] > "2026-12-31"):
+        err.append("evento fuori dal 2026")
     if e.get("place") and e["place"] not in luoghi:
         err.append(f"place sconosciuto: {e['place']}")
     if not e.get("place") and e["scope"] in ("locale",):
@@ -60,6 +62,24 @@ def main():
     if tot:
         sys.exit(f"{tot} problemi in data/eventi.json")
     print(f"eventi.json ok: {len(base['eventi'])} eventi")
+    if "--archivio" in sys.argv:
+        archive = carica("archivio.json")
+        ids = set()
+        for e in archive["eventi"]:
+            if e["id"] in ids:
+                sys.exit("ID duplicato nell'archivio")
+            ids.add(e["id"])
+            for key in ("start", "end"):
+                dt.date.fromisoformat(e[key])
+            if e["start"] > e["end"] or e["end"] < "2026-01-01" or e["start"] > "2026-12-31":
+                sys.exit(f"Date fuori archivio: {e['id']}")
+            if not e.get("src") or any(k not in archive["fonti"] for k in e["src"]):
+                sys.exit(f"Fonte assente: {e['id']}")
+            if any(k not in archive["promotori"] for k in e["orgs"]):
+                sys.exit(f"Promotore sconosciuto: {e['id']}")
+            if e.get("place") and e["place"] not in archive["luoghi"]:
+                sys.exit(f"Luogo sconosciuto: {e['id']}")
+        print(f"archivio.json ok: {len(ids)} voci, fonti e riferimenti validi")
 
 
 if __name__ == "__main__":

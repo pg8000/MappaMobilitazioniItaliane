@@ -1,76 +1,68 @@
-name: Aggiorna dati e pagina
-
+name: Sincronizza archivio 2026
 on:
   schedule:
-    - cron: "30 5 * * *"        # ogni giorno, circa le 7:30 in Italia
+    - cron: "30 5 * * *"
   workflow_dispatch:
+    inputs:
+      cerca_proposte:
+        description: "Cerca manifestazioni e apri proposte da verificare"
+        type: boolean
+        default: false
   push:
     branches: [main]
-    paths:
-      - "data/eventi.json"
-      - "data/province.json"
-      - "tools/sorgente-artifact.html"
-      - "tools/build_*.py"
-
+    paths: ["data/eventi.json", "data/province.json", "tools/**", ".github/workflows/aggiorna.yml", ".github/workflows/pubblica.yml"]
 permissions:
   contents: write
   issues: write
-
+  pages: write
+  id-token: write
+defaults:
+  run:
+    shell: bash
 concurrency:
-  group: aggiorna-mappa
+  group: archivio-mappa
   cancel-in-progress: false
-
 jobs:
   aggiorna:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
-      - name: Valida gli eventi manuali
-        run: python tools/valida.py
-
-      - name: Scioperi dal calendario MIT
-        id: mit
-        if: github.event_name != 'push'
-        continue-on-error: true
-        run: python tools/mit_scioperi.py
-
-      - name: Ricostruisci la pagina
-        run: python tools/build_page.py | tee -a "$GITHUB_STEP_SUMMARY"
-
-      - name: Etichette per le proposte
-        if: github.event_name != 'push'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Controlli e test
         run: |
-          gh label create proposta --color FBCA04 --description "Manifestazione proposta dall'automazione" --force
-          gh label create approva  --color 0E8A16 --description "Aggiungi la proposta alla mappa" --force
-
+          python tools/valida.py
+          python -m unittest discover -s tools -p 'test_*.py'
+      - name: Recupera tutto il 2026 dal MIT
+        run: python tools/mit_scioperi.py | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Ricostruisci e verifica l'archivio
+        run: |
+          python tools/build_page.py | tee -a "$GITHUB_STEP_SUMMARY"
+          python tools/valida.py --archivio
       - name: Proposte di manifestazioni
-        if: github.event_name != 'push'
+        if: github.event_name == 'schedule' || inputs.cerca_proposte == true
         continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python tools/proposte.py
-
-      - name: Pubblica le modifiche
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh label create proposta --color FBCA04 --description "Manifestazione proposta dall'automazione" --force
+          gh label create approva --color 0E8A16 --description "Aggiungi la proposta alla mappa" --force
+          python tools/proposte.py
+      - name: Salva i dati e la pagina
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A data index.html
-          if git diff --cached --quiet; then
-            echo "Nessuna modifica."
-          else
-            git commit -m "Aggiornamento automatico dei dati"
-            git pull --rebase
-            git push
+          git add data index.html
+          if ! git diff --cached --quiet; then
+            git commit -m "Sincronizza archivio MIT 2026 e pagina"
+            git pull --rebase origin main
+            git push origin HEAD:main
           fi
-
-      - name: Segnala se il calendario MIT non si legge più
-        if: steps.mit.outcome == 'failure'
-        run: |
-          echo "::error::Il calendario MIT non è stato letto: controlla tools/mit_scioperi.py (la pagina potrebbe essere cambiata). Gli scioperi restano quelli dell'ultimo aggiornamento."
-          exit 1
+  pubblica:
+    needs: aggiorna
+    uses: ./.github/workflows/pubblica.yml

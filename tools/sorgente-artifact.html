@@ -97,16 +97,44 @@ select{font:inherit;font-size:13.5px;border:1px solid var(--line);background:var
 .note a{color:var(--demo)}
 .empty{color:var(--muted);font-style:italic}
 @media (prefers-reduced-motion:no-preference){.marker .ring,.marker .exc{transition:stroke-width .15s}}
+
+.dense .marker .lbl{display:none}.dense .marker:hover .lbl,.dense .marker:focus .lbl,.dense .marker.sel .lbl{display:block}
+/* Esplorazione dell'anno: calendario e grafico condividono i filtri. */
+.archive-note{margin:0;padding:12px 16px;background:var(--surface);border:1px solid var(--line);border-radius:4px;color:var(--muted);font-size:13px}
+.date-tools{display:flex;flex-wrap:wrap;align-items:end;gap:10px 16px}.date-field{display:grid;gap:4px;min-width:0}
+input[type="date"]{font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:7px 9px;max-width:100%;min-width:0}
+input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.date-error{color:var(--strike);font-size:13px;margin:0;min-height:0}.date-error:empty{display:none}
+.analytics{display:grid;grid-template-columns:minmax(280px,.85fr) minmax(0,1.6fr);gap:20px;align-items:start}
+.calendar-box,.chart-box{min-width:0;background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:16px}
+.analytics h2{font-family:var(--f-display);font-size:22px;line-height:1.2;margin:0 0 10px}
+.calendar-nav{display:flex;gap:8px;align-items:center;justify-content:space-between;margin-bottom:10px}.calendar-nav select{min-width:0;max-width:100%}
+.calendar-week,.calendar-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px}
+.calendar-week{font:11px var(--f-mono);text-align:center;color:var(--muted);margin-bottom:5px}
+.calendar-day{font:inherit;border:1px solid transparent;background:var(--bg);color:var(--ink);border-radius:4px;min-height:44px;padding:3px 1px;display:grid;gap:1px;cursor:pointer;text-align:center}
+.calendar-day small{font:10px var(--f-mono);color:var(--muted)}.calendar-day.in-range{border-color:var(--demo);background:var(--demo-soft)}.calendar-day.current-day>span{font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.calendar-day[aria-pressed="true"]:only-child{outline:2px solid var(--focus)}
+.analytics .hint,.chart-summary{font-size:12.5px;color:var(--muted);margin:10px 0 0}
+.chart-head{display:flex;gap:12px;justify-content:space-between;align-items:start;flex-wrap:wrap}.chart-head label{font-size:12px;color:var(--muted)}
+#trend-chart{display:block;width:100%;height:auto;min-width:0;margin:8px 0}.chart-gridline{stroke:var(--line);stroke-width:1}.chart-label{font:12px var(--f-mono);fill:var(--muted)}
+.chart-series-0{fill:var(--strike)}.chart-series-1{fill:var(--demo)}.chart-series-2{fill:var(--exc-fill)}.chart-bucket{cursor:pointer}.chart-bucket:hover rect:not([fill="transparent"]){opacity:.7}.chart-bucket:focus-visible{outline:2px solid var(--focus)}
+.chart-legend{display:flex;gap:8px 16px;flex-wrap:wrap;font-size:12px;color:var(--muted)}.chart-legend span{display:inline-flex;gap:6px;align-items:center}
+.chart-data{margin-top:12px;font-size:13px}.chart-data summary{cursor:pointer;color:var(--demo)}.chart-data .tablebox{margin-top:8px;max-height:280px}.chart-data table{width:100%;border-collapse:collapse}.chart-data td,.chart-data th{padding:6px;border-bottom:1px solid var(--line);text-align:right}.chart-data th:first-child{text-align:left}
+.pagination{display:flex;gap:12px;justify-content:space-between;align-items:center;margin-top:12px;font-size:13px}.pagination button:disabled,.calendar-nav button:disabled{opacity:.45;cursor:default}.national-more{margin-top:12px}
+@media(max-width:820px){.analytics{grid-template-columns:minmax(0,1fr)}.calendar-box{max-width:none}}
+@media(max-width:440px){.date-field{flex:1 1 130px}.date-field input{width:100%}.chart-box,.calendar-box{padding:12px}.calendar-day{min-height:42px}.pagination{gap:6px}.pagination .chip{padding-inline:8px}.ngrid{grid-template-columns:minmax(0,1fr)}}
 </style>
 
 <div class="wrap">
   <header>
     <div>
       <h1>Piazze e scioperi d'Italia</h1>
-      <p class="sub">Scioperi proclamati e manifestazioni annunciate dal 22 ottobre al 30 novembre 2026, più gli eventi eccezionali (manifestazioni non preavvisate o vietate, scontri) dal 1° ottobre. Tocca un punto sulla mappa per i dettagli; gli eventi nazionali sono nella fascia sotto la mappa.</p>
+      <p class="sub">Archivio 2026 di scioperi, manifestazioni ed eventi eccezionali in Italia. Esplora le date nel calendario e confronta l’andamento degli eventi. Ogni voce rimanda alla fonte.</p>
     </div>
     <div class="stamp">Dati aggiornati al <b>22 ottobre 2026</b><br><span id="todayLine"></span></div>
   </header>
+
+  <p class="archive-note" id="sync-status"></p>
 
   <div class="filters" role="group" aria-label="Filtri">
     <div class="fgroup"><span class="flabel">Tipo</span>
@@ -121,10 +149,38 @@ select{font:inherit;font-size:13.5px;border:1px solid var(--line);background:var
     <div class="fgroup"><label class="flabel" for="f-org">Promotore</label>
       <select id="f-org"><option value="all">Tutti i promotori</option></select>
     </div>
+    <div class="fgroup"><label class="flabel" for="f-status">Stato MIT</label>
+      <select id="f-status"><option value="valid">Escludi revocati e da verificare</option><option value="all">Tutti gli stati</option><option value="revocato">Solo revocati</option><option value="effettuato">Effettuati (MIT)</option><option value="in programma">In programma (MIT)</option><option value="missing">Da riverificare</option></select>
+    </div>
     <div class="fgroup"><span class="flabel">Conclusi</span>
       <button class="chip" id="f-past" aria-pressed="true">Mostra eventi conclusi</button>
     </div>
   </div>
+
+  <div class="date-tools" role="group" aria-label="Periodo del 2026">
+    <label class="date-field" for="date-from"><span class="flabel">Dal</span><input type="date" id="date-from" min="2026-01-01" max="2026-12-31"></label>
+    <label class="date-field" for="date-to"><span class="flabel">Al</span><input type="date" id="date-to" min="2026-01-01" max="2026-12-31"></label>
+    <button class="chip" id="range-year">Tutto il 2026</button><button class="chip" id="range-month">Mese nel calendario</button>
+  </div>
+  <p class="date-error" id="date-error" role="alert"></p>
+  <section class="analytics" aria-label="Calendario e andamento temporale">
+    <div class="calendar-box">
+      <h2>Calendario 2026</h2>
+      <div class="calendar-nav"><button class="chip" id="calendar-prev" aria-label="Mese precedente">←</button><select id="calendar-month" aria-label="Mese del calendario"></select><button class="chip" id="calendar-next" aria-label="Mese successivo">→</button></div>
+      <div class="calendar-week" aria-hidden="true"><span>Lun</span><span>Mar</span><span>Mer</span><span>Gio</span><span>Ven</span><span>Sab</span><span>Dom</span></div>
+      <div class="calendar-grid" id="calendar-grid" role="group" aria-label="Giorni del mese"></div>
+      <p class="hint">Tocca un giorno per filtrare. Il numero indica le voci attive in quel giorno, con gli altri filtri applicati. Le date evidenziate sono nel periodo selezionato.</p>
+    </div>
+    <div class="chart-box">
+      <div class="chart-head"><h2>Andamento degli eventi</h2><label for="chart-granularity">Raggruppa per <select id="chart-granularity"><option value="day">Giorno</option><option value="week">Settimana</option><option value="month" selected>Mese</option></select></label></div>
+      <p class="chart-summary" id="chart-summary" aria-live="polite"></p>
+      <svg id="trend-chart" viewBox="0 0 900 280" role="group" aria-label="Numero di eventi nel tempo. Seleziona una barra per filtrare il periodo."></svg>
+      <p class="empty" id="chart-empty" hidden>Nessun evento con questi filtri.</p>
+      <div class="chart-legend"><span><i class="dot s"></i>Scioperi</span><span><i class="dot m"></i>Manifestazioni</span><span><i class="dia"></i>Eccezionali</span></div>
+      <p class="hint">Una voce contata una sola volta, al primo giorno incluso nel periodo. Le proclamazioni MIT distinte restano separate. Tocca una barra per filtrare. Le assenze di dati non dimostrano l’assenza di eventi.</p>
+      <details class="chart-data"><summary>Dati del grafico in tabella</summary><div class="tablebox"><table><thead><tr><th>Periodo</th><th>Sciop.</th><th>Manif.</th><th>Ecc.</th><th>Totale</th></tr></thead><tbody id="chart-rows"></tbody></table></div></details>
+    </div>
+  </section>
 
   <p class="count" id="count" aria-live="polite"></p>
 
@@ -142,9 +198,10 @@ select{font:inherit;font-size:13.5px;border:1px solid var(--line);background:var
   </div>
 
   <section class="national">
-    <h2>Eventi nazionali e multiregionali</h2>
-    <p>Riguardano tutto il Paese o più regioni, quindi non hanno un punto sulla mappa.</p>
+    <h2>Eventi senza un punto unico</h2>
+    <p>Iniziative nazionali o territoriali senza una posizione puntuale: l’area interessata è indicata nella scheda.</p>
     <div class="ngrid" id="national"></div>
+    <button class="chip national-more" id="national-more" hidden>Mostra altri eventi nazionali</button>
   </section>
 
   <section class="agenda">
@@ -154,6 +211,7 @@ select{font:inherit;font-size:13.5px;border:1px solid var(--line);background:var
       <thead><tr><th>Data</th><th>Tipo</th><th>Evento</th><th>Dove</th><th>Fonte</th></tr></thead>
       <tbody id="agenda"></tbody>
     </table></div>
+    <nav class="pagination" aria-label="Pagine dell’agenda"><button class="chip" id="agenda-prev">← Precedenti</button><span id="agenda-page" aria-live="polite"></span><button class="chip" id="agenda-next">Successivi →</button></nav>
   </section>
 
   <p class="note">Gli scioperi possono essere revocati, rinviati o ridotti fino all'ultimo momento, e le manifestazioni possono cambiare percorso. Prima di partire controlla il <a href="https://scioperi.mit.gov.it/mit2/public/scioperi" target="_blank" rel="noopener">calendario scioperi del Ministero dei Trasporti</a> e gli avvisi dell'azienda di trasporto. Ogni evento riporta la fonte da cui è preso; questa pagina non esprime giudizi sulle iniziative elencate.</p>
@@ -267,10 +325,11 @@ const K=58, LAT0=47.3, LON0=6.4, COSL=Math.cos(42*Math.PI/180);
 const px=(lon,lat)=>[(lon-LON0)*COSL*K+14,(LAT0-lat)*K+8];
 
 // ---------- Stato ----------
-const state={type:"all",sector:"all",org:"all",past:true,selected:null};
+const state={type:"all",sector:"all",org:"all",past:true,selected:null,mitStatus:"valid",from:"2026-01-01",to:"2026-12-31",calendarMonth:"2026-10",granularity:"month",agendaPage:0,nationalLimit:6};
 const romeToday=()=>{try{return new Intl.DateTimeFormat("en-CA",{timeZone:"Europe/Rome"}).format(new Date())}catch(e){return new Date().toISOString().slice(0,10)}};
 let today=romeToday();
-const statusOf=e=>e.end<today?"concluso":(e.start<=today?"oggi":"in arrivo");
+state.calendarMonth=today.startsWith("2026-")?today.slice(0,7):"2026-01";
+const statusOf=e=>e.official_status==="revocato"?"revocato":e.not_in_latest?"da verificare":e.end<today?"concluso":(e.start<=today?"oggi":"in arrivo");
 const MESI=["gen","feb","mar","apr","mag","giu","lug","ago","set","ott","nov","dic"];
 const GIORNI=["dom","lun","mar","mer","gio","ven","sab"];
 const fmt=d=>{const[y,m,g]=d.split("-").map(Number);const wd=new Date(Date.UTC(y,m-1,g)).getUTCDay();return `${GIORNI.at(wd)} ${g} ${MESI.at(m-1)}`};
@@ -279,7 +338,7 @@ const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"
 const safeUrl=u=>/^https:\/\//.test(u)?esc(u):"#";
 const typeMatch=e=>state.type==="all"||(state.type==="eccezionale"?!!e.exc:(e.type===state.type&&!e.exc));
 const orgMatch=e=>state.org==="all"||(state.org.startsWith("fam:")?e.orgs.some(o=>ORGS[o][1]===state.org.slice(4)):e.orgs.includes(state.org.slice(4)));
-const visible=e=>typeMatch(e)&&(state.sector==="all"||e.sector===state.sector)&&orgMatch(e)&&(state.past||statusOf(e)!=="concluso");
+const visible=e=>otherFilters(e)&&e.end>=state.from&&e.start<=state.to;
 const byDate=(a,b)=>a.start.localeCompare(b.start)||a.title.localeCompare(b.title);
 const srcLinks=(e,sep)=>e.src.map(s=>`<a href="${safeUrl(SRC[s][1])}" target="_blank" rel="noopener">${esc(SRC[s][0])}</a>`).join(sep);
 
@@ -331,6 +390,7 @@ function groups(){
 function drawMarkers(){
   gMark.innerHTML="";
   const g=groups();
+  svg.classList.toggle("dense",Object.keys(g).length>22);
   const keys=Object.keys(g).sort((a,b)=>PLACES[a.split(":")[0]].lat-PLACES[b.split(":")[0]].lat).reverse();
   for(const k of keys){
     const [pk,cat]=k.split(":"), evs=g[k], pl=PLACES[pk];
@@ -384,6 +444,8 @@ function card(e,showPlace){
     ${showPlace&&e.place?`<p class="meta">${esc(PLACES[e.place].name)}</p>`:""}
     ${e.area?`<p class="meta">Area: ${esc(e.area)}</p>`:""}
     ${e.where?`<p class="meta">Dove: ${esc(e.where)}</p>`:""}
+    ${e.note?`<p class="meta">Note MIT: ${esc(e.note)}</p>`:""}
+    ${e.not_in_latest?`<p class="meta">Voce non riscontrata nell’ultima verifica: controllare la fonte.</p>`:""}
     ${e.pending?`<p class="meta">Dettagli in attesa: ${esc(e.pending)}</p>`:""}
     <p class="meta">Promotori: ${esc(e.who)} · Settore: ${esc(e.sector)}</p>
     <div class="src">Fonte: ${srcLinks(e," · ")}</div></article>`;
@@ -398,21 +460,29 @@ function renderPanel(){
     p.innerHTML=`<button class="back" id="backBtn">← Torna ai prossimi appuntamenti</button><h2 id="panelTitle" tabindex="-1">${esc(PLACES[pk].name)}${cat==="x"?" · eventi eccezionali":""}</h2>`+evs.map(e=>card(e,false)).join("");
     document.getElementById("backBtn").addEventListener("click",()=>{state.selected=null;render({focusPanel:true})});
   }else{
-    const next=EVENTS.filter(e=>visible(e)&&statusOf(e)!=="concluso").sort(byDate).slice(0,4);
-    p.innerHTML=`<h2 id="panelTitle" tabindex="-1">Prossimi appuntamenti</h2><p class="hint">Seleziona un punto sulla mappa per i dettagli di un luogo.</p>`+(next.length?next.map(e=>card(e,true)).join(""):`<p class="empty">Nessun evento in arrivo con i filtri attuali.</p>`);
+    const filtered=EVENTS.filter(visible).sort(byDate);
+    const upcoming=filtered.filter(e=>e.end>=today);
+    const next=(upcoming.length?upcoming:filtered).slice(0,4);
+    p.innerHTML=`<h2 id="panelTitle" tabindex="-1">Eventi nel periodo</h2><p class="hint">Seleziona un punto sulla mappa per i dettagli di un luogo.</p>`+(next.length?next.map(e=>card(e,true)).join(""):`<p class="empty">Nessun evento con i filtri attuali.</p>`);
   }
 }
 function renderNational(){
   const evs=EVENTS.filter(e=>!e.place&&visible(e)).sort(byDate);
-  document.getElementById("national").innerHTML=evs.length?evs.map(e=>card(e,false)).join(""):`<p class="empty">Nessun evento nazionale con i filtri attuali.</p>`;
+  document.getElementById("national").innerHTML=evs.length?evs.slice(0,state.nationalLimit).map(e=>card(e,false)).join(""):`<p class="empty">Nessun evento nazionale con i filtri attuali.</p>`;
+  document.getElementById("national-more").hidden=evs.length<=state.nationalLimit;
 }
 function renderAgenda(){
   const evs=EVENTS.filter(visible).sort(byDate);
   const tb=document.getElementById("agenda");
-  tb.innerHTML=evs.map(e=>`<tr class="${statusOf(e)==="concluso"?"past":""}${e.exc?" excrow":""}"><td class="d">${fmtRange(e)}</td>
+  const pageSize=50,pages=Math.max(1,Math.ceil(evs.length/pageSize));
+  state.agendaPage=Math.min(pages-1,Math.max(0,state.agendaPage));
+  document.getElementById("agenda-page").textContent=`Pagina ${state.agendaPage+1} di ${pages} · ${evs.length} eventi`;
+  document.getElementById("agenda-prev").disabled=state.agendaPage===0;
+  document.getElementById("agenda-next").disabled=state.agendaPage>=pages-1;
+  tb.innerHTML=evs.slice(state.agendaPage*pageSize,(state.agendaPage+1)*pageSize).map(e=>`<tr class="${statusOf(e)==="concluso"?"past":""}${e.exc?" excrow":""}"><td class="d">${fmtRange(e)}</td>
     <td>${e.exc?`<span class="tag x">eccezionale</span> `:""}<span class="tag ${e.type==="sciopero"?"s":"m"}">${e.type}</span>${e.tbc?` <span class="tag t">da confermare</span>`:""}</td>
     <td>${esc(e.title)}<br><span class="meta">${esc(e.who)}</span></td>
-    <td>${e.place?`<button class="place" data-key="${esc(e.place+":"+(e.exc?"x":"o"))}">${esc(PLACES[e.place].name)}</button>`:esc(e.scope==="nazionale"?"Tutta Italia":"Più regioni")}</td>
+    <td>${e.place?`<button class="place" data-key="${esc(e.place+":"+(e.exc?"x":"o"))}">${esc(PLACES[e.place].name)}</button>`:esc(e.area||(e.scope==="nazionale"?"Tutta Italia":"Più regioni"))}</td>
     <td class="src">${srcLinks(e,"<br>")}</td></tr>`).join("")
     ||`<tr><td colspan="5" class="empty">Nessun evento con i filtri attuali.</td></tr>`;
 }
@@ -424,20 +494,177 @@ document.getElementById("agenda").addEventListener("click",ev=>{
 });
 
 function render(opts={}){
-  renderCount();drawMarkers();renderPanel();renderNational();renderAgenda();
+  if(state.selected&&!groups()[state.selected])state.selected=null;
+  renderCount();drawMarkers();renderPanel();renderNational();renderAgenda();renderCalendar();renderChart();saveFilters();
   if(opts.focusKey){const m=gMark.querySelector(`[data-key="${CSS.escape(opts.focusKey)}"]`);if(m)m.focus()}
   if(opts.focusPanel){const h=document.getElementById("panelTitle");if(h)h.focus({preventScroll:true})}
 }
 
 document.querySelectorAll("[data-type]").forEach(b=>b.addEventListener("click",()=>{
-  state.type=b.dataset.type;document.querySelectorAll("[data-type]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));render()}));
-document.getElementById("f-sector").addEventListener("change",ev=>{state.sector=ev.target.value;render()});
-document.getElementById("f-org").addEventListener("change",ev=>{state.org=ev.target.value;render()});
+  state.agendaPage=0;state.type=b.dataset.type;document.querySelectorAll("[data-type]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));render()}));
+document.getElementById("f-sector").addEventListener("change",ev=>{state.agendaPage=0;state.sector=ev.target.value;render()});
+document.getElementById("f-org").addEventListener("change",ev=>{state.agendaPage=0;state.org=ev.target.value;render()});
 document.getElementById("f-past").addEventListener("click",ev=>{state.past=!state.past;ev.currentTarget.setAttribute("aria-pressed",String(state.past));render()});
 svg.addEventListener("click",ev=>{if(ev.target===svg||ev.target.closest("path.land")){state.selected=null;render()}});
+// Il calendario conta eventi attivi nel giorno; il grafico conta ogni voce una
+// sola volta, al primo giorno compreso nell'intervallo selezionato.
+const YEAR_START="2026-01-01", YEAR_END="2026-12-31";
+const monthNames=["Gennaio","Febbraio","Marzo","Aprile","Maggio","Giugno","Luglio","Agosto","Settembre","Ottobre","Novembre","Dicembre"];
+const isoDate=d=>d.toISOString().slice(0,10);
+const utcDate=s=>new Date(s+"T12:00:00Z");
+const addDays=(s,n)=>{const d=utcDate(s);d.setUTCDate(d.getUTCDate()+n);return isoDate(d)};
+const otherFilters=e=>typeMatch(e)&&(state.sector==="all"||e.sector===state.sector)&&orgMatch(e)&&(state.past||e.end>=today)&&officialMatch(e);
+function officialMatch(e){
+  if(state.mitStatus==="all")return true;
+  if(state.mitStatus==="valid")return e.official_status!=="revocato"&&!e.not_in_latest;
+  if(state.mitStatus==="missing")return !!e.not_in_latest;
+  return e.official_status===state.mitStatus&&!e.not_in_latest;
+}
+function setRange(from,to,focusDate){
+  if(from>to||from<YEAR_START||to>YEAR_END)return;
+  state.from=from;state.to=to;state.agendaPage=0;state.nationalLimit=6;
+  document.getElementById("date-from").value=from;document.getElementById("date-to").value=to;
+  document.getElementById("date-error").textContent="";
+  if(focusDate)state.calendarMonth=focusDate.slice(0,7);
+  render();
+}
+function readRange(){
+  const from=document.getElementById("date-from"),to=document.getElementById("date-to");
+  if(!from.value||!to.value||from.value>to.value||from.value<YEAR_START||to.value>YEAR_END){
+    document.getElementById("date-error").textContent="Scegli due date valide del 2026, con la data iniziale prima di quella finale.";return;
+  }
+  setRange(from.value,to.value,from.value);
+}
+function renderCalendar(){
+  const [year,month]=state.calendarMonth.split("-").map(Number);
+  const days=new Date(Date.UTC(year,month,0)).getUTCDate();
+  const offset=(new Date(Date.UTC(year,month-1,1)).getUTCDay()+6)%7;
+  const evs=EVENTS.filter(otherFilters);
+  let html="";
+  for(let i=0;i<offset;i++)html+='<span class="calendar-blank" aria-hidden="true"></span>';
+  for(let day=1;day<=days;day++){
+    const date=`${year}-${String(month).padStart(2,"0")}-${String(day).padStart(2,"0")}`;
+    const n=evs.filter(e=>e.start<=date&&e.end>=date).length;
+    const selected=date>=state.from&&date<=state.to;
+    html+=`<button class="calendar-day${selected?" in-range":""}${date===today?" current-day":""}" data-date="${date}" aria-pressed="${selected}" aria-label="${day} ${monthNames[month-1]} ${year}: ${n} eventi${selected?", nel periodo selezionato":""}"${date===today?' aria-current="date"':""}><span>${day}</span><small>${n?`${n} ev.`:"·"}</small></button>`;
+  }
+  document.getElementById("calendar-grid").innerHTML=html;
+  document.getElementById("calendar-month").value=state.calendarMonth;
+  document.getElementById("calendar-prev").disabled=month===1;
+  document.getElementById("calendar-next").disabled=month===12;
+}
+function bucketsForRange(from,to,mode){
+  const result=[];
+  let cursor=from;
+  while(cursor<=to){
+    let end,label;
+    const d=utcDate(cursor);
+    if(mode==="month"){
+      end=isoDate(new Date(Date.UTC(d.getUTCFullYear(),d.getUTCMonth()+1,0,12)));
+      label=monthNames[d.getUTCMonth()].slice(0,3);
+    }else if(mode==="week"){
+      end=addDays(cursor,6-((d.getUTCDay()+6)%7));label=`${d.getUTCDate()} ${MESI[d.getUTCMonth()]}`;
+    }else{end=cursor;label=`${d.getUTCDate()} ${MESI[d.getUTCMonth()]}`}
+    if(end>to)end=to;
+    result.push({start:cursor,end,label,counts:[0,0,0]});cursor=addDays(end,1);
+  }
+  return result;
+}
+function chartBuckets(){
+  const bins=bucketsForRange(state.from,state.to,state.granularity);
+  for(const e of EVENTS.filter(visible)){
+    const first=e.start<state.from?state.from:e.start;
+    const b=bins.find(x=>first>=x.start&&first<=x.end);if(!b)continue;
+    b.counts[e.exc?2:e.type==="sciopero"?0:1]++;
+  }
+  return bins;
+}
+function renderChart(){
+  const bins=chartBuckets(), total=bins.reduce((n,b)=>n+b.counts.reduce((a,c)=>a+c,0),0);
+  const max=Math.max(4,Math.ceil(Math.max(1,...bins.map(b=>b.counts.reduce((a,c)=>a+c,0)))/4)*4);
+  const W=900,H=280,left=44,right=12,top=20,bottom=40,plotH=H-top-bottom;
+  const step=(W-left-right)/bins.length,barW=Math.max(.6,step*.7);
+  let body="";
+  for(let i=0;i<=4;i++){
+    const y=H-bottom-i*plotH/4;
+    body+=`<line class="chart-gridline" x1="${left}" y1="${y}" x2="${W-right}" y2="${y}"/><text class="chart-label" x="${left-8}" y="${y+4}" text-anchor="end">${Math.ceil(max*i/4)}</text>`;
+  }
+  const labelEvery=Math.max(1,Math.ceil(bins.length/12));
+  bins.forEach((b,i)=>{
+    const total=b.counts.reduce((a,c)=>a+c,0),x=left+i*step+(step-barW)/2;
+    let y=H-bottom;
+    body+=`<g class="chart-bucket" data-from="${b.start}" data-to="${b.end}" role="button" tabindex="0" aria-label="${esc(fmt(b.start))}${b.end!==b.start?` – ${esc(fmt(b.end))}`:""}: ${total} eventi. Filtra questo periodo"><title>${esc(fmt(b.start))} – ${esc(fmt(b.end))}: ${total} eventi</title><rect x="${left+i*step}" y="${top}" width="${step}" height="${plotH}" fill="transparent"/>`;
+    b.counts.forEach((n,j)=>{const h=n/max*plotH;y-=h;if(n)body+=`<rect class="chart-series-${j}" x="${x}" y="${y}" width="${barW}" height="${h}"/>`});
+    body+='</g>';
+    if(i%labelEvery===0)body+=`<text class="chart-label" x="${left+(i+.5)*step}" y="${H-12}" text-anchor="middle">${esc(b.label)}</text>`;
+  });
+  document.getElementById("trend-chart").innerHTML=body;
+  document.getElementById("chart-summary").textContent=`${total} ${total===1?"evento":"eventi"} nel periodo ${fmt(state.from)} – ${fmt(state.to)} 2026. ${state.mitStatus==="valid"?"Revoche e voci da riverificare escluse.":"Stato secondo il filtro selezionato."}`;
+  document.getElementById("chart-empty").hidden=total!==0;
+  document.getElementById("chart-rows").innerHTML=bins.map(b=>`<tr><th scope="row"><button class="back" data-from="${b.start}" data-to="${b.end}">${esc(fmt(b.start))}${b.start!==b.end?` – ${esc(fmt(b.end))}`:""}</button></th>${b.counts.map(n=>`<td>${n}</td>`).join("")}<td>${b.counts.reduce((a,c)=>a+c,0)}</td></tr>`).join("");
+}
+function shiftMonth(n){
+  const d=utcDate(state.calendarMonth+"-01");d.setUTCMonth(d.getUTCMonth()+n);
+  const month=isoDate(d).slice(0,7);if(month<"2026-01"||month>"2026-12")return;
+  state.calendarMonth=month;renderCalendar();saveFilters();
+}
+function saveFilters(){
+  const p=new URLSearchParams();
+  for(const k of ["type","sector","org","mitStatus","from","to","calendarMonth","granularity"])p.set(k,state[k]);
+  p.set("past",String(state.past));
+  try{history.replaceState(null,"","?"+p)}catch(e){}
+}
+function initTemporal(){
+  const params=new URLSearchParams(location.search);
+  for(const k of ["from","to"]){const v=params.get(k);if(v&&/^2026-\d{2}-\d{2}$/.test(v)&&!Number.isNaN(Date.parse(v))&&isoDate(utcDate(v))===v)state[k]=v}
+  if(state.from>state.to){state.from=YEAR_START;state.to=YEAR_END}
+  const allowed={type:["all","sciopero","manifestazione","eccezionale"],mitStatus:["valid","all","revocato","effettuato","in programma","missing"],granularity:["day","week","month"]};
+  for(const [k,values] of Object.entries(allowed))if(values.includes(params.get(k)))state[k]=params.get(k);
+  if(params.get("past")==="false")state.past=false;
+  if(/^2026-(0[1-9]|1[0-2])$/.test(params.get("calendarMonth")||""))state.calendarMonth=params.get("calendarMonth");
+  if([...document.getElementById("f-sector").options].some(o=>o.value===params.get("sector")))state.sector=params.get("sector");
+  if([...document.getElementById("f-org").options].some(o=>o.value===params.get("org")))state.org=params.get("org");
+  for(const k of ["sector","org"])document.getElementById("f-"+k).value=state[k];
+  document.querySelectorAll("[data-type]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.type===state.type)));
+  document.getElementById("f-past").setAttribute("aria-pressed",String(state.past));
+  document.getElementById("f-status").value=state.mitStatus;
+  document.getElementById("date-from").value=state.from;document.getElementById("date-to").value=state.to;
+  document.getElementById("chart-granularity").value=state.granularity;
+  document.getElementById("calendar-month").innerHTML=monthNames.map((n,i)=>`<option value="2026-${String(i+1).padStart(2,"0")}">${n} 2026</option>`).join("");
+  document.getElementById("date-from").addEventListener("change",readRange);document.getElementById("date-to").addEventListener("change",readRange);
+  document.getElementById("range-year").addEventListener("click",()=>setRange(YEAR_START,YEAR_END));
+  document.getElementById("range-month").addEventListener("click",()=>{const m=state.calendarMonth;setRange(m+"-01",isoDate(new Date(Date.UTC(2026,Number(m.slice(5)),0,12))))});
+  document.getElementById("calendar-prev").addEventListener("click",()=>shiftMonth(-1));document.getElementById("calendar-next").addEventListener("click",()=>shiftMonth(1));
+  document.getElementById("calendar-month").addEventListener("change",e=>{state.calendarMonth=e.target.value;renderCalendar();saveFilters()});
+  document.getElementById("calendar-grid").addEventListener("click",e=>{const b=e.target.closest("[data-date]");if(!b)return;setRange(b.dataset.date,b.dataset.date,b.dataset.date);document.querySelector(`[data-date="${b.dataset.date}"]`)?.focus()});
+  document.getElementById("f-status").addEventListener("change",e=>{state.mitStatus=e.target.value;state.agendaPage=0;render()});
+  document.getElementById("chart-granularity").addEventListener("change",e=>{state.granularity=e.target.value;renderChart();saveFilters()});
+  const pickBucket=e=>{const b=e.target.closest("[data-from]");if(!b)return;if(e.type==="keydown"&&!['Enter',' '].includes(e.key))return;e.preventDefault();setRange(b.dataset.from,b.dataset.to,b.dataset.from);document.getElementById("date-from").focus()};
+  document.getElementById("trend-chart").addEventListener("click",pickBucket);document.getElementById("trend-chart").addEventListener("keydown",pickBucket);document.getElementById("chart-rows").addEventListener("click",pickBucket);
+  document.getElementById("agenda-prev").addEventListener("click",()=>{state.agendaPage--;renderAgenda()});document.getElementById("agenda-next").addEventListener("click",()=>{state.agendaPage++;renderAgenda()});
+  document.getElementById("national-more").addEventListener("click",()=>{state.nationalLimit+=12;renderNational()});
+  const stamp=ARCHIVE.syncedAt?new Intl.DateTimeFormat("it-IT",{dateStyle:"short",timeStyle:"short",timeZone:"Europe/Rome"}).format(new Date(ARCHIVE.syncedAt)):"non ancora eseguita";
+  document.getElementById("sync-status").textContent=`Ultima sincronizzazione MIT riuscita: ${stamp}. ${ARCHIVE.officialCount} proclamazioni archiviate (${ARCHIVE.revokedCount} revocate); ${ARCHIVE.manualCount} iniziative curate a mano. Manifestazioni ed eventi eccezionali: raccolta non esaustiva.`;
+}
+
+initTemporal();
 // la data di Roma si aggiorna se la pagina resta aperta oltre la mezzanotte
 const refreshDay=()=>{const t=romeToday();if(t!==today){today=t;updateToday();render()}};
 document.addEventListener("visibilitychange",()=>{if(!document.hidden)refreshDay()});
 setInterval(refreshDay,60000);
+let checkingVersion=false;
+async function checkVersion(){
+  if(checkingVersion||document.hidden||!/^https?:$/.test(location.protocol))return;
+  checkingVersion=true;
+  try{
+    const response=await fetch("data/aggiornamento.json",{cache:"no-store"});
+    if(response.ok){const latest=await response.json();if(latest.revision&&latest.revision!==ARCHIVE.revision){
+      saveFilters();const url=new URL(location.href);url.searchParams.set("v",latest.revision);location.replace(url);
+    }}
+  }catch(e){/* La pagina e i dati già caricati restano disponibili. */}
+  finally{checkingVersion=false}
+}
+setInterval(checkVersion,900000);
+document.addEventListener("visibilitychange",()=>{if(!document.hidden)checkVersion()});
 render();
 </script>

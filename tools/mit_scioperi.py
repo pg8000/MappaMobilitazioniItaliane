@@ -4,11 +4,12 @@
 Uso: python tools/mit_scioperi.py [file.html]   (con un file usa quello invece di scaricare: serve per i test)
 Non sovrascrive nulla se la tabella non viene riconosciuta o non contiene righe.
 """
-import hashlib, re, sys, urllib.request, datetime as dt
+import hashlib, re, sys, urllib.request, urllib.parse, datetime as dt, time
 from html.parser import HTMLParser
 from comuni import carica, salva, oggi, senza_accenti, slug, province
 
-URL = "https://scioperi.mit.gov.it/mit2/public/scioperi"
+URL = "https://scioperi.mit.gov.it/mit2/public/scioperi/ricerca"
+YEAR = 2026
 UA = "MappaMobilitazioniItaliane/2 (+https://github.com/pg8000/MappaMobilitazioniItaliane)"
 
 
@@ -49,7 +50,8 @@ def leggi_righe(html):
     p.feed(html)
     for tab in p.tabelle:
         for i, riga in enumerate(tab):
-            low = [c.lower() for c in riga]
+            low = [senza_accenti(c).lower().strip().rstrip("*") for c in riga]
+            low = ["modalita" if c.startswith("modalit") else c for c in low]
             if "inizio" in low and any(c.startswith("sindacat") for c in low):
                 intest = low
                 righe = []
@@ -75,11 +77,15 @@ ALIAS = [  # dal più specifico al più generico
 ]
 SETTORI = {
     "trasporto pubblico locale": "Trasporto locale", "trasporto ferroviario": "Treni", "ferrovie": "Treni",
-    "trasporto aereo": "Trasporto aereo", "trasporto marittimo": "Porti", "porti": "Porti",
+    "trasporto aereo": "Trasporto aereo", "aereo": "Trasporto aereo", "ferroviario": "Treni",
+    "trasporto marittimo": "Porti", "marittimo": "Porti", "porti": "Porti",
+    "trasporto merci": "Trasporto merci", "appalti ferroviari": "Appalti ferroviari",
+    "generale": "Generale", "plurisettoriale": "Plurisettoriale",
     "circolazione e sicurezza stradale": "Autostrade", "autostrade": "Autostrade",
 }
 RILEVANZA = {"locale": "locale", "regionale": "regionale", "nazionale": "nazionale",
-             "interregionale": "multiregionale", "multiregionale": "multiregionale"}
+             "interregionale": "multiregionale", "multiregionale": "multiregionale",
+             "provinciale": "locale", "territoriale": "locale", "aziendale": "locale", "da definire": "multiregionale"}
 PICCOLE = {"di", "del", "della", "dei", "delle", "e", "ed", "a", "in", "per", "da", "al", "alla", "il", "la", "le", "i", "lo"}
 
 
@@ -116,7 +122,7 @@ def converti(righe, base, prov, oggi_):
         except (KeyError, ValueError):
             scartati += 1
             continue
-        if fin < max(da, oggi_) or ini > a:
+        if fin < da or ini > a:
             continue
         sind = r.get("sindacati", "")
         orgs = sigle(sind, prom) or ["non-identificato"]
@@ -131,10 +137,12 @@ def converti(righe, base, prov, oggi_):
                 area = f"Regione {regione}; punto su {prov[place]['name']}"
         elif rilev != "nazionale":
             area = ", ".join(x for x in (regione, provincia) if x and x.lower() not in ("italia", "tutte")) or None
+        if not area and regione and regione.lower() != "italia":
+            area = f"Regione {regione}"
         sett = r.get("settore", "").strip()
         modalita = r.get("modalità") or r.get("modalita") or ""
         ev = {
-            "id": "mit-" + hashlib.sha1("|".join([r["inizio"], r.get("fine", ""), sind, r.get("categoria", ""), regione, provincia]).encode()).hexdigest()[:10],
+            "id": "mit-" + hashlib.sha1("|".join([r["inizio"], r.get("fine", ""), sind, r.get("categoria", ""), regione, provincia, r.get("data proclamazione", ""), r.get("data ricezione", "")]).encode()).hexdigest()[:16],
             "orgs": orgs, "type": "sciopero", "scope": rilev,
             "sector": SETTORI.get(sett.lower(), sett or "Altro"),
         }
@@ -149,27 +157,69 @@ def converti(righe, base, prov, oggi_):
         if area:
             ev["area"] = area
         if r.get("note"):
-            ev["note"] = r["note"][:200]
+            ev["note"] = r["note"]
         ev["src"] = ["mit"]
+        stato = r.get("stato", "").lower()
+        ev["official_status"] = "revocato" if "revocat" in stato else "effettuato" if "effettuat" in stato else "in programma"
+        ev["source_category"] = r.get("categoria", "")
+        ev["source_union"] = sind
+        ev["source_region"] = regione
+        ev["source_province"] = provincia
+        ev["proclaimed_at"] = r.get("data proclamazione", "")
+        ev["received_at"] = r.get("data ricezione", "")
+        ev["verified_at"] = oggi_.isoformat()
         eventi.append(ev)
     return eventi, luoghi, scartati
 
 
+def scarica_anno():
+    # Il prospetto iniziale contiene soltanto gli eventi recenti. Il form storico
+    # restituisce invece tutto l'anno e lo stato (compresi i revocati).
+    body = urllib.parse.urlencode({
+        "dataInizio": f"01/01/{YEAR}", "dataFine": f"31/12/{YEAR}",
+        "categoria": "", "sindacato": "", "settore": "0", "rilevanza": "0",
+        "stato": "0", "submit": "Ricerca",
+    }).encode()
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(URL, data=body, headers={"User-Agent": UA, "Accept-Language": "it"})
+            with urllib.request.urlopen(req, timeout=60) as response:
+                return response.read().decode("utf-8", "replace")
+        except (OSError, TimeoutError):
+            if attempt == 2:
+                raise
+            time.sleep(2 ** attempt)
+
+
 def main():
     base, prov = carica("eventi.json"), province()
-    if len(sys.argv) > 1:
-        html = open(sys.argv[1], encoding="utf-8").read()
-    else:
-        req = urllib.request.Request(URL, headers={"User-Agent": UA, "Accept-Language": "it"})
-        html = urllib.request.urlopen(req, timeout=60).read().decode("utf-8", "replace")
+    html = open(sys.argv[1], encoding="utf-8").read() if len(sys.argv) > 1 else scarica_anno()
     righe = leggi_righe(html)
-    if not righe:
-        sys.exit("ERRORE: nessuna riga riconosciuta nella tabella MIT (la pagina è cambiata?). Dati non modificati.")
+    if not righe or not all({"inizio", "fine", "sindacati", "categoria", "stato"} <= r.keys() for r in righe):
+        sys.exit("ERRORE: archivio MIT non riconosciuto. Ultimo archivio valido conservato.")
     eventi, luoghi, scartati = converti(righe, base, prov, oggi())
-    print(f"MIT: {len(righe)} righe lette, {len(eventi)} nel periodo, {scartati} con data non leggibile")
+    if scartati or not eventi:
+        sys.exit(f"ERRORE: {scartati} date non leggibili o archivio vuoto. Dati precedenti conservati.")
+    by_id = {}
+    for e in eventi:
+        old = by_id.get(e["id"])
+        if not old or (e["official_status"] == "revocato" and old["official_status"] != "revocato"):
+            by_id[e["id"]] = e
+    # Una voce assente non equivale a una revoca: rimane archiviata e viene
+    # segnalata come non riscontrata nell'ultima verifica.
+    precedente = carica("scioperi-mit.json")
+    for e in precedente.get("eventi", []):
+        if e["id"] not in by_id and e["start"][:4] == str(YEAR):
+            by_id[e["id"]] = dict(e, not_in_latest=True)
+    luoghi = {**precedente.get("luoghi", {}), **luoghi}
+    result = list(by_id.values())
+    print(f"MIT {YEAR}: {len(righe)} righe, {len(result)} voci archiviate, "
+          f"{sum(e['official_status'] == 'revocato' for e in result)} revocate")
     salva("scioperi-mit.json", {
-        "fonte": URL, "aggiornato": oggi().isoformat(), "righe_lette": len(righe),
-        "luoghi": luoghi, "eventi": sorted(eventi, key=lambda e: (e["start"], e["id"])),
+        "fonte": URL, "anno": YEAR, "aggiornato": oggi().isoformat(),
+        "sincronizzato": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
+        "righe_lette": len(righe), "copertura": {"da": f"{YEAR}-01-01", "a": f"{YEAR}-12-31"},
+        "luoghi": luoghi, "eventi": sorted(result, key=lambda e: (e["start"], e["id"])),
     })
 
 
