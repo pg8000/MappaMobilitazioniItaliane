@@ -1,36 +1,37 @@
-# Automazione dell’archivio 2026
+# Automazione dell'archivio 2026
 
-## Percorso completo
+## Scioperi MIT e sito pubblico
 
-1. `aggiorna.yml`: ogni giorno alle 05:30 UTC, oppure da Actions → Sincronizza archivio 2026 → Run workflow. Parte anche quando cambiano sorgenti e dati curati.
-2. Validazione delle iniziative manuali e test senza rete.
-3. `mit_scioperi.py`: invia al form pubblico MIT le date 01/01/2026–31/12/2026, con tutti gli stati. Legge anche gli eventi effettuati e revocati; normalizza intestazioni come `Settore*` e `Modalità`. Tre tentativi per gli errori di rete.
-4. La risposta deve avere una tabella riconoscibile e date valide. In caso contrario non sovrascrive l’archivio precedente e interrompe la pubblicazione.
-5. Le voci si identificano per data, categoria, sindacati, territorio, proclamazione e ricezione. Proclamazioni distinte restano distinte; una voce non riscontrata nella nuova risposta viene conservata con `not_in_latest`, senza inventarne la revoca.
-6. `build_data.py` usa le righe MIT per gli scioperi già riassunti a mano, conservando le altre iniziative curate. `build_page.py` genera pagina, archivio unito e metadati della sincronizzazione.
-7. `valida.py --archivio` controlla date, ID e riferimenti dell’archivio unito. Il bot salva dati e pagina nel ramo `main`.
-8. Il workflow riutilizzabile `pubblica.yml` carica solo pagina e JSON pubblici e richiama `deploy-pages`. È richiamato direttamente sia dall’aggiornamento sia dall’approvazione: i commit del bot non devono generare un secondo workflow.
+`aggiorna.yml` parte ogni giorno alle 05:30 UTC, su modifica di sorgenti/dati e manualmente da Actions. Legge l'intero 2026 dal form storico MIT, esegue test e validazione, costruisce l'archivio, salva i dati e richiama direttamente `pubblica.yml`. Se il registro non è leggibile conserva l'ultima versione valida e segnala l'errore.
 
-## Stati e conteggi
+L'identità di una proclamazione MIT comprende date, categoria, sindacati, territorio, proclamazione e ricezione. `official_status` distingue in programma, effettuato e revocato. L'assenza dall'ultima risposta viene segnalata con `not_in_latest`, senza inventare una revoca. I conteggi sono voci d'archivio, non necessariamente mobilitazioni distinte. Le vecchie sintesi manuali MIT sono sostituite dalle proclamazioni ufficiali quando l'archivio è disponibile.
 
-Le voci regionali con provincia «Tutte» ricevono un indicatore presso il capoluogo, usando le coordinate già presenti in `province.json`. `kind: region` distingue questi punti dalle città; `map_precision: region` e la nota in scheda ne dichiarano l’approssimazione. La stessa trasformazione viene applicata in costruzione ai dati archiviati e alle iniziative manuali senza punto. Un luogo già assegnato viene conservato. Regioni sconosciute o multiple non vengono interpretate arbitrariamente.
-
-`official_status` distingue `in programma`, `effettuato`, `revocato`. La dicitura MIT «revocato» include sospensione e differimento: non si può inferire quale dei tre sia avvenuto senza un approfondimento. `not_in_latest` significa soltanto assenza nell’ultima risposta.
-
-La vista iniziale esclude revoche e voci da riverificare. Il grafico conta voci dell’archivio, una volta ciascuna al primo giorno compreso nel filtro. Nel calendario, invece, uno sciopero di più giorni compare in ogni giorno in cui è attivo. Le due misure sono spiegate nella pagina.
-
-La data di sincronizzazione indica l’ultima lettura riuscita del registro. Il timestamp non certifica la completezza delle manifestazioni curate a mano. `data/aggiornamento.json` consente a una pagina aperta di riconoscere una nuova versione ogni 15 minuti e al ritorno sulla scheda, conservando i filtri nell’URL.
+Gli eventi regionali senza provincia hanno un indicatore tratteggiato presso il capoluogo. `map_precision: region` e la nota specificano l'approssimazione. Non si inventano città per aree sconosciute o multiple.
 
 ## Manifestazioni ed eventi eccezionali
 
-Nell’esecuzione programmata si cercano anche proposte di manifestazioni tramite notizie RSS. Non diventano eventi finché non vengono verificate. Nell’avvio manuale questa ricerca è facoltativa (`cerca_proposte`, inizialmente disattivata).
+Ricerca, proposte e revisione vengono eseguite in un **repository privato separato**, ogni sei ore e su approvazione. La chat e il computer dell'utente non sono necessari.
 
-Per approvare una proposta: verificare la fonte, correggere il JSON nella issue, completare luogo/data/promotore e applicare `approva`. Il workflow controlla l’autore, rifiuta i dati incompleti, aggiunge l’evento, ricostruisce e pubblica. Gli eventi eccezionali vengono inseriti esclusivamente a mano in `data/eventi.json` con la relativa fonte; non si approvano automaticamente.
+Il processo consulta RSS e tenta la lettura delle pagine pubbliche. Google News serve soltanto alla scoperta. Date dedotte dal titolo, fonti non leggibili, informazioni discordanti e possibili doppioni richiedono revisione. Non si aggirano paywall e non si inventano dati mancanti.
 
-Le nuove iniziative devono ricadere nel 2026. Non si inventano date mancanti o informazioni non presenti nelle fonti.
+Si pubblicano automaticamente soltanto eventi con dati strutturati espliciti Schema.org Event (data, città riconosciuta, organizzazione e stato), sostenuti da una fonte ufficiale/organizzatore ammessa o da due gruppi editoriali indipendenti con dati concordanti. Per gli episodi eccezionali servono una fonte ufficiale o due redazioni indipendenti e una data non futura. Il sistema è selettivo e non garantisce la copertura di tutte le manifestazioni.
 
-## Recupero da un errore
+I casi dubbi diventano issue **private**, con blocco JSON modificabile e fonti. Il proprietario o un collaboratore con scrittura può applicare `approva`. Il sistema rilegge la proposta, valida i dati e invia solamente la scheda approvata e i link pubblici. Una proposta scartata si chiude senza approvarla. Nessuna proposta riservata viene aperta nelle issue pubbliche; `tools/proposte.py` e il vecchio workflow pubblico di approvazione sono disattivati.
 
-Aprire l’esecuzione fallita in Actions, correggere fonte/parser/dati e avviare di nuovo il workflow. I dati precedenti restano nel repository e su Pages. Una nuova esecuzione riuscita aggiorna la dicitura in pagina. Concorrenza serializzata fra aggiornamenti e approvazioni; pubblicazioni serializzate separatamente.
+Il passaggio usa una chiave SSH dedicata: parte pubblica come deploy key con scrittura nel solo repository della mappa; parte privata nel segreto Actions `PUBLIC_MAP_DEPLOY_KEY` del repository privato. Il normale GITHUB_TOKEN del repository privato gestisce esclusivamente stato e issue private. La chiave di esportazione è disponibile solo nel passo che invia il file pubblico, con verifica dell'host SSH attiva.
 
-Permessi dei workflow: scrittura contenuti per i commit, issue per le proposte, Pages e token OIDC per la pubblicazione. Si usa soltanto `GITHUB_TOKEN` fornito da GitHub, senza chiavi aggiuntive nei file.
+## Dati pubblicabili e riservatezza
+
+`data/eventi-verificati.json` contiene unicamente `versione`, `fonti` ed `eventi`, esportati da una lista esplicita di campi ammessi. Corpi e numeri delle issue, commenti, nomi dei revisori e motivi di verifica restano nel privato. `build_data.py` valida e unisce l'export alle iniziative manuali e all'archivio MIT; le coordinate delle nuove città provengono dalla tabella esistente delle province. Una modifica dell'export attiva l'aggiornamento e la pubblicazione pubblica.
+
+Gli eventi eccezionali mantengono il formato `type: manifestazione` e `exc: {kind, note}`. Non si crea una categoria pubblica per i casi incerti. `event_status` distingue confermato, annullato, rinviato e riprogrammato. Annullati e rinviati sono esclusi dalla vista iniziale, consultabili tramite Stato eventi. Un aggiornamento approvato riutilizza l'ID della scheda già esportata da questa raccolta.
+
+La pubblicazione Pages copia soltanto un elenco esplicito di JSON pubblici, mai file di lavoro o dati di revisione. La data MIT riguarda il registro ufficiale e non certifica la completezza delle manifestazioni. `data/aggiornamento.json` contiene la revisione e permette alla pagina aperta di aggiornarsi ogni 15 minuti conservando i filtri.
+
+## Recupero da errori
+
+Le proposte validate vengono conservate prima dell'invio. In caso di errore del collegamento non vengono chiuse come pubblicate: un'esecuzione privata con modo `verifica` ritenta l'export. Dopo il push riuscito la proposta viene chiusa e contiene il collegamento alle esecuzioni pubbliche per verificare la pubblicazione effettiva della pagina.
+
+Aggiornamenti MIT e pubblicazioni pubbliche hanno code serializzate. Le esportazioni ritentano su un nuovo ramo corrente in caso di aggiornamenti concorrenti, modificando soltanto il file previsto. Nessuna cronologia viene forzata.
+
+Le esecuzioni programmate GitHub possono subire ritardi. Al repository privato si applicano i limiti del piano dell'account: non vengono attivati upgrade o acquisti.

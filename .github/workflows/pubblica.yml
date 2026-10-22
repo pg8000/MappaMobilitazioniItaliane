@@ -28,7 +28,9 @@ jobs:
         run: |
           mkdir -p _site/data
           cp index.html _site/
-          cp data/*.json _site/data/
+          for name in archivio aggiornamento province eventi scioperi-mit eventi-verificati; do
+            if [ -f "data/$name.json" ]; then cp "data/$name.json" _site/data/; fi
+          done
           touch _site/.nojekyll
       - uses: actions/upload-pages-artifact@v4
         with:

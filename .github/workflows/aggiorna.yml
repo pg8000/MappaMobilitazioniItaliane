@@ -3,17 +3,11 @@ on:
   schedule:
     - cron: "30 5 * * *"
   workflow_dispatch:
-    inputs:
-      cerca_proposte:
-        description: "Cerca manifestazioni e apri proposte da verificare"
-        type: boolean
-        default: false
   push:
     branches: [main]
-    paths: ["data/eventi.json", "data/province.json", "tools/**", ".github/workflows/aggiorna.yml", ".github/workflows/pubblica.yml"]
+    paths: ["data/eventi.json", "data/eventi-verificati.json", "data/province.json", "tools/**", ".github/workflows/aggiorna.yml", ".github/workflows/pubblica.yml"]
 permissions:
   contents: write
-  issues: write
   pages: write
   id-token: write
 defaults:
@@ -43,16 +37,6 @@ jobs:
         run: |
           python tools/build_page.py | tee -a "$GITHUB_STEP_SUMMARY"
           python tools/valida.py --archivio
-      - name: Proposte di manifestazioni
-        if: github.event_name == 'schedule' || inputs.cerca_proposte == true
-        continue-on-error: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh label create proposta --color FBCA04 --description "Manifestazione proposta dall'automazione" --force
-          gh label create approva --color 0E8A16 --description "Aggiungi la proposta alla mappa" --force
-          python tools/proposte.py
       - name: Salva i dati e la pagina
         run: |
           git config user.name "github-actions[bot]"

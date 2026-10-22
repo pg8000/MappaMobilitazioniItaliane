@@ -83,7 +83,7 @@ class ArchiveTests(unittest.TestCase):
 
     def test_official_rows_replace_old_summaries_only_when_available(self):
         mit_event = self.row()
-        with patch('build_data.carica', side_effect=lambda n: self.base if n == 'eventi.json' else {"eventi": [dict(mit_event, id="test", start="2026-01-07", official_status="effettuato")]}):
+        with patch('build_data.carica', side_effect=lambda n: self.base if n == 'eventi.json' else {"fonti": {}, "eventi": []} if n == 'eventi-verificati.json' else {"eventi": [dict(mit_event, id="test", start="2026-01-07", official_status="effettuato")]}):
             result = unisci()
         expected = 1 + sum(not (e['type'] == 'sciopero' and 'mit' in e.get('src', [])) for e in self.base['eventi'])
         self.assertEqual(len(result['eventi']), expected)

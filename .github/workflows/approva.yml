@@ -1,61 +1,10 @@
-name: Approva proposta
-
+name: Proposte trasferite nella raccolta privata
 on:
-  issues:
-    types: [labeled]
-
+  workflow_dispatch:
 permissions:
-  contents: write
-  issues: write
-  pages: write
-  id-token: write
-
-concurrency:
-  group: archivio-mappa
-  cancel-in-progress: false
-
+  contents: read
 jobs:
-  approva:
-    # Solo l'etichetta "approva" su una proposta creata dall'automazione o dal proprietario del repo
-    if: >-
-      github.event.label.name == 'approva' &&
-      contains(github.event.issue.labels.*.name, 'proposta') &&
-      (github.event.issue.user.login == 'github-actions[bot]' || github.event.issue.user.login == github.repository_owner)
+  istruzioni:
     runs-on: ubuntu-latest
-    env:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      MSG_FILE: /tmp/approva-msg.txt
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Aggiungi l'evento
-        id: approva
-        continue-on-error: true
-        run: python tools/approva.py
-
-      - name: Ricostruisci e pubblica
-        if: steps.approva.outcome == 'success'
-        run: |
-          python tools/build_page.py
-          python tools/valida.py --archivio
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A data index.html
-          git commit -m "Approvata proposta #${{ github.event.issue.number }}"
-          git pull --rebase
-          git push
-          gh issue comment ${{ github.event.issue.number }} --body-file "$MSG_FILE"
-          gh issue close ${{ github.event.issue.number }} --reason completed
-
-      - name: Spiega perché non è stata approvata
-        if: steps.approva.outcome == 'failure'
-        run: |
-          gh issue comment ${{ github.event.issue.number }} --body-file "$MSG_FILE"
-          gh issue edit ${{ github.event.issue.number }} --remove-label approva
-  pubblica:
-    needs: approva
-    if: needs.approva.result == 'success'
-    uses: ./.github/workflows/pubblica.yml
+      - run: echo "Le nuove proposte si verificano e approvano nel repository privato MappaMobilitazioniItaliane-Proposte. Nessuna proposta riservata viene copiata nelle issue pubbliche."

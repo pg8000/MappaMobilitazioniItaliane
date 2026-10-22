@@ -34,7 +34,7 @@ Quando l’archivio MIT annuale è disponibile, le vecchie schede manuali con fo
 
 Il workflow **Sincronizza archivio 2026** si esegue ogni giorno alle **05:30 UTC** (06:30 in Italia con ora solare, 07:30 con ora legale), su modifica dei sorgenti/dati e manualmente da Actions. Recupera l’intero 2026 dal form storico MIT, esegue test e validazione, ricostruisce la pagina, salva i risultati e richiama esplicitamente il workflow **Pubblica la mappa**. La pubblicazione non dipende da un nuovo evento `push` generato dal bot.
 
-Se il registro non è leggibile, il processo fallisce e conserva i dati e il sito dell’ultima esecuzione riuscita. Le manifestazioni vengono proposte per revisione; gli eventi eccezionali restano manuali. Vedi [AUTOMAZIONE](docs/AUTOMAZIONE.md).
+Se il registro non è leggibile, il processo fallisce e conserva i dati e il sito dell’ultima esecuzione riuscita. Manifestazioni ed eventi eccezionali vengono cercati e verificati in una raccolta privata separata. Nel pubblico arrivano solo schede approvate o che superano le verifiche automatiche, tramite data/eventi-verificati.json. Le proposte incerte restano private. Vedi [AUTOMAZIONE](docs/AUTOMAZIONE.md).
 
 ## Prove locali
 

@@ -151,8 +151,8 @@ input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
     <div class="fgroup"><label class="flabel" for="f-org">Promotore</label>
       <select id="f-org"><option value="all">Tutti i promotori</option></select>
     </div>
-    <div class="fgroup"><label class="flabel" for="f-status">Stato MIT</label>
-      <select id="f-status"><option value="valid">Escludi revocati e da verificare</option><option value="all">Tutti gli stati</option><option value="revocato">Solo revocati</option><option value="effettuato">Effettuati (MIT)</option><option value="in programma">In programma (MIT)</option><option value="missing">Da riverificare</option></select>
+    <div class="fgroup"><label class="flabel" for="f-status">Stato eventi</label>
+      <select id="f-status"><option value="valid">Escludi revocati, annullati, rinviati e da verificare</option><option value="all">Tutti gli stati</option><option value="revocato">Solo revocati (MIT)</option><option value="effettuato">Effettuati (MIT)</option><option value="in programma">In programma (MIT)</option><option value="annullato">Manifestazioni annullate</option><option value="rinviato">Manifestazioni rinviate</option><option value="missing">Da riverificare</option></select>
     </div>
     <div class="fgroup"><span class="flabel">Conclusi</span>
       <button class="chip" id="f-past" aria-pressed="true">Mostra eventi conclusi</button>
@@ -332,7 +332,7 @@ const state={type:"all",sector:"all",org:"all",past:true,selected:null,mitStatus
 const romeToday=()=>{try{return new Intl.DateTimeFormat("en-CA",{timeZone:"Europe/Rome"}).format(new Date())}catch(e){return new Date().toISOString().slice(0,10)}};
 let today=romeToday();
 state.calendarMonth=today.startsWith("2026-")?today.slice(0,7):"2026-01";
-const statusOf=e=>e.official_status==="revocato"?"revocato":e.not_in_latest?"da verificare":e.end<today?"concluso":(e.start<=today?"oggi":"in arrivo");
+const statusOf=e=>["annullato","rinviato"].includes(e.event_status)?e.event_status:e.official_status==="revocato"?"revocato":e.not_in_latest?"da verificare":e.end<today?"concluso":(e.start<=today?"oggi":"in arrivo");
 const MESI=["gen","feb","mar","apr","mag","giu","lug","ago","set","ott","nov","dic"];
 const GIORNI=["dom","lun","mar","mer","gio","ven","sab"];
 const fmt=d=>{const[y,m,g]=d.split("-").map(Number);const wd=new Date(Date.UTC(y,m-1,g)).getUTCDay();return `${GIORNI.at(wd)} ${g} ${MESI.at(m-1)}`};
@@ -522,7 +522,8 @@ const addDays=(s,n)=>{const d=utcDate(s);d.setUTCDate(d.getUTCDate()+n);return i
 const otherFilters=e=>typeMatch(e)&&(state.sector==="all"||e.sector===state.sector)&&orgMatch(e)&&(state.past||e.end>=today)&&officialMatch(e);
 function officialMatch(e){
   if(state.mitStatus==="all")return true;
-  if(state.mitStatus==="valid")return e.official_status!=="revocato"&&!e.not_in_latest;
+  if(state.mitStatus==="valid")return e.official_status!=="revocato"&&!e.not_in_latest&&!["annullato","rinviato"].includes(e.event_status);
+  if(["annullato","rinviato"].includes(state.mitStatus))return e.event_status===state.mitStatus;
   if(state.mitStatus==="missing")return !!e.not_in_latest;
   return e.official_status===state.mitStatus&&!e.not_in_latest;
 }
@@ -605,7 +606,7 @@ function renderChart(){
     if(i%labelEvery===0)body+=`<text class="chart-label" x="${left+(i+.5)*step}" y="${H-12}" text-anchor="middle">${esc(b.label)}</text>`;
   });
   document.getElementById("trend-chart").innerHTML=body;
-  document.getElementById("chart-summary").textContent=`${total} ${total===1?"evento":"eventi"} nel periodo ${fmt(state.from)} – ${fmt(state.to)} 2026. ${state.mitStatus==="valid"?"Revoche e voci da riverificare escluse.":"Stato secondo il filtro selezionato."}`;
+  document.getElementById("chart-summary").textContent=`${total} ${total===1?"evento":"eventi"} nel periodo ${fmt(state.from)} – ${fmt(state.to)} 2026. ${state.mitStatus==="valid"?"Revoche, annullamenti, rinvii e voci da riverificare esclusi.":"Stato secondo il filtro selezionato."}`;
   document.getElementById("chart-empty").hidden=total!==0;
   document.getElementById("chart-rows").innerHTML=bins.map(b=>`<tr><th scope="row"><button class="back" data-from="${b.start}" data-to="${b.end}">${esc(fmt(b.start))}${b.start!==b.end?` – ${esc(fmt(b.end))}`:""}</button></th>${b.counts.map(n=>`<td>${n}</td>`).join("")}<td>${b.counts.reduce((a,c)=>a+c,0)}</td></tr>`).join("");
 }
@@ -624,7 +625,7 @@ function initTemporal(){
   const params=new URLSearchParams(location.search);
   for(const k of ["from","to"]){const v=params.get(k);if(v&&/^2026-\d{2}-\d{2}$/.test(v)&&!Number.isNaN(Date.parse(v))&&isoDate(utcDate(v))===v)state[k]=v}
   if(state.from>state.to){state.from=YEAR_START;state.to=YEAR_END}
-  const allowed={type:["all","sciopero","manifestazione","eccezionale"],mitStatus:["valid","all","revocato","effettuato","in programma","missing"],granularity:["day","week","month"]};
+  const allowed={type:["all","sciopero","manifestazione","eccezionale"],mitStatus:["valid","all","revocato","effettuato","in programma","annullato","rinviato","missing"],granularity:["day","week","month"]};
   for(const [k,values] of Object.entries(allowed))if(values.includes(params.get(k)))state[k]=params.get(k);
   if(params.get("past")==="false")state.past=false;
   if(/^2026-(0[1-9]|1[0-2])$/.test(params.get("calendarMonth")||""))state.calendarMonth=params.get("calendarMonth");

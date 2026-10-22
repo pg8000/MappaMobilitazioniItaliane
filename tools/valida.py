@@ -40,6 +40,8 @@ def errori_evento(e, base, luoghi=None):
             err.append(f"fonte sconosciuta: {s}")
     if "exc" in e and not (e["exc"].get("kind") and e["exc"].get("note")):
         err.append("exc richiede kind e note")
+    if e.get("event_status", "confermato") not in {"confermato", "annullato", "rinviato", "riprogrammato"}:
+        err.append("event_status non valido")
     for k in ("title", "who", "time", "where", "area", "sector"):
         v = str(e.get(k, ""))
         if "DA COMPILARE" in v.upper() or len(v) > 300:

@@ -51,7 +51,7 @@ assert 'fonts.googleapis' not in s
 s = s.replace('<meta name="claude:viewport-fit-sides" content="cover">\n', '')
 footer = f'''  <footer class="note">Progetto aperto: codice e dati su <a href="{REPO}" target="_blank" rel="noopener">GitHub</a>.
     Hai trovato un errore o manca un evento? <a href="{REPO}/issues/new?template=correzione.yml" target="_blank" rel="noopener">Segnalalo qui</a>.
-    L’archivio MIT del 2026 è sincronizzato ogni giorno, con revoche e storico; manifestazioni ed eventi eccezionali sono verificati a mano.
+    L’archivio MIT del 2026 è sincronizzato ogni giorno, con revoche e storico; manifestazioni ed eventi eccezionali sono aggiunti dopo verifica delle fonti.
     Codice con licenza MIT, dati con licenza CC BY 4.0. Nessun cookie, nessun tracciamento.</footer>
 </div>
 
@@ -75,6 +75,6 @@ s = s[:e] + '\n</head>\n<body>' + s[e:] + '\n</body>\n</html>\n'
 from comuni import salva
 salva("archivio.json", {"anno": 2026, "aggiornato": d["aggiornato"], "copertura": d["archive"], "fonti": base["fonti"], "luoghi": d["luoghi"], "promotori": base["promotori"], "eventi": d["eventi"]})
 salva("aggiornamento.json", d["archive"])
-print(f"index.html: {len(d['eventi'])} eventi ({d['n_auto']} automatici dal MIT, {len(d['doppi'])} doppioni saltati)")
+print(f"index.html: {len(d['eventi'])} voci ({d['n_auto']} proclamazioni MIT, {d['archive']['verifiedCount']} eventi dalla raccolta verificata)")
 if d["da_verificare"]:
     print("ATTENZIONE: scioperi manuali con fonte MIT non più nel calendario (revocati?):", ", ".join(d["da_verificare"]))
