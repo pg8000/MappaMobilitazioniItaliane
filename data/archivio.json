@@ -5,14 +5,14 @@
     "year": 2026,
     "from": "2026-01-01",
     "to": "2026-12-31",
-    "syncedAt": "2026-10-22T21:48:20+00:00",
+    "syncedAt": "2026-10-22T21:58:47+00:00",
     "sourceRows": 494,
     "officialCount": 494,
     "manualCount": 15,
     "verifiedCount": 0,
     "revokedCount": 140,
     "missingCount": 0,
-    "revision": "a7697de0f0dbe88a2376"
+    "revision": "4b48bc9b52e7e2bb3524"
   },
   "fonti": {
     "mit": {
