@@ -2,12 +2,12 @@
   "year": 2026,
   "from": "2026-01-01",
   "to": "2026-12-31",
-  "syncedAt": "2026-10-22T22:16:08+00:00",
+  "syncedAt": "2026-10-22T22:18:28+00:00",
   "sourceRows": 494,
   "officialCount": 494,
   "manualCount": 15,
-  "verifiedCount": 1,
+  "verifiedCount": 2,
   "revokedCount": 140,
   "missingCount": 0,
-  "revision": "ac951628215f586c72ed"
+  "revision": "0cf21042ecb419f11f99"
 }

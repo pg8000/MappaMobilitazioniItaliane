@@ -5,14 +5,14 @@
     "year": 2026,
     "from": "2026-01-01",
     "to": "2026-12-31",
-    "syncedAt": "2026-10-22T22:16:08+00:00",
+    "syncedAt": "2026-10-22T22:18:28+00:00",
     "sourceRows": 494,
     "officialCount": 494,
     "manualCount": 15,
-    "verifiedCount": 1,
+    "verifiedCount": 2,
     "revokedCount": 140,
     "missingCount": 0,
-    "revision": "ac951628215f586c72ed"
+    "revision": "0cf21042ecb419f11f99"
   },
   "fonti": {
     "mit": {
@@ -110,6 +110,10 @@
     "ver-43de533f3f91d9542cbf": {
       "nome": "Gancio — annuncio del corteo",
       "url": "https://gancio.cisti.org/event/torino-e-contro-il-riarmo-1"
+    },
+    "ver-89a54a0f4960802b23bb": {
+      "nome": "TriestePrima — annuncio del 22/10/2026",
+      "url": "https://www.triesteprima.it/cronaca/guerra-caro-vita-usb-annuncia-sciopero-30-ottobre.html"
     }
   },
   "luoghi": {
@@ -14318,6 +14322,26 @@
       "where": "Piazza dei Cinquecento",
       "src": [
         "usbRoma"
+      ]
+    },
+    {
+      "id": "ver-5e5e36a1e1aca16efbc0",
+      "orgs": [
+        "usb"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Pace e spesa pubblica",
+      "place": "trieste",
+      "start": "2026-10-30",
+      "end": "2026-10-30",
+      "time": "concentramento alle 09:00",
+      "title": "Corteo USB contro la guerra e il caro vita",
+      "who": "USB — Unione Sindacale di Base",
+      "where": "Varco 4 del porto di Trieste",
+      "event_status": "confermato",
+      "src": [
+        "ver-89a54a0f4960802b23bb"
       ]
     },
     {
