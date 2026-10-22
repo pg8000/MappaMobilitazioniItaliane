@@ -34,3 +34,35 @@ def province():
     for nome, c in carica("province.json")["province"].items():
         out[slug(nome)] = {"name": nome, "lon": c["lon"], "lat": c["lat"]}
     return out
+
+
+# Coordinate già presenti nella tabella delle province: il punto è soltanto
+# un indicatore dell'area regionale, non il luogo fisico dello sciopero.
+REGIONI = {
+    "Abruzzo": "L'Aquila", "Basilicata": "Potenza", "Calabria": "Catanzaro",
+    "Campania": "Napoli", "Emilia-Romagna": "Bologna", "Friuli-Venezia Giulia": "Trieste",
+    "Lazio": "Roma", "Liguria": "Genova", "Lombardia": "Milano", "Marche": "Ancona",
+    "Molise": "Campobasso", "Piemonte": "Torino", "Puglia": "Bari", "Sardegna": "Cagliari",
+    "Sicilia": "Palermo", "Toscana": "Firenze", "Trentino-Alto Adige": "Trento",
+    "Umbria": "Perugia", "Valle d'Aosta": "Aosta", "Veneto": "Venezia",
+}
+
+
+def posizione_regionale(evento, luoghi, prov):
+    """Dà un indicatore alle voci regionali senza una provincia, senza mutare gli input."""
+    if evento.get("place") or evento.get("scope") != "regionale":
+        return evento
+    raw = evento.get("source_region") or evento.get("area", "")
+    key = slug(raw.removeprefix("Regione ")).replace("-", "")
+    for regione, capoluogo in REGIONI.items():
+        if key != slug(regione).replace("-", ""):
+            continue
+        cap = prov.get(slug(capoluogo))
+        if not cap:
+            return evento
+        place = "regione-" + slug(regione)
+        luoghi[place] = {**cap, "name": f"{regione} (regione)", "kind": "region",
+                         "region": regione, "anchor": capoluogo}
+        area = f"{evento.get('area') or regione}; indicatore regionale presso {capoluogo}, non luogo puntuale"
+        return dict(evento, place=place, area=area, map_precision="region")
+    return evento

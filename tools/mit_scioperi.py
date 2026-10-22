@@ -6,7 +6,7 @@ Non sovrascrive nulla se la tabella non viene riconosciuta o non contiene righe.
 """
 import hashlib, re, sys, urllib.request, urllib.parse, datetime as dt, time
 from html.parser import HTMLParser
-from comuni import carica, salva, oggi, senza_accenti, slug, province
+from comuni import carica, salva, oggi, senza_accenti, slug, province, posizione_regionale
 
 URL = "https://scioperi.mit.gov.it/mit2/public/scioperi/ricerca"
 YEAR = 2026
@@ -168,7 +168,7 @@ def converti(righe, base, prov, oggi_):
         ev["proclaimed_at"] = r.get("data proclamazione", "")
         ev["received_at"] = r.get("data ricezione", "")
         ev["verified_at"] = oggi_.isoformat()
-        eventi.append(ev)
+        eventi.append(posizione_regionale(ev, luoghi, prov))
     return eventi, luoghi, scartati
 
 

@@ -50,13 +50,15 @@ select{font:inherit;font-size:13.5px;border:1px solid var(--line);background:var
 .land{fill:var(--land);stroke:var(--land-edge);stroke-width:.8;stroke-linejoin:round}
 .marker{cursor:pointer}
 .marker .ring{fill:var(--surface);stroke-width:2.5}
+.marker.regional .ring{stroke-dasharray:4 2}
+.region-key{width:14px;height:14px;display:inline-block;border:2px dashed var(--strike);border-radius:50%;flex:none}
 .marker .exc{fill:var(--exc-fill);stroke:var(--exc);stroke-width:2}
 .marker text{font-family:var(--f-mono);font-size:11px;font-weight:600;fill:var(--ink);pointer-events:none}
 .marker text.on-exc{fill:#1b1f1d}
 .marker .lbl{font-family:var(--f-body);font-size:11.5px;font-weight:600;paint-order:stroke;stroke:var(--surface);stroke-width:3px;fill:var(--ink)}
 .marker:hover .ring,.marker.sel .ring{stroke-width:4}
 .marker:hover .exc,.marker.sel .exc{stroke-width:3.5}
-.marker.past{opacity:.6}
+.marker.past{opacity:.8}
 .marker:focus{outline:none}.marker:focus-visible .ring,.marker:focus-visible .exc{stroke:var(--focus)!important;stroke-width:4}
 .legend{position:absolute;left:16px;bottom:14px;font-size:12.5px;display:flex;flex-direction:column;gap:3px;background:var(--surface);padding:6px 8px;border:1px solid var(--line);border-radius:4px}
 .legend span{display:flex;align-items:center;gap:6px}
@@ -188,7 +190,8 @@ input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
     <div class="mapbox">
       <svg id="map" viewBox="0 0 560 640" role="group" aria-label="Mappa dell'Italia: ogni punto apre gli eventi di quel luogo"></svg>
       <div class="legend">
-        <span><i class="dot s"></i>Sciopero locale o regionale</span>
+        <span><i class="dot s"></i>Sciopero in un luogo</span>
+        <span><i class="region-key"></i>Area regionale (punto indicativo)</span>
         <span><i class="dot m"></i>Manifestazione</span>
         <span><i class="dia"></i>Evento eccezionale</span>
         <span style="color:var(--muted)">Numero = eventi nel luogo · sbiadito = concluso</span>
@@ -367,7 +370,8 @@ function renderCount(){
   const s=n(e=>e.type==="sciopero"),m=n(e=>e.type==="manifestazione"&&!e.exc),x=n(e=>!!e.exc);
   const parts=[`<b>${s}</b> ${s===1?"sciopero":"scioperi"}`,`<b>${m}</b> ${m===1?"manifestazione":"manifestazioni"}`,`<b>${x}</b> ${x===1?"evento eccezionale":"eventi eccezionali"}`];
   const who=state.org==="all"?"":` per ${state.org.startsWith("fam:")?state.org.slice(4):ORGS[state.org.slice(4)][0]}`;
-  document.getElementById("count").innerHTML=`In vista${esc(who)}: ${parts.join(" · ")}`;
+  const mapped=n(e=>!!e.place),unmapped=evs.length-mapped;
+  document.getElementById("count").innerHTML=`In vista${esc(who)}: ${parts.join(" · ")}<br>${mapped} eventi in mappa${unmapped?` · ${unmapped} senza punto unico, disponibili nell’elenco`:""}`;
 }
 
 // ---------- Mappa ----------
@@ -395,15 +399,17 @@ function drawMarkers(){
   for(const k of keys){
     const [pk,cat]=k.split(":"), evs=g[k], pl=PLACES[pk];
     let [x,y]=px(pl.lon,pl.lat);
+    const regional=pl.kind==="region";
+    if(regional&&keys.some(other=>{const p=PLACES[other.split(":")[0]];return p.kind!=="region"&&Math.hypot(...px(p.lon,p.lat).map((n,i)=>n-[x,y][i]))<24})){x+=20;y+=16}
     const hasO=!!g[pk+":o"], hasX=!!g[pk+":x"];
     if(cat==="x"&&hasO){const o=pl.excOff||[13,-13];x+=o[0];y+=o[1]}
     const allPast=evs.every(e=>statusOf(e)==="concluso");
     const node=document.createElementNS(NS,"g");
-    node.setAttribute("class","marker"+(state.selected===k?" sel":"")+(allPast?" past":""));
+    node.setAttribute("class","marker"+(regional?" regional":"")+(state.selected===k?" sel":"")+(allPast?" past":""));
     node.setAttribute("tabindex","0");node.setAttribute("role","button");node.dataset.key=k;
     node.setAttribute("aria-pressed",String(state.selected===k));
     node.setAttribute("aria-label",`${pl.name}: ${evs.length} ${cat==="x"?(evs.length>1?"eventi eccezionali":"evento eccezionale"):(evs.length>1?"eventi":"evento")}`);
-    let inner="";
+    let inner=regional?`<title>${esc(pl.region)}: indicatore regionale presso ${esc(pl.anchor)}, non luogo puntuale</title>`:"";
     if(cat==="x"){
       const r=evs.length>1?12:10;
       inner+=`<path class="exc" d="M${x} ${y-r}L${x+r} ${y}L${x} ${y+r}L${x-r} ${y}Z"/>`;
@@ -411,7 +417,7 @@ function drawMarkers(){
     }else{
       const ns=evs.filter(e=>e.type==="sciopero").length, nm=evs.length-ns;
       const color=nm&&!ns?"var(--demo)":"var(--strike)";
-      const r=evs.length>1?11:8;
+      const r=regional?13:evs.length>1?11:8;
       inner+=`<circle class="ring" cx="${x}" cy="${y}" r="${r}" stroke="${color}"/>`;
       if(ns&&nm)inner+=`<path d="M${x} ${y-r}A${r} ${r} 0 0 1 ${x} ${y+r}" fill="none" stroke="var(--demo)" stroke-width="${state.selected===k?4:2.5}"/>`;
       inner+=evs.length>1?`<text x="${x}" y="${y+3.8}" text-anchor="middle">${evs.length}</text>`:`<circle cx="${x}" cy="${y}" r="3" fill="${color}"/>`;
@@ -419,7 +425,7 @@ function drawMarkers(){
     // etichetta: una sola per luogo, sul marker ordinario se c'è
     if(cat==="o"||!hasO){
       const right=pl.side?pl.side!=="l":(pl.lon<14.5||pk==="napoli");
-      const off=(cat==="x"?14:13);
+      const off=regional?18:(cat==="x"?14:13);
       inner+=`<text class="lbl" x="${right?x+off:x-off}" y="${y+4+(pl.dy||0)}" text-anchor="${right?"start":"end"}">${esc(pl.name)}</text>`;
     }
     node.innerHTML=inner;

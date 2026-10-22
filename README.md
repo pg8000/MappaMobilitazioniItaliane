@@ -17,6 +17,8 @@ Le righe MIT sono **proclamazioni distinte**, anche quando più dichiarazioni ri
 
 ## Dati e fonti
 
+Gli eventi regionali senza provincia sono visibili con un **cerchio tratteggiato** presso il capoluogo: etichetta e scheda specificano che è un indicatore regionale, non un luogo puntuale. Gli eventi nazionali e le aree non riconoscibili rimangono nell’elenco senza una città inventata. Il riepilogo distingue eventi in mappa e senza punto unico.
+
 | File | Contenuto |
 | --- | --- |
 | `data/eventi.json` | Iniziative curate e vecchie schede MIT conservate come riferimento |

@@ -2,7 +2,7 @@
 import datetime as dt
 import unittest
 from unittest.mock import patch
-from comuni import carica, province
+from comuni import carica, province, posizione_regionale, REGIONI
 from mit_scioperi import leggi_righe, converti
 from build_data import unisci
 
@@ -57,6 +57,29 @@ class ArchiveTests(unittest.TestCase):
         es, _, _ = converti([self.row(inizio="04/12/2026", fine="04/12/2026"), self.row(inizio="15/01/2027", fine="15/01/2027")], self.base, self.prov, dt.date(2026, 10, 22))
         self.assertEqual(len(es), 1)
         self.assertEqual(es[0]["start"], "2026-12-04")
+
+    def test_regional_strikes_without_province_have_markers(self):
+        for region in REGIONI:
+            with self.subTest(region=region):
+                es, places, _ = converti([self.row(regione=region, provincia="Tutte", rilevanza="Regionale")], self.base, self.prov, dt.date(2026, 10, 22))
+                self.assertEqual(places[es[0]["place"]]["kind"], "region")
+                self.assertEqual(places[es[0]["place"]]["region"], region)
+                self.assertIn("non luogo puntuale", es[0]["area"])
+
+    def test_local_marker_and_national_scope_are_preserved(self):
+        es, places, _ = converti([self.row(), self.row(rilevanza="Nazionale", regione="Italia", provincia="Tutte")], self.base, self.prov, dt.date(2026, 10, 22))
+        self.assertEqual(es[0]["place"], "bologna")
+        self.assertNotIn("place", es[1])
+        self.assertNotIn("kind", places[es[0]["place"]])
+
+    def test_regional_fallback_is_idempotent_and_not_guessed(self):
+        places = {}
+        original = {"scope": "regionale", "source_region": "Sicilia", "area": "Sicilia"}
+        result = posizione_regionale(original, places, self.prov)
+        self.assertNotIn("place", original)
+        self.assertEqual(posizione_regionale(result, places, self.prov), result)
+        unknown = {"scope": "regionale", "source_region": "Sicilia e Calabria"}
+        self.assertEqual(posizione_regionale(unknown, places, self.prov), unknown)
 
     def test_official_rows_replace_old_summaries_only_when_available(self):
         mit_event = self.row()

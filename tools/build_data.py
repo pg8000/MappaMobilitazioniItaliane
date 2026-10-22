@@ -1,5 +1,5 @@
 """Archivio unico: proclamazioni MIT autorevoli e iniziative curate a mano."""
-from comuni import carica, DATA
+from comuni import carica, DATA, province, posizione_regionale
 
 
 def unisci():
@@ -11,11 +11,13 @@ def unisci():
     # nessuna deduplicazione basata solo su data/luogo/sigla (perderebbe scioperi).
     manuali = [e for e in base["eventi"] if not (
         official and e["type"] == "sciopero" and "mit" in e.get("src", []))]
-    eventi = sorted(manuali + official, key=lambda e: (e["start"], e["id"]))
+    luoghi = {**mit.get("luoghi", {}), **base["luoghi"]}
+    prov = province()
+    eventi = sorted((posizione_regionale(e, luoghi, prov) for e in manuali + official), key=lambda e: (e["start"], e["id"]))
     if len({e["id"] for e in eventi}) != len(eventi):
         raise ValueError("ID duplicati nell'archivio unito")
     return {
-        "base": base, "luoghi": {**mit.get("luoghi", {}), **base["luoghi"]},
+        "base": base, "luoghi": luoghi,
         "eventi": eventi, "aggiornato": max(base["snapshot"], mit.get("aggiornato", "")),
         "n_auto": len(official), "doppi": [], "da_verificare": [],
         "archive": {

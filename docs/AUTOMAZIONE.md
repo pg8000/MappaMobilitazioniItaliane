@@ -13,6 +13,8 @@
 
 ## Stati e conteggi
 
+Le voci regionali con provincia «Tutte» ricevono un indicatore presso il capoluogo, usando le coordinate già presenti in `province.json`. `kind: region` distingue questi punti dalle città; `map_precision: region` e la nota in scheda ne dichiarano l’approssimazione. La stessa trasformazione viene applicata in costruzione ai dati archiviati e alle iniziative manuali senza punto. Un luogo già assegnato viene conservato. Regioni sconosciute o multiple non vengono interpretate arbitrariamente.
+
 `official_status` distingue `in programma`, `effettuato`, `revocato`. La dicitura MIT «revocato» include sospensione e differimento: non si può inferire quale dei tre sia avvenuto senza un approfondimento. `not_in_latest` significa soltanto assenza nell’ultima risposta.
 
 La vista iniziale esclude revoche e voci da riverificare. Il grafico conta voci dell’archivio, una volta ciascuna al primo giorno compreso nel filtro. Nel calendario, invece, uno sciopero di più giorni compare in ogni giorno in cui è attivo. Le due misure sono spiegate nella pagina.
