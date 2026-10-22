@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      MSG_FILE: ${{ runner.temp }}/msg.txt
+      MSG_FILE: /tmp/approva-msg.txt
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
