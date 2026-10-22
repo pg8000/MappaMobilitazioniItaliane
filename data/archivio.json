@@ -5,13 +5,13 @@
     "year": 2026,
     "from": "2026-01-01",
     "to": "2026-12-31",
-    "syncedAt": "2026-10-22T20:29:16+00:00",
+    "syncedAt": "2026-10-22T20:54:17+00:00",
     "sourceRows": 494,
     "officialCount": 494,
     "manualCount": 15,
     "revokedCount": 140,
     "missingCount": 0,
-    "revision": "0c16e9fe2b0106dbc534"
+    "revision": "01c99be68e98eca5ddeb"
   },
   "fonti": {
     "mit": {
@@ -333,6 +333,142 @@
       "lon": 12.04,
       "lat": 44.22
     },
+    "regione-emilia-romagna": {
+      "name": "Emilia-Romagna (regione)",
+      "lon": 11.34,
+      "lat": 44.49,
+      "kind": "region",
+      "region": "Emilia-Romagna",
+      "anchor": "Bologna"
+    },
+    "regione-abruzzo": {
+      "name": "Abruzzo (regione)",
+      "lon": 13.4,
+      "lat": 42.35,
+      "kind": "region",
+      "region": "Abruzzo",
+      "anchor": "L'Aquila"
+    },
+    "regione-lombardia": {
+      "name": "Lombardia (regione)",
+      "lon": 9.19,
+      "lat": 45.46,
+      "kind": "region",
+      "region": "Lombardia",
+      "anchor": "Milano"
+    },
+    "regione-umbria": {
+      "name": "Umbria (regione)",
+      "lon": 12.39,
+      "lat": 43.11,
+      "kind": "region",
+      "region": "Umbria",
+      "anchor": "Perugia"
+    },
+    "regione-molise": {
+      "name": "Molise (regione)",
+      "lon": 14.66,
+      "lat": 41.56,
+      "kind": "region",
+      "region": "Molise",
+      "anchor": "Campobasso"
+    },
+    "regione-lazio": {
+      "name": "Lazio (regione)",
+      "lon": 12.5,
+      "lat": 41.9,
+      "kind": "region",
+      "region": "Lazio",
+      "anchor": "Roma"
+    },
+    "regione-campania": {
+      "name": "Campania (regione)",
+      "lon": 14.25,
+      "lat": 40.85,
+      "kind": "region",
+      "region": "Campania",
+      "anchor": "Napoli"
+    },
+    "regione-sicilia": {
+      "name": "Sicilia (regione)",
+      "lon": 13.36,
+      "lat": 38.12,
+      "kind": "region",
+      "region": "Sicilia",
+      "anchor": "Palermo"
+    },
+    "regione-calabria": {
+      "name": "Calabria (regione)",
+      "lon": 16.59,
+      "lat": 38.91,
+      "kind": "region",
+      "region": "Calabria",
+      "anchor": "Catanzaro"
+    },
+    "regione-toscana": {
+      "name": "Toscana (regione)",
+      "lon": 11.25,
+      "lat": 43.77,
+      "kind": "region",
+      "region": "Toscana",
+      "anchor": "Firenze"
+    },
+    "regione-veneto": {
+      "name": "Veneto (regione)",
+      "lon": 12.34,
+      "lat": 45.44,
+      "kind": "region",
+      "region": "Veneto",
+      "anchor": "Venezia"
+    },
+    "regione-sardegna": {
+      "name": "Sardegna (regione)",
+      "lon": 9.11,
+      "lat": 39.22,
+      "kind": "region",
+      "region": "Sardegna",
+      "anchor": "Cagliari"
+    },
+    "regione-liguria": {
+      "name": "Liguria (regione)",
+      "lon": 8.93,
+      "lat": 44.41,
+      "kind": "region",
+      "region": "Liguria",
+      "anchor": "Genova"
+    },
+    "regione-piemonte": {
+      "name": "Piemonte (regione)",
+      "lon": 7.68,
+      "lat": 45.07,
+      "kind": "region",
+      "region": "Piemonte",
+      "anchor": "Torino"
+    },
+    "regione-puglia": {
+      "name": "Puglia (regione)",
+      "lon": 16.87,
+      "lat": 41.12,
+      "kind": "region",
+      "region": "Puglia",
+      "anchor": "Bari"
+    },
+    "regione-marche": {
+      "name": "Marche (regione)",
+      "lon": 13.52,
+      "lat": 43.62,
+      "kind": "region",
+      "region": "Marche",
+      "anchor": "Ancona"
+    },
+    "regione-trentino-alto-adige": {
+      "name": "Trentino-Alto Adige (regione)",
+      "lon": 11.12,
+      "lat": 46.07,
+      "kind": "region",
+      "region": "Trentino-Alto Adige",
+      "anchor": "Trento"
+    },
     "malpensa": {
       "name": "Malpensa",
       "lon": 8.72,
@@ -506,7 +642,7 @@
       "time": "8 ore: dalle 09.01 alle 17.00",
       "title": "Personale Imprese Ferroviarie, Servizi Ferroviari e Gestore Infrastruttura Ferroviaria Regione Emilia Romagna",
       "who": "Filt-Cgil, Fit-Cisl, Uiltrasporti, Orsa Ferrovie, Fast-Confsal, UGL (categorie trasporti)",
-      "area": "Emilia-Romagna",
+      "area": "Emilia-Romagna; indicatore regionale presso Bologna, non luogo puntuale",
       "note": "ART. 2 CO. 7 L. 146/90 E S.M.I.",
       "src": [
         "mit"
@@ -518,7 +654,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/01/2026",
       "received_at": "06/01/2026 12:02",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-emilia-romagna",
+      "map_precision": "region"
     },
     {
       "id": "mit-4c62653754cb6fb7",
@@ -533,7 +671,7 @@
       "time": "8 ore: dalle 09.01 alle 17.00",
       "title": "Personale Socc. Trenitalia Tper, Trenitalia, Rfi, Fer e Fs Security Regione Emilia Romagna",
       "who": "Faisa-Cisal",
-      "area": "Emilia-Romagna",
+      "area": "Emilia-Romagna; indicatore regionale presso Bologna, non luogo puntuale",
       "note": "ART. 2 CO. 7 L. 146/90 E S.M.I.",
       "src": [
         "mit"
@@ -545,7 +683,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/01/2026",
       "received_at": "06/01/2026 13:44",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-emilia-romagna",
+      "map_precision": "region"
     },
     {
       "id": "mit-d0b6de6a54049816",
@@ -560,7 +700,7 @@
       "time": "8 ore: dalle 09.01 alle 17.00",
       "title": "Personale Socc. Trenitalia Tper, Mercitalia Rail, Trenitalia, Ntv-nuovo Trasporto Viaggiatori, Gruppo Fsi Regione Emilia Romagna",
       "who": "OSR CAT",
-      "area": "Emilia-Romagna",
+      "area": "Emilia-Romagna; indicatore regionale presso Bologna, non luogo puntuale",
       "note": "ART. 2 CO. 7 L. 146/90 E S.M.I.",
       "src": [
         "mit"
@@ -572,7 +712,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/01/2026",
       "received_at": "07/01/2026 11:18",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-emilia-romagna",
+      "map_precision": "region"
     },
     {
       "id": "mit-0d0faf7cdfe9ac7e",
@@ -651,7 +793,7 @@
       "time": "4 ore: dalle 9.00 alle 13.00",
       "title": "Personale Soc. Tua Regione Abruzzo",
       "who": "Orsa Ferrovie",
-      "area": "Abruzzo",
+      "area": "Abruzzo; indicatore regionale presso L'Aquila, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -662,7 +804,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/12/2025",
       "received_at": "15/12/2025 22:22",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-abruzzo",
+      "map_precision": "region"
     },
     {
       "id": "mit-6a9ac5a7f569fd75",
@@ -710,7 +854,7 @@
       "time": "4 ore varie modalita'",
       "title": "Personale Aziende Trasporto Pubblico Locale Regione Abruzzo",
       "who": "Filt-Cgil, Fit-Cisl, Uiltrasporti, Faisa-Cisal",
-      "area": "Abruzzo",
+      "area": "Abruzzo; indicatore regionale presso L'Aquila, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -721,7 +865,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "28/12/2025",
       "received_at": "29/12/2025 08:17",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-abruzzo",
+      "map_precision": "region"
     },
     {
       "id": "mit-80476a604d453a76",
@@ -1180,7 +1326,7 @@
       "time": "23 ore: dalle 03.00 del 12/1 alle 02.00 del 13/1",
       "title": "Personale Soc. Trenord",
       "who": "Orsa Ferrovie",
-      "area": "Lombardia",
+      "area": "Lombardia; indicatore regionale presso Milano, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -1191,7 +1337,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "21/11/2025",
       "received_at": "21/11/2025 15:04",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-lombardia",
+      "map_precision": "region"
     },
     {
       "id": "mit-96293f5d5744258c",
@@ -1264,7 +1412,7 @@
       "time": "24 ore: varie modalita'",
       "title": "Personale Soc. Busitalia Sita Nord Regione Umbria",
       "who": "USB",
-      "area": "Umbria",
+      "area": "Umbria; indicatore regionale presso Perugia, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -1275,7 +1423,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "05/12/2025",
       "received_at": "05/12/2025 12:41",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-umbria",
+      "map_precision": "region"
     },
     {
       "id": "mit-87b6ee0d2a17e445",
@@ -1294,7 +1444,7 @@
       "time": "24 ore",
       "title": "Personale Soc. Dinazzano Po",
       "who": "Filt-Cgil, Fit-Cisl, Uiltrasporti, Faisa-Cisal, UGL (categorie trasporti)",
-      "area": "Emilia-Romagna",
+      "area": "Emilia-Romagna; indicatore regionale presso Bologna, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -1305,7 +1455,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "11/11/2025",
       "received_at": "11/11/2025 15:53",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-emilia-romagna",
+      "map_precision": "region"
     },
     {
       "id": "mit-f79729adb1cd5ab1",
@@ -1402,7 +1554,7 @@
       "time": "5 ore: dalle 18.00 alle 23.00",
       "title": "Personale Dipendente Aziende Tpl Extraurbano Regione Molise",
       "who": "Filt-Cgil, Fit-Cisl, Faisa-Cisal",
-      "area": "Molise",
+      "area": "Molise; indicatore regionale presso Campobasso, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -1413,7 +1565,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "13/12/2025",
       "received_at": "15/12/2025 09:52",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-molise",
+      "map_precision": "region"
     },
     {
       "id": "mit-48f23ef0b74b98b4",
@@ -2128,7 +2282,7 @@
       "time": "24 ore",
       "title": "Personale Appalti Ferroviari della Soc. Coopservice Scdp C/o Soc. Trenitalia Regione Lazio",
       "who": "Uiltrasporti, Orsa Ferrovie, Fast-Confsal, UGL (categorie trasporti)",
-      "area": "Lazio",
+      "area": "Lazio; indicatore regionale presso Roma, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -2139,7 +2293,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "08/01/2026",
       "received_at": "19/01/2026 11:17",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-lazio",
+      "map_precision": "region"
     },
     {
       "id": "mit-fddc47538d930e0c",
@@ -2154,7 +2310,7 @@
       "time": "23 ore: dalle 03.00 del 2/2 alle 02.00 del 3/2",
       "title": "Personale Soc. Trenord",
       "who": "Orsa Ferrovie",
-      "area": "Lombardia",
+      "area": "Lombardia; indicatore regionale presso Milano, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -2165,7 +2321,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/01/2026",
       "received_at": "15/01/2026 20:25",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-lombardia",
+      "map_precision": "region"
     },
     {
       "id": "mit-35c6116d7d3bc19b",
@@ -2266,7 +2424,7 @@
       "time": "4 ore: dalle 09.00 alle 13.00",
       "title": "Personale Soc. Tua Regione Abruzzo",
       "who": "Filt-Cgil, Fit-Cisl, Uiltrasporti, Faisa-Cisal",
-      "area": "Abruzzo",
+      "area": "Abruzzo; indicatore regionale presso L'Aquila, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -2277,7 +2435,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "27/01/2026",
       "received_at": "25/02/2026 18:01",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-abruzzo",
+      "map_precision": "region"
     },
     {
       "id": "mit-87af2491170a99c1",
@@ -2319,7 +2479,7 @@
       "time": "24 ore",
       "title": "Personale Soc. Tua Regione Abruzzo",
       "who": "Orsa Ferrovie",
-      "area": "Abruzzo",
+      "area": "Abruzzo; indicatore regionale presso L'Aquila, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -2330,7 +2490,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/01/2026",
       "received_at": "25/01/2026 23:26",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-abruzzo",
+      "map_precision": "region"
     },
     {
       "id": "mit-c67971059b87f160",
@@ -3406,7 +3568,7 @@
       "time": "4 ore: dalle 8.30 alle 12.30",
       "title": "Personale Aziende Tpl Su Gomma della Regione Campania",
       "who": "Filt-Cgil, Fit-Cisl, Uiltrasporti, Faisa-Cisal, UGL (categorie trasporti)",
-      "area": "Campania",
+      "area": "Campania; indicatore regionale presso Napoli, non luogo puntuale",
       "note": "ART.2 C.7 L.146/90",
       "src": [
         "mit"
@@ -3418,7 +3580,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "05/03/2026",
       "received_at": "05/03/2026 14:42",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-campania",
+      "map_precision": "region"
     },
     {
       "id": "mit-fc5a06f1e47c2d5f",
@@ -3878,7 +4042,7 @@
       "time": "24 ore",
       "title": "Personale Soc. Tua Regione Abruzzo",
       "who": "Orsa Ferrovie",
-      "area": "Abruzzo",
+      "area": "Abruzzo; indicatore regionale presso L'Aquila, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -3889,7 +4053,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "23/02/2026",
       "received_at": "23/02/2026 09:27",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-abruzzo",
+      "map_precision": "region"
     },
     {
       "id": "mit-0c2297cb8ead9e34",
@@ -5057,7 +5223,7 @@
       "time": "120 ore: dalle 00.01 del 14/4 alle 24.00 del 18/4",
       "title": "Fermo Servizi Autotrasporto C/terzi Regione Sicilia",
       "who": "COMITATO TRASPORTO SICILIANO",
-      "area": "Sicilia",
+      "area": "Sicilia; indicatore regionale presso Palermo, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -5068,7 +5234,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "20/03/2026",
       "received_at": "25/03/2026 19:14",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-sicilia",
+      "map_precision": "region"
     },
     {
       "id": "mit-d894263c4eb0f6f6",
@@ -5367,7 +5535,7 @@
       "time": "8 ore: dalle 10.00 alle 17.59",
       "title": "Personale Soc. Rfi Sala Circolazione e Orario di Reggio Calabria e Unita' Circolazione Calabria - Dir. Circolazione e Orario Coa Rc",
       "who": "Filt-Cgil, Fit-Cisl, Uiltrasporti",
-      "area": "Calabria",
+      "area": "Calabria; indicatore regionale presso Catanzaro, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -5378,7 +5546,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "12/04/2026",
       "received_at": "12/04/2026 00:00",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-calabria",
+      "map_precision": "region"
     },
     {
       "id": "mit-3bb15c54699ecc56",
@@ -6232,7 +6402,7 @@
       "time": "Seconda meta' del turno",
       "title": "Personale Appalti Ferroviari della Soc. Euro&promos Lotto 2 Regione Toscana",
       "who": "Filt-Cgil, Fit-Cisl, Uiltrasporti, Orsa Ferrovie, Fast-Confsal, UGL (categorie trasporti)",
-      "area": "Toscana",
+      "area": "Toscana; indicatore regionale presso Firenze, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -6243,7 +6413,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/04/2026",
       "received_at": "24/04/2026 15:02",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-toscana",
+      "map_precision": "region"
     },
     {
       "id": "mit-5b9c4d8555518131",
@@ -6310,7 +6482,7 @@
       "time": "24 ore: varie modalita'",
       "title": "Personale Soc. Busitalia Sita Nord Unita' Produttive Veneto, Umbria e Campania",
       "who": "ADL-Cobas, USB",
-      "area": "Veneto",
+      "area": "Veneto; indicatore regionale presso Venezia, non luogo puntuale",
       "note": "UNITA' PRODUTTIVE VENETO, UMBRIA E CAMPANIA",
       "src": [
         "mit"
@@ -6322,7 +6494,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "27/04/2026",
       "received_at": "27/04/2026 10:20",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-veneto",
+      "map_precision": "region"
     },
     {
       "id": "mit-c7e9980202319cab",
@@ -6670,7 +6844,7 @@
       "time": "Prima meta' del turno per ogni turno di lavoro",
       "title": "Personale Soc. Copernico Appalto Ferroviario Lotto Centostazioni Emilia Romagna",
       "who": "Filt-Cgil, Fit-Cisl, Uiltrasporti, Orsa Ferrovie",
-      "area": "Emilia-Romagna",
+      "area": "Emilia-Romagna; indicatore regionale presso Bologna, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -6681,7 +6855,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/05/2026",
       "received_at": "06/05/2026 18:01",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-emilia-romagna",
+      "map_precision": "region"
     },
     {
       "id": "mit-04396757fec27691",
@@ -6753,7 +6929,7 @@
       "time": "4 ore: dalle 11.45 alle 15.45",
       "title": "Personale Soc. Ferrovie della Calabria",
       "who": "Faisa-Cisal",
-      "area": "Calabria",
+      "area": "Calabria; indicatore regionale presso Catanzaro, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -6764,7 +6940,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "18/05/2026",
       "received_at": "19/05/2026 11:28",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-calabria",
+      "map_precision": "region"
     },
     {
       "id": "mit-528ae97e68314ad4",
@@ -6859,7 +7037,7 @@
       "time": "8 ore: dalle 9.01 alle 17.00",
       "title": "Personale Equipaggi Soc. Trenitalia Dor Sardegna",
       "who": "Orsa Ferrovie, Fast-Confsal",
-      "area": "Sardegna",
+      "area": "Sardegna; indicatore regionale presso Cagliari, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -6870,7 +7048,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "18/05/2026",
       "received_at": "18/05/2026 20:59",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-sardegna",
+      "map_precision": "region"
     },
     {
       "id": "mit-194d66af3ca0c2cb",
@@ -7398,7 +7578,7 @@
       "time": "8 ore: dalle 10.01 alle 18.00",
       "title": "Personale Soc. Fs Security Regione Sicilia",
       "who": "Orsa Ferrovie, Fast-Confsal",
-      "area": "Sicilia",
+      "area": "Sicilia; indicatore regionale presso Palermo, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -7409,7 +7589,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "05/05/2026",
       "received_at": "05/05/2026 14:23",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-sicilia",
+      "map_precision": "region"
     },
     {
       "id": "mit-c3c35743cee3a275",
@@ -7810,7 +7992,7 @@
       "time": "4 ore: dalle 11.50 alle 15.50",
       "title": "Personale Soc. Ferrovie della Calabria",
       "who": "Faisa-Cisal",
-      "area": "Calabria",
+      "area": "Calabria; indicatore regionale presso Catanzaro, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -7821,7 +8003,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "01/06/2026",
       "received_at": "01/06/2026 14:03",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-calabria",
+      "map_precision": "region"
     },
     {
       "id": "mit-a7476a0dc299db45",
@@ -7868,7 +8052,7 @@
       "time": "72 ore: dalle 00.01 del 18/6 alle 24.00 del 20/6",
       "title": "Fermo Servizio Trasporto Merci C/terzi Territorio di Genova Citta' Metropolitana, Piattaforme Logistiche e Bacini Portuali di Genova e Savov",
       "who": "OSR ALIAI/CNA-FITA/CONFARTIGIANATO TRASPORTI/FAI/FIAP/LEGA COOPERATIVE/TRASPORTOUNITO",
-      "area": "Liguria",
+      "area": "Liguria; indicatore regionale presso Genova, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -7879,7 +8063,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "26/05/2026",
       "received_at": "27/05/2026 12:23",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-liguria",
+      "map_precision": "region"
     },
     {
       "id": "mit-5f4e6461defe3383",
@@ -7921,7 +8107,7 @@
       "time": "4 ore: dalle 11.50 alle 15.50",
       "title": "Personale Soc. Ferrovie della Calabria",
       "who": "Faisa-Cisal",
-      "area": "Calabria",
+      "area": "Calabria; indicatore regionale presso Catanzaro, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -7932,7 +8118,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/06/2026",
       "received_at": "06/06/2026 12:44",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-calabria",
+      "map_precision": "region"
     },
     {
       "id": "mit-d6966ac46487e666",
@@ -8030,7 +8218,7 @@
       "time": "8 ore: dalle 9.01 alle 17.00",
       "title": "Personale Equipaggi Soc. Trenitalia Dor Sardegna",
       "who": "Orsa Ferrovie, Fast-Confsal",
-      "area": "Sardegna",
+      "area": "Sardegna; indicatore regionale presso Cagliari, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -8041,7 +8229,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "26/05/2026",
       "received_at": "26/05/2026 19:46",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-sardegna",
+      "map_precision": "region"
     },
     {
       "id": "mit-4996c8e1d45fe0dd",
@@ -8083,7 +8273,7 @@
       "time": "4 ore: dalle 12.00 alle 16.00",
       "title": "Personale Soc. Sacal Gh Aeroporto di Lamezia Terme (cz)",
       "who": "UGL (categorie trasporti)",
-      "area": "Calabria",
+      "area": "Calabria; indicatore regionale presso Catanzaro, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -8094,7 +8284,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/06/2026",
       "received_at": "06/06/2026 18:53",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-calabria",
+      "map_precision": "region"
     },
     {
       "id": "mit-f76f84fd5307b75b",
@@ -8249,7 +8441,7 @@
       "time": "8 ore: dalle 09.00 alle 16.59",
       "title": "Personale Soc. Trenitalia Direzione Customer Operations Csvd Regionale Piemonte",
       "who": "Orsa Ferrovie",
-      "area": "Piemonte",
+      "area": "Piemonte; indicatore regionale presso Torino, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -8260,7 +8452,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "18/05/2026",
       "received_at": "18/05/2026 12:27",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-piemonte",
+      "map_precision": "region"
     },
     {
       "id": "mit-e5745d9ec731f198",
@@ -8413,7 +8607,7 @@
       "time": "Ultime 2 ore di ogni turno",
       "title": "Personale delle Aziende del Settore Trasporto Merci, Logistica e Spedizioni Regione Piemonte",
       "who": "Filt-Cgil",
-      "area": "Piemonte",
+      "area": "Piemonte; indicatore regionale presso Torino, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -8424,7 +8618,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "29/06/2026",
       "received_at": "29/06/2026 11:47",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-piemonte",
+      "map_precision": "region"
     },
     {
       "id": "mit-39e8a0b9151d2699",
@@ -8439,7 +8635,7 @@
       "time": "Intera giornata",
       "title": "Sciopero Generale Categorie Pubbliche e Private Regione Puglia",
       "who": "USB",
-      "area": "Puglia",
+      "area": "Puglia; indicatore regionale presso Bari, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -8450,7 +8646,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "08/06/2026",
       "received_at": "08/06/2026 19:02",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-puglia",
+      "map_precision": "region"
     },
     {
       "id": "mit-bb033ed463322914",
@@ -8468,7 +8666,7 @@
       "time": "8 ore: dalle 3.31 alle 11.29",
       "title": "Personale Soc. Db Cargo Italia Regione Lombardia",
       "who": "Filt-Cgil, Fit-Cisl, Uiltrasporti, Orsa Ferrovie",
-      "area": "Lombardia",
+      "area": "Lombardia; indicatore regionale presso Milano, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -8479,7 +8677,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "18/06/2026",
       "received_at": "18/06/2026 17:14",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-lombardia",
+      "map_precision": "region"
     },
     {
       "id": "mit-8c6d848a43824cf9",
@@ -8993,7 +9193,7 @@
       "time": "8 ore: dalle 9.00 alle 17.00",
       "title": "Personale Soc. Rfi Doit Palermo",
       "who": "Uiltrasporti",
-      "area": "Sicilia",
+      "area": "Sicilia; indicatore regionale presso Palermo, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -9004,7 +9204,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "18/05/2026",
       "received_at": "18/05/2026 17:40",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-sicilia",
+      "map_precision": "region"
     },
     {
       "id": "mit-309b0eaee8c05420",
@@ -9075,7 +9277,7 @@
       "time": "Intera giornata - tpl: intero turno di servizio",
       "title": "Sciopero Generale Categorie Pubbliche e Private Regione Puglia",
       "who": "USB",
-      "area": "Puglia",
+      "area": "Puglia; indicatore regionale presso Bari, non luogo puntuale",
       "note": "ESCLUSI SETTORI TRASPORTO AEREO E APPALTI FERROVIARI",
       "src": [
         "mit"
@@ -9087,7 +9289,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "17/06/2026",
       "received_at": "17/06/2026 03:15",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-puglia",
+      "map_precision": "region"
     },
     {
       "id": "mit-9837f7cdb8cbe55b",
@@ -9375,7 +9579,7 @@
       "time": "24 ore: dalle 06.30 del 17/7 alle 06.30 del 18/7",
       "title": "Personale Soc. Caronte & Tourist Isole Minori",
       "who": "UGL (categorie trasporti)",
-      "area": "Sicilia",
+      "area": "Sicilia; indicatore regionale presso Palermo, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -9386,7 +9590,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "30/06/2026",
       "received_at": "30/06/2026 11:38",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-sicilia",
+      "map_precision": "region"
     },
     {
       "id": "mit-28212de36f683abd",
@@ -9460,7 +9666,7 @@
       "time": "24 ore: dalle 00.00 alle 24.00",
       "title": "Personale Soc. Sacal Gh Aeroporto di Lamezia Terme (cz)",
       "who": "UGL (categorie trasporti)",
-      "area": "Calabria",
+      "area": "Calabria; indicatore regionale presso Catanzaro, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -9471,7 +9677,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "29/06/2026",
       "received_at": "29/06/2026 11:54",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-calabria",
+      "map_precision": "region"
     },
     {
       "id": "mit-6265baed7bcb7144",
@@ -9702,7 +9910,7 @@
       "time": "24 ore: dalle 00.00 alle 24.00",
       "title": "Personale Soc. Sacal Gh Aeroporto di Lamezia Terme (cz)",
       "who": "UGL (categorie trasporti)",
-      "area": "Calabria",
+      "area": "Calabria; indicatore regionale presso Catanzaro, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -9713,7 +9921,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "30/06/2026",
       "received_at": "30/06/2026 18:08",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-calabria",
+      "map_precision": "region"
     },
     {
       "id": "mit-53a7586ac8fc5835",
@@ -9806,7 +10016,7 @@
       "time": "4 ore: dalle 13.00 alle 17.00",
       "title": "Personale Soc. Sogeaal Aeroporto di Alghero (ss)",
       "who": "UGL (categorie trasporti)",
-      "area": "Sardegna",
+      "area": "Sardegna; indicatore regionale presso Cagliari, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -9817,7 +10027,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "10/07/2026",
       "received_at": "10/07/2026 12:39",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-sardegna",
+      "map_precision": "region"
     },
     {
       "id": "mit-ee87b234f054df1c",
@@ -9992,7 +10204,7 @@
       "time": "24 ore: dalle 00.01 alle 23.59",
       "title": "Personale Soc. Db Cargo Italia Regione Lombardia",
       "who": "Filt-Cgil, Fit-Cisl, Uiltrasporti, Orsa Ferrovie",
-      "area": "Lombardia",
+      "area": "Lombardia; indicatore regionale presso Milano, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -10003,7 +10215,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "13/07/2026",
       "received_at": "13/07/2026 15:55",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-lombardia",
+      "map_precision": "region"
     },
     {
       "id": "mit-19ff8e288afbae4f",
@@ -10075,7 +10289,7 @@
       "time": "4 ore: dalle 11.00 alle 15.00",
       "title": "Personale Aziende Trasporto Pubblico Locale Regione Marche",
       "who": "USB",
-      "area": "Marche",
+      "area": "Marche; indicatore regionale presso Ancona, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -10086,7 +10300,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "09/07/2026",
       "received_at": "09/07/2026 09:59",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-marche",
+      "map_precision": "region"
     },
     {
       "id": "mit-0465a4b17f80d01c",
@@ -10155,7 +10371,7 @@
       "time": "Intera giornata",
       "title": "Personale Soc. Toremar Regione Toscana",
       "who": "USB",
-      "area": "Toscana",
+      "area": "Toscana; indicatore regionale presso Firenze, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -10166,7 +10382,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "17/07/2026",
       "received_at": "17/07/2026 11:27",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-toscana",
+      "map_precision": "region"
     },
     {
       "id": "mit-016806e7d9bdc104",
@@ -10398,7 +10616,7 @@
       "time": "24 ore: dalle 21.18 del 7/9 alle 21.00 dell'8/9",
       "title": "Personale Soc. Trenitalia Direzione Customer Operations Csvd Regionale Piemonte",
       "who": "Orsa Ferrovie",
-      "area": "Piemonte",
+      "area": "Piemonte; indicatore regionale presso Torino, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -10409,7 +10627,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/07/2026",
       "received_at": "15/07/2026 14:12",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-piemonte",
+      "map_precision": "region"
     },
     {
       "id": "mit-2caef45e86d980a5",
@@ -10428,7 +10648,7 @@
       "time": "8 ore: dalle 09.01 alle 17.00",
       "title": "Personale Mobile Soc. Trenitalia Appartenente alla Dor ( Direzione Operazioni e Rete ) Trentino Alto Adige",
       "who": "Filt-Cgil, Fit-Cisl, Uiltrasporti, Orsa Ferrovie, Fast-Confsal",
-      "area": "Trentino-Alto Adige",
+      "area": "Trentino-Alto Adige; indicatore regionale presso Trento, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -10439,7 +10659,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "29/07/2026",
       "received_at": "29/07/2026 14:16",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-trentino-alto-adige",
+      "map_precision": "region"
     },
     {
       "id": "mit-3db98f3ff643b4ee",
@@ -10786,7 +11008,7 @@
       "time": "24 ore: dalle 00.01 alle 23.59",
       "title": "Personale Soc. Db Cargo Italia Regione Lombardia",
       "who": "Filt-Cgil, Fit-Cisl, Uiltrasporti, Orsa Ferrovie",
-      "area": "Lombardia",
+      "area": "Lombardia; indicatore regionale presso Milano, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -10797,7 +11019,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/07/2026",
       "received_at": "16/07/2026 12:11",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-lombardia",
+      "map_precision": "region"
     },
     {
       "id": "mit-7bc77bbdb8e987c1",
@@ -10967,7 +11191,7 @@
       "time": "4 ore: dalle 11.00 alle 15.00",
       "title": "Personale Socc. Toscana Aeroporti, Gh Toscana e Consulta Operanti Presso Gli Aeroporti di Pisa e Firenze",
       "who": "CUB",
-      "area": "Toscana",
+      "area": "Toscana; indicatore regionale presso Firenze, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -10978,7 +11202,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "19/08/2026",
       "received_at": "20/08/2026 12:21",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-toscana",
+      "map_precision": "region"
     },
     {
       "id": "mit-3e9bc1c55ed0e987",
@@ -11068,7 +11294,7 @@
       "time": "24 ore: dalle 00.00 alle 23.59",
       "title": "Personale Soc. Sogeaal Aeroporto di Alghero (ss)",
       "who": "UGL (categorie trasporti)",
-      "area": "Sardegna",
+      "area": "Sardegna; indicatore regionale presso Cagliari, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -11079,7 +11305,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "01/09/2026",
       "received_at": "01/09/2026 18:37",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-sardegna",
+      "map_precision": "region"
     },
     {
       "id": "mit-a3524d87699e9be6",
@@ -11122,7 +11350,7 @@
       "time": "4 ore: dalle 11.00 alle 15.00",
       "title": "Personale Socc. Toscana Aeroporti, Gh Toscana e Consulta Operanti Presso Gli Aeroporti di Pisa e Firenze",
       "who": "USB",
-      "area": "Toscana",
+      "area": "Toscana; indicatore regionale presso Firenze, non luogo puntuale",
       "note": "ASTENSIONE DAL LAVORO STRAORDINARIO DAL 13/09 AL 12/10/2026",
       "src": [
         "mit"
@@ -11134,7 +11362,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "10/08/2026",
       "received_at": "10/08/2026 18:23",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-toscana",
+      "map_precision": "region"
     },
     {
       "id": "mit-cace231c2b8aed8a",
@@ -11589,7 +11819,7 @@
       "time": "4 ore: dalle 09.00 alle 13.00",
       "title": "Personale Soc. Tua Regione Abruzzo",
       "who": "Orsa Ferrovie, UGL (categorie trasporti)",
-      "area": "Abruzzo",
+      "area": "Abruzzo; indicatore regionale presso L'Aquila, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -11600,7 +11830,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "07/09/2026",
       "received_at": "07/09/2026 17:46",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-abruzzo",
+      "map_precision": "region"
     },
     {
       "id": "mit-fdf607439e2e94b8",
@@ -11727,7 +11959,7 @@
       "time": "8 ore: dalle 09.01 alle 17.00",
       "title": "Personale Soc. Trenitalia Div. Customer Operations Sedi di Bologna, Reggio Emilia Storica ed Av Mediopadana, Rimini",
       "who": "Filt-Cgil, Fit-Cisl, Uiltrasporti, Orsa Ferrovie",
-      "area": "Emilia-Romagna",
+      "area": "Emilia-Romagna; indicatore regionale presso Bologna, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -11738,7 +11970,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "29/07/2026",
       "received_at": "29/07/2026 14:29",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-emilia-romagna",
+      "map_precision": "region"
     },
     {
       "id": "mit-36412fb8811b818d",
@@ -11753,7 +11987,7 @@
       "time": "24 ore: varie modalita'",
       "title": "Personale Soc. Busitalia Sita Nord Regione Umbria",
       "who": "USB",
-      "area": "Umbria",
+      "area": "Umbria; indicatore regionale presso Perugia, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -11764,7 +11998,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/07/2026",
       "received_at": "06/07/2026 11:50",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-umbria",
+      "map_precision": "region"
     },
     {
       "id": "mit-768442d7cffbbebe",
@@ -11779,7 +12015,7 @@
       "time": "24 ore",
       "title": "Personale Aziende Trasporto Pubblico Locale Regione Marche",
       "who": "USB",
-      "area": "Marche",
+      "area": "Marche; indicatore regionale presso Ancona, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -11790,7 +12026,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "31/08/2026",
       "received_at": "31/08/2026 16:13",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-marche",
+      "map_precision": "region"
     },
     {
       "id": "mit-45fea09a0b0cc39a",
@@ -11805,7 +12043,7 @@
       "time": "Prime 4 ore di ogni turno lavorativo",
       "title": "Personale Consorzio Stabile Bacnet & Facility Appalto Rfi Servizi di Pulizia, Decoro, Impianti e Stazioni Regione Campania",
       "who": "Cobas",
-      "area": "Campania",
+      "area": "Campania; indicatore regionale presso Napoli, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -11816,7 +12054,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "14/09/2026",
       "received_at": "14/09/2026 16:50",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-campania",
+      "map_precision": "region"
     },
     {
       "id": "mit-dd1b427c2ed72618",
@@ -12045,7 +12285,7 @@
       "time": "4 ore: dalle 13.00 alle 17.00",
       "title": "Personale Socc. Toscana Aeroporti, Gh Toscana e Consulta Operanti Presso Gli Aeroporti di Pisa e Firenze",
       "who": "USB",
-      "area": "Toscana",
+      "area": "Toscana; indicatore regionale presso Firenze, non luogo puntuale",
       "note": "ASTENSIONE DAL LAVORO STRAORDINARIO DAL 13/9 AL 12/10",
       "src": [
         "mit"
@@ -12057,7 +12297,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "18/09/2026",
       "received_at": "18/09/2026 13:23",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-toscana",
+      "map_precision": "region"
     },
     {
       "id": "mit-96811db2c9094fb8",
@@ -12284,7 +12526,7 @@
       "time": "24 ore",
       "title": "Personale Soc. Fs Security Regione Sicilia",
       "who": "Orsa Ferrovie, Fast-Confsal",
-      "area": "Sicilia",
+      "area": "Sicilia; indicatore regionale presso Palermo, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -12295,7 +12537,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/07/2026",
       "received_at": "24/07/2026 14:35",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-sicilia",
+      "map_precision": "region"
     },
     {
       "id": "mit-010cf260189d4eed",
@@ -12310,7 +12554,7 @@
       "time": "120 ore: dalle 00.01 del 9/10 alle 24.00 del 13/10",
       "title": "Fermo Servizio Trasporto Merci C/terzi Imprse Aderenti a Fedralog Regione Calabria",
       "who": "FEDRALOG CALABRIA",
-      "area": "Calabria",
+      "area": "Calabria; indicatore regionale presso Catanzaro, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -12321,7 +12565,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/09/2026",
       "received_at": "25/09/2026 11:56",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-calabria",
+      "map_precision": "region"
     },
     {
       "id": "mit-3ec699d17a748533",
@@ -12475,7 +12721,7 @@
       "time": "24 ore: dalle 21.01 del 12/10 alle 21.00 del 13/10",
       "title": "Personale Soc. Rfi Infrastrutture Sicilia/doit Palermo",
       "who": "Uiltrasporti",
-      "area": "Sicilia",
+      "area": "Sicilia; indicatore regionale presso Palermo, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -12486,7 +12732,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/07/2026",
       "received_at": "24/07/2026 14:13",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-sicilia",
+      "map_precision": "region"
     },
     {
       "id": "mit-9cd74638c83c2ef5",
@@ -12556,7 +12804,7 @@
       "time": "Intera giornata di lavoro - ferroviario: dalle 09.01 alle 17.00 / appalti ferroviari: secondo mezzo turno del turno di lavoro / tpl: 4 ore varie modalita' / trasporto merci su rotaia: intera prestazione lavorativa",
       "title": "Sciopero Generale Settori Pubblici e Privati Anche in Appalto e Strumentali Regione Toscana",
       "who": "CGIL (confederale)",
-      "area": "Toscana",
+      "area": "Toscana; indicatore regionale presso Firenze, non luogo puntuale",
       "note": "ESCLUSO SETTORE TRASPORTO AEREO E PERSONALE SOC. GEST DI FIRENZE",
       "src": [
         "mit"
@@ -12568,7 +12816,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "17/09/2026",
       "received_at": "22/09/2026 11:01",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-toscana",
+      "map_precision": "region"
     },
     {
       "id": "mit-030f8f29870060f8",
@@ -12669,7 +12919,7 @@
       "time": "24 ore: dalle 00.00 alle 23.59",
       "title": "Personale Soc. Db Cargo Italia Regione Lombardia",
       "who": "Filt-Cgil, Fit-Cisl, Uiltrasporti, Orsa Ferrovie",
-      "area": "Lombardia",
+      "area": "Lombardia; indicatore regionale presso Milano, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -12680,7 +12930,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/09/2026",
       "received_at": "24/09/2026 11:35",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-lombardia",
+      "map_precision": "region"
     },
     {
       "id": "mit-0d7546e8fac86dd4",
@@ -12746,7 +12998,7 @@
       "time": "24 ore",
       "title": "Personale Socc. Toscana Aeroporti, Gh Toscana e Consulta Operanti Presso Gli Aeroporti di Pisa e Firenze",
       "who": "USB",
-      "area": "Toscana",
+      "area": "Toscana; indicatore regionale presso Firenze, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -12757,7 +13009,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "28/09/2026",
       "received_at": "29/09/2026 22:11",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-toscana",
+      "map_precision": "region"
     },
     {
       "id": "mit-760995e0078e7ac5",
@@ -12799,7 +13053,7 @@
       "time": "120 ore: dalle 00.01 del 16/10 alle 24.00 del 20/10",
       "title": "Fermo Servizi Autotrasporto Merci C/terzi Regione Sicilia",
       "who": "COMITATO TRASPORTO SICILIANO",
-      "area": "Sicilia",
+      "area": "Sicilia; indicatore regionale presso Palermo, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -12810,7 +13064,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "28/09/2026",
       "received_at": "28/09/2026 13:02",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-sicilia",
+      "map_precision": "region"
     },
     {
       "id": "mit-800cbca9a31ff9cc",
@@ -12877,7 +13133,7 @@
       "time": "120 ore: dalle 00.01 del 16/10 alle 24.00 del 20/10",
       "title": "Fermo Servizio Trasporto Merci C/terzi Imprese Aderenti a Fedralog Regione Calabria",
       "who": "FEDRALOG CALABRIA",
-      "area": "Calabria",
+      "area": "Calabria; indicatore regionale presso Catanzaro, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -12888,7 +13144,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "30/09/2026",
       "received_at": "01/10/2026 09:47",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-calabria",
+      "map_precision": "region"
     },
     {
       "id": "mit-e153a9b2b784fec5",
@@ -13466,7 +13724,7 @@
       "time": "24 ore: dalle 21.00 del 28/10 alle 21.00 del 29/10",
       "title": "Personale Soc. Trenitalia Div. Customer Operations Sedi di Bologna, Reggio Emilia Storica ed Av Mediopadana, Rimini",
       "who": "Filt-Cgil, Fit-Cisl, Uiltrasporti, Orsa Ferrovie",
-      "area": "Emilia-Romagna",
+      "area": "Emilia-Romagna; indicatore regionale presso Bologna, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -13477,7 +13735,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/10/2026",
       "received_at": "08/10/2026 09:50",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-emilia-romagna",
+      "map_precision": "region"
     },
     {
       "id": "mit-b3c99a92b1eff84f",
@@ -13521,7 +13781,7 @@
       "time": "24 ore: dalle 00.00 alle 23.59",
       "title": "Personale Soc. Trenitalia Div. Customer Operations Sedi di Bologna, Reggio Emilia Storica ed Av Mediopadana, Rimini",
       "who": "Filt-Cgil, Fit-Cisl, Uiltrasporti, Orsa Ferrovie",
-      "area": "Emilia-Romagna",
+      "area": "Emilia-Romagna; indicatore regionale presso Bologna, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -13532,7 +13792,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "01/10/2026",
       "received_at": "01/10/2026 12:32",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-emilia-romagna",
+      "map_precision": "region"
     },
     {
       "id": "mit-28d9a3ba8da7e340",
@@ -13547,7 +13809,7 @@
       "time": "24 ore: dalle 00.00 alle 23.59",
       "title": "Personale Socc. Toscana Aeroporti, Gh Toscana e Consulta Operanti Presso Gli Aeroporti di Pisa e Firenze",
       "who": "USB",
-      "area": "Toscana",
+      "area": "Toscana; indicatore regionale presso Firenze, non luogo puntuale",
       "src": [
         "mit"
       ],
@@ -13558,7 +13820,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "12/10/2026",
       "received_at": "13/10/2026 08:29",
-      "verified_at": "2026-10-22"
+      "verified_at": "2026-10-22",
+      "place": "regione-toscana",
+      "map_precision": "region"
     },
     {
       "id": "mit-3ff3680cc183d561",
