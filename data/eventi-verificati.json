@@ -52,9 +52,39 @@
     "ver-4d15ef71590fdd946a79": {
       "nome": "ANSA",
       "url": "https://www.ansa.it/calabria/notizie/2026/10/22/centinaia-di-persone-a-presidio-nel-vibonese-che-stasera-si-scioglie_ad3eaa0c-3f30-486e-81a0-feaabf8b7596.html"
+    },
+    "ver-6aa80c2f90dcf4125d3d": {
+      "nome": "ANSA",
+      "url": "https://www.ansa.it/molise/notizie/2026/10/22/sciolto-il-presidio-degli-autotrasportatori-nellisernino_441500e8-528e-4de2-b7b5-13c0fa20d3a1.html"
+    },
+    "ver-a80669ca2448b3f2e5f7": {
+      "nome": "RaiNews",
+      "url": "https://www.rainews.it/maratona/2026/10/emergenza-sud-carburanti-blocchi-tir-dl-misure-sostegno-protesta-autotrasporto-agricoltura-disagi-rete-nazionale-34e5c228-5522-45d1-8882-60f103767510.html"
     }
   },
   "eventi": [
+    {
+      "id": "ver-ddfe4ce03f14bca7b3b1",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Trasporto merci",
+      "place": "venafro",
+      "area": "Presidio sulla SS85 spostato da Roccaravindola a Venafro; punto indicativo su Venafro",
+      "start": "2026-10-19",
+      "end": "2026-10-22",
+      "time": "Orario non indicato",
+      "title": "Presidio degli autotrasportatori sulla SS85",
+      "who": "Autotrasportatori dell'Isernino",
+      "where": "Statale 85, Roccaravindola e Venafro",
+      "event_status": "confermato",
+      "src": [
+        "ver-6aa80c2f90dcf4125d3d",
+        "ver-a80669ca2448b3f2e5f7"
+      ]
+    },
     {
       "id": "ver-a8a6944a0e861a735289",
       "orgs": [
