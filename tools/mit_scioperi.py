@@ -4,7 +4,7 @@
 Uso: python tools/mit_scioperi.py [file.html]   (con un file usa quello invece di scaricare: serve per i test)
 Non sovrascrive nulla se la tabella non viene riconosciuta o non contiene righe.
 """
-import hashlib, re, sys, urllib.request, urllib.parse, datetime as dt, time
+import hashlib, re, sys, urllib.request, urllib.parse, urllib.error, datetime as dt, time
 from html.parser import HTMLParser
 from comuni import carica, salva, oggi, senza_accenti, slug, province, posizione_regionale
 
@@ -193,7 +193,16 @@ def scarica_anno():
 
 def main():
     base, prov = carica("eventi.json"), province()
-    html = open(sys.argv[1], encoding="utf-8").read() if len(sys.argv) > 1 else scarica_anno()
+    try:
+        html = open(sys.argv[1], encoding="utf-8").read() if len(sys.argv) > 1 else scarica_anno()
+    except urllib.error.HTTPError as exc:
+        if exc.code < 500:
+            raise
+        print(f"MIT temporaneamente non disponibile: HTTP {exc.code}", file=sys.stderr)
+        sys.exit(75)
+    except (urllib.error.URLError, TimeoutError) as exc:
+        print(f"MIT temporaneamente non disponibile: {exc}", file=sys.stderr)
+        sys.exit(75)
     righe = leggi_righe(html)
     if not righe or not all({"inizio", "fine", "sindacati", "categoria", "stato"} <= r.keys() for r in righe):
         sys.exit("ERRORE: archivio MIT non riconosciuto. Ultimo archivio valido conservato.")

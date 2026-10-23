@@ -32,7 +32,18 @@ jobs:
           python tools/valida.py
           python -m unittest discover -s tools -p 'test_*.py'
       - name: Recupera tutto il 2026 dal MIT
-        run: python tools/mit_scioperi.py | tee -a "$GITHUB_STEP_SUMMARY"
+        run: |
+          set +e
+          python tools/mit_scioperi.py | tee -a "$GITHUB_STEP_SUMMARY"
+          result=${PIPESTATUS[0]}
+          set -e
+          if [ "$result" -eq 75 ]; then
+            python -c 'import json; d=json.load(open("data/scioperi-mit.json",encoding="utf-8")); assert d.get("anno")==2026 and d.get("sincronizzato") and d.get("eventi"), "Archivio MIT precedente assente o non valido"'
+            echo '::warning::MIT temporaneamente non disponibile: pubblico la pagina con l’ultimo archivio MIT valido. La data di sincronizzazione resta invariata.'
+            echo 'MIT temporaneamente non disponibile: usato l’ultimo archivio valido; la data di sincronizzazione non è stata aggiornata.' >> "$GITHUB_STEP_SUMMARY"
+          elif [ "$result" -ne 0 ]; then
+            exit "$result"
+          fi
       - name: Ricostruisci e verifica l'archivio
         run: |
           python tools/build_page.py | tee -a "$GITHUB_STEP_SUMMARY"
