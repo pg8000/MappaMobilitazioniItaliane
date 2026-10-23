@@ -17,14 +17,6 @@
       "nome": "GenovaToday — annuncio del 22/10/2026",
       "url": "https://www.genovatoday.it/cronaca/genova-manifestazione-caro-vita-sabato-piazza-de-ferrari.html"
     },
-    "ver-58011808da39398f4a08": {
-      "nome": "CGIL Liguria",
-      "url": "https://www.liguria.cgil.it/notizie/martedi-27-ottobre-sciopero-nazionale-del-comparto-spettacolo-dal-vivo-senza-diritti-niente-scena-il-lavoro-di-paga-a-genova-presidio-davanti-al-teatro-ivo-chiesa.html"
-    },
-    "ver-61496851cae5550c36e5": {
-      "nome": "ANSA",
-      "url": "https://www.ansa.it/liguria/notizie/2026/10/23/a-genova-presidio-per-lo-sciopero-nazionale-dello-spettacolo-dal-vivo_74ccf558-e5b9-450c-be7f-a36ff3756bfa.html"
-    },
     "ver-3180c93c2319c8449d50": {
       "nome": "ANSA",
       "url": "https://www.ansa.it/lombardia/notizie/2026/10/21/a-milano-la-pioggia-non-ferma-il-presidio-contro-la-violenza_aa01e397-153f-40d8-b6fa-d4f4440b0044.html"
@@ -48,6 +40,14 @@
     "ver-1e12b132d782ecad6a80": {
       "nome": "Bologna Newslocali",
       "url": "https://www.newslocali.it/bologna/bologna-studenti-in-corteo-contro-affitti-alti"
+    },
+    "ver-58011808da39398f4a08": {
+      "nome": "CGIL Liguria",
+      "url": "https://www.liguria.cgil.it/notizie/martedi-27-ottobre-sciopero-nazionale-del-comparto-spettacolo-dal-vivo-senza-diritti-niente-scena-il-lavoro-di-paga-a-genova-presidio-davanti-al-teatro-ivo-chiesa.html"
+    },
+    "ver-61496851cae5550c36e5": {
+      "nome": "ANSA",
+      "url": "https://www.ansa.it/liguria/notizie/2026/10/23/a-genova-presidio-per-lo-sciopero-nazionale-dello-spettacolo-dal-vivo_74ccf558-e5b9-450c-be7f-a36ff3756bfa.html"
     }
   },
   "eventi": [
@@ -177,7 +177,7 @@
     {
       "id": "ver-76988fd1639b4a342111",
       "orgs": [
-        "non-identificato"
+        "cgil"
       ],
       "type": "manifestazione",
       "scope": "locale",
