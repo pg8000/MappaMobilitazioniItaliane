@@ -40,6 +40,14 @@
     "ver-2a4a52fb4060936e504d": {
       "nome": "News Istruzione",
       "url": "https://www.newsistruzione.it/2026/10/23/napoli-studenti-protesta-carcere-secondigliano"
+    },
+    "ver-0fe336fc79dc49f3d850": {
+      "nome": "ANSA",
+      "url": "https://www.ansa.it/emiliaromagna/notizie/2026/10/22/e-partito-il-corteo-studentesco-verso-sede-della-regione-emilia-romagna_d0479be9-1bc3-439c-8a32-3687b6a940d1.html"
+    },
+    "ver-1e12b132d782ecad6a80": {
+      "nome": "Bologna Newslocali",
+      "url": "https://www.newslocali.it/bologna/bologna-studenti-in-corteo-contro-affitti-alti"
     }
   },
   "eventi": [
@@ -81,6 +89,27 @@
       "event_status": "confermato",
       "src": [
         "ver-3180c93c2319c8449d50"
+      ]
+    },
+    {
+      "id": "ver-5427a2d93241cb1a18b1",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Studenti",
+      "place": "bologna",
+      "start": "2026-10-22",
+      "end": "2026-10-22",
+      "time": "Dalle 17:50",
+      "title": "Corteo studentesco per il diritto alla casa",
+      "who": "Cambiare Rotta",
+      "where": "Dal rettorato di via Zamboni verso la sede della Regione Emilia-Romagna",
+      "event_status": "confermato",
+      "src": [
+        "ver-0fe336fc79dc49f3d850",
+        "ver-1e12b132d782ecad6a80"
       ]
     },
     {
