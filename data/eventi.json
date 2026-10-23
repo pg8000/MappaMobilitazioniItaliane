@@ -314,6 +314,24 @@
       "name": "Bergamo",
       "lon": 9.67,
       "lat": 45.7
+    },
+    "gela": {
+      "name": "Gela",
+      "lon": 14.2315,
+      "lat": 37.0814,
+      "region": "Sicilia"
+    },
+    "venafro": {
+      "name": "Venafro",
+      "lon": 14.046,
+      "lat": 41.4844,
+      "region": "Molise"
+    },
+    "vazzano": {
+      "name": "Vazzano",
+      "lon": 16.2488,
+      "lat": 38.6339,
+      "region": "Calabria"
     }
   },
   "eventi": [

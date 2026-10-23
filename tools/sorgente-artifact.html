@@ -104,6 +104,9 @@ select{font:inherit;font-size:13.5px;border:1px solid var(--line);background:var
 .dense .marker .lbl{display:none}.dense .marker:hover .lbl,.dense .marker:focus .lbl,.dense .marker.sel .lbl{display:block}
 /* Esplorazione dell'anno: calendario e grafico condividono i filtri. */
 .archive-note{margin:0;padding:12px 16px;background:var(--surface);border:1px solid var(--line);border-radius:4px;color:var(--muted);font-size:13px}
+.archive-note.stale{border-color:var(--exc);background:var(--exc-soft);color:var(--ink)}
+.method{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:12px 16px;font-size:13.5px}.method summary{cursor:pointer;font-weight:600}.method p{margin:8px 0 0;color:var(--muted)}
+.agenda-tools{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;margin:0 0 10px}.agenda-tools p{margin:0;color:var(--muted);font-size:13px}
 .date-tools{display:flex;flex-wrap:wrap;align-items:end;gap:10px 16px}.date-field{display:grid;gap:4px;min-width:0}
 input[type="date"]{font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:7px 9px;max-width:100%;min-width:0}
 input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
@@ -137,7 +140,7 @@ input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
     <div class="stamp">Dati aggiornati al <b>22 ottobre 2026</b><br><span id="todayLine"></span></div>
   </header>
 
-  <p class="archive-note" id="sync-status"></p>
+  <p class="archive-note" id="sync-status" role="status"></p>
 
   <div class="filters" role="group" aria-label="Filtri">
     <div class="fgroup"><span class="flabel">Tipo</span>
@@ -219,12 +222,19 @@ input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
   <section class="agenda">
     <h2>Agenda completa</h2>
     <p>Tutti gli eventi filtrati, in ordine di data. Gli eventi eccezionali hanno il bordo arancione.</p>
+    <div class="agenda-tools"><button class="chip" id="export-csv" type="button">Scarica CSV degli eventi filtrati</button><p>Il file comprende tutte le pagine dell’agenda e i link alle fonti.</p></div>
     <div class="tablebox"><table>
       <thead><tr><th>Data</th><th>Tipo</th><th>Evento</th><th>Dove</th><th>Fonte</th></tr></thead>
       <tbody id="agenda"></tbody>
     </table></div>
     <nav class="pagination" aria-label="Pagine dell’agenda"><button class="chip" id="agenda-prev">← Precedenti</button><span id="agenda-page" aria-live="polite"></span><button class="chip" id="agenda-next">Successivi →</button></nav>
   </section>
+
+  <details class="method"><summary>Come leggere la mappa e i conteggi</summary>
+    <p>Ogni voce MIT è una proclamazione distinta: scioperi che riguardano lo stesso giorno o settore possono quindi comparire più volte. I presidi collegati a uno sciopero sono indicati separatamente quando hanno un luogo e una fonte propri.</p>
+    <p>Un punto sulla mappa raggruppa le voci associate a un luogo; per scioperi regionali il punto è indicativo e la scheda precisa l’area interessata. Il grafico conta ciascuna voce una sola volta, al primo giorno compreso nel periodo scelto; il calendario mostra invece quante voci sono attive in ciascun giorno.</p>
+    <p>L’archivio MIT è aggiornato automaticamente. Manifestazioni ed eventi eccezionali sono una raccolta selettiva basata su fonti verificabili, non un censimento completo. Controlla sempre lo stato e la fonte prima di fare affidamento su un evento.</p>
+  </details>
 
   <p class="note">Gli scioperi possono essere revocati, rinviati o ridotti fino all'ultimo momento, e le manifestazioni possono cambiare percorso. Prima di partire controlla il <a href="https://scioperi.mit.gov.it/mit2/public/scioperi" target="_blank" rel="noopener">calendario scioperi del Ministero dei Trasporti</a> e gli avvisi dell'azienda di trasporto. Ogni evento riporta la fonte da cui è preso; questa pagina non esprime giudizi sulle iniziative elencate.</p>
 </div>
@@ -500,6 +510,19 @@ function renderAgenda(){
     <td>${e.place?`<button class="place" data-key="${esc(e.place+":"+(e.exc?"x":"o"))}">${esc(PLACES[e.place].name)}</button>`:esc(e.area||(e.scope==="nazionale"?"Tutta Italia":"Più regioni"))}</td>
     <td class="src">${srcLinks(e,"<br>")}</td></tr>`).join("")
     ||`<tr><td colspan="5" class="empty">Nessun evento con i filtri attuali.</td></tr>`;
+  document.getElementById("export-csv").disabled=evs.length===0;
+}
+function exportCsv(){
+  const evs=EVENTS.filter(visible).sort(byDate);
+  if(!evs.length)return;
+  // Il prefisso apostrofo impedisce ai fogli di calcolo di eseguire formule contenute nei dati.
+  const cell=value=>{let s=String(value??"");if(/^[\s\uFEFF]*[=+@\-\t\r]/.test(s))s="'"+s;return '"'+s.replace(/"/g,'""')+'"'};
+  const rows=[["Inizio","Fine","Tipo","Ambito","Stato","Titolo","Luogo","Area","Settore","Promotori","Orario","Fonti"],
+    ...evs.map(e=>[e.start,e.end,e.exc?"Evento eccezionale":e.type,e.scope,statusOf(e),e.title,e.place?PLACES[e.place].name:"",e.area||e.where||"",e.sector,e.who,e.time||"",e.src.map(s=>SRC[s][1]).join(" | ")])];
+  const blob=new Blob(["\uFEFF"+rows.map(row=>row.map(cell).join(",")).join("\r\n")+"\r\n"],{type:"text/csv;charset=utf-8"});
+  const url=URL.createObjectURL(blob),a=document.createElement("a");
+  a.href=url;a.download=`mappa-mobilitazioni-2026-${state.from}-${state.to}.csv`;
+  document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);
 }
 // delega: i pulsanti dell'agenda non perdono il gestore quando la tabella si ridisegna
 document.getElementById("agenda").addEventListener("click",ev=>{
@@ -689,14 +712,23 @@ function initTemporal(){
   const pickBucket=e=>{const b=e.target.closest("[data-from]");if(!b)return;if(e.type==="keydown"&&!['Enter',' '].includes(e.key))return;e.preventDefault();setRange(b.dataset.from,b.dataset.to,b.dataset.from);document.getElementById("date-from").focus()};
   document.getElementById("trend-chart").addEventListener("click",pickBucket);document.getElementById("trend-chart").addEventListener("keydown",pickBucket);document.getElementById("chart-rows").addEventListener("click",pickBucket);
   document.getElementById("agenda-prev").addEventListener("click",()=>{state.agendaPage--;renderAgenda()});document.getElementById("agenda-next").addEventListener("click",()=>{state.agendaPage++;renderAgenda()});
+  document.getElementById("export-csv").addEventListener("click",exportCsv);
   document.getElementById("national-more").addEventListener("click",()=>{state.nationalLimit+=12;renderNational()});
-  const stamp=ARCHIVE.syncedAt?new Intl.DateTimeFormat("it-IT",{dateStyle:"short",timeStyle:"short",timeZone:"Europe/Rome"}).format(new Date(ARCHIVE.syncedAt)):"non ancora eseguita";
-  document.getElementById("sync-status").textContent=`Ultima sincronizzazione MIT riuscita: ${stamp}. ${ARCHIVE.officialCount} proclamazioni archiviate (${ARCHIVE.revokedCount} revocate); ${ARCHIVE.manualCount} iniziative curate a mano. Manifestazioni ed eventi eccezionali: raccolta non esaustiva.`;
+  updateSyncStatus();
+}
+
+function updateSyncStatus(){
+  const sync=ARCHIVE.syncedAt?new Date(ARCHIVE.syncedAt):null;
+  const stamp=sync&&!Number.isNaN(sync.getTime())?new Intl.DateTimeFormat("it-IT",{dateStyle:"short",timeStyle:"short",timeZone:"Europe/Rome"}).format(sync):"non ancora eseguita";
+  const stale=!sync||Number.isNaN(sync.getTime())||Date.now()-sync.getTime()>36*60*60*1000;
+  const box=document.getElementById("sync-status");
+  box.classList.toggle("stale",stale);
+  box.textContent=(stale?"Attenzione: l'archivio MIT non è stato sincronizzato con successo nelle ultime 36 ore. Controlla il calendario ufficiale prima di fare affidamento su questi dati. ":"")+`Ultima sincronizzazione MIT riuscita: ${stamp}. ${ARCHIVE.officialCount} proclamazioni archiviate (${ARCHIVE.revokedCount} revocate); ${ARCHIVE.manualCount} iniziative curate a mano. Manifestazioni ed eventi eccezionali: raccolta non esaustiva.`;
 }
 
 initTemporal();
 // la data di Roma si aggiorna se la pagina resta aperta oltre la mezzanotte
-const refreshDay=()=>{const t=romeToday();if(t!==today){today=t;updateToday();render()}};
+const refreshDay=()=>{updateSyncStatus();const t=romeToday();if(t!==today){today=t;updateToday();render()}};
 document.addEventListener("visibilitychange",()=>{if(!document.hidden)refreshDay()});
 setInterval(refreshDay,60000);
 let checkingVersion=false;
