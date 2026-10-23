@@ -9,10 +9,10 @@
     "sourceRows": 494,
     "officialCount": 494,
     "manualCount": 15,
-    "verifiedCount": 8,
+    "verifiedCount": 11,
     "revokedCount": 140,
     "missingCount": 0,
-    "revision": "90968bad591a0c1ad04e"
+    "revision": "0a543106a10e42bad9e5"
   },
   "fonti": {
     "mit": {
@@ -150,6 +150,30 @@
     "ver-61496851cae5550c36e5": {
       "nome": "ANSA",
       "url": "https://www.ansa.it/liguria/notizie/2026/10/23/a-genova-presidio-per-lo-sciopero-nazionale-dello-spettacolo-dal-vivo_74ccf558-e5b9-450c-be7f-a36ff3756bfa.html"
+    },
+    "ver-4d15ef71590fdd946a79": {
+      "nome": "ANSA",
+      "url": "https://www.ansa.it/calabria/notizie/2026/10/22/centinaia-di-persone-a-presidio-nel-vibonese-che-stasera-si-scioglie_ad3eaa0c-3f30-486e-81a0-feaabf8b7596.html"
+    },
+    "ver-6aa80c2f90dcf4125d3d": {
+      "nome": "ANSA",
+      "url": "https://www.ansa.it/molise/notizie/2026/10/22/sciolto-il-presidio-degli-autotrasportatori-nellisernino_441500e8-528e-4de2-b7b5-13c0fa20d3a1.html"
+    },
+    "ver-a80669ca2448b3f2e5f7": {
+      "nome": "RaiNews",
+      "url": "https://www.rainews.it/maratona/2026/10/emergenza-sud-carburanti-blocchi-tir-dl-misure-sostegno-protesta-autotrasporto-agricoltura-disagi-rete-nazionale-34e5c228-5522-45d1-8882-60f103767510.html"
+    },
+    "ver-2066dfcb93c4196a0b40": {
+      "nome": "ANSA, 16 ottobre",
+      "url": "https://www.ansa.it/sicilia/notizie/2026/10/16/code-e-disagi-allingresso-di-gela-tir-e-camion-fermi-in-strada_8449c32b-a959-4fbb-ae8c-47f70d488e91.html"
+    },
+    "ver-388d1b976fd6b3a0862c": {
+      "nome": "ANSA, 22 ottobre",
+      "url": "https://www.ansa.it/amp/sicilia/notizie/2026/10/22/protesta-tir-resta-presidio-trasportatori-a-gela-fermo-prosegue_e1d88cc1-f6f4-4284-8190-bfe7887c3ae7.html"
+    },
+    "ver-feeac601a3bfae888195": {
+      "nome": "Quotidiano di Gela, 22 ottobre",
+      "url": "https://quotidianodigela.it/protesta-tir-in-citta-rimosso-lultimo-presidio-mezzi-pesanti-hanno-ripreso-la-strada"
     }
   },
   "luoghi": {
@@ -15032,6 +15056,31 @@
       ]
     },
     {
+      "id": "ver-66c9d3e897502510f5c7",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Trasporto merci",
+      "place": "gela",
+      "start": "2026-10-16",
+      "end": "2026-10-22",
+      "time": "Presidio continuativo, orari non indicati",
+      "title": "Presidio degli autotrasportatori all'ingresso di Gela",
+      "who": "Autotrasportatori autonomi a Gela",
+      "where": "Rotatoria sulla SS117 bis Gela–Catania, ingresso città",
+      "event_status": "confermato",
+      "src": [
+        "ver-2066dfcb93c4196a0b40",
+        "ver-388d1b976fd6b3a0862c",
+        "ver-feeac601a3bfae888195"
+      ],
+      "regions": [
+        "Sicilia"
+      ]
+    },
+    {
       "id": "bergamo-17",
       "orgs": [
         "italia-in-piazza"
@@ -15231,6 +15280,31 @@
       ]
     },
     {
+      "id": "ver-ddfe4ce03f14bca7b3b1",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Trasporto merci",
+      "place": "venafro",
+      "area": "Presidio sulla SS85 spostato da Roccaravindola a Venafro; punto indicativo su Venafro",
+      "start": "2026-10-19",
+      "end": "2026-10-22",
+      "time": "Orario non indicato",
+      "title": "Presidio degli autotrasportatori sulla SS85",
+      "who": "Autotrasportatori dell'Isernino",
+      "where": "Statale 85, Roccaravindola e Venafro",
+      "event_status": "confermato",
+      "src": [
+        "ver-6aa80c2f90dcf4125d3d",
+        "ver-a80669ca2448b3f2e5f7"
+      ],
+      "regions": [
+        "Molise"
+      ]
+    },
+    {
       "id": "mit-4664ba5adefbd9bf",
       "orgs": [
         "non-identificato"
@@ -15358,6 +15432,29 @@
       ],
       "regions": [
         "Emilia-Romagna"
+      ]
+    },
+    {
+      "id": "ver-f85b283728587776a74f",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Trasporto merci",
+      "place": "vazzano",
+      "start": "2026-10-22",
+      "end": "2026-10-22",
+      "time": "Sera, orario non indicato",
+      "title": "Presidio a Vazzano contro il caro carburante",
+      "who": "Agricoltori e autotrasportatori",
+      "where": "Strada provinciale 65, presso lo svincolo A2 di Vazzano",
+      "event_status": "confermato",
+      "src": [
+        "ver-4d15ef71590fdd946a79"
+      ],
+      "regions": [
+        "Calabria"
       ]
     },
     {
