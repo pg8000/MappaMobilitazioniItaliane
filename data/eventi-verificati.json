@@ -28,9 +28,33 @@
     "ver-3180c93c2319c8449d50": {
       "nome": "ANSA",
       "url": "https://www.ansa.it/lombardia/notizie/2026/10/21/a-milano-la-pioggia-non-ferma-il-presidio-contro-la-violenza_aa01e397-153f-40d8-b6fa-d4f4440b0044.html"
+    },
+    "ver-7546ac3fdf1ed293cb15": {
+      "nome": "ANSA",
+      "url": "https://www.ansa.it/marche/notizie/2026/10/21/allo-stabilimento-barilla-di-ascoli-presidio-lavoratori-contro-il-piano-industriale_cc516bdf-3994-42ab-b097-2ddd2004f7ac.html"
     }
   },
   "eventi": [
+    {
+      "id": "ver-a8a6944a0e861a735289",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Industria alimentare",
+      "place": "ascoli-piceno",
+      "start": "2026-10-21",
+      "end": "2026-10-21",
+      "time": "Mattina, orario non indicato",
+      "title": "Presidio dei lavoratori Barilla contro il piano industriale",
+      "who": "Fai, Flai e Uila",
+      "where": "Davanti allo stabilimento Barilla di Ascoli Piceno",
+      "event_status": "confermato",
+      "src": [
+        "ver-7546ac3fdf1ed293cb15"
+      ]
+    },
     {
       "id": "ver-fe612fb21b4f361b46fb",
       "orgs": [
