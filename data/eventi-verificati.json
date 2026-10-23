@@ -16,6 +16,14 @@
     "ver-d7db77c11e321e250e14": {
       "nome": "GenovaToday — annuncio del 22/10/2026",
       "url": "https://www.genovatoday.it/cronaca/genova-manifestazione-caro-vita-sabato-piazza-de-ferrari.html"
+    },
+    "ver-58011808da39398f4a08": {
+      "nome": "CGIL Liguria",
+      "url": "https://www.liguria.cgil.it/notizie/martedi-27-ottobre-sciopero-nazionale-del-comparto-spettacolo-dal-vivo-senza-diritti-niente-scena-il-lavoro-di-paga-a-genova-presidio-davanti-al-teatro-ivo-chiesa.html"
+    },
+    "ver-61496851cae5550c36e5": {
+      "nome": "ANSA",
+      "url": "https://www.ansa.it/liguria/notizie/2026/10/23/a-genova-presidio-per-lo-sciopero-nazionale-dello-spettacolo-dal-vivo_74ccf558-e5b9-450c-be7f-a36ff3756bfa.html"
     }
   },
   "eventi": [
@@ -58,6 +66,27 @@
       "event_status": "confermato",
       "src": [
         "ver-d7db77c11e321e250e14"
+      ]
+    },
+    {
+      "id": "ver-76988fd1639b4a342111",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Spettacolo dal vivo",
+      "place": "genova",
+      "start": "2026-10-27",
+      "end": "2026-10-27",
+      "time": "10:00–12:00",
+      "title": "Presidio dei lavoratori dello spettacolo dal vivo",
+      "who": "SLC CGIL Liguria",
+      "where": "Davanti al Teatro Ivo Chiesa, Genova",
+      "event_status": "confermato",
+      "src": [
+        "ver-58011808da39398f4a08",
+        "ver-61496851cae5550c36e5"
       ]
     },
     {
