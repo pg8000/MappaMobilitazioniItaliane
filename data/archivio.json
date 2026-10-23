@@ -9,10 +9,10 @@
     "sourceRows": 494,
     "officialCount": 494,
     "manualCount": 15,
-    "verifiedCount": 6,
+    "verifiedCount": 7,
     "revokedCount": 140,
     "missingCount": 0,
-    "revision": "d098d19b7708ab34e2d4"
+    "revision": "849c7b672fe59869d66f"
   },
   "fonti": {
     "mit": {
@@ -134,6 +134,14 @@
     "ver-7546ac3fdf1ed293cb15": {
       "nome": "ANSA",
       "url": "https://www.ansa.it/marche/notizie/2026/10/21/allo-stabilimento-barilla-di-ascoli-presidio-lavoratori-contro-il-piano-industriale_cc516bdf-3994-42ab-b097-2ddd2004f7ac.html"
+    },
+    "ver-01b4c5a2a8067e8119df": {
+      "nome": "ANSA",
+      "url": "https://www.ansa.it/campania/notizie/2026/10/23/manifestazione-degli-studenti-a-napoli-davanti-al-carcere-di-secondigliano_9b45254d-b846-44d1-b003-75dc4f779795.html"
+    },
+    "ver-2a4a52fb4060936e504d": {
+      "nome": "News Istruzione",
+      "url": "https://www.newsistruzione.it/2026/10/23/napoli-studenti-protesta-carcere-secondigliano"
     }
   },
   "luoghi": {
@@ -1223,6 +1231,33 @@
       "regions": [
         "Toscana",
         "Emilia-Romagna"
+      ]
+    },
+    "gela": {
+      "name": "Gela",
+      "lon": 14.2315,
+      "lat": 37.0814,
+      "region": "Sicilia",
+      "regions": [
+        "Sicilia"
+      ]
+    },
+    "venafro": {
+      "name": "Venafro",
+      "lon": 14.046,
+      "lat": 41.4844,
+      "region": "Molise",
+      "regions": [
+        "Molise"
+      ]
+    },
+    "vazzano": {
+      "name": "Vazzano",
+      "lon": 16.2488,
+      "lat": 38.6339,
+      "region": "Calabria",
+      "regions": [
+        "Calabria"
       ]
     }
   },
@@ -15378,6 +15413,30 @@
       "verified_at": "2026-10-23",
       "regions": [
         "Puglia"
+      ]
+    },
+    {
+      "id": "ver-8e913ebb4d553e7687c3",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Studenti",
+      "place": "napoli",
+      "start": "2026-10-23",
+      "end": "2026-10-23",
+      "time": "Mattina, orario non indicato",
+      "title": "Presidio degli studenti davanti al carcere di Secondigliano",
+      "who": "Studenti di Napoli",
+      "where": "Davanti al carcere di Secondigliano, poi verso Scampia",
+      "event_status": "confermato",
+      "src": [
+        "ver-01b4c5a2a8067e8119df",
+        "ver-2a4a52fb4060936e504d"
+      ],
+      "regions": [
+        "Campania"
       ]
     },
     {
