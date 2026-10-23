@@ -106,7 +106,6 @@ select{font:inherit;font-size:13.5px;border:1px solid var(--line);background:var
 .archive-note{margin:0;padding:12px 16px;background:var(--surface);border:1px solid var(--line);border-radius:4px;color:var(--muted);font-size:13px}
 .archive-note.stale{border-color:var(--exc);background:var(--exc-soft);color:var(--ink)}
 .method{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:12px 16px;font-size:13.5px}.method summary{cursor:pointer;font-weight:600}.method p{margin:8px 0 0;color:var(--muted)}
-.agenda-tools{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;margin:0 0 10px}.agenda-tools p{margin:0;color:var(--muted);font-size:13px}
 .date-tools{display:flex;flex-wrap:wrap;align-items:end;gap:10px 16px}.date-field{display:grid;gap:4px;min-width:0}
 input[type="date"]{font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:7px 9px;max-width:100%;min-width:0}
 input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
@@ -222,7 +221,6 @@ input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
   <section class="agenda">
     <h2>Agenda completa</h2>
     <p>Tutti gli eventi filtrati, in ordine di data. Gli eventi eccezionali hanno il bordo arancione.</p>
-    <div class="agenda-tools"><button class="chip" id="export-csv" type="button">Scarica CSV degli eventi filtrati</button><p>Il file comprende tutte le pagine dell’agenda e i link alle fonti.</p></div>
     <div class="tablebox"><table>
       <thead><tr><th>Data</th><th>Tipo</th><th>Evento</th><th>Dove</th><th>Fonte</th></tr></thead>
       <tbody id="agenda"></tbody>
@@ -510,21 +508,6 @@ function renderAgenda(){
     <td>${e.place?`<button class="place" data-key="${esc(e.place+":"+(e.exc?"x":"o"))}">${esc(PLACES[e.place].name)}</button>`:esc(e.area||(e.scope==="nazionale"?"Tutta Italia":"Più regioni"))}</td>
     <td class="src">${srcLinks(e,"<br>")}</td></tr>`).join("")
     ||`<tr><td colspan="5" class="empty">Nessun evento con i filtri attuali.</td></tr>`;
-  const exportButton=document.getElementById("export-csv");
-  exportButton.disabled=evs.length===0;
-  exportButton.textContent=`Scarica CSV degli eventi filtrati (${evs.length})`;
-}
-function exportCsv(){
-  const evs=EVENTS.filter(visible).sort(byDate);
-  if(!evs.length)return;
-  // Il prefisso apostrofo impedisce ai fogli di calcolo di eseguire formule contenute nei dati.
-  const cell=value=>{let s=String(value??"");if(/^[\s\uFEFF]*[=+@\-\t\r]/.test(s))s="'"+s;return '"'+s.replace(/"/g,'""')+'"'};
-  const rows=[["ID","Inizio","Fine","Tipo","Ambito","Stato","Titolo","Luogo","Area interessata","Indirizzo o percorso","Settore","Promotori","Orario","Fonti"],
-    ...evs.map(e=>[e.id,e.start,e.end,e.exc?"Evento eccezionale":e.type,e.scope,statusOf(e),e.title,e.place?PLACES[e.place].name:"",e.area||"",e.where||"",e.sector,e.who,e.time||"",e.src.map(s=>`${SRC[s][0]}: ${SRC[s][1]}`).join(" | ")])];
-  const blob=new Blob(["\uFEFF"+rows.map(row=>row.map(cell).join(",")).join("\r\n")+"\r\n"],{type:"text/csv;charset=utf-8"});
-  const url=URL.createObjectURL(blob),a=document.createElement("a");
-  a.href=url;a.download=`mappa-mobilitazioni-2026-${state.from}-${state.to}.csv`;
-  document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);
 }
 // delega: i pulsanti dell'agenda non perdono il gestore quando la tabella si ridisegna
 document.getElementById("agenda").addEventListener("click",ev=>{
@@ -714,7 +697,6 @@ function initTemporal(){
   const pickBucket=e=>{const b=e.target.closest("[data-from]");if(!b)return;if(e.type==="keydown"&&!['Enter',' '].includes(e.key))return;e.preventDefault();setRange(b.dataset.from,b.dataset.to,b.dataset.from);document.getElementById("date-from").focus()};
   document.getElementById("trend-chart").addEventListener("click",pickBucket);document.getElementById("trend-chart").addEventListener("keydown",pickBucket);document.getElementById("chart-rows").addEventListener("click",pickBucket);
   document.getElementById("agenda-prev").addEventListener("click",()=>{state.agendaPage--;renderAgenda()});document.getElementById("agenda-next").addEventListener("click",()=>{state.agendaPage++;renderAgenda()});
-  document.getElementById("export-csv").addEventListener("click",exportCsv);
   document.getElementById("national-more").addEventListener("click",()=>{state.nationalLimit+=12;renderNational()});
   updateSyncStatus();
 }
