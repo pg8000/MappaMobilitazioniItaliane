@@ -24,9 +24,33 @@
     "ver-61496851cae5550c36e5": {
       "nome": "ANSA",
       "url": "https://www.ansa.it/liguria/notizie/2026/10/23/a-genova-presidio-per-lo-sciopero-nazionale-dello-spettacolo-dal-vivo_74ccf558-e5b9-450c-be7f-a36ff3756bfa.html"
+    },
+    "ver-3180c93c2319c8449d50": {
+      "nome": "ANSA",
+      "url": "https://www.ansa.it/lombardia/notizie/2026/10/21/a-milano-la-pioggia-non-ferma-il-presidio-contro-la-violenza_aa01e397-153f-40d8-b6fa-d4f4440b0044.html"
     }
   },
   "eventi": [
+    {
+      "id": "ver-fe612fb21b4f361b46fb",
+      "orgs": [
+        "cgil"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Caro vita",
+      "place": "milano",
+      "start": "2026-10-21",
+      "end": "2026-10-21",
+      "time": "Sera, orario non indicato",
+      "title": "Presidio contro la violenza in piazza Scala",
+      "who": "CGIL Milano",
+      "where": "Piazza Scala, davanti a Palazzo Marino",
+      "event_status": "confermato",
+      "src": [
+        "ver-3180c93c2319c8449d50"
+      ]
+    },
     {
       "id": "ver-b0aa2fc8ea458254f701",
       "orgs": [
