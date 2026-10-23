@@ -510,15 +510,17 @@ function renderAgenda(){
     <td>${e.place?`<button class="place" data-key="${esc(e.place+":"+(e.exc?"x":"o"))}">${esc(PLACES[e.place].name)}</button>`:esc(e.area||(e.scope==="nazionale"?"Tutta Italia":"Più regioni"))}</td>
     <td class="src">${srcLinks(e,"<br>")}</td></tr>`).join("")
     ||`<tr><td colspan="5" class="empty">Nessun evento con i filtri attuali.</td></tr>`;
-  document.getElementById("export-csv").disabled=evs.length===0;
+  const exportButton=document.getElementById("export-csv");
+  exportButton.disabled=evs.length===0;
+  exportButton.textContent=`Scarica CSV degli eventi filtrati (${evs.length})`;
 }
 function exportCsv(){
   const evs=EVENTS.filter(visible).sort(byDate);
   if(!evs.length)return;
   // Il prefisso apostrofo impedisce ai fogli di calcolo di eseguire formule contenute nei dati.
   const cell=value=>{let s=String(value??"");if(/^[\s\uFEFF]*[=+@\-\t\r]/.test(s))s="'"+s;return '"'+s.replace(/"/g,'""')+'"'};
-  const rows=[["Inizio","Fine","Tipo","Ambito","Stato","Titolo","Luogo","Area","Settore","Promotori","Orario","Fonti"],
-    ...evs.map(e=>[e.start,e.end,e.exc?"Evento eccezionale":e.type,e.scope,statusOf(e),e.title,e.place?PLACES[e.place].name:"",e.area||e.where||"",e.sector,e.who,e.time||"",e.src.map(s=>SRC[s][1]).join(" | ")])];
+  const rows=[["ID","Inizio","Fine","Tipo","Ambito","Stato","Titolo","Luogo","Area interessata","Indirizzo o percorso","Settore","Promotori","Orario","Fonti"],
+    ...evs.map(e=>[e.id,e.start,e.end,e.exc?"Evento eccezionale":e.type,e.scope,statusOf(e),e.title,e.place?PLACES[e.place].name:"",e.area||"",e.where||"",e.sector,e.who,e.time||"",e.src.map(s=>`${SRC[s][0]}: ${SRC[s][1]}`).join(" | ")])];
   const blob=new Blob(["\uFEFF"+rows.map(row=>row.map(cell).join(",")).join("\r\n")+"\r\n"],{type:"text/csv;charset=utf-8"});
   const url=URL.createObjectURL(blob),a=document.createElement("a");
   a.href=url;a.download=`mappa-mobilitazioni-2026-${state.from}-${state.to}.csv`;
@@ -747,3 +749,4 @@ setInterval(checkVersion,900000);
 document.addEventListener("visibilitychange",()=>{if(!document.hidden)checkVersion()});
 render();
 </script>
+
