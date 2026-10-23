@@ -5,14 +5,14 @@
     "year": 2026,
     "from": "2026-01-01",
     "to": "2026-12-31",
-    "syncedAt": "2026-10-22T22:18:28+00:00",
+    "syncedAt": "2026-10-23T07:16:57+00:00",
     "sourceRows": 494,
     "officialCount": 494,
     "manualCount": 15,
-    "verifiedCount": 2,
+    "verifiedCount": 3,
     "revokedCount": 140,
     "missingCount": 0,
-    "revision": "0cf21042ecb419f11f99"
+    "revision": "865ad72308410537e802"
   },
   "fonti": {
     "mit": {
@@ -114,6 +114,10 @@
     "ver-89a54a0f4960802b23bb": {
       "nome": "TriestePrima — annuncio del 22/10/2026",
       "url": "https://www.triesteprima.it/cronaca/guerra-caro-vita-usb-annuncia-sciopero-30-ottobre.html"
+    },
+    "ver-d7db77c11e321e250e14": {
+      "nome": "GenovaToday — annuncio del 22/10/2026",
+      "url": "https://www.genovatoday.it/cronaca/genova-manifestazione-caro-vita-sabato-piazza-de-ferrari.html"
     }
   },
   "luoghi": {
@@ -13999,6 +14003,26 @@
       "src": [
         "ver-22c3db4144e1bc8f044a",
         "ver-43de533f3f91d9542cbf"
+      ]
+    },
+    {
+      "id": "ver-c9b5eb2c23d105694f7b",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Mobilitazioni",
+      "place": "genova",
+      "start": "2026-10-24",
+      "end": "2026-10-24",
+      "time": "15:00",
+      "title": "Manifestazione sabato in piazza De Ferrari: \"Massima attenzione, ma nessun allarme\" - GenovaToday",
+      "who": "Movimento 17 ottobre",
+      "where": "Piazza De Ferrari",
+      "event_status": "confermato",
+      "src": [
+        "ver-d7db77c11e321e250e14"
       ]
     },
     {
