@@ -25,6 +25,8 @@ def unisci():
         if errors:
             raise ValueError("Evento verificato non valido: " + "; ".join(errors))
     eventi = sorted((posizione_regionale(e, luoghi, prov) for e in manuali + official + verified["eventi"]), key=lambda e: (e["start"], e["id"]))
+    from geografia import arricchisci
+    arricchisci(luoghi, eventi)
     if len({e["id"] for e in eventi}) != len(eventi):
         raise ValueError("ID duplicati nell'archivio unito")
     return {

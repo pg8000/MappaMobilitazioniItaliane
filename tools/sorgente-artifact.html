@@ -33,6 +33,7 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(28px,4.5vw,44px)
 .stamp{font-family:var(--f-mono);font-size:12.5px;color:var(--muted);text-align:right}
 .stamp b{color:var(--ink);font-weight:500}
 .count{margin:-8px 0 0;font-size:13.5px;color:var(--muted)}.count b{color:var(--ink);font-weight:600}
+.geography{margin:16px 0;padding:14px;border:1px solid var(--line);border-radius:8px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}.geography input[type="search"]{font:inherit;color:inherit;background:transparent;border:1px solid currentColor;border-radius:5px;padding:7px;max-width:100%;min-width:0}.geography .geo-hint{flex-basis:100%;margin:0;font-size:.85rem;opacity:.8}.fgroup{min-width:0;max-width:100%}.fgroup select{min-width:0;max-width:100%}
 .filters{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center}
 .fgroup{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 .flabel{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-right:2px}
@@ -157,6 +158,14 @@ input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
     <div class="fgroup"><span class="flabel">Conclusi</span>
       <button class="chip" id="f-past" aria-pressed="true">Mostra eventi conclusi</button>
     </div>
+  </div>
+
+  <div class="geography" role="group" aria-label="Filtri geografici">
+    <div class="fgroup"><label for="f-region">Regione</label><select id="f-region"><option value="all">Tutte le regioni</option></select></div>
+    <div class="fgroup"><label for="f-place">Comune o luogo</label><input type="search" id="f-place" list="place-options" placeholder="Es. Torino" maxlength="100" aria-describedby="geo-hint"><datalist id="place-options"></datalist></div>
+    <label><input type="checkbox" id="f-national"> Includi eventi nazionali</label>
+    <button class="chip" id="geo-reset">Azzera luogo e regione</button>
+    <p class="geo-hint" id="geo-hint">Cerca tra i luoghi registrati. Le aree regionali sono indicate come “regione”; i punti provinciali non indicano necessariamente il comune esatto. Senza filtri geografici sono inclusi anche gli eventi nazionali.</p>
   </div>
 
   <div class="date-tools" role="group" aria-label="Periodo del 2026">
@@ -328,7 +337,7 @@ const K=58, LAT0=47.3, LON0=6.4, COSL=Math.cos(42*Math.PI/180);
 const px=(lon,lat)=>[(lon-LON0)*COSL*K+14,(LAT0-lat)*K+8];
 
 // ---------- Stato ----------
-const state={type:"all",sector:"all",org:"all",past:true,selected:null,mitStatus:"valid",from:"2026-01-01",to:"2026-12-31",calendarMonth:"2026-10",granularity:"month",agendaPage:0,nationalLimit:6};
+const state={region:"all",place:"",includeNational:false,type:"all",sector:"all",org:"all",past:true,selected:null,mitStatus:"valid",from:"2026-01-01",to:"2026-12-31",calendarMonth:"2026-10",granularity:"month",agendaPage:0,nationalLimit:6};
 const romeToday=()=>{try{return new Intl.DateTimeFormat("en-CA",{timeZone:"Europe/Rome"}).format(new Date())}catch(e){return new Date().toISOString().slice(0,10)}};
 let today=romeToday();
 state.calendarMonth=today.startsWith("2026-")?today.slice(0,7):"2026-01";
@@ -519,7 +528,37 @@ const monthNames=["Gennaio","Febbraio","Marzo","Aprile","Maggio","Giugno","Lugli
 const isoDate=d=>d.toISOString().slice(0,10);
 const utcDate=s=>new Date(s+"T12:00:00Z");
 const addDays=(s,n)=>{const d=utcDate(s);d.setUTCDate(d.getUTCDate()+n);return isoDate(d)};
-const otherFilters=e=>typeMatch(e)&&(state.sector==="all"||e.sector===state.sector)&&orgMatch(e)&&(state.past||e.end>=today)&&officialMatch(e);
+const geoNormalize=value=>String(value||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g," ").trim();
+const geoMatch=e=>{
+  const query=geoNormalize(state.place);
+  if(state.region==="all"&&!query)return true;
+  if(e.scope==="nazionale")return state.includeNational;
+  if(state.region!=="all"&&!(e.regions||[]).includes(state.region))return false;
+  if(!query)return true;
+  const p=PLACES[e.place];
+  return !!p&&geoNormalize(p.name).includes(query);
+};
+function updatePlaceOptions(){
+  const places=Object.values(PLACES).filter(p=>state.region==="all"||(p.regions||[]).includes(state.region));
+  document.getElementById("place-options").replaceChildren(...places.sort((a,b)=>a.name.localeCompare(b.name,"it")).map(p=>{const o=document.createElement("option");o.value=p.name;return o}));
+}
+function initGeography(params){
+  const regions=[...new Set(Object.values(PLACES).flatMap(p=>p.regions||[]))].sort((a,b)=>a.localeCompare(b,"it"));
+  const select=document.getElementById("f-region");
+  regions.forEach(r=>{const o=document.createElement("option");o.value=r;o.textContent=r;select.appendChild(o)});
+  if(regions.includes(params.get("region")))state.region=params.get("region");
+  state.place=(params.get("place")||"").slice(0,100);
+  state.includeNational=params.get("includeNational")==="true";
+  select.value=state.region;document.getElementById("f-place").value=state.place;
+  document.getElementById("f-national").checked=state.includeNational;
+  updatePlaceOptions();
+  const changed=()=>{state.selected=null;state.agendaPage=0;state.nationalLimit=6;render()};
+  select.addEventListener("change",e=>{state.region=e.target.value;state.place="";document.getElementById("f-place").value="";updatePlaceOptions();changed()});
+  document.getElementById("f-place").addEventListener("input",e=>{state.place=e.target.value;changed()});
+  document.getElementById("f-national").addEventListener("change",e=>{state.includeNational=e.target.checked;changed()});
+  document.getElementById("geo-reset").addEventListener("click",()=>{state.region="all";state.place="";state.includeNational=false;select.value="all";document.getElementById("f-place").value="";document.getElementById("f-national").checked=false;updatePlaceOptions();changed()});
+}
+const otherFilters=e=>geoMatch(e)&&typeMatch(e)&&(state.sector==="all"||e.sector===state.sector)&&orgMatch(e)&&(state.past||e.end>=today)&&officialMatch(e);
 function officialMatch(e){
   if(state.mitStatus==="all")return true;
   if(state.mitStatus==="valid")return e.official_status!=="revocato"&&!e.not_in_latest&&!["annullato","rinviato"].includes(e.event_status);
@@ -617,12 +656,13 @@ function shiftMonth(n){
 }
 function saveFilters(){
   const p=new URLSearchParams();
-  for(const k of ["type","sector","org","mitStatus","from","to","calendarMonth","granularity"])p.set(k,state[k]);
+  for(const k of ["type","sector","org","mitStatus","from","to","calendarMonth","granularity","region","place","includeNational"])p.set(k,state[k]);
   p.set("past",String(state.past));
   try{history.replaceState(null,"","?"+p)}catch(e){}
 }
 function initTemporal(){
   const params=new URLSearchParams(location.search);
+  initGeography(params);
   for(const k of ["from","to"]){const v=params.get(k);if(v&&/^2026-\d{2}-\d{2}$/.test(v)&&!Number.isNaN(Date.parse(v))&&isoDate(utcDate(v))===v)state[k]=v}
   if(state.from>state.to){state.from=YEAR_START;state.to=YEAR_END}
   const allowed={type:["all","sciopero","manifestazione","eccezionale"],mitStatus:["valid","all","revocato","effettuato","in programma","annullato","rinviato","missing"],granularity:["day","week","month"]};
