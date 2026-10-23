@@ -48,6 +48,10 @@
     "ver-61496851cae5550c36e5": {
       "nome": "ANSA",
       "url": "https://www.ansa.it/liguria/notizie/2026/10/23/a-genova-presidio-per-lo-sciopero-nazionale-dello-spettacolo-dal-vivo_74ccf558-e5b9-450c-be7f-a36ff3756bfa.html"
+    },
+    "ver-4d15ef71590fdd946a79": {
+      "nome": "ANSA",
+      "url": "https://www.ansa.it/calabria/notizie/2026/10/22/centinaia-di-persone-a-presidio-nel-vibonese-che-stasera-si-scioglie_ad3eaa0c-3f30-486e-81a0-feaabf8b7596.html"
     }
   },
   "eventi": [
@@ -110,6 +114,26 @@
       "src": [
         "ver-0fe336fc79dc49f3d850",
         "ver-1e12b132d782ecad6a80"
+      ]
+    },
+    {
+      "id": "ver-f85b283728587776a74f",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Trasporto merci",
+      "place": "vazzano",
+      "start": "2026-10-22",
+      "end": "2026-10-22",
+      "time": "Sera, orario non indicato",
+      "title": "Presidio a Vazzano contro il caro carburante",
+      "who": "Agricoltori e autotrasportatori",
+      "where": "Strada provinciale 65, presso lo svincolo A2 di Vazzano",
+      "event_status": "confermato",
+      "src": [
+        "ver-4d15ef71590fdd946a79"
       ]
     },
     {
