@@ -32,6 +32,14 @@
     "ver-7546ac3fdf1ed293cb15": {
       "nome": "ANSA",
       "url": "https://www.ansa.it/marche/notizie/2026/10/21/allo-stabilimento-barilla-di-ascoli-presidio-lavoratori-contro-il-piano-industriale_cc516bdf-3994-42ab-b097-2ddd2004f7ac.html"
+    },
+    "ver-01b4c5a2a8067e8119df": {
+      "nome": "ANSA",
+      "url": "https://www.ansa.it/campania/notizie/2026/10/23/manifestazione-degli-studenti-a-napoli-davanti-al-carcere-di-secondigliano_9b45254d-b846-44d1-b003-75dc4f779795.html"
+    },
+    "ver-2a4a52fb4060936e504d": {
+      "nome": "News Istruzione",
+      "url": "https://www.newsistruzione.it/2026/10/23/napoli-studenti-protesta-carcere-secondigliano"
     }
   },
   "eventi": [
@@ -73,6 +81,27 @@
       "event_status": "confermato",
       "src": [
         "ver-3180c93c2319c8449d50"
+      ]
+    },
+    {
+      "id": "ver-8e913ebb4d553e7687c3",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Studenti",
+      "place": "napoli",
+      "start": "2026-10-23",
+      "end": "2026-10-23",
+      "time": "Mattina, orario non indicato",
+      "title": "Presidio degli studenti davanti al carcere di Secondigliano",
+      "who": "Studenti di Napoli",
+      "where": "Davanti al carcere di Secondigliano, poi verso Scampia",
+      "event_status": "confermato",
+      "src": [
+        "ver-01b4c5a2a8067e8119df",
+        "ver-2a4a52fb4060936e504d"
       ]
     },
     {
