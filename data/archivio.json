@@ -12,7 +12,7 @@
     "verifiedCount": 11,
     "revokedCount": 140,
     "missingCount": 0,
-    "revision": "0a543106a10e42bad9e5"
+    "revision": "c457cb10ff2926d7e28b"
   },
   "fonti": {
     "mit": {
@@ -102,6 +102,10 @@
     "giorno22": {
       "nome": "Il Giorno, 22/10/2026",
       "url": "https://www.ilgiorno.it/milano/cronaca/sala-timori-scontri-sabato-ajsaaid3"
+    },
+    "ansaMilanoAnnullato": {
+      "nome": "ANSA, 23/10/2026",
+      "url": "https://www.ansa.it/amp/lombardia/notizie/2026/10/23/domani-a-milano-due-presidi-autorizzati-preoccupazione-per-piazza-duomo_7c201705-3da8-49c5-a688-e8b047aa7b80.html"
     },
     "ver-22c3db4144e1bc8f044a": {
       "nome": "ANSA",
@@ -1287,6 +1291,24 @@
       "name": "Vazzano",
       "lon": 16.2488,
       "lat": 38.6339,
+      "region": "Calabria",
+      "regions": [
+        "Calabria"
+      ]
+    },
+    "castel-volturno": {
+      "name": "Castel Volturno",
+      "lon": 13.9462,
+      "lat": 41.0149,
+      "region": "Campania",
+      "regions": [
+        "Campania"
+      ]
+    },
+    "falerna": {
+      "name": "Falerna",
+      "lon": 16.1715,
+      "lat": 39.0035,
       "region": "Calabria",
       "regions": [
         "Calabria"
@@ -15583,14 +15605,15 @@
       "title": "Corteo anarchico verso San Vittore",
       "who": "Area anarchica",
       "where": "Conciliazione → carcere di San Vittore",
-      "tbc": true,
       "exc": {
         "kind": "Non preavvisato",
         "note": "Descritto come non preavvisato ma previsto da tempo; la data del 24 è dedotta dalla fonte. Il centro storico dovrebbe essere vietato alle manifestazioni (Il Giorno)."
       },
       "src": [
-        "giorno22"
+        "giorno22",
+        "ansaMilanoAnnullato"
       ],
+      "event_status": "annullato",
       "regions": [
         "Lombardia"
       ]
