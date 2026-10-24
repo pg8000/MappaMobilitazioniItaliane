@@ -9,10 +9,10 @@
     "sourceRows": 494,
     "officialCount": 494,
     "manualCount": 15,
-    "verifiedCount": 12,
+    "verifiedCount": 13,
     "revokedCount": 140,
     "missingCount": 0,
-    "revision": "11f02d662e0efcfa0c68"
+    "revision": "164cd4ef7b0ab5f4df9a"
   },
   "fonti": {
     "mit": {
@@ -107,6 +107,14 @@
       "nome": "ANSA, 23/10/2026",
       "url": "https://www.ansa.it/amp/lombardia/notizie/2026/10/23/domani-a-milano-due-presidi-autorizzati-preoccupazione-per-piazza-duomo_7c201705-3da8-49c5-a688-e8b047aa7b80.html"
     },
+    "giorno24Milano": {
+      "nome": "Il Giorno, 24/10/2026",
+      "url": "https://www.ilgiorno.it/milano/cronaca/manifestazioni-24-ottobre-sicurezza-militari-wnrlqbfs"
+    },
+    "corriere24Milano": {
+      "nome": "Corriere della Sera, 24/10/2026",
+      "url": "https://milano.corriere.it/cronaca/diretta-live/26_ottobre_24/milano-manifestazioni-scontri-oggi.shtml?intcmp=Leggi_anche_nd_270526_corriere_ss_nd"
+    },
     "ver-22c3db4144e1bc8f044a": {
       "nome": "ANSA",
       "url": "https://www.ansa.it/sito/notizie/cronaca/2026/10/22/torino-contro-il-riarmo-sabato-cortei-di-antagonisti-e-studenti_7f76524e-9dab-4468-9b48-843a0906212b.html"
@@ -194,6 +202,22 @@
     "ver-2778d446f3f108fc9ad4": {
       "nome": "Fanpage, 24/10/2026",
       "url": "https://www.fanpage.it/napoli/cpr-di-castel-volturno-lavori-aggiudicati-nelle-ore-della-protesta-in-ventimila-sfilano-col-cardinale-battaglia-e-il-governatore-fico/"
+    },
+    "ver-e3d47363922a52e5b40a": {
+      "nome": "RaiNews TGR Calabria, 13/10/2026",
+      "url": "https://www.rainews.it/tgr/calabria/video/2026/10/agricoltori-proteste-falerna-blocchi-movimento-mobilitazione-madeinitaly-cf954f19-1b7d-4cc1-ba0d-89fb8cb65a3d.html"
+    },
+    "ver-b25ca92dec50e9181b1f": {
+      "nome": "ANSA, 22/10/2026",
+      "url": "https://www.ansa.it/calabria/notizie/2026/10/22/tir-sbloccati-ma-in-calabria-ancora-attivi-alcuni-presidi-di-agricoltori_8ac80f4f-059a-4064-b936-707c50d60a59.html"
+    },
+    "ver-c8ae160a04a9c82eea82": {
+      "nome": "ANSA, 23/10/2026",
+      "url": "https://www.ansa.it/calabria/notizie/2026/10/23/presidio-agricoltori-ancora-in-atto-allo-svincolo-della2-nel-lametino_82681f02-0f42-40f2-ba46-6dd10613d349.html"
+    },
+    "ver-8e161f6649832be2c764": {
+      "nome": "Calabria Diretta News, 24/10/2026",
+      "url": "https://www.calabriadirettanews.com/2026/10/24/caro-carburante-la-protesta-degli-agricoltori-non-si-ferma-presidi-a-falerna-e-pizzo/"
     }
   },
   "luoghi": {
@@ -14619,6 +14643,33 @@
       "regions": []
     },
     {
+      "id": "ver-5802586fae3f201d8bd5",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Agricoltura",
+      "place": "falerna",
+      "area": "Svincolo A2 di Falerna, presso la rotonda; punto indicativo sul comune di Falerna",
+      "start": "2026-10-13",
+      "end": "2026-10-24",
+      "time": "Presidio continuativo, orari non indicati",
+      "title": "Presidio degli agricoltori allo svincolo A2 di Falerna",
+      "who": "Movimento Territorio e Agricoltura",
+      "where": "Rotonda dello svincolo A2 di Falerna",
+      "event_status": "confermato",
+      "src": [
+        "ver-e3d47363922a52e5b40a",
+        "ver-b25ca92dec50e9181b1f",
+        "ver-c8ae160a04a9c82eea82",
+        "ver-8e161f6649832be2c764"
+      ],
+      "regions": [
+        "Calabria"
+      ]
+    },
+    {
       "id": "mit-303b07d4ef6964ae",
       "orgs": [
         "cgil"
@@ -15641,22 +15692,19 @@
       ],
       "type": "manifestazione",
       "scope": "locale",
-      "sector": "Caro vita",
+      "sector": "Mobilitazioni",
       "place": "milano",
       "start": "2026-10-24",
       "end": "2026-10-24",
-      "time": "data indicata come probabile",
-      "title": "Raduno del Blocco Studentesco all'Arco della Pace",
-      "who": "Blocco Studentesco",
-      "where": "Arco della Pace",
-      "tbc": true,
-      "exc": {
-        "kind": "Probabile divieto",
-        "note": "Secondo Il Giorno il divieto di manifestare in centro dovrebbe valere anche per questo raduno."
-      },
+      "time": "10:00",
+      "title": "Presidio degli Studenti col Tricolore",
+      "who": "Studenti col Tricolore, con Blocco Studentesco e Gioventù Nazionale",
+      "where": "Piazza XXV Aprile, Milano",
       "src": [
-        "giorno22"
+        "giorno24Milano",
+        "corriere24Milano"
       ],
+      "event_status": "confermato",
       "regions": [
         "Lombardia"
       ]
