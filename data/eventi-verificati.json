@@ -88,9 +88,49 @@
     "ver-2778d446f3f108fc9ad4": {
       "nome": "Fanpage, 24/10/2026",
       "url": "https://www.fanpage.it/napoli/cpr-di-castel-volturno-lavori-aggiudicati-nelle-ore-della-protesta-in-ventimila-sfilano-col-cardinale-battaglia-e-il-governatore-fico/"
+    },
+    "ver-e3d47363922a52e5b40a": {
+      "nome": "RaiNews TGR Calabria, 13/10/2026",
+      "url": "https://www.rainews.it/tgr/calabria/video/2026/10/agricoltori-proteste-falerna-blocchi-movimento-mobilitazione-madeinitaly-cf954f19-1b7d-4cc1-ba0d-89fb8cb65a3d.html"
+    },
+    "ver-b25ca92dec50e9181b1f": {
+      "nome": "ANSA, 22/10/2026",
+      "url": "https://www.ansa.it/calabria/notizie/2026/10/22/tir-sbloccati-ma-in-calabria-ancora-attivi-alcuni-presidi-di-agricoltori_8ac80f4f-059a-4064-b936-707c50d60a59.html"
+    },
+    "ver-c8ae160a04a9c82eea82": {
+      "nome": "ANSA, 23/10/2026",
+      "url": "https://www.ansa.it/calabria/notizie/2026/10/23/presidio-agricoltori-ancora-in-atto-allo-svincolo-della2-nel-lametino_82681f02-0f42-40f2-ba46-6dd10613d349.html"
+    },
+    "ver-8e161f6649832be2c764": {
+      "nome": "Calabria Diretta News, 24/10/2026",
+      "url": "https://www.calabriadirettanews.com/2026/10/24/caro-carburante-la-protesta-degli-agricoltori-non-si-ferma-presidi-a-falerna-e-pizzo/"
     }
   },
   "eventi": [
+    {
+      "id": "ver-5802586fae3f201d8bd5",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Agricoltura",
+      "place": "falerna",
+      "area": "Svincolo A2 di Falerna, presso la rotonda; punto indicativo sul comune di Falerna",
+      "start": "2026-10-13",
+      "end": "2026-10-24",
+      "time": "Presidio continuativo, orari non indicati",
+      "title": "Presidio degli agricoltori allo svincolo A2 di Falerna",
+      "who": "Movimento Territorio e Agricoltura",
+      "where": "Rotonda dello svincolo A2 di Falerna",
+      "event_status": "confermato",
+      "src": [
+        "ver-e3d47363922a52e5b40a",
+        "ver-b25ca92dec50e9181b1f",
+        "ver-c8ae160a04a9c82eea82",
+        "ver-8e161f6649832be2c764"
+      ]
+    },
     {
       "id": "ver-66c9d3e897502510f5c7",
       "orgs": [
