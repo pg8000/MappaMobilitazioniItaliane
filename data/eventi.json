@@ -104,6 +104,14 @@
     "ansaMilanoAnnullato": {
       "nome": "ANSA, 23/10/2026",
       "url": "https://www.ansa.it/amp/lombardia/notizie/2026/10/23/domani-a-milano-due-presidi-autorizzati-preoccupazione-per-piazza-duomo_7c201705-3da8-49c5-a688-e8b047aa7b80.html"
+    },
+    "giorno24Milano": {
+      "nome": "Il Giorno, 24/10/2026",
+      "url": "https://www.ilgiorno.it/milano/cronaca/manifestazioni-24-ottobre-sicurezza-militari-wnrlqbfs"
+    },
+    "corriere24Milano": {
+      "nome": "Corriere della Sera, 24/10/2026",
+      "url": "https://milano.corriere.it/cronaca/diretta-live/26_ottobre_24/milano-manifestazioni-scontri-oggi.shtml?intcmp=Leggi_anche_nd_270526_corriere_ss_nd"
     }
   },
   "promotori": {
@@ -550,22 +558,19 @@
       ],
       "type": "manifestazione",
       "scope": "locale",
-      "sector": "Caro vita",
+      "sector": "Mobilitazioni",
       "place": "milano",
       "start": "2026-10-24",
       "end": "2026-10-24",
-      "time": "data indicata come probabile",
-      "title": "Raduno del Blocco Studentesco all'Arco della Pace",
-      "who": "Blocco Studentesco",
-      "where": "Arco della Pace",
-      "tbc": true,
-      "exc": {
-        "kind": "Probabile divieto",
-        "note": "Secondo Il Giorno il divieto di manifestare in centro dovrebbe valere anche per questo raduno."
-      },
+      "time": "10:00",
+      "title": "Presidio degli Studenti col Tricolore",
+      "who": "Studenti col Tricolore, con Blocco Studentesco e Gioventù Nazionale",
+      "where": "Piazza XXV Aprile, Milano",
       "src": [
-        "giorno22"
-      ]
+        "giorno24Milano",
+        "corriere24Milano"
+      ],
+      "event_status": "confermato"
     },
     {
       "id": "fse-bari",
