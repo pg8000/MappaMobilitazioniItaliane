@@ -541,10 +541,6 @@
       "title": "Corteo anarchico verso San Vittore",
       "who": "Area anarchica",
       "where": "Conciliazione → carcere di San Vittore",
-      "exc": {
-        "kind": "Non preavvisato",
-        "note": "Descritto come non preavvisato ma previsto da tempo; la data del 24 è dedotta dalla fonte. Il centro storico dovrebbe essere vietato alle manifestazioni (Il Giorno)."
-      },
       "src": [
         "giorno22",
         "ansaMilanoAnnullato"
