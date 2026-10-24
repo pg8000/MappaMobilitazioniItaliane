@@ -72,6 +72,22 @@
     "ver-feeac601a3bfae888195": {
       "nome": "Quotidiano di Gela, 22 ottobre",
       "url": "https://quotidianodigela.it/protesta-tir-in-citta-rimosso-lultimo-presidio-mezzi-pesanti-hanno-ripreso-la-strada"
+    },
+    "ver-b70a7c217bd38665dbac": {
+      "nome": "ANSA, 23/10/2026",
+      "url": "https://www.ansa.it/campania/notizie/2026/10/23/migranti-domani-migliaia-in-corteo-contro-il-cpr-a-castel-volturno_29943ab8-7077-40f9-956c-932bdaee459f.html"
+    },
+    "ver-e9f21ed4f0b7f129873c": {
+      "nome": "la Repubblica, 24/10/2026",
+      "url": "https://napoli.repubblica.it/cronaca/2026/10/24/news/chiesa_fico_sinistra_e_studenti_insieme_in_corteo_a_castel_volturno_contro_il_cpr-425671862/amp/"
+    },
+    "ver-203f09dae2ed1eff870e": {
+      "nome": "AIR Campania, avviso 24/10/2026",
+      "url": "https://aircampania.it/castelvolturno-deviazioni-temporanee/"
+    },
+    "ver-2778d446f3f108fc9ad4": {
+      "nome": "Fanpage, 24/10/2026",
+      "url": "https://www.fanpage.it/napoli/cpr-di-castel-volturno-lavori-aggiudicati-nelle-ore-della-protesta-in-ventimila-sfilano-col-cardinale-battaglia-e-il-governatore-fico/"
     }
   },
   "eventi": [
@@ -219,6 +235,29 @@
       "src": [
         "ver-01b4c5a2a8067e8119df",
         "ver-2a4a52fb4060936e504d"
+      ]
+    },
+    {
+      "id": "ver-0bbc12c99f8ff769149f",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Mobilitazioni",
+      "place": "castel-volturno",
+      "start": "2026-10-24",
+      "end": "2026-10-24",
+      "time": "Dalle 13:00",
+      "title": "Corteo contro il CPR a Castel Volturno",
+      "who": "Comitato campano «No CPR né a Castel Volturno né altrove»",
+      "where": "Centro Fernandes → Piazza Annunziata",
+      "event_status": "confermato",
+      "src": [
+        "ver-b70a7c217bd38665dbac",
+        "ver-e9f21ed4f0b7f129873c",
+        "ver-203f09dae2ed1eff870e",
+        "ver-2778d446f3f108fc9ad4"
       ]
     },
     {
