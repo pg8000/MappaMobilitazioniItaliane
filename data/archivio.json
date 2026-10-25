@@ -9,10 +9,10 @@
     "sourceRows": 494,
     "officialCount": 494,
     "manualCount": 15,
-    "verifiedCount": 13,
+    "verifiedCount": 14,
     "revokedCount": 140,
     "missingCount": 0,
-    "revision": "4432b10373d5e36cd178"
+    "revision": "42eddad037be6e6d95d2"
   },
   "fonti": {
     "mit": {
@@ -218,6 +218,14 @@
     "ver-8e161f6649832be2c764": {
       "nome": "Calabria Diretta News, 24/10/2026",
       "url": "https://www.calabriadirettanews.com/2026/10/24/caro-carburante-la-protesta-degli-agricoltori-non-si-ferma-presidi-a-falerna-e-pizzo/"
+    },
+    "ver-e89d678542a3769216bb": {
+      "nome": "RaiNews TGR Campania",
+      "url": "https://www.rainews.it/tgr/campania/articoli/2026/10/cortei-a-napoli-in-piazza-garibaldi-in-300-al-presidio-contro-il-caro-vita-a7e8e3fb-1751-4036-936e-090abe8a09dd.html"
+    },
+    "ver-2eb31d7c9722f3e86339": {
+      "nome": "ANSA",
+      "url": "https://www.ansa.it/campania/notizie/2026/10/24/cortei-a-napoli-in-piazza-garibaldi-in-300-al-presidio-contro-il-caro-vita_6c25d125-59ae-4d2f-bacb-54986ce5c09e.html"
     }
   },
   "luoghi": {
@@ -15801,6 +15809,29 @@
         "ver-e9f21ed4f0b7f129873c",
         "ver-203f09dae2ed1eff870e",
         "ver-2778d446f3f108fc9ad4"
+      ],
+      "regions": [
+        "Campania"
+      ]
+    },
+    {
+      "id": "ver-138455825305982311aa",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Mobilitazioni",
+      "place": "napoli",
+      "start": "2026-10-24",
+      "end": "2026-10-24",
+      "time": "pomeriggio",
+      "title": "Corteo contro il carovita da piazza Garibaldi a piazza Municipio",
+      "who": "Partecipanti alla mobilitazione spontanea contro il carovita",
+      "event_status": "confermato",
+      "src": [
+        "ver-e89d678542a3769216bb",
+        "ver-2eb31d7c9722f3e86339"
       ],
       "regions": [
         "Campania"
