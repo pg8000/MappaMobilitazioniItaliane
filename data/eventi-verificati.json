@@ -132,6 +132,18 @@
     "ver-b294842540af2ce1f97b": {
       "nome": "RaiNews TGR Emilia-Romagna",
       "url": "https://www.rainews.it/amp/tgr/emiliaromagna/articoli/2026/10/tre-arresti-e-una-trentina-di-feriti-dopo-gli-scontri-di-piazza-il-24-ottobre-94f2cc1d-6500-41ef-9e76-0f787420c39a.html"
+    },
+    "ver-b8509d0cf83f6827ec6c": {
+      "nome": "RaiNews TGR Lombardia",
+      "url": "https://www.rainews.it/tgr/lombardia/maratona/2026/10/sabato-di-tensione-a-milano-cortei-spontanei-e-scontri-35424ed6-f714-4241-8d99-449ddf581e79.html"
+    },
+    "ver-21c82161bf14bd5c864b": {
+      "nome": "Radio Lombardia",
+      "url": "https://www.radiolombardia.it/2026/10/24/diecimila-persone-al-corteo-in-una-milano-blindata/"
+    },
+    "ver-0684533410a17f14d1aa": {
+      "nome": "ANSA",
+      "url": "https://videoembed.ansa.it/sito/videogallery/italia/2026/10/24/corteo-a-milano-siamo-pacifici-non-gruppi-organizzati_32c7f30f-fce3-4d9b-9448-269a228348f0.html"
     }
   },
   "eventi": [
@@ -418,6 +430,28 @@
       "src": [
         "ver-22c3db4144e1bc8f044a",
         "ver-43de533f3f91d9542cbf"
+      ]
+    },
+    {
+      "id": "ver-bef56a9c636667cfd69a",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Mobilitazioni",
+      "place": "milano",
+      "start": "2026-10-24",
+      "end": "2026-10-24",
+      "time": "Pomeriggio e sera",
+      "title": "Corteo contro il carovita da Lanza a piazza Leonardo da Vinci",
+      "who": "Partecipanti ai cortei spontanei contro il carovita",
+      "where": "Da zona Lanza e centro verso piazza Leonardo da Vinci",
+      "event_status": "confermato",
+      "src": [
+        "ver-b8509d0cf83f6827ec6c",
+        "ver-21c82161bf14bd5c864b",
+        "ver-0684533410a17f14d1aa"
       ]
     },
     {
