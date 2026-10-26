@@ -124,6 +124,14 @@
     "ver-6f74eba6ded1bbc678fe": {
       "nome": "La Nazione Firenze",
       "url": "https://www.lanazione.it/firenze/cronaca/corteo-firenze-tensione-polizia-manifestanti-gdtwapv9"
+    },
+    "ver-d3ae53c712d20a7fd7a9": {
+      "nome": "ANSA Emilia-Romagna",
+      "url": "https://www.ansa.it/emiliaromagna/notizie/2026/10/24/corteo-bologna-altre-cariche-e-alcuni-manifestanti-bloccati-da-agenti_ff5d1c11-8362-420f-b999-de9131b29e6b.html"
+    },
+    "ver-b294842540af2ce1f97b": {
+      "nome": "RaiNews TGR Emilia-Romagna",
+      "url": "https://www.rainews.it/amp/tgr/emiliaromagna/articoli/2026/10/tre-arresti-e-una-trentina-di-feriti-dopo-gli-scontri-di-piazza-il-24-ottobre-94f2cc1d-6500-41ef-9e76-0f787420c39a.html"
     }
   },
   "eventi": [
@@ -338,6 +346,31 @@
       "src": [
         "ver-e89d678542a3769216bb",
         "ver-2eb31d7c9722f3e86339"
+      ]
+    },
+    {
+      "id": "ver-860c464827eb987556b9",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Mobilitazioni",
+      "place": "bologna",
+      "start": "2026-10-24",
+      "end": "2026-10-24",
+      "time": "Pomeriggio e sera",
+      "title": "Cortei del 24 ottobre a Bologna, da piazza del Nettuno a piazza dei Martiri",
+      "who": "Partecipanti ai cortei confluiti in piazza del Nettuno",
+      "where": "Piazza del Nettuno, via Ugo Bassi, via Marconi e piazza dei Martiri",
+      "exc": {
+        "kind": "Scontri",
+        "note": "ANSA Emilia-Romagna e RaiNews TGR Emilia-Romagna riferiscono lanci di oggetti, cariche e impiego di idranti durante le manifestazioni."
+      },
+      "event_status": "confermato",
+      "src": [
+        "ver-d3ae53c712d20a7fd7a9",
+        "ver-b294842540af2ce1f97b"
       ]
     },
     {
