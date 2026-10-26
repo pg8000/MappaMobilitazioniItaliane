@@ -1,7 +1,9 @@
 """Regressioni RSS MIT: GUID, archivio storico, stati e guasti di rete."""
 import copy
 import datetime as dt
+import io
 import unittest
+from contextlib import redirect_stdout, redirect_stderr
 from unittest.mock import patch
 from comuni import carica, province
 import mit_scioperi as mit
@@ -114,7 +116,8 @@ class RssTests(unittest.TestCase):
 
     def test_outage_and_invalid_xml_do_not_save(self):
         for failure in (TimeoutError('test'), ValueError('test')):
-            with patch.object(mit, 'scarica_rss', side_effect=failure), patch.object(mit, 'salva') as save:
+            with patch.object(mit, 'scarica_rss', side_effect=failure), patch.object(mit, 'salva') as save, \
+                    redirect_stdout(io.StringIO()), redirect_stderr(io.StringIO()):
                 self.assertFalse(mit.integra_rss())
                 save.assert_not_called()
 

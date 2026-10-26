@@ -31,6 +31,16 @@ jobs:
         run: |
           python tools/valida.py
           python -m unittest discover -s tools -p 'test_*.py'
+      - name: Verifica collegamento HTTPS MIT
+        run: |
+          python - <<'PY'
+          import socket
+          print('Indirizzi MIT:', sorted({a[4][0] for a in socket.getaddrinfo('scioperi.mit.gov.it', 443)}))
+          PY
+          for family in -4 -6; do
+            echo "Verifica RSS HTTPS $family"
+            curl "$family" --proto '=https' --connect-timeout 8 --max-time 12 --silent --show-error --output /tmp/mit-connection.xml --write-out 'HTTP %{http_code}; IP %{remote_ip}; TLS %{ssl_verify_result}; tempo %{time_total}s\n' 'https://scioperi.mit.gov.it/mit2/public/scioperi/rss' || true
+          done
       - name: Recupera tutto il 2026 dal MIT
         run: |
           set +e
