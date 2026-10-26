@@ -44,7 +44,9 @@ jobs:
           elif [ "$result" -ne 0 ]; then
             exit "$result"
           fi
-      - name: Integra feed RSS MIT\n        run: python -c 'import sys; sys.path.insert(0, "tools"); from mit_scioperi import integra_rss; integra_rss()'\n      - name: Ricostruisci e verifica l'archivio
+      - name: Integra feed RSS MIT
+        run: python tools/mit_scioperi.py --rss | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Ricostruisci e verifica l'archivio
         run: |
           python tools/build_page.py | tee -a "$GITHUB_STEP_SUMMARY"
           python tools/valida.py --archivio
@@ -61,3 +63,5 @@ jobs:
   pubblica:
     needs: aggiorna
     uses: ./.github/workflows/pubblica.yml
+
+
