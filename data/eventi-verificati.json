@@ -144,6 +144,18 @@
     "ver-0684533410a17f14d1aa": {
       "nome": "ANSA",
       "url": "https://videoembed.ansa.it/sito/videogallery/italia/2026/10/24/corteo-a-milano-siamo-pacifici-non-gruppi-organizzati_32c7f30f-fce3-4d9b-9448-269a228348f0.html"
+    },
+    "ver-e4aa60f65674aec2db31": {
+      "nome": "RaiNews TGR Veneto",
+      "url": "https://www.rainews.it/amp/tgr/veneto/video/2026/10/padova-manifestazioni-cortei-pacifici-nessun-incidente-28ceab44-6052-46d3-b307-7f906a1918da.html"
+    },
+    "ver-72a7c0da0b1ab4ec488c": {
+      "nome": "Il Mattino di Padova",
+      "url": "https://www.mattinopadova.it/cronaca/padova-corteo-ragazzi-protesta-24-ottobre-polizia-cmjnf3je"
+    },
+    "ver-da023c1e8ec867eb7cfe": {
+      "nome": "Corriere delle Alpi",
+      "url": "https://www.corrierealpi.it/cronaca/corteo-24-ottobre-padova-no-al-riarmo-itali-v4gkx546"
     }
   },
   "eventi": [
@@ -358,6 +370,28 @@
       "src": [
         "ver-e89d678542a3769216bb",
         "ver-2eb31d7c9722f3e86339"
+      ]
+    },
+    {
+      "id": "ver-804e679d24e9cfff26b5",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Mobilitazioni",
+      "place": "padova",
+      "start": "2026-10-24",
+      "end": "2026-10-24",
+      "time": "Pomeriggio",
+      "title": "Corteo di Ita.Li e studenti nel centro di Padova",
+      "who": "Associazione Ita.Li-Italia Libera e studenti",
+      "where": "Da piazza Garibaldi a piazza dei Signori, poi verso piazza Mazzini",
+      "event_status": "confermato",
+      "src": [
+        "ver-e4aa60f65674aec2db31",
+        "ver-72a7c0da0b1ab4ec488c",
+        "ver-da023c1e8ec867eb7cfe"
       ]
     },
     {
