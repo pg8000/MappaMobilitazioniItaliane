@@ -13,6 +13,18 @@
     }
   },
   "fonti": {
+    "teleclub-giugliano-20261026": {
+      "nome": "TeleclubItalia — annuncio del corteo di Giugliano",
+      "url": "https://www.teleclubitalia.it/giugliano-studenti-dellarea-nord-protestano/"
+    },
+    "cronacaflegrea-giugliano-20261026": {
+      "nome": "Cronaca Flegrea — mobilitazione degli studenti dell’Area Nord",
+      "url": "https://www.cronacaflegrea.it/mobilitazione-nellarea-nord-di-napoli-gli-studenti-in-piazza-a-giugliano-contro-carovita-e-rincari/"
+    },
+    "meridiano-giugliano-20261026": {
+      "nome": "Il Meridiano News — resoconto del corteo",
+      "url": "https://www.ilmeridianonews.it/2026/10/giugliano-in-circa-300-al-corteo-degli-studenti-protesta-contro-il-caro-vita-e-per-il-diritto-allo-studio/"
+    },
     "mit": {
       "nome": "MIT — archivio scioperi 2026",
       "url": "https://scioperi.mit.gov.it/mit2/public/scioperi/ricerca"
@@ -245,6 +257,13 @@
     }
   },
   "luoghi": {
+    "giugliano-in-campania": {
+      "name": "Giugliano in Campania",
+      "aliases": ["Giugliano"],
+      "lon": 14.20321,
+      "lat": 40.92854,
+      "region": "Campania"
+    },
     "roma": {
       "name": "Roma",
       "lon": 12.5,
@@ -359,6 +378,22 @@
     }
   },
   "eventi": [
+    {
+      "id": "giugliano-studenti-2026-10-26",
+      "orgs": ["non-identificato"],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Studenti",
+      "place": "giugliano-in-campania",
+      "start": "2026-10-26",
+      "end": "2026-10-26",
+      "time": "09:30 (ritrovo)",
+      "title": "Corteo degli studenti dell’Area Nord contro il carovita",
+      "who": "Studentesse e studenti dell’Area Nord di Napoli, senza sigle politiche e sindacali",
+      "where": "Metro di Giugliano; via Colonne e corso Campano fino a piazza Annunziata",
+      "event_status": "confermato",
+      "src": ["teleclub-giugliano-20261026", "cronacaflegrea-giugliano-20261026", "meridiano-giugliano-20261026"]
+    },
     {
       "id": "torino-16",
       "orgs": [
@@ -1114,3 +1149,5 @@
     }
   ]
 }
+
+
