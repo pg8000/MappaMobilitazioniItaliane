@@ -156,6 +156,14 @@
     "ver-da023c1e8ec867eb7cfe": {
       "nome": "Corriere delle Alpi",
       "url": "https://www.corrierealpi.it/cronaca/corteo-24-ottobre-padova-no-al-riarmo-itali-v4gkx546"
+    },
+    "ver-0995a8943ef46f74827a": {
+      "nome": "GoNews Firenze — annuncio del 23 ottobre",
+      "url": "https://www.gonews.it/2026/10/23/valditara-firenze-annunciato-corteo-26-ottobre/"
+    },
+    "ver-5d5ba8e01cf87a285a79": {
+      "nome": "ANSA — resoconto del 26 ottobre",
+      "url": "https://www.ansa.it/sito/notizie/cronaca/2026/10/26/manifestazione-degli-studenti-a-firenze-con-un-corteo-in-centro_706b1501-b0e7-4d9a-a323-20d2115be210.html"
     }
   },
   "eventi": [
@@ -506,6 +514,27 @@
       "event_status": "confermato",
       "src": [
         "ver-d7db77c11e321e250e14"
+      ]
+    },
+    {
+      "id": "ver-247d0d40eb00de9c36ee",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Studenti",
+      "place": "firenze",
+      "start": "2026-10-26",
+      "end": "2026-10-26",
+      "time": "13:00 (ritrovo)",
+      "title": "Corteo per una scuola migliore",
+      "who": "Collettivo K1 e collettivi studenteschi fiorentini",
+      "where": "Piazza Santa Maria Novella, Firenze",
+      "event_status": "confermato",
+      "src": [
+        "ver-0995a8943ef46f74827a",
+        "ver-5d5ba8e01cf87a285a79"
       ]
     },
     {
