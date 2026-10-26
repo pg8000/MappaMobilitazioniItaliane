@@ -232,5 +232,88 @@ def main():
     })
 
 
+
+
+# Feed ufficiale dei prossimi scioperi: fonte integrativa, mai sostitutiva dello storico.
+RSS_URL = "https://scioperi.mit.gov.it/mit2/public/scioperi/rss"
+
+
+def leggi_rss(xml):
+    import xml.etree.ElementTree as ET
+    from html import unescape
+    root = ET.fromstring(xml)
+    if root.tag != "rss":
+        raise ValueError("Feed MIT RSS non riconosciuto")
+    righe = []
+    for item in root.findall("./channel/item"):
+        title = item.findtext("title", "")
+        desc = unescape(item.findtext("description", "") or "")
+        campi = {}
+        for parte in re.split(r"<br\s*/?>", desc, flags=re.I):
+            if ":" in parte:
+                k, v = parte.split(":", 1)
+                campi[k.strip().lower()] = v.strip()
+        def titolo_campo(nome):
+            m = re.search(r"(?:^| - )" + re.escape(nome) + r":\s*(.*?)(?= - [^:]+:|$)", title)
+            return m.group(1).strip() if m else ""
+        r = {
+            "inizio": titolo_campo("Data inizio"),
+            "fine": campi.get("data fine", ""),
+            "settore": campi.get("settore") or titolo_campo("Settore"),
+            "rilevanza": campi.get("rilevanza") or titolo_campo("Rilevanza"),
+            "regione": campi.get("regione") or titolo_campo("Regione"),
+            "provincia": campi.get("provincia") or titolo_campo("Provincia"),
+            "sindacati": campi.get("sindacati", ""),
+            "categoria": campi.get("categoria interessata", ""),
+            "modalità": campi.get("modalità", ""),
+            "data proclamazione": campi.get("data proclamazione", ""),
+            "data ricezione": campi.get("data ricezione", ""),
+        }
+        if not r["inizio"] or not r["fine"] or not r["categoria"]:
+            raise ValueError("Elemento RSS MIT incompleto")
+        r["mit_guid"] = item.findtext("guid", "")
+        righe.append(r)
+    if not righe:
+        raise ValueError("Feed MIT RSS vuoto")
+    return righe
+
+
+def scarica_rss():
+    req = urllib.request.Request(RSS_URL, headers={"User-Agent": UA, "Accept": "application/rss+xml, application/xml"})
+    with urllib.request.urlopen(req, timeout=25) as response:
+        return response.read().decode("utf-8-sig")
+
+
+def integra_rss():
+    # L'RSS non pubblica stati ufficiali: non modificare mai revoche o conferme esistenti.
+    try:
+        righe = leggi_rss(scarica_rss())
+    except (OSError, TimeoutError, ValueError, __import__("xml.etree.ElementTree", fromlist=["ParseError"]).ParseError) as exc:
+        print(f"MIT RSS non disponibile: {exc}; archivio invariato", file=sys.stderr)
+        return False
+    base, prov = carica("eventi.json"), province()
+    nuovi, luoghi, scartati = converti(righe, base, prov, oggi())
+    if scartati or not nuovi:
+        print("MIT RSS: dati incompleti; archivio invariato", file=sys.stderr)
+        return False
+    precedente = carica("scioperi-mit.json")
+    by_id = {e["id"]: e for e in precedente.get("eventi", [])}
+    aggiunti = 0
+    for e in nuovi:
+        if e["id"] not in by_id:
+            e["source_feed"] = "rss"
+            by_id[e["id"]] = e
+            aggiunti += 1
+    if not aggiunti:
+        print(f"MIT RSS: {len(righe)} voci lette, nessun nuovo evento")
+        return True
+    precedente["eventi"] = sorted(by_id.values(), key=lambda e: (e["start"], e["id"]))
+    precedente["luoghi"] = {**precedente.get("luoghi", {}), **luoghi}
+    precedente["rss_checked_at"] = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
+    precedente["rss_items"] = len(righe)
+    salva("scioperi-mit.json", precedente)
+    print(f"MIT RSS: {len(righe)} voci lette, {aggiunti} nuovi eventi integrati")
+    return True
+
 if __name__ == "__main__":
     main()
