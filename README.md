@@ -2,54 +2,42 @@
 
 [Apri la mappa](https://pg8000.github.io/MappaMobilitazioniItaliane/)
 
-Archivio dal **1° gennaio al 31 dicembre 2026**: proclamazioni del registro MIT (trasporti e mobilitazioni generali presenti nel registro), più manifestazioni ed eventi eccezionali curati a mano. Le fonti sono collegate nelle schede. Le iniziative future possono essere presenti solo quando annunciate: non è una previsione né un censimento esaustivo di tutte le manifestazioni italiane.
+Archivio dal **1° gennaio al 31 dicembre 2026** di scioperi, manifestazioni ed eventi eccezionali in Italia. Ogni scheda riporta data, luogo, promotori e fonti. Gli eventi futuri compaiono quando annunciati; la raccolta non costituisce un censimento esaustivo di tutte le iniziative.
 
-## Esplorazione
+## Esplorare la mappa
 
-- Calendario mensile navigabile, selezione del giorno o di un intervallo; pulsanti per mese e anno intero.
-- Grafico dinamico per giorno, settimana o mese, con serie distinte e tabella accessibile. Una barra filtra il periodo.
-- Filtri per tipo, settore, promotore, eventi conclusi e stato ufficiale MIT.
-- Le revoche sono archiviate e consultabili, escluse dalla vista iniziale. Una voce assente dall’ultima verifica è distinta da una revoca.
-- Agenda paginata, mappa e schede condividono i filtri. Il calendario conta le voci attive nel giorno; il grafico conta ogni voce una volta, al primo giorno incluso nel periodo.
-- I filtri si conservano nell’URL e sono condivisibili. Una pagina aperta verifica ogni 15 minuti se esiste una nuova versione e si aggiorna conservando i filtri.
+- Seleziona un giorno o un intervallo dal calendario, oppure usa i pulsanti per il mese e l’anno intero.
+- Filtra per tipo, settore, promotore, stato, regione e luogo.
+- Attiva **Mostra eventi conclusi** per consultare gli appuntamenti passati.
+- Scegli **Tutti** o **Eventi eccezionali** per vedere le manifestazioni contrassegnate per episodi riportati dalle fonti.
+- Usa il grafico per confrontare giorni, settimane e mesi; una barra seleziona il periodo corrispondente.
+- Consulta l’agenda per gli eventi privi di un punto unico sulla mappa.
 
-Le righe MIT sono **proclamazioni distinte**, anche quando più dichiarazioni riguardano una stessa mobilitazione. I conteggi non misurano partecipanti, adesioni o disagi. Le iniziative inserite a mano non coprono sistematicamente tutti i mesi.
+I filtri si conservano nell’indirizzo della pagina e sono condivisibili. La pagina controlla periodicamente la disponibilità di una nuova versione dei dati e conserva i filtri durante l’aggiornamento.
 
-## Dati e fonti
+## Leggere dati e conteggi
 
-Gli eventi regionali senza provincia sono visibili con un **cerchio tratteggiato** presso il capoluogo: etichetta e scheda specificano che è un indicatore regionale, non un luogo puntuale. Gli eventi nazionali e le aree non riconoscibili rimangono nell’elenco senza una città inventata. Il riepilogo distingue eventi in mappa e senza punto unico.
+Il calendario conta le voci attive in ciascun giorno. Il grafico conta ogni voce una volta, al primo giorno incluso nel periodo selezionato. I conteggi non misurano partecipanti, adesioni o disagi.
 
-| File | Contenuto |
-| --- | --- |
-| `data/eventi.json` | Iniziative curate e vecchie schede MIT conservate come riferimento |
-| `data/scioperi-mit.json` | Archivio ufficiale annuale con stato, note, provenienza e ultima verifica |
-| `data/archivio.json` | Archivio effettivo unito, dati riutilizzabili della pagina |
-| `data/aggiornamento.json` | Stato dell’ultima sincronizzazione riuscita e revisione della pagina |
-| `data/province.json` | Coordinate approssimate dei capoluoghi |
-| `tools/sorgente-artifact.html` | Sorgente dell’interfaccia; il generatore vi inserisce i dati correnti |
+Le voci MIT rappresentano proclamazioni distinte. Le revoche restano consultabili e sono escluse dalla vista iniziale. L’assenza dall’ultima risposta della fonte è distinta da una revoca.
 
-Quando l’archivio MIT annuale è disponibile, le vecchie schede manuali con fonte MIT sono sostituite dalle righe ufficiali. Non si eliminano proclamazioni solo perché hanno la stessa data, provincia o una sigla in comune.
+Un cerchio tratteggiato presso il capoluogo indica un’area regionale, non un luogo puntuale. Gli eventi nazionali e le aree prive di una posizione certa rimangono nell’elenco. La scheda specifica l’ambito geografico disponibile.
 
-## Aggiornamento e pubblicazione automatici
+## Aggiornamento delle fonti
 
-Il workflow **Sincronizza archivio 2026** si esegue ogni giorno alle **05:30 UTC** (06:30 in Italia con ora solare, 07:30 con ora legale), su modifica dei sorgenti/dati e manualmente da Actions. Recupera l’intero 2026 dal form storico MIT, esegue test e validazione, ricostruisce la pagina, salva i risultati e richiama esplicitamente il workflow **Pubblica la mappa**. La pubblicazione non dipende da un nuovo evento `push` generato dal bot.
+Il calendario MIT viene consultato ogni giorno alle **05:30 UTC**, pari alle 06:30 italiane con ora solare e alle 07:30 con ora legale. Il feed RSS ufficiale integra gli eventi disponibili senza sostituire lo storico annuale né modificare gli stati ufficiali già registrati.
 
-Se il registro non è leggibile, il processo fallisce e conserva i dati e il sito dell’ultima esecuzione riuscita. Manifestazioni ed eventi eccezionali vengono cercati e verificati in una raccolta privata separata. Nel pubblico arrivano solo schede approvate o che superano le verifiche automatiche, tramite data/eventi-verificati.json. Le proposte incerte restano private. Vedi [AUTOMAZIONE](docs/AUTOMAZIONE.md).
+Manifestazioni ed eventi eccezionali vengono cercati tramite fonti nazionali e locali e sottoposti a verifica in una raccolta privata. Solo le schede approvate o conformi ai criteri di pubblicazione automatica entrano nell’archivio pubblico.
 
-## Prove locali
+Se una fonte non risponde, vengono conservati i dati validi e la relativa data di verifica. La riuscita della pubblicazione della pagina non implica che tutte le fonti siano state aggiornate.
 
-Python 3.12+, nessuna dipendenza Python esterna:
+## Documentazione
 
-```sh
-python tools/valida.py
-python -m unittest discover -s tools -p 'test_*.py'
-python tools/mit_scioperi.py
-python tools/build_page.py
-python tools/valida.py --archivio
-```
+- [Funzionamento delle automazioni](docs/AUTOMAZIONE.md)
+- [Fonti e criteri di inclusione](docs/RICERCA-E-FONTI.md)
+- [Ambito del progetto](docs/PIANO.md)
+- [Filtri geografici](FILTRI.md)
 
-Il downloader accetta anche un file HTML MIT salvato come argomento, per una prova senza rete. Aprire `index.html` per la pagina statica; la verifica automatica delle nuove versioni richiede HTTP/HTTPS.
+[Segnala un dato inesatto o un evento mancante](https://github.com/pg8000/MappaMobilitazioniItaliane/issues/new?template=correzione.yml), indicando una fonte diretta.
 
-[Segnala una correzione](https://github.com/pg8000/MappaMobilitazioniItaliane/issues/new?template=correzione.yml), sempre con una fonte.
-
-Codice: MIT (`LICENSE`). Dati: CC BY 4.0 (`LICENSE-DATI.md`); fonti originali attribuite nelle singole voci. Nessun cookie o tracciamento dei visitatori.
+Codice: MIT ([LICENSE](LICENSE)). Dati: CC BY 4.0 ([LICENSE-DATI.md](LICENSE-DATI.md)); le fonti originali sono attribuite nelle schede. Nessun cookie o tracciamento dei visitatori.

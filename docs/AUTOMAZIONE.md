@@ -1,51 +1,47 @@
-# Automazione dell'archivio 2026
+# Funzionamento delle automazioni
 
-## Scioperi MIT e sito pubblico
+## Scioperi MIT
 
-`aggiorna.yml` parte ogni giorno alle 05:30 UTC, su modifica di sorgenti/dati e manualmente da Actions. Legge l'intero 2026 dal form storico MIT, esegue test e validazione, costruisce l'archivio, salva i dati e richiama direttamente `pubblica.yml`. Se il registro non è leggibile conserva l'ultima versione valida e segnala l'errore.
+Il workflow **Sincronizza archivio 2026** consulta ogni giorno alle 05:30 UTC il registro annuale MIT. Può essere avviato anche da GitHub Actions. Il processo acquisisce i dati disponibili, ne controlla la coerenza, ricostruisce l’archivio e pubblica la pagina con GitHub Pages.
 
-L'identità di una proclamazione MIT comprende date, categoria, sindacati, territorio, proclamazione e ricezione. `official_status` distingue in programma, effettuato e revocato. L'assenza dall'ultima risposta viene segnalata con `not_in_latest`, senza inventare una revoca. I conteggi sono voci d'archivio, non necessariamente mobilitazioni distinte. Le vecchie sintesi manuali MIT sono sostituite dalle proclamazioni ufficiali quando l'archivio è disponibile.
+L’identità di una proclamazione comprende date, categoria, sindacati, territorio, proclamazione e ricezione. Gli stati ufficiali distinguono eventi in programma, effettuati e revocati. Una voce assente dall’ultima risposta rimane distinta da una revoca.
 
-Gli eventi regionali senza provincia hanno un indicatore tratteggiato presso il capoluogo. `map_precision: region` e la nota specificano l'approssimazione. Non si inventano città per aree sconosciute o multiple.
+## Feed RSS integrativo
 
-### Feed RSS MIT integrativo
+Il feed ufficiale MIT viene consultato anche quando il registro annuale non è disponibile. Usa le date di inizio e fine dello sciopero e un identificativo stabile per riconoscere le voci già archiviate.
 
-Dopo la ricerca annuale viene interrogato il feed ufficiale `/mit2/public/scioperi/rss`, anche quando il registro annuale è temporaneamente indisponibile. Il feed integra gli eventi del 2026 e usa le date `Data inizio` e `Data fine`, mai `pubDate`. Il GUID MIT viene conservato in `mit_guid`: le successive modifiche descrittive riutilizzano la stessa voce.
+Il collegamento con lo storico tiene conto della diversa precisione delle date tra le due fonti. Una corrispondenza ambigua viene segnalata senza fondere proclamazioni distinte o aggiungere possibili duplicati.
 
-Per collegare il feed allo storico privo di GUID si confrontano date, settore, sindacati, categoria, territorio, proclamazione e ricezione, normalizzando gli spazi e la precisione delle date. La tabella include l'ora di ricezione mentre il feed riporta solo il giorno: se più righe corrispondono, l'importazione si astiene dalla fusione e dall'aggiunta di un possibile doppione e segnala l'ambiguità. Gli ID storici vengono mantenuti. Il successivo risultato annuale univoco acquisisce una voce RSS già presente e torna autorevole per il suo stato.
+Il feed non sostituisce gli stati ufficiali del registro annuale. Una voce assente dall’RSS non viene cancellata né revocata.
 
-Il feed non certifica revoche o conferme: gli stati e i contenuti delle voci annuali rimangono invariati. Una voce assente dal feed non viene cancellata né revocata. `rss_checked_at`, `rss_items`, `rss_added` e `rss_ambiguous` rendono verificabile il controllo RSS anche se non aggiunge eventi; `sincronizzato` rimane la data dell'ultima ricerca annuale completa. L'indisponibilità RSS genera un avviso e conserva l'archivio. I test di regressione sono in `tools/test_mit_rss.py`.
+## Ricerca delle manifestazioni
 
-Il 26 ottobre 2026 la prova reale dal runner GitHub ha rilevato timeout della connessione TCP HTTPS all'host MIT (anche con curl IPv4); l'host non pubblicava un indirizzo IPv6. Il modulo annuale e l'RSS erano invece leggibili nel browser. Questo impedimento di rete non equivale a un problema del parser né a un'importazione riuscita: gli avvisi del workflow vanno controllati anche quando la pubblicazione termina con successo.
+La raccolta privata consulta le fonti ogni sei ore. La ricerca alterna i gruppi editoriali e comprende feed nazionali, regionali e locali e ricerche mirate.
 
-In quella data è stato acquisito dal browser l'intero risultato ufficiale (499 righe, su cinque pagine da 100), verificando campi geografici e note con i dettagli ufficiali e preservando gli orari di ricezione della tabella. Il confronto ha conservato tutti i 494 ID precedenti, aggiunto cinque voci e registrato due passaggi da in programma a effettuato; le revoche sono 141. `metodo_ultima_sincronizzazione: browser-manuale-verificato` identifica questo recupero assistito. Non dimostra che l'accesso automatico dal runner sia stato ripristinato. Le successive verifiche annuali riuscite sostituiscono normalmente tale indicazione con i metadati ordinari della sincronizzazione.
+Le bozze che eccedono il limite delle schede aperte rimangono in una coda privata. Quando si liberano posti vengono inviate alla revisione. Le bozze in attesa non sono eventi pubblici e non mantengono automaticamente una precedente idoneità alla pubblicazione senza una nuova verifica delle fonti.
 
-## Manifestazioni ed eventi eccezionali
+Google News serve alla scoperta; le schede pubblicate collegano gli articoli originali. I blocchi di accesso e gli abbonamenti non vengono aggirati.
 
-Ricerca, proposte e revisione vengono eseguite in un **repository privato separato**, ogni sei ore e su approvazione. La chat e il computer dell'utente non sono necessari.
+## Approvazione e pubblicazione
 
-Il processo consulta RSS e tenta la lettura delle pagine pubbliche. Google News serve soltanto alla scoperta. Date dedotte dal titolo, fonti non leggibili, informazioni discordanti e possibili doppioni richiedono revisione. Non si aggirano paywall e non si inventano dati mancanti.
+Il proprietario o un collaboratore con permesso di scrittura può approvare una proposta completa. Il sistema rilegge la scheda, controlla dati e duplicati e prepara l’esportazione.
 
-Si pubblicano automaticamente soltanto eventi con dati strutturati espliciti Schema.org Event (data, città riconosciuta, organizzazione e stato), sostenuti da una fonte ufficiale/organizzatore ammessa o da due gruppi editoriali indipendenti con dati concordanti. Per gli episodi eccezionali servono una fonte ufficiale o due redazioni indipendenti e una data non futura. Il sistema è selettivo e non garantisce la copertura di tutte le manifestazioni.
+La pubblicazione automatica richiede dati strutturati espliciti su evento, data, luogo, organizzazione e stato. Servono una fonte ufficiale o dell’organizzatore ammessa, oppure due gruppi editoriali indipendenti concordanti. Per gli episodi eccezionali non è ammessa una data futura.
 
-I casi dubbi diventano issue **private**, con blocco JSON modificabile e fonti. Il proprietario o un collaboratore con scrittura può applicare `approva`. Il sistema rilegge la proposta, valida i dati e invia solamente la scheda approvata e i link pubblici. Una proposta scartata si chiude senza approvarla. Nessuna proposta riservata viene aperta nelle issue pubbliche; `tools/proposte.py` e il vecchio workflow pubblico di approvazione sono disattivati.
+Annullamenti, rinvii, informazioni discordanti e possibili duplicati richiedono revisione. Gli aggiornamenti delle schede già pubblicate riutilizzano il relativo identificativo.
 
-Il passaggio usa una chiave SSH dedicata: parte pubblica come deploy key con scrittura nel solo repository della mappa; parte privata nel segreto Actions `PUBLIC_MAP_DEPLOY_KEY` del repository privato. Il normale GITHUB_TOKEN del repository privato gestisce esclusivamente stato e issue private. La chiave di esportazione è disponibile solo nel passo che invia il file pubblico, con verifica dell'host SSH attiva.
+## Riservatezza
 
-## Dati pubblicabili e riservatezza
+Il repository privato conserva bozze, discussioni e informazioni di revisione. L’esportazione contiene soltanto gli eventi approvati e le relative fonti pubbliche, selezionati tramite un elenco di campi ammessi.
 
-`data/eventi-verificati.json` contiene unicamente `versione`, `fonti` ed `eventi`, esportati da una lista esplicita di campi ammessi. Corpi e numeri delle issue, commenti, nomi dei revisori e motivi di verifica restano nel privato. `build_data.py` valida e unisce l'export alle iniziative manuali e all'archivio MIT; le coordinate delle nuove città provengono dalla tabella esistente delle province. Una modifica dell'export attiva l'aggiornamento e la pubblicazione pubblica.
+La chiave dedicata all’esportazione autorizza la scrittura nel solo repository della mappa. La verifica dell’host SSH rimane attiva. La pubblicazione GitHub Pages comprende esclusivamente i file pubblici previsti.
 
-Gli eventi eccezionali mantengono il formato `type: manifestazione` e `exc: {kind, note}`. Non si crea una categoria pubblica per i casi incerti. `event_status` distingue confermato, annullato, rinviato e riprogrammato. Annullati e rinviati sono esclusi dalla vista iniziale, consultabili tramite Stato eventi. Un aggiornamento approvato riutilizza l'ID della scheda già esportata da questa raccolta.
+## Disponibilità delle fonti
 
-La pubblicazione Pages copia soltanto un elenco esplicito di JSON pubblici, mai file di lavoro o dati di revisione. La data MIT riguarda il registro ufficiale e non certifica la completezza delle manifestazioni. `data/aggiornamento.json` contiene la revisione e permette alla pagina aperta di aggiornarsi ogni 15 minuti conservando i filtri.
+Se una fonte non risponde, vengono conservati i dati validi e la data dell’ultima verifica riuscita. Una pubblicazione della pagina può completarsi usando l’archivio conservato: il suo esito non dimostra da solo che tutte le fonti siano state aggiornate.
 
-## Recupero da errori
+Le proposte validate restano recuperabili anche se l’invio fallisce. Vengono contrassegnate come pubblicate soltanto dopo l’esportazione riuscita.
 
-Le proposte validate vengono conservate prima dell'invio. In caso di errore del collegamento non vengono chiuse come pubblicate: un'esecuzione privata con modo `verifica` ritenta l'export. Dopo il push riuscito la proposta viene chiusa e contiene il collegamento alle esecuzioni pubbliche per verificare la pubblicazione effettiva della pagina.
+La data della verifica MIT riguarda il registro ufficiale e non certifica la completezza delle manifestazioni. La pagina controlla periodicamente la revisione dei dati e conserva i filtri durante l’aggiornamento.
 
-Aggiornamenti MIT e pubblicazioni pubbliche hanno code serializzate. Le esportazioni ritentano su un nuovo ramo corrente in caso di aggiornamenti concorrenti, modificando soltanto il file previsto. Nessuna cronologia viene forzata.
-
-Le esecuzioni programmate GitHub possono subire ritardi. Al repository privato si applicano i limiti del piano dell'account: non vengono attivati upgrade o acquisti.
-
-
+Le esecuzioni programmate possono subire ritardi e sono soggette ai limiti del piano GitHub. Il funzionamento non richiede che il computer dell’utente o l’app siano aperti.
