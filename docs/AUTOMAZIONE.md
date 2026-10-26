@@ -8,6 +8,14 @@ L'identità di una proclamazione MIT comprende date, categoria, sindacati, terri
 
 Gli eventi regionali senza provincia hanno un indicatore tratteggiato presso il capoluogo. `map_precision: region` e la nota specificano l'approssimazione. Non si inventano città per aree sconosciute o multiple.
 
+### Feed RSS MIT integrativo
+
+Dopo la ricerca annuale viene interrogato il feed ufficiale `/mit2/public/scioperi/rss`, anche quando il registro annuale è temporaneamente indisponibile. Il feed integra gli eventi del 2026 e usa le date `Data inizio` e `Data fine`, mai `pubDate`. Il GUID MIT viene conservato in `mit_guid`: le successive modifiche descrittive riutilizzano la stessa voce.
+
+Per collegare il feed allo storico privo di GUID si confrontano date, settore, sindacati, categoria, territorio, proclamazione e ricezione, normalizzando gli spazi e la precisione delle date. La tabella include l'ora di ricezione mentre il feed riporta solo il giorno: se più righe corrispondono, l'importazione si astiene dalla fusione e dall'aggiunta di un possibile doppione e segnala l'ambiguità. Gli ID storici vengono mantenuti. Il successivo risultato annuale univoco acquisisce una voce RSS già presente e torna autorevole per il suo stato.
+
+Il feed non certifica revoche o conferme: gli stati e i contenuti delle voci annuali rimangono invariati. Una voce assente dal feed non viene cancellata né revocata. `rss_checked_at`, `rss_items`, `rss_added` e `rss_ambiguous` rendono verificabile il controllo RSS anche se non aggiunge eventi; `sincronizzato` rimane la data dell'ultima ricerca annuale completa. L'indisponibilità RSS genera un avviso e conserva l'archivio. I test di regressione sono in `tools/test_mit_rss.py`.
+
 ## Manifestazioni ed eventi eccezionali
 
 Ricerca, proposte e revisione vengono eseguite in un **repository privato separato**, ogni sei ore e su approvazione. La chat e il computer dell'utente non sono necessari.
@@ -35,3 +43,5 @@ Le proposte validate vengono conservate prima dell'invio. In caso di errore del 
 Aggiornamenti MIT e pubblicazioni pubbliche hanno code serializzate. Le esportazioni ritentano su un nuovo ramo corrente in caso di aggiornamenti concorrenti, modificando soltanto il file previsto. Nessuna cronologia viene forzata.
 
 Le esecuzioni programmate GitHub possono subire ritardi. Al repository privato si applicano i limiti del piano dell'account: non vengono attivati upgrade o acquisti.
+
+

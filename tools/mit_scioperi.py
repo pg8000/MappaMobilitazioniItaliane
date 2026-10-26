@@ -5,6 +5,7 @@ Uso: python tools/mit_scioperi.py [file.html]   (con un file usa quello invece d
 Non sovrascrive nulla se la tabella non viene riconosciuta o non contiene righe.
 """
 import hashlib, re, sys, urllib.request, urllib.parse, urllib.error, datetime as dt, time
+import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 from comuni import carica, salva, oggi, senza_accenti, slug, province, posizione_regionale
 
@@ -168,6 +169,8 @@ def converti(righe, base, prov, oggi_):
         ev["proclaimed_at"] = r.get("data proclamazione", "")
         ev["received_at"] = r.get("data ricezione", "")
         ev["verified_at"] = oggi_.isoformat()
+        if r.get("mit_guid"):
+            ev["mit_guid"] = normalizza_guid(r["mit_guid"])
         eventi.append(posizione_regionale(ev, luoghi, prov))
     return eventi, luoghi, scartati
 
@@ -209,6 +212,8 @@ def main():
     eventi, luoghi, scartati = converti(righe, base, prov, oggi())
     if scartati or not eventi:
         sys.exit(f"ERRORE: {scartati} date non leggibili o archivio vuoto. Dati precedenti conservati.")
+    precedente = carica("scioperi-mit.json")
+    eventi = riconcilia_annuale(eventi, precedente.get("eventi", []))
     by_id = {}
     for e in eventi:
         old = by_id.get(e["id"])
@@ -216,7 +221,6 @@ def main():
             by_id[e["id"]] = e
     # Una voce assente non equivale a una revoca: rimane archiviata e viene
     # segnalata come non riscontrata nell'ultima verifica.
-    precedente = carica("scioperi-mit.json")
     for e in precedente.get("eventi", []):
         if e["id"] not in by_id and e["start"][:4] == str(YEAR):
             by_id[e["id"]] = dict(e, not_in_latest=True)
@@ -225,6 +229,7 @@ def main():
     print(f"MIT {YEAR}: {len(righe)} righe, {len(result)} voci archiviate, "
           f"{sum(e['official_status'] == 'revocato' for e in result)} revocate")
     salva("scioperi-mit.json", {
+        **{k: v for k, v in precedente.items() if k.startswith("rss_")},
         "fonte": URL, "anno": YEAR, "aggiornato": oggi().isoformat(),
         "sincronizzato": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
         "righe_lette": len(righe), "copertura": {"da": f"{YEAR}-01-01", "a": f"{YEAR}-12-31"},
@@ -239,12 +244,13 @@ RSS_URL = "https://scioperi.mit.gov.it/mit2/public/scioperi/rss"
 
 
 def leggi_rss(xml):
-    import xml.etree.ElementTree as ET
     from html import unescape
+    if len(xml) > 2_000_000 or re.search(r"<!DOCTYPE|<!ENTITY", xml, re.I):
+        raise ValueError("Feed MIT RSS eccessivo o con dichiarazioni non consentite")
     root = ET.fromstring(xml)
     if root.tag != "rss":
         raise ValueError("Feed MIT RSS non riconosciuto")
-    righe = []
+    righe, guids = [], set()
     for item in root.findall("./channel/item"):
         title = item.findtext("title", "")
         desc = unescape(item.findtext("description", "") or "")
@@ -271,7 +277,12 @@ def leggi_rss(xml):
         }
         if not r["inizio"] or not r["fine"] or not r["categoria"]:
             raise ValueError("Elemento RSS MIT incompleto")
-        r["mit_guid"] = item.findtext("guid", "")
+        r["mit_guid"] = normalizza_guid(item.findtext("guid", ""))
+        if r["mit_guid"] in guids:
+            raise ValueError("GUID RSS MIT duplicato")
+        guids.add(r["mit_guid"])
+        if data_it(r["fine"]) < data_it(r["inizio"]):
+            raise ValueError("Intervallo RSS MIT non valido")
         righe.append(r)
     if not righe:
         raise ValueError("Feed MIT RSS vuoto")
@@ -281,39 +292,117 @@ def leggi_rss(xml):
 def scarica_rss():
     req = urllib.request.Request(RSS_URL, headers={"User-Agent": UA, "Accept": "application/rss+xml, application/xml"})
     with urllib.request.urlopen(req, timeout=25) as response:
-        return response.read().decode("utf-8-sig")
+        content = response.read(2_000_001)
+        if len(content) > 2_000_000:
+            raise ValueError("Feed MIT RSS eccessivo")
+        return content.decode("utf-8-sig")
+
+
+def normalizza_guid(value):
+    """Identificativo MIT stabile, indipendente da schema HTTP/HTTPS."""
+    value = str(value).strip()
+    if value.isdecimal():
+        return value
+    parsed = urllib.parse.urlsplit(value)
+    if (parsed.scheme in ("http", "https") and parsed.netloc == "scioperi.mit.gov.it"
+            and re.fullmatch(r"/[0-9]+/?", parsed.path) and not parsed.query and not parsed.fragment):
+        return parsed.path.strip("/")
+    raise ValueError("GUID RSS MIT assente o non valido")
+
+
+def chiave_evento(event):
+    """Ponte conservativo verso lo storico privo di GUID.
+
+    L'RSS omette l'ora di ricezione presente nella tabella; confrontiamo il giorno,
+    ma non fondiamo mai più candidati indistinguibili con questa precisione.
+    """
+    fields = ("start", "end", "sector", "source_union", "source_category",
+              "source_region", "source_province", "proclaimed_at", "received_at")
+    return tuple(" ".join(senza_accenti(str(event.get(k, ""))[:10] if k.endswith("_at")
+                                       else str(event.get(k, ""))).lower().split()) for k in fields)
+
+
+def trova_evento(event, events):
+    guid = event.get("mit_guid")
+    if guid:
+        matches = [e for e in events if e.get("mit_guid") and normalizza_guid(e["mit_guid"]) == guid]
+        if matches:
+            return matches[0] if len(matches) == 1 else False
+    exact = [e for e in events if e["id"] == event["id"]]
+    if exact:
+        return exact[0]
+    matches = [e for e in events if chiave_evento(e) == chiave_evento(event)
+               and (not guid or not e.get("mit_guid") or normalizza_guid(e["mit_guid"]) == guid)]
+    return matches[0] if len(matches) == 1 else False if matches else None
+
+
+def riconcilia_annuale(events, previous):
+    result = []
+    for event in events:
+        # Solo il GUID o l'identità completa e univoca possono collegare le fonti.
+        old = trova_evento(event, previous)
+        if old and old["id"] != event["id"] and sum(chiave_evento(e) == chiave_evento(event) for e in events) != 1:
+            old = None
+        if old:
+            event = dict(event, id=old["id"])
+            for key in ("mit_guid", "rss_seen_at"):
+                if old.get(key):
+                    event[key] = old[key]
+        result.append(event)
+    return result
+
+
+def fondi_rss(previous, events, places, item_count, checked_at):
+    by_id = {e["id"]: dict(e) for e in previous.get("eventi", [])}
+    added = ambiguous = 0
+    for event in events:
+        old = trova_evento(event, list(by_id.values()))
+        if old is False:
+            ambiguous += 1
+            continue
+        if old:
+            # La tabella annuale resta autorevole per contenuti e stati ufficiali.
+            if old.get("source_feed") == "rss":
+                by_id[old["id"]] = dict(event, id=old["id"], source_feed="rss",
+                                        official_status=old["official_status"])
+            by_id[old["id"]].update(mit_guid=event["mit_guid"], rss_seen_at=checked_at)
+        else:
+            event = dict(event, id="mit-rss-" + event["mit_guid"], source_feed="rss", rss_seen_at=checked_at)
+            by_id[event["id"]] = event
+            added += 1
+    return dict(previous, eventi=sorted(by_id.values(), key=lambda e: (e["start"], e["id"])),
+                luoghi={**previous.get("luoghi", {}), **places}, rss_checked_at=checked_at,
+                rss_items=item_count, rss_added=added, rss_ambiguous=ambiguous)
 
 
 def integra_rss():
     # L'RSS non pubblica stati ufficiali: non modificare mai revoche o conferme esistenti.
     try:
         righe = leggi_rss(scarica_rss())
-    except (OSError, TimeoutError, ValueError, __import__("xml.etree.ElementTree", fromlist=["ParseError"]).ParseError) as exc:
+    except (OSError, TimeoutError, ValueError, ET.ParseError) as exc:
         print(f"MIT RSS non disponibile: {exc}; archivio invariato", file=sys.stderr)
+        if __import__("os").environ.get("GITHUB_ACTIONS"):
+            print("::warning::Feed RSS MIT non disponibile: archivio precedente conservato")
         return False
     base, prov = carica("eventi.json"), province()
     nuovi, luoghi, scartati = converti(righe, base, prov, oggi())
-    if scartati or not nuovi:
+    if scartati:
         print("MIT RSS: dati incompleti; archivio invariato", file=sys.stderr)
         return False
     precedente = carica("scioperi-mit.json")
-    by_id = {e["id"]: e for e in precedente.get("eventi", [])}
-    aggiunti = 0
-    for e in nuovi:
-        if e["id"] not in by_id:
-            e["source_feed"] = "rss"
-            by_id[e["id"]] = e
-            aggiunti += 1
-    if not aggiunti:
-        print(f"MIT RSS: {len(righe)} voci lette, nessun nuovo evento")
-        return True
-    precedente["eventi"] = sorted(by_id.values(), key=lambda e: (e["start"], e["id"]))
-    precedente["luoghi"] = {**precedente.get("luoghi", {}), **luoghi}
-    precedente["rss_checked_at"] = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
-    precedente["rss_items"] = len(righe)
-    salva("scioperi-mit.json", precedente)
-    print(f"MIT RSS: {len(righe)} voci lette, {aggiunti} nuovi eventi integrati")
+    risultato = fondi_rss(precedente, nuovi, luoghi, len(righe),
+                          dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"))
+    salva("scioperi-mit.json", risultato)
+    print(f"MIT RSS: {len(righe)} voci lette, {risultato['rss_added']} nuovi eventi integrati, "
+          f"{risultato['rss_ambiguous']} corrispondenze ambigue non importate")
+    if risultato['rss_ambiguous']:
+        print("::warning::RSS MIT: corrispondenze ambigue conservate senza fusione né nuovi duplicati")
     return True
 
 if __name__ == "__main__":
-    main()
+    if sys.argv[1:] == ["--rss"]:
+        integra_rss()
+    else:
+        main()
+
+
