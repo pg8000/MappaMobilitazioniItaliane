@@ -16,6 +16,10 @@ Per collegare il feed allo storico privo di GUID si confrontano date, settore, s
 
 Il feed non certifica revoche o conferme: gli stati e i contenuti delle voci annuali rimangono invariati. Una voce assente dal feed non viene cancellata né revocata. `rss_checked_at`, `rss_items`, `rss_added` e `rss_ambiguous` rendono verificabile il controllo RSS anche se non aggiunge eventi; `sincronizzato` rimane la data dell'ultima ricerca annuale completa. L'indisponibilità RSS genera un avviso e conserva l'archivio. I test di regressione sono in `tools/test_mit_rss.py`.
 
+Il 26 ottobre 2026 la prova reale dal runner GitHub ha rilevato timeout della connessione TCP HTTPS all'host MIT (anche con curl IPv4); l'host non pubblicava un indirizzo IPv6. Il modulo annuale e l'RSS erano invece leggibili nel browser. Questo impedimento di rete non equivale a un problema del parser né a un'importazione riuscita: gli avvisi del workflow vanno controllati anche quando la pubblicazione termina con successo.
+
+In quella data è stato acquisito dal browser l'intero risultato ufficiale (499 righe, su cinque pagine da 100), verificando campi geografici e note con i dettagli ufficiali e preservando gli orari di ricezione della tabella. Il confronto ha conservato tutti i 494 ID precedenti, aggiunto cinque voci e registrato due passaggi da in programma a effettuato; le revoche sono 141. `metodo_ultima_sincronizzazione: browser-manuale-verificato` identifica questo recupero assistito. Non dimostra che l'accesso automatico dal runner sia stato ripristinato. Le successive verifiche annuali riuscite sostituiscono normalmente tale indicazione con i metadati ordinari della sincronizzazione.
+
 ## Manifestazioni ed eventi eccezionali
 
 Ricerca, proposte e revisione vengono eseguite in un **repository privato separato**, ogni sei ore e su approvazione. La chat e il computer dell'utente non sono necessari.
