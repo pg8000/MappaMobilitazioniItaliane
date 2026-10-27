@@ -9,10 +9,10 @@
     "sourceRows": 499,
     "officialCount": 499,
     "manualCount": 16,
-    "verifiedCount": 20,
+    "verifiedCount": 22,
     "revokedCount": 141,
     "missingCount": 0,
-    "revision": "e144b8f1a4ccda903655"
+    "revision": "3d3ad536950514c89d2a"
   },
   "fonti": {
     "teleclub-giugliano-20261026": {
@@ -294,6 +294,14 @@
     "ver-6c8d515e60c09c8fe71c": {
       "nome": "ANSA, 26/10/2026",
       "url": "https://www.ansa.it/sito/notizie/cronaca/2026/10/26/studenti-in-corteo-nei-corridoi-della-facolta-di-economia-a-torino_342caab1-9443-49bf-885c-850f4315e94a.html"
+    },
+    "ver-88c9d5ef53f75bf4cbb7": {
+      "nome": "RaiNews, 26/10/2026",
+      "url": "https://www.rainews.it/articoli/2026/10/manifestazione-tassisti-ed-ncc-di-fronte-al-mit-sul-caro-carburante-serve-soluzione-2d012a14-4f80-4dc2-ac1d-796f33ff8d06.html"
+    },
+    "ver-e1825694736d98c9381a": {
+      "nome": "GoNews, 23/10/2026",
+      "url": "https://www.gonews.it/2026/10/23/manifestazione-anche-a-pisa-su-carovita-guerre-e-emarginazione-sociale/"
     }
   },
   "luoghi": {
@@ -15918,6 +15926,29 @@
       ]
     },
     {
+      "id": "ver-6c09e4b4efb6078c12c6",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Caro vita e pace",
+      "place": "pisa",
+      "start": "2026-10-24",
+      "end": "2026-10-24",
+      "time": "17:00",
+      "title": "Presidio autorganizzato contro carovita, guerre ed emarginazione sociale",
+      "who": "Giovani e studenti promotori autorganizzati",
+      "where": "Piazza Dante, Pisa",
+      "event_status": "confermato",
+      "src": [
+        "ver-e1825694736d98c9381a"
+      ],
+      "regions": [
+        "Toscana"
+      ]
+    },
+    {
       "id": "ver-804e679d24e9cfff26b5",
       "orgs": [
         "non-identificato"
@@ -16141,6 +16172,29 @@
       ],
       "regions": [
         "Piemonte"
+      ]
+    },
+    {
+      "id": "ver-b107e62f72e5a0b3c647",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Trasporti",
+      "place": "roma",
+      "start": "2026-10-26",
+      "end": "2026-10-26",
+      "time": "Dalle 10:00",
+      "title": "Presidio tassisti e NCC contro il caro carburante",
+      "who": "itTaxi, URI, Unicoop e rete Muoversi",
+      "where": "Porta Pia, davanti al Ministero delle Infrastrutture e dei Trasporti",
+      "event_status": "confermato",
+      "src": [
+        "ver-88c9d5ef53f75bf4cbb7"
+      ],
+      "regions": [
+        "Lazio"
       ]
     },
     {
