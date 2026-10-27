@@ -9,10 +9,10 @@
     "sourceRows": 499,
     "officialCount": 499,
     "manualCount": 16,
-    "verifiedCount": 19,
+    "verifiedCount": 20,
     "revokedCount": 141,
     "missingCount": 0,
-    "revision": "872f02d8ae9fd73a4447"
+    "revision": "e144b8f1a4ccda903655"
   },
   "fonti": {
     "teleclub-giugliano-20261026": {
@@ -290,6 +290,10 @@
     "ver-5d5ba8e01cf87a285a79": {
       "nome": "ANSA — resoconto del 26 ottobre",
       "url": "https://www.ansa.it/sito/notizie/cronaca/2026/10/26/manifestazione-degli-studenti-a-firenze-con-un-corteo-in-centro_706b1501-b0e7-4d9a-a323-20d2115be210.html"
+    },
+    "ver-6c8d515e60c09c8fe71c": {
+      "nome": "ANSA, 26/10/2026",
+      "url": "https://www.ansa.it/sito/notizie/cronaca/2026/10/26/studenti-in-corteo-nei-corridoi-della-facolta-di-economia-a-torino_342caab1-9443-49bf-885c-850f4315e94a.html"
     }
   },
   "luoghi": {
@@ -16114,6 +16118,29 @@
       ],
       "regions": [
         "Toscana"
+      ]
+    },
+    {
+      "id": "ver-8a13b86fcc7566ed5fdd",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Università e istruzione",
+      "place": "torino",
+      "start": "2026-10-26",
+      "end": "2026-10-26",
+      "time": "Mattina, orario non indicato",
+      "title": "Presidio e corteo studentesco alla Scuola di Management ed Economia",
+      "who": "Cambiare Rotta, Studenti Indipendenti e CUA",
+      "where": "Scuola di Management ed Economia, corso Unione Sovietica, Torino",
+      "event_status": "confermato",
+      "src": [
+        "ver-6c8d515e60c09c8fe71c"
+      ],
+      "regions": [
+        "Piemonte"
       ]
     },
     {
