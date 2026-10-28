@@ -35,7 +35,10 @@ def unisci():
         "n_auto": len(official), "doppi": [], "da_verificare": [],
         "archive": {
             "year": 2026, "from": "2026-01-01", "to": "2026-12-31",
-            "syncedAt": mit.get("sincronizzato", ""), "sourceRows": mit.get("righe_lette", 0),
+            "syncedAt": mit.get("sincronizzato", ""),
+            "syncMethod": mit.get("metodo_ultima_sincronizzazione", ""),
+            "rssCheckedAt": mit.get("rss_checked_at", ""),
+            "sourceRows": mit.get("righe_lette", 0),
             "officialCount": len(official), "manualCount": len(manuali),
             "verifiedCount": len(verified["eventi"]),
             "revokedCount": sum(e.get("official_status") == "revocato" for e in official),
