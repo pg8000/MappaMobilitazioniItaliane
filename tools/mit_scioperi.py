@@ -232,6 +232,7 @@ def main():
         **{k: v for k, v in precedente.items() if k.startswith("rss_")},
         "fonte": URL, "anno": YEAR, "aggiornato": oggi().isoformat(),
         "sincronizzato": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
+        "metodo_ultima_sincronizzazione": "automatico-tabella-annuale",
         "righe_lette": len(righe), "copertura": {"da": f"{YEAR}-01-01", "a": f"{YEAR}-12-31"},
         "luoghi": luoghi, "eventi": sorted(result, key=lambda e: (e["start"], e["id"])),
     })
