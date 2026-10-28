@@ -259,7 +259,9 @@
   "luoghi": {
     "giugliano-in-campania": {
       "name": "Giugliano in Campania",
-      "aliases": ["Giugliano"],
+      "aliases": [
+        "Giugliano"
+      ],
       "lon": 14.20321,
       "lat": 40.92854,
       "region": "Campania"
@@ -375,12 +377,20 @@
       "lon": 16.1715,
       "lat": 39.0035,
       "region": "Calabria"
+    },
+    "empoli": {
+      "name": "Empoli",
+      "lon": 10.9476,
+      "lat": 43.7179,
+      "region": "Toscana"
     }
   },
   "eventi": [
     {
       "id": "giugliano-studenti-2026-10-26",
-      "orgs": ["non-identificato"],
+      "orgs": [
+        "non-identificato"
+      ],
       "type": "manifestazione",
       "scope": "locale",
       "sector": "Studenti",
@@ -392,7 +402,11 @@
       "who": "Studentesse e studenti dell’Area Nord di Napoli, senza sigle politiche e sindacali",
       "where": "Metro di Giugliano; via Colonne e corso Campano fino a piazza Annunziata",
       "event_status": "confermato",
-      "src": ["teleclub-giugliano-20261026", "cronacaflegrea-giugliano-20261026", "meridiano-giugliano-20261026"]
+      "src": [
+        "teleclub-giugliano-20261026",
+        "cronacaflegrea-giugliano-20261026",
+        "meridiano-giugliano-20261026"
+      ]
     },
     {
       "id": "torino-16",
@@ -1149,5 +1163,3 @@
     }
   ]
 }
-
-
