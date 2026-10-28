@@ -8,7 +8,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [ubuntu-24.04-arm, ubuntu-slim]
     runs-on: ${{ matrix.os }}
     timeout-minutes: 6
     steps:
