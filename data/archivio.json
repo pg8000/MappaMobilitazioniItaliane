@@ -9,10 +9,10 @@
     "sourceRows": 499,
     "officialCount": 499,
     "manualCount": 16,
-    "verifiedCount": 22,
+    "verifiedCount": 23,
     "revokedCount": 141,
     "missingCount": 0,
-    "revision": "3d3ad536950514c89d2a"
+    "revision": "6dc643bf07ad41ddb343"
   },
   "fonti": {
     "teleclub-giugliano-20261026": {
@@ -302,6 +302,14 @@
     "ver-e1825694736d98c9381a": {
       "nome": "GoNews, 23/10/2026",
       "url": "https://www.gonews.it/2026/10/23/manifestazione-anche-a-pisa-su-carovita-guerre-e-emarginazione-sociale/"
+    },
+    "ver-158db5e936124694b5ad": {
+      "nome": "GoNews, comunicato dei Collettivi Autorganizzati Universitari",
+      "url": "https://www.gonews.it/2026/10/26/firenze-il-collettivo-autorganizzato-universitario-annuncia-flash-mob-contro-la-crisi-abitativa/"
+    },
+    "ver-2c63a561dc3ef6f5e246": {
+      "nome": "FirenzeDintorni, annuncio del 26 ottobre",
+      "url": "https://www.firenzedintorni.it/it/articolo/49446/collettivo-universitario-a-firenze-flash-mob-contro-la-crisi-abitativa-in-questo-quadro-di-crisi-la-casa-e-tutto-cio-che-ci-e-rimasto-e-dobbiamo-difenderla.html"
     }
   },
   "luoghi": {
@@ -16319,6 +16327,30 @@
       "rss_seen_at": "2026-10-26T20:25:49+00:00",
       "regions": [
         "Emilia-Romagna"
+      ]
+    },
+    {
+      "id": "ver-236cf33c3021d2cdec6a",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Studenti",
+      "place": "firenze",
+      "start": "2026-10-28",
+      "end": "2026-10-28",
+      "time": "Orario non indicato",
+      "title": "Flash mob con tende contro la crisi abitativa",
+      "who": "Collettivi Autorganizzati Universitari di Firenze",
+      "where": "Davanti a Palazzo Vecchio, piazza della Signoria",
+      "event_status": "confermato",
+      "src": [
+        "ver-158db5e936124694b5ad",
+        "ver-2c63a561dc3ef6f5e246"
+      ],
+      "regions": [
+        "Toscana"
       ]
     },
     {
