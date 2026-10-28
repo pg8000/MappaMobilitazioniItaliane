@@ -73,5 +73,38 @@ jobs:
   pubblica:
     needs: aggiorna
     uses: ./.github/workflows/pubblica.yml
+  controlla_freschezza:
+    needs: [aggiorna, pubblica]
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Segnala se MIT e RSS non si aggiornano da oltre 36 ore
+        run: |
+          python - <<'PY'
+          import datetime as dt
+          import json
+          import sys
+
+          with open('data/aggiornamento.json', encoding='utf-8') as source:
+              update = json.load(source)
+          now = dt.datetime.now(dt.timezone.utc)
+          ages = {}
+          for label, key in [('tabella MIT', 'syncedAt'), ('RSS MIT', 'rssCheckedAt')]:
+              timestamp = dt.datetime.fromisoformat(update[key].replace('Z', '+00:00'))
+              if timestamp.tzinfo is None or timestamp > now:
+                  raise ValueError(f'Data non valida per {label}: {update[key]}')
+              ages[label] = now - timestamp
+              print(f'{label}: ultima acquisizione {update[key]}, {ages[label]} fa')
+          limit = dt.timedelta(hours=36)
+          if all(age > limit for age in ages.values()):
+              print('::error::Nessuna acquisizione MIT o RSS riuscita da oltre 36 ore; la pagina usa dati conservati.')
+              sys.exit(1)
+          for label, age in ages.items():
+              if age > limit:
+                  print(f'::warning::{label} non aggiornato da oltre 36 ore.')
+          PY
 
 
