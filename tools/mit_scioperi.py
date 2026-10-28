@@ -4,10 +4,11 @@
 Uso: python tools/mit_scioperi.py [file.html]   (con un file usa quello invece di scaricare: serve per i test)
 Non sovrascrive nulla se la tabella non viene riconosciuta o non contiene righe.
 """
-import hashlib, re, sys, urllib.request, urllib.parse, urllib.error, datetime as dt, time
+import hashlib, re, sys, urllib.request, urllib.parse, urllib.error, datetime as dt, time, os
 import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 from comuni import carica, salva, oggi, senza_accenti, slug, province, posizione_regionale
+from mit_relay import scarica_relay
 
 URL = "https://scioperi.mit.gov.it/mit2/public/scioperi/ricerca"
 YEAR = 2026
@@ -178,6 +179,13 @@ def converti(righe, base, prov, oggi_):
 def scarica_anno():
     # Il prospetto iniziale contiene soltanto gli eventi recenti. Il form storico
     # restituisce invece tutto l'anno e lo stato (compresi i revocati).
+    if os.environ.get("GITHUB_ACTIONS"):
+        try:
+            html = scarica_relay("annual", 12_000_000).decode("utf-8", "replace")
+            print("MIT: archivio annuale acquisito tramite relay autenticato")
+            return html, "automatico-tabella-annuale-relay"
+        except RuntimeError as exc:
+            print(f"MIT relay non disponibile: {exc}; provo il collegamento diretto", file=sys.stderr)
     body = urllib.parse.urlencode({
         "dataInizio": f"01/01/{YEAR}", "dataFine": f"31/12/{YEAR}",
         "categoria": "", "sindacato": "", "settore": "0", "rilevanza": "0",
@@ -187,7 +195,7 @@ def scarica_anno():
         try:
             req = urllib.request.Request(URL, data=body, headers={"User-Agent": UA, "Accept-Language": "it"})
             with urllib.request.urlopen(req, timeout=60) as response:
-                return response.read().decode("utf-8", "replace")
+                return response.read().decode("utf-8", "replace"), "automatico-tabella-annuale"
         except (OSError, TimeoutError):
             if attempt == 2:
                 raise
@@ -197,7 +205,11 @@ def scarica_anno():
 def main():
     base, prov = carica("eventi.json"), province()
     try:
-        html = open(sys.argv[1], encoding="utf-8").read() if len(sys.argv) > 1 else scarica_anno()
+        if len(sys.argv) > 1:
+            html = open(sys.argv[1], encoding="utf-8").read()
+            method = "file-locale"
+        else:
+            html, method = scarica_anno()
     except urllib.error.HTTPError as exc:
         if exc.code < 500:
             raise
@@ -232,7 +244,7 @@ def main():
         **{k: v for k, v in precedente.items() if k.startswith("rss_")},
         "fonte": URL, "anno": YEAR, "aggiornato": oggi().isoformat(),
         "sincronizzato": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
-        "metodo_ultima_sincronizzazione": "automatico-tabella-annuale",
+        "metodo_ultima_sincronizzazione": method,
         "righe_lette": len(righe), "copertura": {"da": f"{YEAR}-01-01", "a": f"{YEAR}-12-31"},
         "luoghi": luoghi, "eventi": sorted(result, key=lambda e: (e["start"], e["id"])),
     })
@@ -291,6 +303,13 @@ def leggi_rss(xml):
 
 
 def scarica_rss():
+    if os.environ.get("GITHUB_ACTIONS"):
+        try:
+            content = scarica_relay("rss", 2_000_000)
+            print("MIT RSS: feed acquisito tramite relay autenticato")
+            return content.decode("utf-8-sig")
+        except RuntimeError as exc:
+            print(f"MIT RSS relay non disponibile: {exc}; provo il collegamento diretto", file=sys.stderr)
     req = urllib.request.Request(RSS_URL, headers={"User-Agent": UA, "Accept": "application/rss+xml, application/xml"})
     with urllib.request.urlopen(req, timeout=25) as response:
         content = response.read(2_000_001)
@@ -405,5 +424,6 @@ if __name__ == "__main__":
         integra_rss()
     else:
         main()
+
 
 
