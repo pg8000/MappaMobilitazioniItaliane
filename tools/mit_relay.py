@@ -7,6 +7,7 @@ import urllib.parse
 import urllib.request
 
 RELAY_URL = "https://mit-relay-mappa-2026.heartyfawn37.chatgpt.site"
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130.0 Safari/537.36"
 
 
 def oidc_token():
@@ -15,7 +16,8 @@ def oidc_token():
     separator = "&" if "?" in request_url else "?"
     url = request_url + separator + "audience=" + urllib.parse.quote(RELAY_URL, safe="")
     request = urllib.request.Request(
-        url, headers={"Authorization": "bearer " + request_token})
+        url, headers={"Authorization": "bearer " + request_token,
+                      "User-Agent": USER_AGENT})
     with urllib.request.urlopen(request, timeout=10) as response:
         token = json.load(response)["value"]
     if not isinstance(token, str) or len(token) > 16000:
@@ -32,7 +34,8 @@ def scarica_relay(path, limit):
             request = urllib.request.Request(
                 RELAY_URL + "/" + path,
                 headers={"Authorization": "Bearer " + oidc_token(),
-                         "Accept": "text/html, application/rss+xml"})
+                         "Accept": "text/html, application/rss+xml",
+                         "User-Agent": USER_AGENT})
             with urllib.request.urlopen(request, timeout=45) as response:
                 if response.headers.get("X-MIT-Source") != "scioperi.mit.gov.it":
                     raise ValueError("Provenienza relay non riconosciuta")
