@@ -81,6 +81,12 @@ class ArchiveTests(unittest.TestCase):
         unknown = {"scope": "regionale", "source_region": "Sicilia e Calabria"}
         self.assertEqual(posizione_regionale(unknown, places, self.prov), unknown)
 
+    def test_archive_exposes_actual_mit_sync_method(self):
+        result = unisci()
+        mit = carica('scioperi-mit.json')
+        self.assertEqual(result['archive']['syncMethod'], mit.get('metodo_ultima_sincronizzazione', ''))
+        self.assertEqual(result['archive']['rssCheckedAt'], mit.get('rss_checked_at', ''))
+
     def test_official_rows_replace_old_summaries_only_when_available(self):
         mit_event = self.row()
         with patch('build_data.carica', side_effect=lambda n: self.base if n == 'eventi.json' else {"fonti": {}, "eventi": []} if n == 'eventi-verificati.json' else {"eventi": [dict(mit_event, id="test", start="2026-01-07", official_status="effettuato")]}):
