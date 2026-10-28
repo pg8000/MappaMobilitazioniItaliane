@@ -1,0 +1,44 @@
+name: Diagnostica collegamento MIT
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  rete:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 6
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verifica accesso diretto ai servizi MIT
+        shell: bash
+        run: |
+          python - <<'PY'
+          import socket, urllib.request, urllib.parse, time
+          host = "scioperi.mit.gov.it"
+          print("DNS:", sorted({entry[4][0] for entry in socket.getaddrinfo(host, 443)}), flush=True)
+          endpoints = [
+              ("RSS", "https://scioperi.mit.gov.it/mit2/public/scioperi/rss", None),
+              ("Archivio 2026", "https://scioperi.mit.gov.it/mit2/public/scioperi/ricerca",
+               urllib.parse.urlencode({"dataInizio": "01/01/2026", "dataFine": "31/12/2026",
+                                       "settore": "0", "rilevanza": "0", "stato": "0",
+                                       "submit": "Ricerca"}).encode()),
+              ("Portale dati MIT", "https://dati.mit.gov.it/catalog/dataset/scioperi-dei-trasporti", None),
+          ]
+          for name, url, body in endpoints:
+              start = time.monotonic()
+              try:
+                  request = urllib.request.Request(url, data=body,
+                      headers={"User-Agent": "MappaMobilitazioniItaliane/2 (+https://github.com/pg8000/MappaMobilitazioniItaliane)",
+                               "Accept-Language": "it"})
+                  with urllib.request.urlopen(request, timeout=12) as response:
+                      content = response.read(4096)
+                      print(f"{name}: HTTP {response.status}, {len(content)} byte iniziali, {time.monotonic()-start:.1f}s", flush=True)
+              except Exception as error:
+                  print(f"{name}: {type(error).__name__}: {error}; {time.monotonic()-start:.1f}s", flush=True)
+          PY
