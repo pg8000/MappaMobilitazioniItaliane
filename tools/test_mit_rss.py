@@ -121,6 +121,12 @@ class RssTests(unittest.TestCase):
                 self.assertFalse(mit.integra_rss())
                 save.assert_not_called()
 
+    def test_rss_merge_preserves_manual_sync_provenance(self):
+        previous = dict(self.previous, metodo_ultima_sincronizzazione='browser-manuale-verificato')
+        merged = self.merge(previous)
+        self.assertEqual(merged['metodo_ultima_sincronizzazione'], 'browser-manuale-verificato')
+        self.assertEqual(merged['sincronizzato'], previous['sincronizzato'])
+
     def test_no_new_events_still_records_successful_check(self):
         first = self.merge()
         second = self.merge(first, stamp='2026-10-27T08:00:00+00:00')
