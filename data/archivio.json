@@ -6,6 +6,8 @@
     "from": "2026-01-01",
     "to": "2026-12-31",
     "syncedAt": "2026-10-26T20:25:47+00:00",
+    "syncMethod": "browser-manuale-verificato",
+    "rssCheckedAt": "2026-10-26T20:25:49+00:00",
     "sourceRows": 499,
     "officialCount": 499,
     "manualCount": 16,
@@ -1456,6 +1458,15 @@
       "region": "Calabria",
       "regions": [
         "Calabria"
+      ]
+    },
+    "empoli": {
+      "name": "Empoli",
+      "lon": 10.9476,
+      "lat": 43.7179,
+      "region": "Toscana",
+      "regions": [
+        "Toscana"
       ]
     }
   },
