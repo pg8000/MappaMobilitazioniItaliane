@@ -1,0 +1,22 @@
+name: Diagnostica relay MIT
+on:
+  push:
+    paths: [".github/workflows/diagnostica-relay.yml"]
+permissions:
+  contents: read
+  id-token: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Prova accesso al relay senza dati MIT
+        run: |
+          url='https://mit-relay-mappa-2026.heartyfawn37.chatgpt.site/rss'
+          for agent in 'curl/8.0' 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130.0 Safari/537.36' 'Python-urllib/3.12'; do
+            echo "Client: $agent"
+            curl --silent --show-error --max-time 12 --user-agent "$agent" --dump-header /tmp/headers --output /tmp/body --write-out 'HTTP %{http_code}; IP %{remote_ip}; tempo %{time_total}s\n' "$url" || true
+            grep -iE '^(server|cf-ray|location|content-type):' /tmp/headers || true
+            head -c 160 /tmp/body | tr '\n' ' '
+            echo
+          done
