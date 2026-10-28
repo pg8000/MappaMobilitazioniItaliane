@@ -7,14 +7,14 @@
     "to": "2026-12-31",
     "syncedAt": "2026-10-28T12:01:04+00:00",
     "syncMethod": "locale-manuale-verificato",
-    "rssCheckedAt": "2026-10-28T12:01:12+00:00",
+    "rssCheckedAt": "2026-10-28T13:49:45+00:00",
     "sourceRows": 500,
     "officialCount": 500,
     "manualCount": 16,
     "verifiedCount": 24,
     "revokedCount": 142,
     "missingCount": 0,
-    "revision": "4ed43f80da4a143d406b"
+    "revision": "745cd26b9cdebfd82f38"
   },
   "fonti": {
     "teleclub-giugliano-20261026": {
@@ -16336,7 +16336,7 @@
       "received_at": "01/10/2026 11:15",
       "verified_at": "2026-10-28",
       "mit_guid": "8583",
-      "rss_seen_at": "2026-10-28T12:01:12+00:00",
+      "rss_seen_at": "2026-10-28T13:49:45+00:00",
       "regions": [
         "Campania"
       ]
@@ -16490,7 +16490,7 @@
       "place": "regione-toscana",
       "map_precision": "region",
       "mit_guid": "8601",
-      "rss_seen_at": "2026-10-28T12:01:12+00:00",
+      "rss_seen_at": "2026-10-28T13:49:45+00:00",
       "regions": [
         "Toscana"
       ]
@@ -16524,7 +16524,7 @@
       "received_at": "20/10/2026 12:18",
       "verified_at": "2026-10-28",
       "mit_guid": "8611",
-      "rss_seen_at": "2026-10-28T12:01:12+00:00",
+      "rss_seen_at": "2026-10-28T13:49:45+00:00",
       "regions": []
     },
     {
@@ -16552,7 +16552,7 @@
       "received_at": "16/10/2026 12:13",
       "verified_at": "2026-10-28",
       "mit_guid": "8606",
-      "rss_seen_at": "2026-10-28T12:01:12+00:00",
+      "rss_seen_at": "2026-10-28T13:49:45+00:00",
       "regions": []
     },
     {
@@ -16580,7 +16580,7 @@
       "received_at": "06/10/2026 16:58",
       "verified_at": "2026-10-28",
       "mit_guid": "8590",
-      "rss_seen_at": "2026-10-28T12:01:12+00:00",
+      "rss_seen_at": "2026-10-28T13:49:45+00:00",
       "regions": []
     },
     {
@@ -16610,7 +16610,7 @@
       "received_at": "03/07/2026 23:38",
       "verified_at": "2026-10-28",
       "mit_guid": "8453",
-      "rss_seen_at": "2026-10-28T12:01:12+00:00",
+      "rss_seen_at": "2026-10-28T13:49:45+00:00",
       "regions": []
     },
     {
@@ -16639,7 +16639,7 @@
       "received_at": "21/10/2026 10:42",
       "verified_at": "2026-10-28",
       "mit_guid": "8612",
-      "rss_seen_at": "2026-10-28T12:01:12+00:00",
+      "rss_seen_at": "2026-10-28T13:49:45+00:00",
       "regions": []
     },
     {
@@ -16736,7 +16736,7 @@
       "received_at": "07/09/2026 15:11",
       "verified_at": "2026-10-28",
       "mit_guid": "8548",
-      "rss_seen_at": "2026-10-28T12:01:12+00:00",
+      "rss_seen_at": "2026-10-28T13:49:45+00:00",
       "regions": []
     },
     {
@@ -16766,7 +16766,7 @@
       "received_at": "26/10/2026 12:14",
       "verified_at": "2026-10-28",
       "mit_guid": "8620",
-      "rss_seen_at": "2026-10-28T12:01:12+00:00",
+      "rss_seen_at": "2026-10-28T13:49:45+00:00",
       "regions": [
         "Campania"
       ]
@@ -16851,7 +16851,7 @@
       "received_at": "23/10/2026 17:14",
       "verified_at": "2026-10-28",
       "mit_guid": "8618",
-      "rss_seen_at": "2026-10-28T12:01:12+00:00",
+      "rss_seen_at": "2026-10-28T13:49:45+00:00",
       "regions": [
         "Sicilia"
       ]
@@ -16883,7 +16883,7 @@
       "received_at": "22/10/2026 14:22",
       "verified_at": "2026-10-28",
       "mit_guid": "8615",
-      "rss_seen_at": "2026-10-28T12:01:12+00:00",
+      "rss_seen_at": "2026-10-28T13:49:45+00:00",
       "regions": [
         "Veneto"
       ]
@@ -16917,7 +16917,7 @@
       "received_at": "27/10/2026 11:21",
       "verified_at": "2026-10-28",
       "mit_guid": "8621",
-      "rss_seen_at": "2026-10-28T12:01:12+00:00",
+      "rss_seen_at": "2026-10-28T13:49:45+00:00",
       "regions": []
     },
     {
@@ -16945,7 +16945,7 @@
       "received_at": "16/10/2026 15:30",
       "verified_at": "2026-10-28",
       "mit_guid": "8608",
-      "rss_seen_at": "2026-10-28T12:01:12+00:00",
+      "rss_seen_at": "2026-10-28T13:49:45+00:00",
       "regions": []
     },
     {
@@ -16975,7 +16975,7 @@
       "received_at": "26/10/2026 11:31",
       "verified_at": "2026-10-28",
       "mit_guid": "8619",
-      "rss_seen_at": "2026-10-28T12:01:12+00:00",
+      "rss_seen_at": "2026-10-28T13:49:45+00:00",
       "regions": [
         "Calabria"
       ]
@@ -17007,7 +17007,7 @@
       "received_at": "13/10/2026 10:39",
       "verified_at": "2026-10-28",
       "mit_guid": "8602",
-      "rss_seen_at": "2026-10-28T12:01:12+00:00",
+      "rss_seen_at": "2026-10-28T13:49:45+00:00",
       "regions": [
         "Lombardia"
       ]
@@ -17040,7 +17040,7 @@
       "received_at": "08/10/2026 14:46",
       "verified_at": "2026-10-28",
       "mit_guid": "8598",
-      "rss_seen_at": "2026-10-28T12:01:12+00:00",
+      "rss_seen_at": "2026-10-28T13:49:45+00:00",
       "regions": [
         "Veneto"
       ]
@@ -17075,7 +17075,7 @@
       "received_at": "16/10/2026 11:56",
       "verified_at": "2026-10-28",
       "mit_guid": "8605",
-      "rss_seen_at": "2026-10-28T12:01:12+00:00",
+      "rss_seen_at": "2026-10-28T13:49:45+00:00",
       "regions": [
         "Puglia"
       ]
@@ -17111,7 +17111,7 @@
       "received_at": "14/10/2026 09:13",
       "verified_at": "2026-10-28",
       "mit_guid": "8603",
-      "rss_seen_at": "2026-10-28T12:01:12+00:00",
+      "rss_seen_at": "2026-10-28T13:49:45+00:00",
       "regions": [
         "Campania"
       ]
@@ -17143,7 +17143,7 @@
       "received_at": "07/10/2026 18:49",
       "verified_at": "2026-10-28",
       "mit_guid": "8592",
-      "rss_seen_at": "2026-10-28T12:01:12+00:00",
+      "rss_seen_at": "2026-10-28T13:49:45+00:00",
       "regions": []
     },
     {
@@ -17171,7 +17171,7 @@
       "received_at": "19/10/2026 16:17",
       "verified_at": "2026-10-28",
       "mit_guid": "8610",
-      "rss_seen_at": "2026-10-28T12:01:12+00:00",
+      "rss_seen_at": "2026-10-28T13:49:45+00:00",
       "regions": []
     },
     {
@@ -17221,7 +17221,7 @@
       "received_at": "23/09/2026 14:48",
       "verified_at": "2026-10-28",
       "mit_guid": "8571",
-      "rss_seen_at": "2026-10-28T12:01:12+00:00",
+      "rss_seen_at": "2026-10-28T13:49:45+00:00",
       "regions": []
     },
     {
@@ -17250,7 +17250,7 @@
       "received_at": "30/09/2026 17:34",
       "verified_at": "2026-10-28",
       "mit_guid": "8579",
-      "rss_seen_at": "2026-10-28T12:01:12+00:00",
+      "rss_seen_at": "2026-10-28T13:49:45+00:00",
       "regions": []
     },
     {
@@ -17278,7 +17278,7 @@
       "received_at": "05/10/2026 20:33",
       "verified_at": "2026-10-28",
       "mit_guid": "8588",
-      "rss_seen_at": "2026-10-28T12:01:12+00:00",
+      "rss_seen_at": "2026-10-28T13:49:45+00:00",
       "regions": []
     },
     {
@@ -17309,7 +17309,7 @@
       "received_at": "27/09/2026 08:37",
       "verified_at": "2026-10-28",
       "mit_guid": "8575",
-      "rss_seen_at": "2026-10-28T12:01:12+00:00",
+      "rss_seen_at": "2026-10-28T13:49:45+00:00",
       "regions": []
     },
     {
@@ -17337,7 +17337,7 @@
       "received_at": "08/10/2026 00:02",
       "verified_at": "2026-10-28",
       "mit_guid": "8594",
-      "rss_seen_at": "2026-10-28T12:01:12+00:00",
+      "rss_seen_at": "2026-10-28T13:49:45+00:00",
       "regions": []
     },
     {
@@ -17366,7 +17366,7 @@
       "received_at": "16/10/2026 14:17",
       "verified_at": "2026-10-28",
       "mit_guid": "8607",
-      "rss_seen_at": "2026-10-28T12:01:12+00:00",
+      "rss_seen_at": "2026-10-28T13:49:45+00:00",
       "regions": [
         "Emilia-Romagna"
       ]
@@ -17397,7 +17397,7 @@
       "received_at": "23/10/2026 11:01",
       "verified_at": "2026-10-28",
       "mit_guid": "8616",
-      "rss_seen_at": "2026-10-28T12:01:12+00:00",
+      "rss_seen_at": "2026-10-28T13:49:45+00:00",
       "regions": []
     },
     {
