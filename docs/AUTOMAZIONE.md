@@ -4,6 +4,10 @@
 
 Il workflow **Sincronizza archivio 2026** consulta ogni giorno alle 05:30 UTC il registro annuale MIT. Può essere avviato anche da GitHub Actions. Il processo acquisisce i dati disponibili, ne controlla la coerenza, ricostruisce l’archivio e pubblica la pagina con GitHub Pages.
 
+I runner GitHub usano il [relay MIT dedicato](../tools/mit_relay.py) per il registro annuale e l'RSS. Il relay è raggiungibile pubblicamente ma risponde solo a richieste con un token temporaneo firmato da GitHub per questo repository e il ramo `main`; senza token restituisce `401`. Può consultare soltanto i due endpoint MIT previsti. Il workflow prova il collegamento diretto se il relay fallisce e, se entrambi non rispondono, conserva l'ultima copia valida e la sua data. Il controllo di freschezza segnala un errore quando entrambe le acquisizioni mancano da oltre 36 ore.
+
+Il relay è gestito nel progetto Sites **Relay MIT per la mappa** dell'account proprietario. Se il progetto viene disattivato o cambia indirizzo, occorre aggiornare l'indirizzo sia nel client del repository sia nella verifica del token nel relay.
+
 L’identità di una proclamazione comprende date, categoria, sindacati, territorio, proclamazione e ricezione. Gli stati ufficiali distinguono eventi in programma, effettuati e revocati. Una voce assente dall’ultima risposta rimane distinta da una revoca.
 
 ## Feed RSS integrativo
@@ -45,3 +49,4 @@ Le proposte validate restano recuperabili anche se l’invio fallisce. Vengono c
 La data della verifica MIT riguarda il registro ufficiale e non certifica la completezza delle manifestazioni. La pagina controlla periodicamente la revisione dei dati e conserva i filtri durante l’aggiornamento.
 
 Le esecuzioni programmate possono subire ritardi e sono soggette ai limiti del piano GitHub. Il funzionamento non richiede che il computer dell’utente o l’app siano aperti.
+

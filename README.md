@@ -27,9 +27,11 @@ Un cerchio tratteggiato presso il capoluogo indica un’area regionale, non un l
 
 Il calendario MIT viene consultato ogni giorno alle **05:30 UTC**, pari alle 06:30 italiane con ora solare e alle 07:30 con ora legale. Il feed RSS ufficiale integra gli eventi disponibili senza sostituire lo storico annuale né modificare gli stati ufficiali già registrati.
 
+GitHub Actions acquisisce le due fonti attraverso un relay dedicato, che accetta soltanto richieste firmate dall'identità temporanea del workflow di questo repository. Il relay consulta esclusivamente i due indirizzi MIT previsti; la pagina pubblica non dipende dal relay per essere visualizzata.
+
 Manifestazioni ed eventi eccezionali vengono cercati tramite fonti nazionali e locali e sottoposti a verifica in una raccolta privata. Solo le schede approvate o conformi ai criteri di pubblicazione automatica entrano nell’archivio pubblico.
 
-Se una fonte non risponde, vengono conservati i dati validi e la relativa data di verifica. La riuscita della pubblicazione della pagina non implica che tutte le fonti siano state aggiornate.
+Se una fonte non risponde, vengono conservati i dati validi e la relativa data di verifica. La riuscita della pubblicazione della pagina non implica che tutte le fonti siano state aggiornate. Una verifica separata segnala se né il registro annuale né l'RSS sono stati acquisiti da oltre 36 ore.
 
 ## Documentazione
 
@@ -41,3 +43,4 @@ Se una fonte non risponde, vengono conservati i dati validi e la relativa data d
 [Segnala un dato inesatto o un evento mancante](https://github.com/pg8000/MappaMobilitazioniItaliane/issues/new?template=correzione.yml), indicando una fonte diretta.
 
 Codice: MIT ([LICENSE](LICENSE)). Dati: CC BY 4.0 ([LICENSE-DATI.md](LICENSE-DATI.md)); le fonti originali sono attribuite nelle schede. Nessun cookie o tracciamento dei visitatori.
+
