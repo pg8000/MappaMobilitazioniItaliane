@@ -184,6 +184,18 @@
     "ver-2c63a561dc3ef6f5e246": {
       "nome": "FirenzeDintorni, annuncio del 26 ottobre",
       "url": "https://www.firenzedintorni.it/it/articolo/49446/collettivo-universitario-a-firenze-flash-mob-contro-la-crisi-abitativa-in-questo-quadro-di-crisi-la-casa-e-tutto-cio-che-ci-e-rimasto-e-dobbiamo-difenderla.html"
+    },
+    "ver-7727d0dfed0624d8ae90": {
+      "nome": "GoNews, annuncio e dichiarazioni dei promotori",
+      "url": "https://www.gonews.it/2026/10/21/anche-a-empoli-studenti-in-piazza-contro-il-caro-vita-manifestazione-sabato-24-ottobre/"
+    },
+    "ver-acc274c4a973ed08bb21": {
+      "nome": "La Nazione Empoli, cronaca del 25 ottobre",
+      "url": "https://www.lanazione.it/empoli/cronaca/caro-vita-e-distruzione-della-scuola-dbb1b1f0"
+    },
+    "ver-758a24e915c765960993": {
+      "nome": "GoNews, cronaca del 24 ottobre",
+      "url": "https://www.gonews.it/2026/10/24/manifestazione-studenti-empoli/"
     }
   },
   "eventi": [
@@ -554,6 +566,28 @@
       "event_status": "confermato",
       "src": [
         "ver-d7db77c11e321e250e14"
+      ]
+    },
+    {
+      "id": "ver-eb385c901d463b2b1493",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Studenti",
+      "place": "empoli",
+      "start": "2026-10-24",
+      "end": "2026-10-24",
+      "time": "08:30 (ritrovo)",
+      "title": "Generazione senza futuro: corteo studentesco contro il carovita",
+      "who": "Studenti e studentesse degli istituti empolesi",
+      "where": "Via Bonistallo (ritrovo), poi centro di Empoli",
+      "event_status": "confermato",
+      "src": [
+        "ver-7727d0dfed0624d8ae90",
+        "ver-acc274c4a973ed08bb21",
+        "ver-758a24e915c765960993"
       ]
     },
     {
