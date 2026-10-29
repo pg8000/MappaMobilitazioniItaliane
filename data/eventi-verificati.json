@@ -196,6 +196,14 @@
     "ver-758a24e915c765960993": {
       "nome": "GoNews, cronaca del 24 ottobre",
       "url": "https://www.gonews.it/2026/10/24/manifestazione-studenti-empoli/"
+    },
+    "ver-6c3ca787024ea7ea6cdb": {
+      "nome": "ANSA Campania",
+      "url": "https://www.ansa.it/campania/notizie/2026/10/26/presidio-dei-lavoratori-enel-a-napoli_476196b5-e02f-46c0-a621-de6e7687a63b.html"
+    },
+    "ver-9b335ca07f045ba8b79c": {
+      "nome": "PrimaCampania",
+      "url": "https://www.primacampania.it/presidio-sindacale-davanti-enel-napoli/"
     }
   },
   "eventi": [
@@ -588,6 +596,27 @@
         "ver-7727d0dfed0624d8ae90",
         "ver-acc274c4a973ed08bb21",
         "ver-758a24e915c765960993"
+      ]
+    },
+    {
+      "id": "ver-0b21da74b36d4d09fed0",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Mobilitazioni",
+      "place": "napoli",
+      "start": "2026-10-26",
+      "end": "2026-10-26",
+      "time": "Mattina (orario non precisato)",
+      "title": "Presidio dei lavoratori Enel a Napoli per le relazioni industriali",
+      "who": "Lavoratori Enel, Filctem Cgil, Flaei Cisl e Uiltec Uil Campania",
+      "where": "Sede direzionale Enel, via Galileo Ferraris, Napoli",
+      "event_status": "confermato",
+      "src": [
+        "ver-6c3ca787024ea7ea6cdb",
+        "ver-9b335ca07f045ba8b79c"
       ]
     },
     {
