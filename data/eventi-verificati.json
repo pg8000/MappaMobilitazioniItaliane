@@ -204,6 +204,10 @@
     "ver-9b335ca07f045ba8b79c": {
       "nome": "PrimaCampania",
       "url": "https://www.primacampania.it/presidio-sindacale-davanti-enel-napoli/"
+    },
+    "ver-ba240f8cc757855afa7a": {
+      "nome": "FIAB Genova, comunicato del 27 ottobre 2026",
+      "url": "https://fiabgenova.it/2026/10/27/cambiamo-strada-il-15-novembre-una-ciclabile-umana-in-via-xx-settembre/"
     }
   },
   "eventi": [
@@ -740,6 +744,26 @@
       "event_status": "confermato",
       "src": [
         "ver-89a54a0f4960802b23bb"
+      ]
+    },
+    {
+      "id": "ver-271ced5e136ad9811268",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Mobilitazioni",
+      "place": "genova",
+      "start": "2026-11-15",
+      "end": "2026-11-15",
+      "time": "15:00 (ritrovo)",
+      "title": "Ciclabile umana per la sicurezza stradale a Genova",
+      "who": "FIAB Genova e associazioni aderenti alla mobilitazione per la sicurezza stradale",
+      "where": "Ritrovo in piazza De Ferrari, poi via XX Settembre",
+      "event_status": "confermato",
+      "src": [
+        "ver-ba240f8cc757855afa7a"
       ]
     }
   ]
