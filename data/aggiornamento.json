@@ -2,14 +2,14 @@
   "year": 2026,
   "from": "2026-01-01",
   "to": "2026-12-31",
-  "syncedAt": "2026-10-29T11:40:52+00:00",
+  "syncedAt": "2026-10-30T07:19:48+00:00",
   "syncMethod": "automatico-tabella-annuale-relay",
-  "rssCheckedAt": "2026-10-29T11:41:17+00:00",
-  "sourceRows": 503,
-  "officialCount": 503,
+  "rssCheckedAt": "2026-10-30T07:21:05+00:00",
+  "sourceRows": 504,
+  "officialCount": 504,
   "manualCount": 16,
-  "verifiedCount": 25,
-  "revokedCount": 143,
+  "verifiedCount": 26,
+  "revokedCount": 144,
   "missingCount": 0,
-  "revision": "f51dfa7752da4df2fd2d"
+  "revision": "226fc4eddee163ce8f17"
 }

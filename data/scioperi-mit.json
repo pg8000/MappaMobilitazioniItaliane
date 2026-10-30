@@ -1,14 +1,14 @@
 {
-  "rss_checked_at": "2026-10-29T11:41:17+00:00",
-  "rss_items": 31,
+  "rss_checked_at": "2026-10-30T07:21:05+00:00",
+  "rss_items": 32,
   "rss_added": 0,
   "rss_ambiguous": 0,
   "fonte": "https://scioperi.mit.gov.it/mit2/public/scioperi/ricerca",
   "anno": 2026,
-  "aggiornato": "2026-10-29",
-  "sincronizzato": "2026-10-29T11:40:52+00:00",
+  "aggiornato": "2026-10-30",
+  "sincronizzato": "2026-10-30T07:19:48+00:00",
   "metodo_ultima_sincronizzazione": "automatico-tabella-annuale-relay",
-  "righe_lette": 503,
+  "righe_lette": 504,
   "copertura": {
     "da": "2026-01-01",
     "a": "2026-12-31"
@@ -402,7 +402,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/01/2026",
       "received_at": "06/01/2026 12:02",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-emilia-romagna",
       "map_precision": "region"
     },
@@ -431,7 +431,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/01/2026",
       "received_at": "06/01/2026 13:44",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-emilia-romagna",
       "map_precision": "region"
     },
@@ -460,7 +460,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/01/2026",
       "received_at": "07/01/2026 11:18",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-emilia-romagna",
       "map_precision": "region"
     },
@@ -495,7 +495,7 @@
       "source_province": "Genova",
       "proclaimed_at": "07/01/2026",
       "received_at": "07/01/2026 11:14",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-409b124e1caf3ce7",
@@ -526,7 +526,7 @@
       "source_province": "Pescara",
       "proclaimed_at": "21/11/2025",
       "received_at": "21/11/2025 15:15",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-464daa1a25435cbe",
@@ -552,7 +552,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/12/2025",
       "received_at": "15/12/2025 22:22",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-abruzzo",
       "map_precision": "region"
     },
@@ -584,7 +584,7 @@
       "source_province": "Teramo",
       "proclaimed_at": "10/12/2025",
       "received_at": "11/12/2025 12:03",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-7316b6ee4e3f8a4b",
@@ -613,7 +613,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "28/12/2025",
       "received_at": "29/12/2025 08:17",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-abruzzo",
       "map_precision": "region"
     },
@@ -645,7 +645,7 @@
       "source_province": "Chieti",
       "proclaimed_at": "28/12/2025",
       "received_at": "30/12/2025 08:31",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-f72fcbbf581d4512",
@@ -674,7 +674,7 @@
       "source_province": "Bolzano",
       "proclaimed_at": "05/12/2025",
       "received_at": "05/12/2025 20:54",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-fab92ebac85100cb",
@@ -701,7 +701,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "28/11/2025",
       "received_at": "28/11/2025 12:44",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-05c35bb9003f6a60",
@@ -726,7 +726,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "05/12/2025",
       "received_at": "05/12/2025 09:04",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-2ca8994bd1b1ca73",
@@ -751,7 +751,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "10/11/2025",
       "received_at": "10/11/2025 18:13",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-477c303572a2cf4f",
@@ -778,7 +778,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/01/2026",
       "received_at": "06/01/2026 23:41",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-497280a85178e648",
@@ -803,7 +803,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "19/11/2025",
       "received_at": "19/11/2025 12:19",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-6debb458d238b888",
@@ -828,7 +828,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/11/2025",
       "received_at": "24/11/2025 16:29",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-7a300aa80f38f16a",
@@ -853,7 +853,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/12/2025",
       "received_at": "06/12/2025 09:35",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-ba736b0de35f6c0d",
@@ -878,7 +878,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "22/12/2025",
       "received_at": "22/12/2025 10:19",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-c2b3ff566f963bdd",
@@ -905,7 +905,7 @@
       "source_province": "Campobasso",
       "proclaimed_at": "24/11/2025",
       "received_at": "24/11/2025 15:26",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-d8246bdb65f2d6c8",
@@ -931,7 +931,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/12/2025",
       "received_at": "02/01/2026 01:12",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-e60d4fe48719feae",
@@ -956,7 +956,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "23/12/2025",
       "received_at": "23/12/2025 10:13",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-eedc8194eb9fffb5",
@@ -982,7 +982,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "10/11/2025",
       "received_at": "10/11/2025 15:29",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-ef4ab31eabf4ce96",
@@ -1007,7 +1007,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "27/12/2025",
       "received_at": "27/12/2025 14:11",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-5e2ac78e474bd353",
@@ -1033,7 +1033,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/12/2025",
       "received_at": "24/12/2025 18:41",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-7660679931efbf17",
@@ -1059,7 +1059,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/12/2025",
       "received_at": "24/12/2025 18:38",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-463cb82996ba8a39",
@@ -1085,7 +1085,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "21/11/2025",
       "received_at": "21/11/2025 15:04",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-lombardia",
       "map_precision": "region"
     },
@@ -1114,7 +1114,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "08/01/2026",
       "received_at": "08/01/2026 20:01",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-b134da231f8e3af1",
@@ -1145,7 +1145,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "17/12/2025",
       "received_at": "17/12/2025 14:40",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-bd265f730ac43b03",
@@ -1171,7 +1171,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "05/12/2025",
       "received_at": "05/12/2025 12:41",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-umbria",
       "map_precision": "region"
     },
@@ -1203,7 +1203,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "11/11/2025",
       "received_at": "11/11/2025 15:53",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-emilia-romagna",
       "map_precision": "region"
     },
@@ -1232,7 +1232,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "09/12/2025",
       "received_at": "09/12/2025 12:13",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-c14d83cf59cbc509",
@@ -1258,7 +1258,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "18/12/2025",
       "received_at": "18/12/2025 13:59",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-22e35b6790f0f8f3",
@@ -1285,7 +1285,7 @@
       "source_province": "Palermo",
       "proclaimed_at": "18/12/2025",
       "received_at": "18/12/2025 23:40",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-4780573d77d17769",
@@ -1313,7 +1313,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "13/12/2025",
       "received_at": "15/12/2025 09:52",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-molise",
       "map_precision": "region"
     },
@@ -1342,7 +1342,7 @@
       "source_province": "Enna",
       "proclaimed_at": "18/12/2025",
       "received_at": "18/12/2025 23:40",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-5754b63e132616e9",
@@ -1369,7 +1369,7 @@
       "source_province": "Palermo",
       "proclaimed_at": "18/12/2025",
       "received_at": "18/12/2025 23:40",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-816454bceff26333",
@@ -1396,7 +1396,7 @@
       "source_province": "Catania",
       "proclaimed_at": "18/12/2025",
       "received_at": "18/12/2025 23:40",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-183dfae432af62d6",
@@ -1426,7 +1426,7 @@
       "source_province": "Bolzano",
       "proclaimed_at": "01/01/2026",
       "received_at": "01/01/2026 20:22",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-6fb8ae9132432adf",
@@ -1453,7 +1453,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "02/01/2026",
       "received_at": "02/01/2026 21:04",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-75579d791924e942",
@@ -1480,7 +1480,7 @@
       "source_province": "Udine",
       "proclaimed_at": "08/01/2026",
       "received_at": "08/01/2026 18:15",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-c0efd7bc49c9706c",
@@ -1505,7 +1505,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "18/12/2025",
       "received_at": "19/12/2025 14:18",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-d344f79cc9db1288",
@@ -1532,7 +1532,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "17/12/2025",
       "received_at": "17/12/2025 16:18",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-6db16afd0757ba1a",
@@ -1563,7 +1563,7 @@
       "source_province": "Roma",
       "proclaimed_at": "22/01/2026",
       "received_at": "22/01/2026 13:55",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-814c7b0e95da20b3",
@@ -1592,7 +1592,7 @@
       "source_province": "Roma",
       "proclaimed_at": "22/01/2026",
       "received_at": "22/01/2026 14:33",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-e3e0f221d74bb3d5",
@@ -1619,7 +1619,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "10/12/2025",
       "received_at": "10/12/2025 17:58",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-b4b50de5f6181e5c",
@@ -1647,7 +1647,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "14/01/2026",
       "received_at": "14/01/2026 14:16",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-e0f2d99a9cb7b5ff",
@@ -1672,7 +1672,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "01/12/2025",
       "received_at": "01/12/2025 20:09",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-ed1bd5d8d574f076",
@@ -1699,7 +1699,7 @@
       "source_province": "Genova",
       "proclaimed_at": "15/01/2026",
       "received_at": "15/01/2026 11:45",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-3600643abb6b257c",
@@ -1729,7 +1729,7 @@
       "source_province": "Ancona",
       "proclaimed_at": "23/12/2025",
       "received_at": "23/12/2025 12:38",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-da3a343040653492",
@@ -1756,7 +1756,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/01/2026",
       "received_at": "20/01/2026 14:38",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-088db9b877200c50",
@@ -1786,7 +1786,7 @@
       "source_province": "Bologna",
       "proclaimed_at": "11/12/2025",
       "received_at": "11/12/2025 16:01",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-1741caa76114165a",
@@ -1815,7 +1815,7 @@
       "source_province": "Palermo",
       "proclaimed_at": "30/12/2025",
       "received_at": "30/12/2025 21:47",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-43e298860ee8b6e1",
@@ -1844,7 +1844,7 @@
       "source_province": "Bolzano",
       "proclaimed_at": "09/01/2026",
       "received_at": "09/01/2026 00:53",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-12765e3bb2a9a6b5",
@@ -1871,7 +1871,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "11/12/2025",
       "received_at": "11/12/2025 13:12",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-9603ba5877a69940",
@@ -1898,7 +1898,7 @@
       "source_province": "Brescia",
       "proclaimed_at": "16/01/2026",
       "received_at": "16/01/2026 14:48",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-a01b66edeee9b8c8",
@@ -1926,7 +1926,7 @@
       "source_province": "Brescia",
       "proclaimed_at": "16/01/2026",
       "received_at": "16/01/2026 15:02",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-b267306d9a32e911",
@@ -1954,7 +1954,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/01/2026",
       "received_at": "15/01/2026 12:19",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-3a74cb2d05368797",
@@ -1982,7 +1982,7 @@
       "source_province": "Roma",
       "proclaimed_at": "08/01/2026",
       "received_at": "08/01/2026 10:02",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-70a14627e5aa4174",
@@ -2012,7 +2012,7 @@
       "source_province": "Roma",
       "proclaimed_at": "08/01/2026",
       "received_at": "08/01/2026 09:25",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-e58671ca5e176908",
@@ -2041,7 +2041,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "08/01/2026",
       "received_at": "19/01/2026 11:17",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-lazio",
       "map_precision": "region"
     },
@@ -2069,7 +2069,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/01/2026",
       "received_at": "15/01/2026 20:25",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-lombardia",
       "map_precision": "region"
     },
@@ -2102,7 +2102,7 @@
       "source_province": "Rimini",
       "proclaimed_at": "20/01/2026",
       "received_at": "20/01/2026 10:34",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-2211e8ec7d25e236",
@@ -2127,7 +2127,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "20/01/2026",
       "received_at": "20/01/2026 13:03",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-3e16b31549e9a67f",
@@ -2154,7 +2154,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "22/01/2026",
       "received_at": "22/01/2026 12:35",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-42353ac58de3739b",
@@ -2183,7 +2183,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "27/01/2026",
       "received_at": "25/02/2026 18:01",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-abruzzo",
       "map_precision": "region"
     },
@@ -2212,7 +2212,7 @@
       "source_province": "Bari",
       "proclaimed_at": "15/01/2026",
       "received_at": "15/01/2026 13:01",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-c1a9b6c2778d4e75",
@@ -2238,7 +2238,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/01/2026",
       "received_at": "25/01/2026 23:26",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-abruzzo",
       "map_precision": "region"
     },
@@ -2270,7 +2270,7 @@
       "source_province": "Teramo",
       "proclaimed_at": "16/01/2026",
       "received_at": "16/01/2026 16:53",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-d80754c49b92f204",
@@ -2300,7 +2300,7 @@
       "source_province": "Chieti",
       "proclaimed_at": "27/01/2026",
       "received_at": "28/01/2026 09:46",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-5e0cb8989c62b5be",
@@ -2328,7 +2328,7 @@
       "source_province": "Catania",
       "proclaimed_at": "02/02/2026",
       "received_at": "02/02/2026 15:13",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-c258fee1c708484c",
@@ -2356,7 +2356,7 @@
       "source_province": "Catania",
       "proclaimed_at": "01/02/2026",
       "received_at": "01/02/2026 22:03",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-4b338983d9d6a233",
@@ -2383,7 +2383,7 @@
       "source_province": "Udine",
       "proclaimed_at": "23/01/2026",
       "received_at": "23/01/2026 09:55",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-545cf0ec8f1dd6a1",
@@ -2410,7 +2410,7 @@
       "source_province": "Campobasso",
       "proclaimed_at": "13/01/2026",
       "received_at": "13/01/2026 14:59",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-a6278e959c31480a",
@@ -2440,7 +2440,7 @@
       "source_province": "Bolzano",
       "proclaimed_at": "22/01/2026",
       "received_at": "22/01/2026 20:21",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-beae1192c4de7769",
@@ -2467,7 +2467,7 @@
       "source_province": "Venezia",
       "proclaimed_at": "31/01/2026",
       "received_at": "11/02/2026 18:49",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-1721a227e7e93cab",
@@ -2492,7 +2492,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "07/01/2026",
       "received_at": "07/01/2026 09:53",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-2f0e9efbcc079eb2",
@@ -2517,7 +2517,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/01/2026",
       "received_at": "16/01/2026 17:43",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-37fbaf03f46b63b0",
@@ -2544,7 +2544,7 @@
       "source_province": "Genova",
       "proclaimed_at": "02/02/2026",
       "received_at": "02/02/2026 12:01",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-41c2ec9bcd97ecdc",
@@ -2571,7 +2571,7 @@
       "source_province": "Brescia",
       "proclaimed_at": "04/02/2026",
       "received_at": "04/02/2026 16:00",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-44e6c858c1eb47c9",
@@ -2597,7 +2597,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "08/01/2026",
       "received_at": "08/01/2026 11:31",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-4c4830625f2b9053",
@@ -2622,7 +2622,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "13/01/2026",
       "received_at": "14/01/2026 10:23",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-616ed819242b9559",
@@ -2648,7 +2648,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "02/02/2026",
       "received_at": "02/02/2026 12:55",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-62b1cc7f5a9e2dc9",
@@ -2677,7 +2677,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "22/12/2025",
       "received_at": "22/12/2025 16:57",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-74776d2e2dac0936",
@@ -2702,7 +2702,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "13/01/2026",
       "received_at": "14/01/2026 10:24",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-80f156151ed13e80",
@@ -2730,7 +2730,7 @@
       "source_province": "Brescia",
       "proclaimed_at": "04/02/2026",
       "received_at": "04/02/2026 16:09",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-8216f02d657c9a91",
@@ -2756,7 +2756,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "04/02/2026",
       "received_at": "04/02/2026 20:11",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-8d15510c53d0e21d",
@@ -2785,7 +2785,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "04/02/2026",
       "received_at": "04/02/2026 18:08",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-aab085a7c937ea31",
@@ -2811,7 +2811,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "01/02/2026",
       "received_at": "01/02/2026 17:13",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-b145c6785fc52d25",
@@ -2836,7 +2836,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "03/02/2026",
       "received_at": "03/02/2026 10:17",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-a14095c8e18d0e04",
@@ -2863,7 +2863,7 @@
       "source_province": "Verona",
       "proclaimed_at": "02/02/2026",
       "received_at": "02/02/2026 18:59",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-0521b986dfdf101f",
@@ -2892,7 +2892,7 @@
       "source_province": "Bolzano",
       "proclaimed_at": "31/01/2026",
       "received_at": "31/01/2026 01:35",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-19b598086f64ba5e",
@@ -2920,7 +2920,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "11/02/2026",
       "received_at": "11/02/2026 12:41",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-0338b7cff0c5c5b4",
@@ -2948,7 +2948,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "13/02/2026",
       "received_at": "13/02/2026 22:13",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-08a5cda0d1754986",
@@ -2973,7 +2973,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/02/2026",
       "received_at": "15/02/2026 13:06",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-3e6a05d69ae15aa4",
@@ -3001,7 +3001,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "13/02/2026",
       "received_at": "13/02/2026 22:04",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-40dbaa3d4154b0e4",
@@ -3026,7 +3026,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/02/2026",
       "received_at": "15/02/2026 13:04",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-74d7212bcdfed077",
@@ -3051,7 +3051,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "13/02/2026",
       "received_at": "13/02/2026 18:43",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-e856f35f3da26a7a",
@@ -3076,7 +3076,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/02/2026",
       "received_at": "15/02/2026 13:01",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-61051143702a2d65",
@@ -3101,7 +3101,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "17/02/2026",
       "received_at": "17/02/2026 17:08",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-746ae85690b18e8e",
@@ -3132,7 +3132,7 @@
       "source_province": "Torino",
       "proclaimed_at": "16/02/2026",
       "received_at": "16/02/2026 11:42",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-86e05ff7ad0c70bb",
@@ -3157,7 +3157,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "11/01/2026",
       "received_at": "11/01/2026 00:04",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-a1264cc18e46adf9",
@@ -3187,7 +3187,7 @@
       "source_province": "Bari",
       "proclaimed_at": "20/01/2026",
       "received_at": "20/01/2026 10:01",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-f468063bb4e393b2",
@@ -3214,7 +3214,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/02/2026",
       "received_at": "16/02/2026 23:50",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-36b60d091b9371c3",
@@ -3243,7 +3243,7 @@
       "source_province": "Bolzano",
       "proclaimed_at": "17/02/2026",
       "received_at": "17/02/2026 22:26",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-d587d17cf4745c45",
@@ -3270,7 +3270,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "18/02/2026",
       "received_at": "19/02/2026 08:56",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-6f9bdf05ef175ca1",
@@ -3297,7 +3297,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "23/02/2026",
       "received_at": "23/02/2026 22:12",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-d65b67a94c4efd6d",
@@ -3328,7 +3328,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "05/03/2026",
       "received_at": "05/03/2026 14:42",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-campania",
       "map_precision": "region"
     },
@@ -3357,7 +3357,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "21/01/2026",
       "received_at": "21/01/2026 13:02",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-708bb07f5296e0e7",
@@ -3383,7 +3383,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "27/01/2026",
       "received_at": "27/01/2026 17:48",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-8bd9754c91555c9e",
@@ -3408,7 +3408,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "21/01/2026",
       "received_at": "21/01/2026 11:01",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-a4179365260eda11",
@@ -3434,7 +3434,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/01/2026",
       "received_at": "15/01/2026 13:53",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-c1ab3a01cd84dcd6",
@@ -3460,7 +3460,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "02/01/2026",
       "received_at": "02/01/2026 17:13",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-f1589193b1c5e78d",
@@ -3486,7 +3486,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "19/01/2026",
       "received_at": "19/01/2026 15:55",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-77c00cdf48afc099",
@@ -3511,7 +3511,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/02/2026",
       "received_at": "24/02/2026 16:05",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-8a774064d7384a16",
@@ -3537,7 +3537,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "11/02/2026",
       "received_at": "12/02/2026 13:56",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-ab4cb4ed7a254ab2",
@@ -3563,7 +3563,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/02/2026",
       "received_at": "16/02/2026 16:35",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-b0ddee1cd5c65257",
@@ -3588,7 +3588,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "26/02/2026",
       "received_at": "26/02/2026 16:53",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-8d3e34921ff49217",
@@ -3613,7 +3613,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "01/03/2026",
       "received_at": "01/03/2026 00:02",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-e56db39af7b77a76",
@@ -3640,7 +3640,7 @@
       "source_province": "Udine",
       "proclaimed_at": "17/02/2026",
       "received_at": "17/02/2026 23:11",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-10718217b64f32de",
@@ -3667,7 +3667,7 @@
       "source_province": "Verona",
       "proclaimed_at": "03/03/2026",
       "received_at": "03/03/2026 21:55",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-00b0bc143922532f",
@@ -3694,7 +3694,7 @@
       "source_province": "Palermo",
       "proclaimed_at": "21/02/2026",
       "received_at": "21/02/2026 16:50",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-11bf36a148b545fd",
@@ -3721,7 +3721,7 @@
       "source_province": "Enna",
       "proclaimed_at": "21/02/2026",
       "received_at": "21/02/2026 16:50",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-14ea4a89ddfb5136",
@@ -3748,7 +3748,7 @@
       "source_province": "Palermo",
       "proclaimed_at": "21/02/2026",
       "received_at": "21/02/2026 16:50",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-8e953a2c3ee42002",
@@ -3775,7 +3775,7 @@
       "source_province": "Catania",
       "proclaimed_at": "21/02/2026",
       "received_at": "21/02/2026 16:50",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-be1fcac64caf0f32",
@@ -3801,7 +3801,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "23/02/2026",
       "received_at": "23/02/2026 09:27",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-abruzzo",
       "map_precision": "region"
     },
@@ -3831,7 +3831,7 @@
       "source_province": "Brescia",
       "proclaimed_at": "19/02/2026",
       "received_at": "19/02/2026 12:53",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-2324b3a0b44af5cd",
@@ -3856,7 +3856,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "13/02/2026",
       "received_at": "13/02/2026 18:27",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-316891cb342f9604",
@@ -3883,7 +3883,7 @@
       "source_province": "Brescia",
       "proclaimed_at": "26/02/2026",
       "received_at": "26/02/2026 17:02",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-332b31c4087e5281",
@@ -3908,7 +3908,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "13/02/2026",
       "received_at": "13/02/2026 12:21",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-3c45ab874dfe082b",
@@ -3936,7 +3936,7 @@
       "source_province": "Brescia",
       "proclaimed_at": "26/02/2026",
       "received_at": "26/02/2026 17:05",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-600dfb25a3753c98",
@@ -3961,7 +3961,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "20/02/2026",
       "received_at": "20/02/2026 18:12",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-b40e834e7fd8f431",
@@ -3988,7 +3988,7 @@
       "source_province": "Brescia",
       "proclaimed_at": "19/02/2026",
       "received_at": "19/02/2026 12:46",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-ed06e33221d62154",
@@ -4013,7 +4013,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "20/02/2026",
       "received_at": "20/02/2026 18:08",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-f55431b7c58424b7",
@@ -4042,7 +4042,7 @@
       "source_province": "Roma",
       "proclaimed_at": "18/03/2026",
       "received_at": "18/03/2026 14:46",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-6c98d2c9e7cf8a6e",
@@ -4067,7 +4067,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "11/02/2026",
       "received_at": "12/02/2026 09:02",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-a499f7e3d675b9da",
@@ -4092,7 +4092,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "11/02/2026",
       "received_at": "12/02/2026 09:02",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-5a5ece4b3d5b58d4",
@@ -4119,7 +4119,7 @@
       "source_province": "Frosinone",
       "proclaimed_at": "28/02/2026",
       "received_at": "28/02/2026 14:44",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-7eea98d39f9b96d6",
@@ -4146,7 +4146,7 @@
       "source_province": "Reggio Calabria",
       "proclaimed_at": "13/03/2026",
       "received_at": "16/03/2026 09:58",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-3718a112f84c0de9",
@@ -4172,7 +4172,7 @@
       "source_province": "Frosinone",
       "proclaimed_at": "06/03/2026",
       "received_at": "07/03/2026 00:02",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-44e2c1b1136ba0c6",
@@ -4199,7 +4199,7 @@
       "source_province": "Novara",
       "proclaimed_at": "27/02/2026",
       "received_at": "27/02/2026 14:49",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-93156926d23f8595",
@@ -4230,7 +4230,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "10/03/2026",
       "received_at": "10/03/2026 13:26",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-98aa64bba8281d8e",
@@ -4261,7 +4261,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "24/02/2026",
       "received_at": "24/02/2026 17:17",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-d40a5a2a24596f8d",
@@ -4291,7 +4291,7 @@
       "source_province": "Torino",
       "proclaimed_at": "06/03/2026",
       "received_at": "06/03/2026 16:04",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-e29e449e35d4959c",
@@ -4321,7 +4321,7 @@
       "source_province": "Parma",
       "proclaimed_at": "11/03/2026",
       "received_at": "11/03/2026 16:13",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-fcc45c2691b9a9b2",
@@ -4347,7 +4347,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "20/02/2026",
       "received_at": "20/02/2026 11:45",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-4834e04fe5aabd2c",
@@ -4377,7 +4377,7 @@
       "source_province": "Bari",
       "proclaimed_at": "17/02/2026",
       "received_at": "17/02/2026 10:55",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-514eed558a3fb128",
@@ -4405,7 +4405,7 @@
       "source_province": "Bari",
       "proclaimed_at": "20/02/2026",
       "received_at": "20/02/2026 11:15",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-d8fa116cbf20085a",
@@ -4435,7 +4435,7 @@
       "source_province": "Bari",
       "proclaimed_at": "12/03/2026",
       "received_at": "12/03/2026 10:05",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-d7aad1ce14e84ad9",
@@ -4465,7 +4465,7 @@
       "source_province": "Parma",
       "proclaimed_at": "19/03/2026",
       "received_at": "19/03/2026 10:17",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-0764cd1412cb59a1",
@@ -4490,7 +4490,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "11/02/2026",
       "received_at": "11/02/2026 14:48",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-0b83be0d4a1e05fb",
@@ -4515,7 +4515,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "17/02/2026",
       "received_at": "17/02/2026 15:46",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-23f92b952555da83",
@@ -4541,7 +4541,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "31/03/2026",
       "received_at": "31/03/2026 16:23",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-460045aa307a7cb2",
@@ -4566,7 +4566,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "14/02/2026",
       "received_at": "14/02/2026 11:52",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-52e8de3e73cdc3be",
@@ -4591,7 +4591,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/02/2026",
       "received_at": "16/02/2026 12:19",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-5e3285594e452bcf",
@@ -4616,7 +4616,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "26/02/2026",
       "received_at": "26/02/2026 09:24",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-6ec256790b19aa26",
@@ -4643,7 +4643,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "17/03/2026",
       "received_at": "17/03/2026 16:41",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-8a78255e1ae681e3",
@@ -4668,7 +4668,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "26/02/2026",
       "received_at": "26/02/2026 18:52",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-91da5aacecc157a4",
@@ -4693,7 +4693,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "26/03/2026",
       "received_at": "26/03/2026 14:11",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-9ffe8df5857ba9fe",
@@ -4720,7 +4720,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "27/02/2026",
       "received_at": "27/02/2026 15:43",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-a995339c958b9e2f",
@@ -4745,7 +4745,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "12/02/2026",
       "received_at": "12/02/2026 12:46",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-ef910889b557d861",
@@ -4773,7 +4773,7 @@
       "source_province": "Messina",
       "proclaimed_at": "02/03/2026",
       "received_at": "02/03/2026 16:38",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-502c5f2fabfbb748",
@@ -4798,7 +4798,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "26/03/2026",
       "received_at": "26/03/2026 13:14",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-821cbc8de9682c5d",
@@ -4823,7 +4823,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "26/03/2026",
       "received_at": "26/03/2026 13:14",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-cd17ddf8e54469db",
@@ -4848,7 +4848,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "11/02/2026",
       "received_at": "11/02/2026 15:13",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-1018c9531ed4e5e5",
@@ -4873,7 +4873,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/03/2026",
       "received_at": "24/03/2026 18:47",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-64c04c83aea04792",
@@ -4900,7 +4900,7 @@
       "source_province": "Udine",
       "proclaimed_at": "31/03/2026",
       "received_at": "31/03/2026 09:49",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-d2941451f41672e3",
@@ -4927,7 +4927,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "18/03/2026",
       "received_at": "18/03/2026 10:57",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-f39fe426be170026",
@@ -4956,7 +4956,7 @@
       "source_province": "Cosenza",
       "proclaimed_at": "01/04/2026",
       "received_at": "01/04/2026 10:46",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-678782d53cb9a010",
@@ -4982,7 +4982,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "20/03/2026",
       "received_at": "25/03/2026 19:14",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-sicilia",
       "map_precision": "region"
     },
@@ -5012,7 +5012,7 @@
       "source_province": "Brescia",
       "proclaimed_at": "13/04/2026",
       "received_at": "13/04/2026 15:56",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-642614cc1f67517a",
@@ -5040,7 +5040,7 @@
       "source_province": "Brescia",
       "proclaimed_at": "15/04/2026",
       "received_at": "15/04/2026 18:07",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-170ce35dcfbda6bd",
@@ -5068,7 +5068,7 @@
       "source_province": "Messina",
       "proclaimed_at": "13/03/2026",
       "received_at": "13/03/2026 09:37",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-8d91c2b733b7e075",
@@ -5099,7 +5099,7 @@
       "source_province": "Salerno",
       "proclaimed_at": "09/04/2026",
       "received_at": "09/04/2026 13:56",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-f72b14f31d013f29",
@@ -5130,7 +5130,7 @@
       "source_province": "Milano",
       "proclaimed_at": "07/04/2026",
       "received_at": "07/04/2026 18:40",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-4d3cbf16df6d438b",
@@ -5157,7 +5157,7 @@
       "source_province": "Firenze",
       "proclaimed_at": "20/03/2026",
       "received_at": "21/03/2026 19:43",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-3273c3e5ab7bfac8",
@@ -5182,7 +5182,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/03/2026",
       "received_at": "30/03/2026 12:26",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-3df4370916ef2d34",
@@ -5209,7 +5209,7 @@
       "source_province": "Chieti",
       "proclaimed_at": "23/03/2026",
       "received_at": "24/03/2026 09:51",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-37a2196d1b9ac5fa",
@@ -5239,7 +5239,7 @@
       "source_province": "Bolzano",
       "proclaimed_at": "07/04/2026",
       "received_at": "07/04/2026 01:26",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-f3c0ec2164ae2bd6",
@@ -5266,7 +5266,7 @@
       "source_province": "Frosinone",
       "proclaimed_at": "01/04/2026",
       "received_at": "01/04/2026 08:30",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-0ddbaf74be9e55b5",
@@ -5294,7 +5294,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "12/04/2026",
       "received_at": "12/04/2026 00:00",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-calabria",
       "map_precision": "region"
     },
@@ -5325,7 +5325,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "10/04/2026",
       "received_at": "10/04/2026 21:29",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-ed112f419dd3aee9",
@@ -5350,7 +5350,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "07/04/2026",
       "received_at": "15/04/2026 12:17",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-df44911a5340f1a3",
@@ -5377,7 +5377,7 @@
       "source_province": "Milano",
       "proclaimed_at": "04/03/2026",
       "received_at": "04/03/2026 14:56",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-2650d57010b28add",
@@ -5407,7 +5407,7 @@
       "source_province": "Bari",
       "proclaimed_at": "03/04/2026",
       "received_at": "03/04/2026 17:09",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-c6cbb209bcf3594f",
@@ -5434,7 +5434,7 @@
       "source_province": "Firenze",
       "proclaimed_at": "17/04/2026",
       "received_at": "17/04/2026 19:10",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-cf4299d18b47c5ad",
@@ -5461,7 +5461,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "10/04/2026",
       "received_at": "10/04/2026 09:48",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-e84297476629ca34",
@@ -5490,7 +5490,7 @@
       "source_province": "Cosenza",
       "proclaimed_at": "16/04/2026",
       "received_at": "17/04/2026 09:41",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-936f050ec6c07b5c",
@@ -5516,7 +5516,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "02/03/2026",
       "received_at": "03/03/2026 02:09",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-1dcce351baf2ae89",
@@ -5543,7 +5543,7 @@
       "source_province": "Milano",
       "proclaimed_at": "23/04/2026",
       "received_at": "23/04/2026 19:14",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-2ff295e230dcce69",
@@ -5572,7 +5572,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/04/2026",
       "received_at": "16/04/2026 10:58",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-bbf51710511778b1",
@@ -5597,7 +5597,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/04/2026",
       "received_at": "16/04/2026 00:04",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-a0ddb8c17f19fc87",
@@ -5624,7 +5624,7 @@
       "source_province": "Firenze",
       "proclaimed_at": "08/04/2026",
       "received_at": "08/04/2026 11:15",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-58ac836fbe12f7c1",
@@ -5650,7 +5650,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/04/2026",
       "received_at": "16/04/2026 13:11",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-87aeb5c22eb96a02",
@@ -5675,7 +5675,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "17/02/2026",
       "received_at": "17/02/2026 14:20",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-71e690f6eefc05a5",
@@ -5703,7 +5703,7 @@
       "source_province": "Brescia",
       "proclaimed_at": "07/05/2026",
       "received_at": "07/05/2026 12:16",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-815365ddaaae866b",
@@ -5734,7 +5734,7 @@
       "source_province": "Potenza",
       "proclaimed_at": "24/04/2026",
       "received_at": "24/04/2026 21:54",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-b66cb7d2bb33ff63",
@@ -5761,7 +5761,7 @@
       "source_province": "Trento",
       "proclaimed_at": "14/04/2026",
       "received_at": "14/04/2026 10:03",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-5a3d4e76d86ad228",
@@ -5788,7 +5788,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "17/04/2026",
       "received_at": "17/04/2026 09:10",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-233fd092c7c254a7",
@@ -5815,7 +5815,7 @@
       "source_province": "Firenze",
       "proclaimed_at": "29/04/2026",
       "received_at": "30/04/2026 18:19",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-07989937218164c6",
@@ -5840,7 +5840,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/02/2026",
       "received_at": "16/02/2026 09:47",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-1b0f745df6545ce7",
@@ -5865,7 +5865,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/04/2026",
       "received_at": "16/04/2026 10:23",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-2bb83d6eb3d2787e",
@@ -5890,7 +5890,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "02/04/2026",
       "received_at": "02/04/2026 12:33",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-3e4fa444b0692d4b",
@@ -5916,7 +5916,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "28/04/2026",
       "received_at": "28/04/2026 21:04",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-59271d351f1bde68",
@@ -5944,7 +5944,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "22/04/2026",
       "received_at": "22/04/2026 15:51",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-5c98581c61c0aad3",
@@ -5969,7 +5969,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "19/02/2026",
       "received_at": "19/02/2026 12:08",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-71287b56296e0b5b",
@@ -5994,7 +5994,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "13/02/2026",
       "received_at": "13/02/2026 09:46",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-8aa48332c4a878f2",
@@ -6022,7 +6022,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/04/2026",
       "received_at": "24/04/2026 18:52",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-b4493b7eb9892b83",
@@ -6047,7 +6047,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/04/2026",
       "received_at": "15/04/2026 15:14",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-fae7cb8f0146c4f5",
@@ -6075,7 +6075,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/04/2026",
       "received_at": "17/04/2026 10:31",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-77e5681e7fab377c",
@@ -6102,7 +6102,7 @@
       "source_province": "Novara",
       "proclaimed_at": "10/04/2026",
       "received_at": "10/04/2026 12:25",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-4a554c73de3a5104",
@@ -6130,7 +6130,7 @@
       "source_province": "Catania",
       "proclaimed_at": "10/04/2026",
       "received_at": "10/04/2026 14:11",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-4f516863339ceaf3",
@@ -6161,7 +6161,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/04/2026",
       "received_at": "24/04/2026 15:02",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-toscana",
       "map_precision": "region"
     },
@@ -6189,7 +6189,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/04/2026",
       "received_at": "15/04/2026 23:12",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-5c01215baa5ab1a8",
@@ -6214,7 +6214,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/04/2026",
       "received_at": "15/04/2026 17:27",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-918f75b65957bd76",
@@ -6242,7 +6242,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "27/04/2026",
       "received_at": "27/04/2026 10:20",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-veneto",
       "map_precision": "region"
     },
@@ -6276,7 +6276,7 @@
       "source_province": "Foggia",
       "proclaimed_at": "17/04/2026",
       "received_at": "17/04/2026 19:00",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-86657b7868e33a20",
@@ -6302,7 +6302,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "07/05/2026",
       "received_at": "07/05/2026 11:52",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-872801e7ab5f8ea8",
@@ -6329,7 +6329,7 @@
       "source_province": "Palermo",
       "proclaimed_at": "07/05/2026",
       "received_at": "07/05/2026 17:31",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-af27794a229fc923",
@@ -6359,7 +6359,7 @@
       "source_province": "Bari",
       "proclaimed_at": "06/05/2026",
       "received_at": "06/05/2026 12:11",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-fa9393a776ea7b3a",
@@ -6385,7 +6385,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "07/05/2026",
       "received_at": "07/05/2026 13:55",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-e6822df5641a9b52",
@@ -6413,7 +6413,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "23/04/2026",
       "received_at": "23/04/2026 19:43",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-212de58e6b0367ae",
@@ -6444,7 +6444,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "22/04/2026",
       "received_at": "22/04/2026 13:18",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-d4514372a79a64e4",
@@ -6472,7 +6472,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "20/04/2026",
       "received_at": "20/04/2026 16:13",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-39b9423677c4b3a2",
@@ -6497,7 +6497,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "09/04/2026",
       "received_at": "09/04/2026 10:29",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-6cec334b5ecf5405",
@@ -6524,7 +6524,7 @@
       "source_province": "Udine",
       "proclaimed_at": "04/05/2026",
       "received_at": "04/05/2026 14:41",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-87656ca2a27cbc64",
@@ -6549,7 +6549,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "09/04/2026",
       "received_at": "09/04/2026 10:29",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-9f77c10b58dff79b",
@@ -6574,7 +6574,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "20/04/2026",
       "received_at": "21/04/2026 11:09",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-b69465542071c234",
@@ -6603,7 +6603,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/05/2026",
       "received_at": "06/05/2026 18:01",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-emilia-romagna",
       "map_precision": "region"
     },
@@ -6631,7 +6631,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "14/05/2026",
       "received_at": "14/05/2026 15:36",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-3c256489b8fa0705",
@@ -6662,7 +6662,7 @@
       "source_province": "Potenza",
       "proclaimed_at": "11/05/2026",
       "received_at": "11/05/2026 11:37",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-46b88acca18272d6",
@@ -6688,7 +6688,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "18/05/2026",
       "received_at": "19/05/2026 11:28",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-calabria",
       "map_precision": "region"
     },
@@ -6715,7 +6715,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "09/04/2026",
       "received_at": "09/04/2026 22:15",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-aff4b364cd17f34b",
@@ -6740,7 +6740,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "09/04/2026",
       "received_at": "09/04/2026 22:15",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-b56f4fb6d5322a1b",
@@ -6769,7 +6769,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "09/04/2026",
       "received_at": "09/04/2026 23:22",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-2c7aa40595cc0697",
@@ -6796,7 +6796,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "18/05/2026",
       "received_at": "18/05/2026 20:59",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-sardegna",
       "map_precision": "region"
     },
@@ -6823,7 +6823,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "30/03/2026",
       "received_at": "30/03/2026 16:53",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-3dcf6cb323514a0d",
@@ -6848,7 +6848,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "30/03/2026",
       "received_at": "30/03/2026 16:53",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-22d6f296f71acb33",
@@ -6875,7 +6875,7 @@
       "source_province": "Catania",
       "proclaimed_at": "19/05/2026",
       "received_at": "19/05/2026 22:23",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-517c05893b93fa21",
@@ -6902,7 +6902,7 @@
       "source_province": "Catania",
       "proclaimed_at": "16/05/2026",
       "received_at": "16/05/2026 23:17",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-68a328099965a61e",
@@ -6928,7 +6928,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "21/05/2026",
       "received_at": "21/05/2026 09:43",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-a3698709a7c7f242",
@@ -6958,7 +6958,7 @@
       "source_province": "Catania",
       "proclaimed_at": "16/05/2026",
       "received_at": "16/05/2026 09:47",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-cfd72a9e5ddbdedb",
@@ -6988,7 +6988,7 @@
       "source_province": "Messina",
       "proclaimed_at": "07/05/2026",
       "received_at": "08/05/2026 10:14",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-d7ec2ef46e066139",
@@ -7016,7 +7016,7 @@
       "source_province": "Foggia",
       "proclaimed_at": "21/05/2026",
       "received_at": "21/05/2026 16:40",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-6f9f8ff016825686",
@@ -7041,7 +7041,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "07/05/2026",
       "received_at": "07/05/2026 12:53",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-831d7c06abb7eece",
@@ -7066,7 +7066,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "07/05/2026",
       "received_at": "07/05/2026 19:12",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-fb9e16ba060f1fd6",
@@ -7095,7 +7095,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "07/05/2026",
       "received_at": "07/05/2026 10:09",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-3dda650b5ee0c48e",
@@ -7122,7 +7122,7 @@
       "source_province": "Cagliari",
       "proclaimed_at": "29/05/2026",
       "received_at": "29/05/2026 18:20",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-7eed9c7e51fa1852",
@@ -7149,7 +7149,7 @@
       "source_province": "Ravenna",
       "proclaimed_at": "18/05/2026",
       "received_at": "18/05/2026 18:05",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-a7a325ee674d2a2d",
@@ -7174,7 +7174,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/06/2026",
       "received_at": "07/06/2026 15:36",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-0f2b47ac6038bae4",
@@ -7199,7 +7199,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/05/2026",
       "received_at": "06/05/2026 17:03",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-241f0d93e44cb5a5",
@@ -7230,7 +7230,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "30/05/2026",
       "received_at": "30/05/2026 00:00",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-26f45e3af45990c5",
@@ -7257,7 +7257,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "04/05/2026",
       "received_at": "04/05/2026 21:48",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-578a7057a59bffb4",
@@ -7285,7 +7285,7 @@
       "source_province": "Messina",
       "proclaimed_at": "05/05/2026",
       "received_at": "05/05/2026 23:15",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-5d69088d604985f8",
@@ -7310,7 +7310,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "01/06/2026",
       "received_at": "01/06/2026 11:50",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-6c4bd685f1af316a",
@@ -7337,7 +7337,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "05/05/2026",
       "received_at": "05/05/2026 14:23",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-sicilia",
       "map_precision": "region"
     },
@@ -7364,7 +7364,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "30/05/2026",
       "received_at": "30/05/2026 16:13",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-f97c70ae335715e4",
@@ -7391,7 +7391,7 @@
       "source_province": "Palermo",
       "proclaimed_at": "09/05/2026",
       "received_at": "09/05/2026 13:16",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-13dd3da62eb282ff",
@@ -7422,7 +7422,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "11/05/2026",
       "received_at": "11/05/2026 11:20",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-6483c0620d134721",
@@ -7449,7 +7449,7 @@
       "source_province": "Latina",
       "proclaimed_at": "25/05/2026",
       "received_at": "25/05/2026 10:54",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-79ffcb9b15a2fb67",
@@ -7477,7 +7477,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/04/2026",
       "received_at": "24/04/2026 14:08",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-95aeb9fa18366721",
@@ -7508,7 +7508,7 @@
       "source_province": "Potenza",
       "proclaimed_at": "18/05/2026",
       "received_at": "18/05/2026 16:44",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-b49315c8a52aa2a9",
@@ -7539,7 +7539,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "29/04/2026",
       "received_at": "29/04/2026 12:16",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-0d288239238c69e6",
@@ -7567,7 +7567,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "29/05/2026",
       "received_at": "29/05/2026 19:36",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-2a767a8c03c65c82",
@@ -7592,7 +7592,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "30/05/2026",
       "received_at": "30/05/2026 11:56",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-98faec2d5685dfbc",
@@ -7619,7 +7619,7 @@
       "source_province": "Milano",
       "proclaimed_at": "07/05/2026",
       "received_at": "07/05/2026 15:59",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-b5e5bd3b6a0574b1",
@@ -7646,7 +7646,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/05/2026",
       "received_at": "15/05/2026 20:36",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-de567aaf2b6cc43f",
@@ -7672,7 +7672,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "01/06/2026",
       "received_at": "01/06/2026 13:02",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-e37292644796398e",
@@ -7698,7 +7698,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "30/03/2026",
       "received_at": "30/03/2026 09:15",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-1e8718f516d29034",
@@ -7725,7 +7725,7 @@
       "source_province": "Firenze",
       "proclaimed_at": "13/05/2026",
       "received_at": "13/05/2026 16:00",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-37148ce29d2640c0",
@@ -7751,7 +7751,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "01/06/2026",
       "received_at": "01/06/2026 14:03",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-calabria",
       "map_precision": "region"
     },
@@ -7785,7 +7785,7 @@
       "source_province": "Bologna",
       "proclaimed_at": "14/06/2026",
       "received_at": "14/06/2026 16:43",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-7cc153bddd98bd2c",
@@ -7811,7 +7811,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "26/05/2026",
       "received_at": "27/05/2026 12:23",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-liguria",
       "map_precision": "region"
     },
@@ -7840,7 +7840,7 @@
       "source_province": "Udine",
       "proclaimed_at": "18/05/2026",
       "received_at": "19/05/2026 11:00",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-a4e942eecd4aeed3",
@@ -7866,7 +7866,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/06/2026",
       "received_at": "06/06/2026 12:44",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-calabria",
       "map_precision": "region"
     },
@@ -7895,7 +7895,7 @@
       "source_province": "Lecce",
       "proclaimed_at": "08/05/2026",
       "received_at": "08/05/2026 09:02",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-69840151509da8b5",
@@ -7922,7 +7922,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "22/05/2026",
       "received_at": "22/05/2026 12:07",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-acedb7b6e8291429",
@@ -7950,7 +7950,7 @@
       "source_province": "Verona",
       "proclaimed_at": "13/05/2026",
       "received_at": "13/05/2026 17:56",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-d18e44f773bb0f19",
@@ -7977,7 +7977,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "26/05/2026",
       "received_at": "26/05/2026 19:46",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-sardegna",
       "map_precision": "region"
     },
@@ -8006,7 +8006,7 @@
       "source_province": "Torino",
       "proclaimed_at": "27/05/2026",
       "received_at": "27/05/2026 16:26",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-7635c831d7403e90",
@@ -8032,7 +8032,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/06/2026",
       "received_at": "06/06/2026 18:53",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-calabria",
       "map_precision": "region"
     },
@@ -8062,7 +8062,7 @@
       "source_province": "Venezia",
       "proclaimed_at": "12/06/2026",
       "received_at": "15/06/2026 10:33",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-3fd11a815b9cfa95",
@@ -8088,7 +8088,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "10/06/2026",
       "received_at": "10/06/2026 19:49",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-5361f415efcf7ed4",
@@ -8116,7 +8116,7 @@
       "source_province": "Roma",
       "proclaimed_at": "25/06/2026",
       "received_at": "25/06/2026 21:47",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-b79d5d30d04c3bcb",
@@ -8147,7 +8147,7 @@
       "source_province": "Roma",
       "proclaimed_at": "25/06/2026",
       "received_at": "25/06/2026 17:51",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-d730b420dcf7b678",
@@ -8174,7 +8174,7 @@
       "source_province": "Barletta-Andria-Trani",
       "proclaimed_at": "03/06/2026",
       "received_at": "03/06/2026 18:43",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-dfb34b486a38f58f",
@@ -8200,7 +8200,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "18/05/2026",
       "received_at": "18/05/2026 12:27",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-piemonte",
       "map_precision": "region"
     },
@@ -8228,7 +8228,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "05/05/2026",
       "received_at": "05/05/2026 14:24",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-511e4cfa523bcc44",
@@ -8257,7 +8257,7 @@
       "source_province": "Roma",
       "proclaimed_at": "26/06/2026",
       "received_at": "26/06/2026 16:38",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-5ebfa864b7db1aed",
@@ -8287,7 +8287,7 @@
       "source_province": "Roma",
       "proclaimed_at": "11/06/2026",
       "received_at": "11/06/2026 11:26",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-f3b642494dea30de",
@@ -8315,7 +8315,7 @@
       "source_province": "Firenze",
       "proclaimed_at": "24/06/2026",
       "received_at": "24/06/2026 21:28",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-f2690eaac42d08f8",
@@ -8340,7 +8340,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/06/2026",
       "received_at": "15/06/2026 15:48",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-0c066cf9ac89926f",
@@ -8366,7 +8366,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "29/06/2026",
       "received_at": "29/06/2026 11:47",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-piemonte",
       "map_precision": "region"
     },
@@ -8394,7 +8394,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "08/06/2026",
       "received_at": "08/06/2026 19:02",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-puglia",
       "map_precision": "region"
     },
@@ -8425,7 +8425,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "18/06/2026",
       "received_at": "18/06/2026 17:14",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-lombardia",
       "map_precision": "region"
     },
@@ -8453,7 +8453,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "18/06/2026",
       "received_at": "14/07/2026 15:09",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-2b6cda83b9ad55f5",
@@ -8478,7 +8478,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "14/06/2026",
       "received_at": "14/06/2026 16:30",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-30ab32bfc38dbd9b",
@@ -8503,7 +8503,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "20/05/2026",
       "received_at": "20/05/2026 16:25",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-4a92eb39ff0c6dd9",
@@ -8530,7 +8530,7 @@
       "source_province": "Firenze",
       "proclaimed_at": "18/06/2026",
       "received_at": "18/06/2026 15:07",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-5a2e1e9bab3c15d9",
@@ -8555,7 +8555,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "29/05/2026",
       "received_at": "29/05/2026 11:43",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-78154c5f94505700",
@@ -8583,7 +8583,7 @@
       "source_province": "Palermo",
       "proclaimed_at": "22/06/2026",
       "received_at": "22/06/2026 12:47",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-8a0a56aea0125667",
@@ -8608,7 +8608,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "19/06/2026",
       "received_at": "19/06/2026 12:07",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-ad1caf594260d506",
@@ -8633,7 +8633,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "22/04/2026",
       "received_at": "22/04/2026 15:58",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-b7552cf19e3328d0",
@@ -8658,7 +8658,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "21/04/2026",
       "received_at": "21/04/2026 11:02",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-c0a09666f6eb1a93",
@@ -8683,7 +8683,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "22/04/2026",
       "received_at": "22/04/2026 15:58",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-cb81a434c7ea7ac4",
@@ -8708,7 +8708,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "21/04/2026",
       "received_at": "21/04/2026 12:26",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-efe7e13cc40fbade",
@@ -8736,7 +8736,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "22/06/2026",
       "received_at": "23/06/2026 16:27",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-f6c96c48232a8ab6",
@@ -8761,7 +8761,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "08/06/2026",
       "received_at": "08/06/2026 19:16",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-3e4de81233b80d6d",
@@ -8788,7 +8788,7 @@
       "source_province": "Catania",
       "proclaimed_at": "26/06/2026",
       "received_at": "26/06/2026 19:23",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-3fa8cb77df4a63b2",
@@ -8814,7 +8814,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "19/06/2026",
       "received_at": "19/06/2026 12:35",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-6c7b8dfadb94725c",
@@ -8844,7 +8844,7 @@
       "source_province": "Catania",
       "proclaimed_at": "18/06/2026",
       "received_at": "18/06/2026 10:04",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-b29b9ad7898d1e34",
@@ -8871,7 +8871,7 @@
       "source_province": "Prato",
       "proclaimed_at": "23/06/2026",
       "received_at": "24/06/2026 09:21",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-fe30ce367a292a20",
@@ -8898,7 +8898,7 @@
       "source_province": "Catania",
       "proclaimed_at": "21/06/2026",
       "received_at": "21/06/2026 16:21",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-5c93f9e60e7ab3b9",
@@ -8926,7 +8926,7 @@
       "source_province": "Torino",
       "proclaimed_at": "06/07/2026",
       "received_at": "06/07/2026 08:59",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-e19af46ef062c325",
@@ -8952,7 +8952,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "18/05/2026",
       "received_at": "18/05/2026 17:40",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-sicilia",
       "map_precision": "region"
     },
@@ -8979,7 +8979,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "23/06/2026",
       "received_at": "23/06/2026 00:00",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-2f5b4313e3593f14",
@@ -9010,7 +9010,7 @@
       "source_province": "Genova",
       "proclaimed_at": "10/07/2026",
       "received_at": "10/07/2026 12:50",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-80f8ac19db1b1c46",
@@ -9037,7 +9037,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "17/06/2026",
       "received_at": "17/06/2026 03:15",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-puglia",
       "map_precision": "region"
     },
@@ -9068,7 +9068,7 @@
       "source_province": "Bari",
       "proclaimed_at": "04/06/2026",
       "received_at": "03/07/2026 11:49",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-f11a5b8652a69439",
@@ -9095,7 +9095,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "22/06/2026",
       "received_at": "22/06/2026 15:24",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-0e386f7b78892294",
@@ -9122,7 +9122,7 @@
       "source_province": "Palermo",
       "proclaimed_at": "17/06/2026",
       "received_at": "17/06/2026 10:13",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-9af96353e3548e91",
@@ -9150,7 +9150,7 @@
       "source_province": "Genova",
       "proclaimed_at": "10/07/2026",
       "received_at": "10/07/2026 10:16",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-cdb19b313baa2a07",
@@ -9176,7 +9176,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "25/06/2026",
       "received_at": "14/07/2026 15:09",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-a71363052f482fc6",
@@ -9202,7 +9202,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/06/2026",
       "received_at": "15/06/2026 10:53",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-29652a5f8f85d1d7",
@@ -9233,7 +9233,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "17/06/2026",
       "received_at": "17/06/2026 15:25",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-49a33148719a619e",
@@ -9258,7 +9258,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/06/2026",
       "received_at": "16/06/2026 17:26",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-c55b21a389e8ddf4",
@@ -9283,7 +9283,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "18/06/2026",
       "received_at": "18/06/2026 16:28",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-fea86398448b4eeb",
@@ -9312,7 +9312,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/06/2026",
       "received_at": "16/06/2026 17:20",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-1ab7f0d9e87e9b11",
@@ -9338,7 +9338,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "30/06/2026",
       "received_at": "30/06/2026 11:38",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-sicilia",
       "map_precision": "region"
     },
@@ -9368,7 +9368,7 @@
       "source_province": "Venezia",
       "proclaimed_at": "29/06/2026",
       "received_at": "29/06/2026 09:32",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-493fd647bc206bc9",
@@ -9399,7 +9399,7 @@
       "source_province": "Genova",
       "proclaimed_at": "17/07/2026",
       "received_at": "20/07/2026 09:33",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-a126d2a0445a9a70",
@@ -9425,7 +9425,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "29/06/2026",
       "received_at": "29/06/2026 11:54",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-calabria",
       "map_precision": "region"
     },
@@ -9455,7 +9455,7 @@
       "source_province": "Verona",
       "proclaimed_at": "29/06/2026",
       "received_at": "29/06/2026 17:04",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-124f80092c06e564",
@@ -9482,7 +9482,7 @@
       "source_province": "Latina",
       "proclaimed_at": "18/06/2026",
       "received_at": "18/06/2026 16:39",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-977e5af52aa1a194",
@@ -9509,7 +9509,7 @@
       "source_province": "Prato",
       "proclaimed_at": "10/07/2026",
       "received_at": "10/07/2026 00:17",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-9d646bc2144df840",
@@ -9536,7 +9536,7 @@
       "source_province": "Firenze",
       "proclaimed_at": "24/06/2026",
       "received_at": "24/06/2026 10:40",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-bc515cafd9904f51",
@@ -9564,7 +9564,7 @@
       "source_province": "Genova",
       "proclaimed_at": "18/07/2026",
       "received_at": "18/07/2026 09:00",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-e64859f0e0cea303",
@@ -9591,7 +9591,7 @@
       "source_province": "Genova",
       "proclaimed_at": "08/07/2026",
       "received_at": "08/07/2026 12:42",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-e8f6ab827ecccd3f",
@@ -9618,7 +9618,7 @@
       "source_province": "Firenze",
       "proclaimed_at": "24/06/2026",
       "received_at": "24/06/2026 10:46",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-1f6af87c98697cfd",
@@ -9643,7 +9643,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "09/07/2026",
       "received_at": "09/07/2026 10:53",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-2233707ab270d4d0",
@@ -9669,7 +9669,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "30/06/2026",
       "received_at": "30/06/2026 18:08",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-calabria",
       "map_precision": "region"
     },
@@ -9697,7 +9697,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "10/07/2026",
       "received_at": "10/07/2026 12:39",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-5443b9fdc5fa8575",
@@ -9723,7 +9723,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "05/07/2026",
       "received_at": "05/07/2026 18:32",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-5faff7416303d2d8",
@@ -9749,7 +9749,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "05/06/2026",
       "received_at": "05/06/2026 17:05",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-78b09b54150c5208",
@@ -9775,7 +9775,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "10/07/2026",
       "received_at": "10/07/2026 12:39",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-sardegna",
       "map_precision": "region"
     },
@@ -9802,7 +9802,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "09/07/2026",
       "received_at": "09/07/2026 09:09",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-f225b07885249da9",
@@ -9829,7 +9829,7 @@
       "source_province": "Palermo",
       "proclaimed_at": "09/07/2026",
       "received_at": "09/07/2026 10:25",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-03b013863e55556b",
@@ -9854,7 +9854,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/07/2026",
       "received_at": "06/07/2026 21:50",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-2c300d054f5a5459",
@@ -9879,7 +9879,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "30/06/2026",
       "received_at": "30/06/2026 05:45",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-2b6f008c23e5f305",
@@ -9907,7 +9907,7 @@
       "source_province": "Verona",
       "proclaimed_at": "10/07/2026",
       "received_at": "10/07/2026 13:26",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-d19362f93020dd7b",
@@ -9934,7 +9934,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "25/06/2026",
       "received_at": "25/06/2026 14:54",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-d29697bf8c18f2fd",
@@ -9963,7 +9963,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "13/07/2026",
       "received_at": "13/07/2026 15:55",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-lombardia",
       "map_precision": "region"
     },
@@ -9995,7 +9995,7 @@
       "source_province": "Bari",
       "proclaimed_at": "09/07/2026",
       "received_at": "09/07/2026 18:30",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-9582db4448e9783d",
@@ -10022,7 +10022,7 @@
       "source_province": "Salerno",
       "proclaimed_at": "08/07/2026",
       "received_at": "08/07/2026 13:42",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-c1a9e4ab6e1ec546",
@@ -10048,7 +10048,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "09/07/2026",
       "received_at": "09/07/2026 09:59",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-marche",
       "map_precision": "region"
     },
@@ -10076,7 +10076,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "14/07/2026",
       "received_at": "14/07/2026 12:31",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-e271d8301f36b7fc",
@@ -10104,7 +10104,7 @@
       "source_province": "Savona",
       "proclaimed_at": "02/07/2026",
       "received_at": "02/07/2026 21:03",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-478b0b5e11d8fd3b",
@@ -10130,7 +10130,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "17/07/2026",
       "received_at": "17/07/2026 11:27",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-toscana",
       "map_precision": "region"
     },
@@ -10159,7 +10159,7 @@
       "source_province": "Livorno",
       "proclaimed_at": "31/07/2026",
       "received_at": "02/08/2026 14:59",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-4d93a6b682ac59f9",
@@ -10187,7 +10187,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "22/07/2026",
       "received_at": "22/07/2026 12:53",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-f2cb4bac228507c6",
@@ -10212,7 +10212,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "07/07/2026",
       "received_at": "07/07/2026 10:59",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-c3ca225d5a2edc54",
@@ -10237,7 +10237,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "19/07/2026",
       "received_at": "19/07/2026 11:29",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-fd5f4b433c5b98e4",
@@ -10264,7 +10264,7 @@
       "source_province": "Livorno",
       "proclaimed_at": "09/08/2026",
       "received_at": "09/08/2026 18:17",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-7f4fe9efd748ce44",
@@ -10292,7 +10292,7 @@
       "source_province": "Ascoli Piceno",
       "proclaimed_at": "31/07/2026",
       "received_at": "31/07/2026 11:09",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-380a719f52a9ab73",
@@ -10319,7 +10319,7 @@
       "source_province": "Genova",
       "proclaimed_at": "04/08/2026",
       "received_at": "05/08/2026 08:51",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-cb5ed5b3f885bdee",
@@ -10349,7 +10349,7 @@
       "source_province": "Venezia",
       "proclaimed_at": "24/07/2026",
       "received_at": "24/07/2026 15:40",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-19e98f0b318b8d13",
@@ -10375,7 +10375,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/07/2026",
       "received_at": "15/07/2026 14:12",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-piemonte",
       "map_precision": "region"
     },
@@ -10407,7 +10407,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "29/07/2026",
       "received_at": "29/07/2026 14:16",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-trentino-alto-adige",
       "map_precision": "region"
     },
@@ -10440,7 +10440,7 @@
       "source_province": "Bolzano",
       "proclaimed_at": "26/08/2026",
       "received_at": "26/08/2026 19:45",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-41562eef10604106",
@@ -10468,7 +10468,7 @@
       "source_province": "Verona",
       "proclaimed_at": "28/08/2026",
       "received_at": "28/08/2026 18:04",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-4d9ca795778167be",
@@ -10495,7 +10495,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "07/08/2026",
       "received_at": "07/08/2026 14:33",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-530fe663d56ea67b",
@@ -10521,7 +10521,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "11/08/2026",
       "received_at": "11/08/2026 17:59",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-86acbb34ab215302",
@@ -10549,7 +10549,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "17/08/2026",
       "received_at": "20/08/2026 21:01",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-e47c8ef09359054b",
@@ -10575,7 +10575,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "09/08/2026",
       "received_at": "09/08/2026 23:19",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-835cd04609f9c529",
@@ -10601,7 +10601,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "28/08/2026",
       "received_at": "28/08/2026 12:40",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-07c5464f28d74b9b",
@@ -10628,7 +10628,7 @@
       "source_province": "Trento",
       "proclaimed_at": "31/07/2026",
       "received_at": "31/07/2026 11:01",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-2cc5930ca20b6ca3",
@@ -10656,7 +10656,7 @@
       "source_province": "Verona",
       "proclaimed_at": "04/08/2026",
       "received_at": "18/08/2026 12:27",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-7524b667fd7d2c6f",
@@ -10683,7 +10683,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/08/2026",
       "received_at": "06/08/2026 14:41",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-a49788fe28764aa4",
@@ -10711,7 +10711,7 @@
       "source_province": "Foggia",
       "proclaimed_at": "11/06/2026",
       "received_at": "11/06/2026 15:51",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-e1cb0e99ddcdd1d2",
@@ -10738,7 +10738,7 @@
       "source_province": "Udine",
       "proclaimed_at": "21/08/2026",
       "received_at": "21/08/2026 11:12",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-ff34ca126a161f39",
@@ -10767,7 +10767,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/07/2026",
       "received_at": "16/07/2026 12:11",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-lombardia",
       "map_precision": "region"
     },
@@ -10794,7 +10794,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "27/08/2026",
       "received_at": "28/08/2026 11:30",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-89c4c3fb48b71406",
@@ -10822,7 +10822,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/08/2026",
       "received_at": "24/08/2026 18:30",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-e38b08be9518aac8",
@@ -10847,7 +10847,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "27/08/2026",
       "received_at": "28/08/2026 11:29",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-ee26fca11fa38066",
@@ -10874,7 +10874,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "13/08/2026",
       "received_at": "13/08/2026 16:16",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-114a75156ea9f6b2",
@@ -10899,7 +10899,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "01/09/2026",
       "received_at": "01/09/2026 18:43",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-1e5c1cf9e3eea9e0",
@@ -10924,7 +10924,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "31/08/2026",
       "received_at": "31/08/2026 11:27",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-2c694d61d25ba0bc",
@@ -10950,7 +10950,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "19/08/2026",
       "received_at": "20/08/2026 12:21",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-toscana",
       "map_precision": "region"
     },
@@ -10977,7 +10977,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "01/09/2026",
       "received_at": "01/09/2026 16:35",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-445a938b63d2186e",
@@ -11002,7 +11002,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "26/08/2026",
       "received_at": "26/08/2026 10:26",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-8f7b8a5af6db7a57",
@@ -11027,7 +11027,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "31/08/2026",
       "received_at": "10/09/2026 17:52",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-a13546392426e737",
@@ -11053,7 +11053,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "01/09/2026",
       "received_at": "01/09/2026 18:37",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-sardegna",
       "map_precision": "region"
     },
@@ -11083,7 +11083,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "26/08/2026",
       "received_at": "26/08/2026 16:32",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-c06c26d8241e4a6a",
@@ -11110,7 +11110,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "10/08/2026",
       "received_at": "10/08/2026 18:23",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-toscana",
       "map_precision": "region"
     },
@@ -11137,7 +11137,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "09/07/2026",
       "received_at": "09/07/2026 12:58",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-b08fa1800aa9ee15",
@@ -11167,7 +11167,7 @@
       "source_province": "Bergamo",
       "proclaimed_at": "16/07/2026",
       "received_at": "20/07/2026 11:21",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-dd74467625546c2f",
@@ -11195,7 +11195,7 @@
       "source_province": "Venezia",
       "proclaimed_at": "04/08/2026",
       "received_at": "05/08/2026 08:54",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-0454c0129c6d418a",
@@ -11222,7 +11222,7 @@
       "source_province": "Firenze",
       "proclaimed_at": "24/08/2026",
       "received_at": "25/08/2026 20:01",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-0992999435c3d63e",
@@ -11249,7 +11249,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "07/07/2026",
       "received_at": "07/07/2026 09:57",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-0bfc6bdd9fc08719",
@@ -11276,7 +11276,7 @@
       "source_province": "Firenze",
       "proclaimed_at": "24/07/2026",
       "received_at": "24/07/2026 13:03",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-170ad17b52806b25",
@@ -11304,7 +11304,7 @@
       "source_province": "Venezia",
       "proclaimed_at": "06/08/2026",
       "received_at": "06/08/2026 13:15",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-43995b67137ca576",
@@ -11331,7 +11331,7 @@
       "source_province": "Firenze",
       "proclaimed_at": "13/07/2026",
       "received_at": "13/07/2026 16:58",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-47d4f57e09501f83",
@@ -11358,7 +11358,7 @@
       "source_province": "Ravenna",
       "proclaimed_at": "06/08/2026",
       "received_at": "06/08/2026 10:25",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-9c13a440d0219fa4",
@@ -11384,7 +11384,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/07/2026",
       "received_at": "15/07/2026 16:13",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-a090ad6fede10d32",
@@ -11416,7 +11416,7 @@
       "source_province": "Ravenna",
       "proclaimed_at": "04/08/2026",
       "received_at": "04/08/2026 13:00",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-b93aceb9bafdc327",
@@ -11443,7 +11443,7 @@
       "source_province": "Firenze",
       "proclaimed_at": "24/07/2026",
       "received_at": "24/07/2026 13:01",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-d7fc0d24876f8481",
@@ -11470,7 +11470,7 @@
       "source_province": "Prato",
       "proclaimed_at": "24/07/2026",
       "received_at": "24/07/2026 12:40",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-e45bb6b1d780e643",
@@ -11497,7 +11497,7 @@
       "source_province": "Pisa",
       "proclaimed_at": "14/08/2026",
       "received_at": "14/08/2026 15:52",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-532d78b12ba6f625",
@@ -11524,7 +11524,7 @@
       "source_province": "Torino",
       "proclaimed_at": "29/06/2026",
       "received_at": "29/06/2026 10:02",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-ab59bef9fa8b8ffa",
@@ -11551,7 +11551,7 @@
       "source_province": "Roma",
       "proclaimed_at": "08/09/2026",
       "received_at": "08/09/2026 15:01",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-d85a69b15be0b86d",
@@ -11578,7 +11578,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "07/09/2026",
       "received_at": "07/09/2026 17:46",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-abruzzo",
       "map_precision": "region"
     },
@@ -11607,7 +11607,7 @@
       "source_province": "Genova",
       "proclaimed_at": "08/09/2026",
       "received_at": "08/09/2026 13:01",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-12bfebbc503876f2",
@@ -11632,7 +11632,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "04/09/2026",
       "received_at": "04/09/2026 11:56",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-7d0cfeaf6fc0ae1d",
@@ -11662,7 +11662,7 @@
       "source_province": "Bologna",
       "proclaimed_at": "23/07/2026",
       "received_at": "24/07/2026 09:39",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-e77d62238645e34e",
@@ -11689,7 +11689,7 @@
       "source_province": "Roma",
       "proclaimed_at": "09/09/2026",
       "received_at": "09/09/2026 15:56",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-f5e61cfb9b634568",
@@ -11718,7 +11718,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "29/07/2026",
       "received_at": "29/07/2026 14:29",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-emilia-romagna",
       "map_precision": "region"
     },
@@ -11746,7 +11746,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/07/2026",
       "received_at": "06/07/2026 11:50",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-umbria",
       "map_precision": "region"
     },
@@ -11774,7 +11774,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "31/08/2026",
       "received_at": "31/08/2026 16:13",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-marche",
       "map_precision": "region"
     },
@@ -11802,7 +11802,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "14/09/2026",
       "received_at": "14/09/2026 16:50",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-campania",
       "map_precision": "region"
     },
@@ -11830,7 +11830,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "08/05/2026",
       "received_at": "17/07/2026 16:01",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-6eeb715189f91c7f",
@@ -11861,7 +11861,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "29/07/2026",
       "received_at": "29/07/2026 12:28",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-b59a16b6834036e5",
@@ -11886,7 +11886,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "14/09/2026",
       "received_at": "14/09/2026 16:08",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-4386d0a364efcf00",
@@ -11914,7 +11914,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "14/09/2026",
       "received_at": "15/09/2026 09:23",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-00feac9981bf864d",
@@ -11939,7 +11939,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "17/09/2026",
       "received_at": "17/09/2026 17:20",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-267d21954dc65c77",
@@ -11966,7 +11966,7 @@
       "source_province": "Roma",
       "proclaimed_at": "30/07/2026",
       "received_at": "30/07/2026 15:43",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-4dcaffc05a8760d2",
@@ -11991,7 +11991,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "29/07/2026",
       "received_at": "29/07/2026 11:05",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-5d67238e9a22798e",
@@ -12018,7 +12018,7 @@
       "source_province": "Roma",
       "proclaimed_at": "30/07/2026",
       "received_at": "30/07/2026 10:07",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-6682bb387b6dfafe",
@@ -12045,7 +12045,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "18/09/2026",
       "received_at": "18/09/2026 13:23",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-toscana",
       "map_precision": "region"
     },
@@ -12072,7 +12072,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "21/07/2026",
       "received_at": "21/07/2026 16:42",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-9ff323b8298dacfa",
@@ -12097,7 +12097,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "29/07/2026",
       "received_at": "29/07/2026 11:53",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-a1e4043af8e5e72c",
@@ -12122,7 +12122,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "10/09/2026",
       "received_at": "10/09/2026 12:55",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-b4935f159c5975f3",
@@ -12149,7 +12149,7 @@
       "source_province": "Roma",
       "proclaimed_at": "30/07/2026",
       "received_at": "30/07/2026 09:54",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-cf9833ee4659a3d5",
@@ -12174,7 +12174,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "21/07/2026",
       "received_at": "21/07/2026 15:23",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-f423424e86440b45",
@@ -12205,7 +12205,7 @@
       "source_province": "Bolzano",
       "proclaimed_at": "17/09/2026",
       "received_at": "17/09/2026 22:04",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-d1baf51ef3045545",
@@ -12231,7 +12231,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "02/09/2026",
       "received_at": "02/09/2026 09:09",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-67f2f76a8c968565",
@@ -12258,7 +12258,7 @@
       "source_province": "Genova",
       "proclaimed_at": "23/09/2026",
       "received_at": "23/09/2026 15:15",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-e13ef09fefb7409b",
@@ -12285,7 +12285,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/07/2026",
       "received_at": "24/07/2026 14:35",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-sicilia",
       "map_precision": "region"
     },
@@ -12313,7 +12313,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/09/2026",
       "received_at": "25/09/2026 11:56",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-calabria",
       "map_precision": "region"
     },
@@ -12341,7 +12341,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "27/07/2026",
       "received_at": "27/07/2026 15:30",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-703242fc63cfeff2",
@@ -12367,7 +12367,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "01/08/2026",
       "received_at": "01/08/2026 17:44",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-c6f7971f182e47be",
@@ -12395,7 +12395,7 @@
       "source_province": "Forli'-Cesena",
       "proclaimed_at": "07/10/2026",
       "received_at": "07/10/2026 15:35",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-da074b41af74acd3",
@@ -12427,7 +12427,7 @@
       "source_province": "Forli'-Cesena",
       "proclaimed_at": "06/10/2026",
       "received_at": "06/10/2026 14:10",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-e742635154de3215",
@@ -12454,7 +12454,7 @@
       "source_province": "Firenze",
       "proclaimed_at": "18/09/2026",
       "received_at": "18/09/2026 00:01",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-7e0a865926f26f8d",
@@ -12480,7 +12480,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/07/2026",
       "received_at": "24/07/2026 14:13",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-sicilia",
       "map_precision": "region"
     },
@@ -12512,7 +12512,7 @@
       "source_province": "Bari",
       "proclaimed_at": "22/09/2026",
       "received_at": "22/09/2026 16:04",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-397199422642d587",
@@ -12537,7 +12537,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "01/10/2026",
       "received_at": "01/10/2026 09:27",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-303b07d4ef6964ae",
@@ -12564,7 +12564,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "17/09/2026",
       "received_at": "22/09/2026 11:01",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-toscana",
       "map_precision": "region"
     },
@@ -12594,7 +12594,7 @@
       "source_province": "Foggia",
       "proclaimed_at": "14/09/2026",
       "received_at": "14/09/2026 17:16",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-8dd20fc6573ba94d",
@@ -12624,7 +12624,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "17/09/2026",
       "received_at": "01/10/2026 14:38",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-c750b1bcc75d57ed",
@@ -12649,7 +12649,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "11/09/2026",
       "received_at": "11/09/2026 12:46",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-e8d68c21fa10e8a1",
@@ -12678,7 +12678,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/09/2026",
       "received_at": "24/09/2026 11:35",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-lombardia",
       "map_precision": "region"
     },
@@ -12705,7 +12705,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "14/09/2026",
       "received_at": "14/09/2026 10:25",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-21eacaec932af8db",
@@ -12731,7 +12731,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "27/08/2026",
       "received_at": "27/08/2026 10:33",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-70c67bce82810f99",
@@ -12757,7 +12757,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "28/09/2026",
       "received_at": "29/09/2026 22:11",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-toscana",
       "map_precision": "region"
     },
@@ -12786,7 +12786,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/10/2026",
       "received_at": "06/10/2026 15:33",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-7aa8805e030c63fc",
@@ -12812,7 +12812,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "28/09/2026",
       "received_at": "28/09/2026 13:02",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-sicilia",
       "map_precision": "region"
     },
@@ -12841,7 +12841,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "14/09/2026",
       "received_at": "14/09/2026 19:28",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-8ec4d6634a4df965",
@@ -12866,7 +12866,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "22/09/2026",
       "received_at": "22/09/2026 18:07",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-d8200c61a252438a",
@@ -12892,7 +12892,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "30/09/2026",
       "received_at": "01/10/2026 09:47",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-calabria",
       "map_precision": "region"
     },
@@ -12924,7 +12924,7 @@
       "source_province": "Bergamo",
       "proclaimed_at": "24/09/2026",
       "received_at": "26/09/2026 12:38",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-ebf9d206600b18bd",
@@ -12951,7 +12951,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "30/09/2026",
       "received_at": "30/09/2026 14:35",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-53d47efb2db1ce72",
@@ -12983,7 +12983,7 @@
       "source_province": "Savona",
       "proclaimed_at": "07/10/2026",
       "received_at": "07/10/2026 20:20",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-7c165ec242a247b1",
@@ -13010,7 +13010,7 @@
       "source_province": "Roma",
       "proclaimed_at": "09/10/2026",
       "received_at": "09/10/2026 10:06",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-4664ba5adefbd9bf",
@@ -13037,7 +13037,7 @@
       "source_province": "Udine",
       "proclaimed_at": "01/10/2026",
       "received_at": "01/10/2026 09:47",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-9283293572f41e9f",
@@ -13064,7 +13064,7 @@
       "source_province": "Genova",
       "proclaimed_at": "19/10/2026",
       "received_at": "19/10/2026 05:56",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-029b4bd2e28a9a49",
@@ -13094,7 +13094,7 @@
       "source_province": "Bari",
       "proclaimed_at": "08/10/2026",
       "received_at": "08/10/2026 12:23",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-1db907a3f6f54d3e",
@@ -13124,7 +13124,7 @@
       "source_province": "Bari",
       "proclaimed_at": "08/10/2026",
       "received_at": "08/10/2026 12:19",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-d898fd28b543f016",
@@ -13149,7 +13149,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "05/10/2026",
       "received_at": "05/10/2026 16:37",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "mit_guid": "8587",
       "rss_seen_at": "2026-10-26T20:25:49+00:00"
     },
@@ -13182,7 +13182,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "01/10/2026",
       "received_at": "01/10/2026 11:15",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "mit_guid": "8583",
       "rss_seen_at": "2026-10-28T13:53:15+00:00"
     },
@@ -13213,7 +13213,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/10/2026",
       "received_at": "08/10/2026 09:50",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-emilia-romagna",
       "map_precision": "region",
       "mit_guid": "8597",
@@ -13243,7 +13243,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/10/2026",
       "received_at": "16/10/2026 09:35",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-df07a01f02b41edf",
@@ -13272,7 +13272,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "01/10/2026",
       "received_at": "01/10/2026 12:32",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-emilia-romagna",
       "map_precision": "region"
     },
@@ -13300,11 +13300,11 @@
       "source_province": "Tutte",
       "proclaimed_at": "12/10/2026",
       "received_at": "13/10/2026 08:29",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "place": "regione-toscana",
       "map_precision": "region",
       "mit_guid": "8601",
-      "rss_seen_at": "2026-10-29T11:41:17+00:00"
+      "rss_seen_at": "2026-10-30T07:21:05+00:00"
     },
     {
       "id": "mit-3ff3680cc183d561",
@@ -13333,9 +13333,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "20/10/2026",
       "received_at": "20/10/2026 12:18",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "mit_guid": "8611",
-      "rss_seen_at": "2026-10-29T11:41:17+00:00"
+      "rss_seen_at": "2026-10-30T07:21:05+00:00"
     },
     {
       "id": "mit-45b7087e9ae4f5a2",
@@ -13360,9 +13360,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/10/2026",
       "received_at": "16/10/2026 12:13",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "mit_guid": "8606",
-      "rss_seen_at": "2026-10-29T11:41:17+00:00"
+      "rss_seen_at": "2026-10-30T07:21:05+00:00"
     },
     {
       "id": "mit-776550b04d33096b",
@@ -13388,9 +13388,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/10/2026",
       "received_at": "06/10/2026 16:58",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "mit_guid": "8590",
-      "rss_seen_at": "2026-10-29T11:41:17+00:00"
+      "rss_seen_at": "2026-10-30T07:21:05+00:00"
     },
     {
       "id": "mit-8f8d1738b8a4259e",
@@ -13417,9 +13417,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "03/07/2026",
       "received_at": "03/07/2026 23:38",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "mit_guid": "8453",
-      "rss_seen_at": "2026-10-29T11:41:17+00:00"
+      "rss_seen_at": "2026-10-30T07:21:05+00:00"
     },
     {
       "id": "mit-933cfdd2c1a395f8",
@@ -13445,9 +13445,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "20/10/2026",
       "received_at": "21/10/2026 10:42",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "mit_guid": "8612",
-      "rss_seen_at": "2026-10-29T11:41:17+00:00"
+      "rss_seen_at": "2026-10-30T07:21:05+00:00"
     },
     {
       "id": "mit-80281ceaa775424d",
@@ -13472,9 +13472,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "07/09/2026",
       "received_at": "07/09/2026 15:11",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "mit_guid": "8548",
-      "rss_seen_at": "2026-10-29T11:41:17+00:00"
+      "rss_seen_at": "2026-10-30T07:21:05+00:00"
     },
     {
       "id": "mit-88f80d7cd3d14828",
@@ -13501,9 +13501,9 @@
       "source_province": "Napoli",
       "proclaimed_at": "26/10/2026",
       "received_at": "26/10/2026 12:14",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "mit_guid": "8620",
-      "rss_seen_at": "2026-10-29T11:41:17+00:00"
+      "rss_seen_at": "2026-10-30T07:21:05+00:00"
     },
     {
       "id": "mit-99461b0d5289b661",
@@ -13529,7 +13529,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "08/09/2026",
       "received_at": "08/09/2026 17:20",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-eac4ae2b74a3af98",
@@ -13554,7 +13554,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "23/10/2026",
       "received_at": "23/10/2026 16:46",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     },
     {
       "id": "mit-0c02d4d02e565626",
@@ -13581,9 +13581,9 @@
       "source_province": "Palermo",
       "proclaimed_at": "23/10/2026",
       "received_at": "23/10/2026 17:14",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "mit_guid": "8618",
-      "rss_seen_at": "2026-10-29T11:41:17+00:00"
+      "rss_seen_at": "2026-10-30T07:21:05+00:00"
     },
     {
       "id": "mit-193883f03a7853fb",
@@ -13610,9 +13610,9 @@
       "source_province": "Genova",
       "proclaimed_at": "28/10/2026",
       "received_at": "28/10/2026 15:17",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "mit_guid": "8624",
-      "rss_seen_at": "2026-10-29T11:41:17+00:00"
+      "rss_seen_at": "2026-10-30T07:21:05+00:00"
     },
     {
       "id": "mit-2e50a7814763ba40",
@@ -13639,7 +13639,7 @@
       "source_province": "Verona",
       "proclaimed_at": "22/10/2026",
       "received_at": "22/10/2026 14:22",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "mit_guid": "8615",
       "rss_seen_at": "2026-10-28T13:53:15+00:00"
     },
@@ -13670,9 +13670,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "27/10/2026",
       "received_at": "27/10/2026 11:21",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "mit_guid": "8621",
-      "rss_seen_at": "2026-10-29T11:41:17+00:00"
+      "rss_seen_at": "2026-10-30T07:21:05+00:00"
     },
     {
       "id": "mit-eef687bfcc9d7cff",
@@ -13697,9 +13697,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "27/10/2026",
       "received_at": "27/10/2026 17:36",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "mit_guid": "8622",
-      "rss_seen_at": "2026-10-29T11:41:17+00:00"
+      "rss_seen_at": "2026-10-30T07:21:05+00:00"
     },
     {
       "id": "mit-734d13a0c27e997a",
@@ -13724,9 +13724,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/10/2026",
       "received_at": "16/10/2026 15:30",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "mit_guid": "8608",
-      "rss_seen_at": "2026-10-29T11:41:17+00:00"
+      "rss_seen_at": "2026-10-30T07:21:05+00:00"
     },
     {
       "id": "mit-cb63918e35ba7c39",
@@ -13753,9 +13753,9 @@
       "source_province": "Cosenza",
       "proclaimed_at": "25/10/2026",
       "received_at": "26/10/2026 11:31",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "mit_guid": "8619",
-      "rss_seen_at": "2026-10-29T11:41:17+00:00"
+      "rss_seen_at": "2026-10-30T07:21:05+00:00"
     },
     {
       "id": "mit-10aad812b6e8e3d8",
@@ -13782,9 +13782,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "13/10/2026",
       "received_at": "13/10/2026 10:39",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "mit_guid": "8602",
-      "rss_seen_at": "2026-10-29T11:41:17+00:00"
+      "rss_seen_at": "2026-10-30T07:21:05+00:00"
     },
     {
       "id": "mit-9478816d9f742b9f",
@@ -13812,9 +13812,9 @@
       "source_province": "Venezia",
       "proclaimed_at": "08/10/2026",
       "received_at": "08/10/2026 14:46",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "mit_guid": "8598",
-      "rss_seen_at": "2026-10-29T11:41:17+00:00"
+      "rss_seen_at": "2026-10-30T07:21:05+00:00"
     },
     {
       "id": "mit-aec9b074f8675e67",
@@ -13844,9 +13844,9 @@
       "source_province": "Bari",
       "proclaimed_at": "16/10/2026",
       "received_at": "16/10/2026 11:56",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "mit_guid": "8605",
-      "rss_seen_at": "2026-10-29T11:41:17+00:00"
+      "rss_seen_at": "2026-10-30T07:21:05+00:00"
     },
     {
       "id": "mit-fc62d15d5d824439",
@@ -13877,9 +13877,9 @@
       "source_province": "Napoli",
       "proclaimed_at": "14/10/2026",
       "received_at": "14/10/2026 09:13",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "mit_guid": "8603",
-      "rss_seen_at": "2026-10-29T11:41:17+00:00"
+      "rss_seen_at": "2026-10-30T07:21:05+00:00"
     },
     {
       "id": "mit-65e0cdf602b2b5ab",
@@ -13906,9 +13906,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "07/10/2026",
       "received_at": "07/10/2026 18:49",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "mit_guid": "8592",
-      "rss_seen_at": "2026-10-29T11:41:17+00:00"
+      "rss_seen_at": "2026-10-30T07:21:05+00:00"
     },
     {
       "id": "mit-83d96678c67ca9aa",
@@ -13933,9 +13933,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "19/10/2026",
       "received_at": "19/10/2026 16:17",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "mit_guid": "8610",
-      "rss_seen_at": "2026-10-29T11:41:17+00:00"
+      "rss_seen_at": "2026-10-30T07:21:05+00:00"
     },
     {
       "id": "mit-3b5a4bd9921b97d3",
@@ -13954,14 +13954,14 @@
       "src": [
         "mit"
       ],
-      "official_status": "in programma",
+      "official_status": "revocato",
       "source_category": "PERSONALE SOC. ENAV",
       "source_union": "FILT-CGIL/UGL-TA",
       "source_region": "Italia",
       "source_province": "Tutte",
       "proclaimed_at": "23/09/2026",
       "received_at": "23/09/2026 14:48",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "mit_guid": "8571",
       "rss_seen_at": "2026-10-29T11:41:17+00:00"
     },
@@ -13990,9 +13990,9 @@
       "source_province": "Verona",
       "proclaimed_at": "28/10/2026",
       "received_at": "28/10/2026 17:21",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "mit_guid": "8625",
-      "rss_seen_at": "2026-10-29T11:41:17+00:00"
+      "rss_seen_at": "2026-10-30T07:21:05+00:00"
     },
     {
       "id": "mit-43431a6db073e33d",
@@ -14018,9 +14018,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "30/09/2026",
       "received_at": "30/09/2026 17:34",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "mit_guid": "8579",
-      "rss_seen_at": "2026-10-29T11:41:17+00:00"
+      "rss_seen_at": "2026-10-30T07:21:05+00:00"
     },
     {
       "id": "mit-7a4df743a5ab24ef",
@@ -14045,9 +14045,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "05/10/2026",
       "received_at": "05/10/2026 20:33",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "mit_guid": "8588",
-      "rss_seen_at": "2026-10-29T11:41:17+00:00"
+      "rss_seen_at": "2026-10-30T07:21:05+00:00"
     },
     {
       "id": "mit-2be604d1751920a8",
@@ -14075,9 +14075,36 @@
       "source_province": "Tutte",
       "proclaimed_at": "27/09/2026",
       "received_at": "27/09/2026 08:37",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "mit_guid": "8575",
-      "rss_seen_at": "2026-10-29T11:41:17+00:00"
+      "rss_seen_at": "2026-10-30T07:21:05+00:00"
+    },
+    {
+      "id": "mit-85832e1c37ca75e1",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "sciopero",
+      "scope": "nazionale",
+      "sector": "Generale",
+      "start": "2026-12-04",
+      "end": "2026-12-04",
+      "time": "Intera giornata",
+      "title": "Sciopero Generale Pers. a Tempo Determinato e Indeterminato Con Contratti Precari e Atipici di Tutti i Comparti Con Esclusione del Settore T",
+      "who": "UNIONE SINDACALE ITALIANA USI 1912",
+      "src": [
+        "mit"
+      ],
+      "official_status": "in programma",
+      "source_category": "SCIOPERO GENERALE PERS. A TEMPO DETERMINATO E INDETERMINATO CON CONTRATTI PRECARI E ATIPICI DI TUTTI I COMPARTI CON ESCLUSIONE DEL SETTORE TRASPORTI",
+      "source_union": "UNIONE SINDACALE ITALIANA USI 1912",
+      "source_region": "Italia",
+      "source_province": "Tutte",
+      "proclaimed_at": "28/10/2026",
+      "received_at": "29/10/2026 10:49",
+      "verified_at": "2026-10-30",
+      "mit_guid": "8626",
+      "rss_seen_at": "2026-10-30T07:21:05+00:00"
     },
     {
       "id": "mit-2b5439759dd5248a",
@@ -14102,9 +14129,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "08/10/2026",
       "received_at": "08/10/2026 00:02",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "mit_guid": "8594",
-      "rss_seen_at": "2026-10-29T11:41:17+00:00"
+      "rss_seen_at": "2026-10-30T07:21:05+00:00"
     },
     {
       "id": "mit-b528c4f927b48074",
@@ -14130,9 +14157,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/10/2026",
       "received_at": "16/10/2026 14:17",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "mit_guid": "8607",
-      "rss_seen_at": "2026-10-29T11:41:17+00:00"
+      "rss_seen_at": "2026-10-30T07:21:05+00:00"
     },
     {
       "id": "mit-0f954b449d2f31c4",
@@ -14158,9 +14185,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "23/10/2026",
       "received_at": "23/10/2026 11:01",
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "mit_guid": "8616",
-      "rss_seen_at": "2026-10-29T11:41:17+00:00"
+      "rss_seen_at": "2026-10-30T07:21:05+00:00"
     },
     {
       "id": "mit-d92a9685addb72e1",
@@ -14191,7 +14218,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "02/10/2026",
       "received_at": "02/10/2026 13:35",
-      "verified_at": "2026-10-29"
+      "verified_at": "2026-10-30"
     }
   ]
 }
