@@ -236,6 +236,18 @@
     "ver-01c000c64b1e1f9e105f": {
       "nome": "la Repubblica, cronaca del 17 ottobre",
       "url": "https://www.repubblica.it/politica/2026/10/17/diretta/manifestazione_e_corteo_cgil_oggi_a_roma_le_news_in_diretta-425654630/"
+    },
+    "ver-ea67a6fe5ff71b35b4c2": {
+      "nome": "Roma Servizi per la Mobilità, piano ufficiale del 25 ottobre",
+      "url": "https://romamobilita.it/primo-piano/manifestazioni-di-piazza-cortei-nel-weekend-il-piano-mobilita/"
+    },
+    "ver-9a450a70b5dc046f9c17": {
+      "nome": "Roma Servizi per la Mobilità, dettaglio del percorso",
+      "url": "https://romamobilita.it/infomobilita/domenica-corteo-circo-massimo-piramide-possibili-chiusure-e-deviazioni/"
+    },
+    "ver-09ee93373b881289fbf9": {
+      "nome": "la Repubblica Roma, viabilità 24-25 ottobre",
+      "url": "https://roma.repubblica.it/cronaca/2026/10/24/news/strade_chiuse_roma_weekend_24_25_ottobre_cortei_lazio_parma_maker_faire-425672178/"
     }
   },
   "eventi": [
@@ -677,6 +689,28 @@
         "ver-7727d0dfed0624d8ae90",
         "ver-acc274c4a973ed08bb21",
         "ver-758a24e915c765960993"
+      ]
+    },
+    {
+      "id": "ver-4bcc9b5edc42eb4df6ba",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Mobilitazioni",
+      "place": "roma",
+      "start": "2026-10-25",
+      "end": "2026-10-25",
+      "time": "15:00–17:30 (orario annunciato)",
+      "title": "Corteo della comunità romena a Roma",
+      "who": "Comunità romena in Italia",
+      "where": "Da piazzale Ugo La Malfa a piazzale Ostiense, lungo via del Circo Massimo, viale Aventino e piazza Albania",
+      "event_status": "confermato",
+      "src": [
+        "ver-ea67a6fe5ff71b35b4c2",
+        "ver-9a450a70b5dc046f9c17",
+        "ver-09ee93373b881289fbf9"
       ]
     },
     {
