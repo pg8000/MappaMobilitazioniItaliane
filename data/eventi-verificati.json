@@ -208,6 +208,18 @@
     "ver-ba240f8cc757855afa7a": {
       "nome": "FIAB Genova, comunicato del 27 ottobre 2026",
       "url": "https://fiabgenova.it/2026/10/27/cambiamo-strada-il-15-novembre-una-ciclabile-umana-in-via-xx-settembre/"
+    },
+    "ver-623d1d5334d4e0c9e6a5": {
+      "nome": "RaiNews TGR Puglia, cronaca del 24 ottobre",
+      "url": "https://www.rainews.it/amp/tgr/puglia/articoli/2026/10/in-piazza-del-ferrarese-poche-decine-di-ragazzi-f1d784bc-96fd-4835-a80e-6055f7d1cf76.html"
+    },
+    "ver-6a5368489ad14b490bc9": {
+      "nome": "ANSA Puglia, cronaca del 24 ottobre",
+      "url": "https://www.ansa.it/puglia/notizie/2026/10/24/sciolto-il-corteo-non-autorizzato-a-bari-nessun-incidente_d03a2628-0e68-42c0-96be-bdeb12f53de3.html"
+    },
+    "ver-826c8b839e3c80b969fc": {
+      "nome": "la Repubblica Bari, cronaca del 24 ottobre",
+      "url": "https://bari.repubblica.it/cronaca/2026/10/24/news/bari_piazza_manifestazione_giovanissimi_controlli_polizia_ronde_destra-425672722/"
     }
   },
   "eventi": [
@@ -578,6 +590,32 @@
       "event_status": "confermato",
       "src": [
         "ver-d7db77c11e321e250e14"
+      ]
+    },
+    {
+      "id": "ver-e974c6825fe11cc9a42c",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Mobilitazioni",
+      "place": "bari",
+      "start": "2026-10-24",
+      "end": "2026-10-24",
+      "time": "Pomeriggio (orario non indicato)",
+      "title": "Corteo spontaneo contro la guerra e il carovita a Bari",
+      "who": "Studenti e giovani manifestanti; promotori non identificati",
+      "where": "Da piazza del Ferrarese attraverso la Città vecchia e via Sparano, fino al Molo San Nicola",
+      "exc": {
+        "kind": "Corteo non preavvisato",
+        "note": "RaiNews TGR Puglia e ANSA riferiscono che il corteo si è concluso senza incidenti; alcuni negozi hanno chiuso al passaggio."
+      },
+      "event_status": "confermato",
+      "src": [
+        "ver-623d1d5334d4e0c9e6a5",
+        "ver-6a5368489ad14b490bc9",
+        "ver-826c8b839e3c80b969fc"
       ]
     },
     {
