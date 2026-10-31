@@ -1,6 +1,6 @@
 {
   "anno": 2026,
-  "aggiornato": "2026-10-30",
+  "aggiornato": "2026-10-31",
   "copertura": {
     "year": 2026,
     "from": "2026-01-01",
@@ -10,11 +10,11 @@
     "rssCheckedAt": "2026-10-31T07:19:58+00:00",
     "sourceRows": 504,
     "officialCount": 504,
-    "manualCount": 16,
-    "verifiedCount": 27,
+    "manualCount": 17,
+    "verifiedCount": 29,
     "revokedCount": 144,
     "missingCount": 0,
-    "revision": "3a995882902be2d83c10"
+    "revision": "7f66fe03be3345f01116"
   },
   "fonti": {
     "teleclub-giugliano-20261026": {
@@ -128,6 +128,14 @@
     "corriere24Milano": {
       "nome": "Corriere della Sera, 24/10/2026",
       "url": "https://milano.corriere.it/cronaca/diretta-live/26_ottobre_24/milano-manifestazioni-scontri-oggi.shtml?intcmp=Leggi_anche_nd_270526_corriere_ss_nd"
+    },
+    "roma-mobilita-italia-20261017": {
+      "nome": "Roma Servizi per la Mobilità, percorso del 17 ottobre",
+      "url": "https://romamobilita.it/comunicato/due-cortei-e-la-half-marathon-gli-eventi-del-fine-settimana/"
+    },
+    "repubblica-roma-italia-20261017": {
+      "nome": "la Repubblica Roma, cronaca e intervista agli organizzatori",
+      "url": "https://roma.repubblica.it/cronaca/2026/10/19/news/corteo_circo_massimo_italia_in_piazza_rapper_babydr4go-425659072/"
     },
     "ver-22c3db4144e1bc8f044a": {
       "nome": "ANSA",
@@ -348,6 +356,34 @@
     "ver-826c8b839e3c80b969fc": {
       "nome": "la Repubblica Bari, cronaca del 24 ottobre",
       "url": "https://bari.repubblica.it/cronaca/2026/10/24/news/bari_piazza_manifestazione_giovanissimi_controlli_polizia_ronde_destra-425672722/"
+    },
+    "ver-ca6f288b275b39cceae2": {
+      "nome": "FIOM CGIL, convocazione del 15 ottobre",
+      "url": "https://www.fiom.brescia.it/17-ottobre-2026-la-via-maestra-manifestazione-a-roma/"
+    },
+    "ver-077dd6af2cfdccf1240f": {
+      "nome": "Rete Italiana Pace e Disarmo, annuncio dei promotori",
+      "url": "https://retepacedisarmo.org/evento/insieme-sulla-via-maestra-manifestazione-nazionale/"
+    },
+    "ver-c3d679e147599303160d": {
+      "nome": "Roma Servizi per la Mobilità, percorso del 17 ottobre",
+      "url": "https://romamobilita.it/comunicato/due-cortei-e-la-half-marathon-gli-eventi-del-fine-settimana/"
+    },
+    "ver-01c000c64b1e1f9e105f": {
+      "nome": "la Repubblica, cronaca del 17 ottobre",
+      "url": "https://www.repubblica.it/politica/2026/10/17/diretta/manifestazione_e_corteo_cgil_oggi_a_roma_le_news_in_diretta-425654630/"
+    },
+    "ver-ea67a6fe5ff71b35b4c2": {
+      "nome": "Roma Servizi per la Mobilità, piano ufficiale del 25 ottobre",
+      "url": "https://romamobilita.it/primo-piano/manifestazioni-di-piazza-cortei-nel-weekend-il-piano-mobilita/"
+    },
+    "ver-9a450a70b5dc046f9c17": {
+      "nome": "Roma Servizi per la Mobilità, dettaglio del percorso",
+      "url": "https://romamobilita.it/infomobilita/domenica-corteo-circo-massimo-piramide-possibili-chiusure-e-deviazioni/"
+    },
+    "ver-09ee93373b881289fbf9": {
+      "nome": "la Repubblica Roma, viabilità 24-25 ottobre",
+      "url": "https://roma.repubblica.it/cronaca/2026/10/24/news/strade_chiuse_roma_weekend_24_25_ottobre_cortei_lazio_parma_maker_faire-425672178/"
     }
   },
   "luoghi": {
@@ -15401,6 +15437,30 @@
       ]
     },
     {
+      "id": "roma-italia-in-piazza-2026-10-17",
+      "orgs": [
+        "italia-in-piazza"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Mobilitazioni",
+      "place": "roma",
+      "start": "2026-10-17",
+      "end": "2026-10-17",
+      "time": "15:00–18:00",
+      "title": "Corteo «Italia in Piazza» contro il carovita",
+      "who": "Italia in Piazza, organizzato a Roma da Aura Asara e Ludovica Calvitti",
+      "where": "Da piazzale Ugo La Malfa a piazzale Ostiense, attraverso viale Aventino e piazza Albania",
+      "event_status": "confermato",
+      "src": [
+        "roma-mobilita-italia-20261017",
+        "repubblica-roma-italia-20261017"
+      ],
+      "regions": [
+        "Lazio"
+      ]
+    },
+    {
       "id": "torino-17",
       "orgs": [
         "non-identificato"
@@ -15425,6 +15485,32 @@
       ],
       "regions": [
         "Piemonte"
+      ]
+    },
+    {
+      "id": "ver-6c18e9194d23ac54aa12",
+      "orgs": [
+        "cgil"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Mobilitazioni",
+      "place": "roma",
+      "start": "2026-10-17",
+      "end": "2026-10-17",
+      "time": "13:30 (concentramento)",
+      "title": "Manifestazione nazionale «Insieme sulla Via Maestra»",
+      "who": "CGIL e oltre cento associazioni aderenti alla rete La Via Maestra",
+      "where": "Da piazza della Repubblica a piazza del Popolo",
+      "event_status": "confermato",
+      "src": [
+        "ver-ca6f288b275b39cceae2",
+        "ver-077dd6af2cfdccf1240f",
+        "ver-c3d679e147599303160d",
+        "ver-01c000c64b1e1f9e105f"
+      ],
+      "regions": [
+        "Lazio"
       ]
     },
     {
@@ -16209,6 +16295,31 @@
       ],
       "regions": [
         "Toscana"
+      ]
+    },
+    {
+      "id": "ver-4bcc9b5edc42eb4df6ba",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Mobilitazioni",
+      "place": "roma",
+      "start": "2026-10-25",
+      "end": "2026-10-25",
+      "time": "15:00–17:30 (orario annunciato)",
+      "title": "Corteo della comunità romena a Roma",
+      "who": "Comunità romena in Italia",
+      "where": "Da piazzale Ugo La Malfa a piazzale Ostiense, lungo via del Circo Massimo, viale Aventino e piazza Albania",
+      "event_status": "confermato",
+      "src": [
+        "ver-ea67a6fe5ff71b35b4c2",
+        "ver-9a450a70b5dc046f9c17",
+        "ver-09ee93373b881289fbf9"
+      ],
+      "regions": [
+        "Lazio"
       ]
     },
     {
