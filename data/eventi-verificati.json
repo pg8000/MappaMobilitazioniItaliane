@@ -220,6 +220,22 @@
     "ver-826c8b839e3c80b969fc": {
       "nome": "la Repubblica Bari, cronaca del 24 ottobre",
       "url": "https://bari.repubblica.it/cronaca/2026/10/24/news/bari_piazza_manifestazione_giovanissimi_controlli_polizia_ronde_destra-425672722/"
+    },
+    "ver-ca6f288b275b39cceae2": {
+      "nome": "FIOM CGIL, convocazione del 15 ottobre",
+      "url": "https://www.fiom.brescia.it/17-ottobre-2026-la-via-maestra-manifestazione-a-roma/"
+    },
+    "ver-077dd6af2cfdccf1240f": {
+      "nome": "Rete Italiana Pace e Disarmo, annuncio dei promotori",
+      "url": "https://retepacedisarmo.org/evento/insieme-sulla-via-maestra-manifestazione-nazionale/"
+    },
+    "ver-c3d679e147599303160d": {
+      "nome": "Roma Servizi per la Mobilità, percorso del 17 ottobre",
+      "url": "https://romamobilita.it/comunicato/due-cortei-e-la-half-marathon-gli-eventi-del-fine-settimana/"
+    },
+    "ver-01c000c64b1e1f9e105f": {
+      "nome": "la Repubblica, cronaca del 17 ottobre",
+      "url": "https://www.repubblica.it/politica/2026/10/17/diretta/manifestazione_e_corteo_cgil_oggi_a_roma_le_news_in_diretta-425654630/"
     }
   },
   "eventi": [
@@ -267,6 +283,29 @@
         "ver-2066dfcb93c4196a0b40",
         "ver-388d1b976fd6b3a0862c",
         "ver-feeac601a3bfae888195"
+      ]
+    },
+    {
+      "id": "ver-6c18e9194d23ac54aa12",
+      "orgs": [
+        "cgil"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Mobilitazioni",
+      "place": "roma",
+      "start": "2026-10-17",
+      "end": "2026-10-17",
+      "time": "13:30 (concentramento)",
+      "title": "Manifestazione nazionale «Insieme sulla Via Maestra»",
+      "who": "CGIL e oltre cento associazioni aderenti alla rete La Via Maestra",
+      "where": "Da piazza della Repubblica a piazza del Popolo",
+      "event_status": "confermato",
+      "src": [
+        "ver-ca6f288b275b39cceae2",
+        "ver-077dd6af2cfdccf1240f",
+        "ver-c3d679e147599303160d",
+        "ver-01c000c64b1e1f9e105f"
       ]
     },
     {
