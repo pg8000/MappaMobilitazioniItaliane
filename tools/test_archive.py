@@ -81,6 +81,14 @@ class ArchiveTests(unittest.TestCase):
         unknown = {"scope": "regionale", "source_region": "Sicilia e Calabria"}
         self.assertEqual(posizione_regionale(unknown, places, self.prov), unknown)
 
+    def test_distinct_rome_marches_on_same_day_are_not_merged(self):
+        events = [e for e in unisci()['eventi']
+                  if e.get('place') == 'roma' and e.get('start') == '2026-10-17'
+                  and e.get('type') == 'manifestazione']
+        self.assertTrue(any('Italia in Piazza' in e.get('who', '') for e in events))
+        self.assertTrue(any('CGIL' in e.get('who', '') for e in events))
+        self.assertGreaterEqual(len({e['id'] for e in events}), 2)
+
     def test_archive_exposes_actual_mit_sync_method(self):
         result = unisci()
         mit = carica('scioperi-mit.json')
