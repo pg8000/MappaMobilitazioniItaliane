@@ -1,6 +1,6 @@
 {
   "licenza": "CC BY 4.0",
-  "snapshot": "2026-10-22",
+  "snapshot": "2026-10-31",
   "versione": "2.0",
   "periodo": {
     "scioperi_e_manifestazioni": {
@@ -124,6 +124,14 @@
     "corriere24Milano": {
       "nome": "Corriere della Sera, 24/10/2026",
       "url": "https://milano.corriere.it/cronaca/diretta-live/26_ottobre_24/milano-manifestazioni-scontri-oggi.shtml?intcmp=Leggi_anche_nd_270526_corriere_ss_nd"
+    },
+    "roma-mobilita-italia-20261017": {
+      "nome": "Roma Servizi per la Mobilità, percorso del 17 ottobre",
+      "url": "https://romamobilita.it/comunicato/due-cortei-e-la-half-marathon-gli-eventi-del-fine-settimana/"
+    },
+    "repubblica-roma-italia-20261017": {
+      "nome": "la Repubblica Roma, cronaca e intervista agli organizzatori",
+      "url": "https://roma.repubblica.it/cronaca/2026/10/19/news/corteo_circo_massimo_italia_in_piazza_rapper_babydr4go-425659072/"
     }
   },
   "promotori": {
@@ -386,6 +394,27 @@
     }
   },
   "eventi": [
+    {
+      "id": "roma-italia-in-piazza-2026-10-17",
+      "orgs": [
+        "italia-in-piazza"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Mobilitazioni",
+      "place": "roma",
+      "start": "2026-10-17",
+      "end": "2026-10-17",
+      "time": "15:00–18:00",
+      "title": "Corteo «Italia in Piazza» contro il carovita",
+      "who": "Italia in Piazza, organizzato a Roma da Aura Asara e Ludovica Calvitti",
+      "where": "Da piazzale Ugo La Malfa a piazzale Ostiense, attraverso viale Aventino e piazza Albania",
+      "event_status": "confermato",
+      "src": [
+        "roma-mobilita-italia-20261017",
+        "repubblica-roma-italia-20261017"
+      ]
+    },
     {
       "id": "giugliano-studenti-2026-10-26",
       "orgs": [
