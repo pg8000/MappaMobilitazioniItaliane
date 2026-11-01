@@ -248,6 +248,18 @@
     "ver-09ee93373b881289fbf9": {
       "nome": "la Repubblica Roma, viabilità 24-25 ottobre",
       "url": "https://roma.repubblica.it/cronaca/2026/10/24/news/strade_chiuse_roma_weekend_24_25_ottobre_cortei_lazio_parma_maker_faire-425672178/"
+    },
+    "ver-1d517277dc42d1022136": {
+      "nome": "La Nazione Arezzo",
+      "url": "https://www.lanazione.it/arezzo/cronaca/tornano-i-girotondi-trattori-e-01fa8c5c"
+    },
+    "ver-92e461a5bc53bd1bd1b6": {
+      "nome": "Arezzo24",
+      "url": "https://www.arezzo24.net/notizie/cronaca/trattori-e-camion-alle-farniole-il-presidio-contro-il-caro-gasolio/"
+    },
+    "ver-57bc639d0c659827ad1c": {
+      "nome": "ArezzoTV",
+      "url": "https://arezzotv.it/politica-attualita/plvideo/youplay/trattori-e-tir-in-protesta-al-casello-della-a1-cosi-non-andiamo-piu-avanti.html"
     }
   },
   "eventi": [
@@ -753,6 +765,29 @@
       "src": [
         "ver-0995a8943ef46f74827a",
         "ver-5d5ba8e01cf87a285a79"
+      ]
+    },
+    {
+      "id": "ver-4757b68cf643778ba8fd",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Trasporto merci",
+      "place": "arezzo",
+      "area": "Foiano della Chiana (AR), località Farniole; punto sulla mappa indicativo su Arezzo",
+      "start": "2026-10-26",
+      "end": "2026-10-26",
+      "time": "Dalle 08:00",
+      "title": "Presidio di agricoltori e autotrasportatori alle Farniole contro il caro gasolio",
+      "who": "Agricoltori e autotrasportatori della Valdichiana",
+      "where": "Rotatoria delle Farniole, Foiano della Chiana, presso il casello A1 Valdichiana–Bettolle",
+      "event_status": "confermato",
+      "src": [
+        "ver-1d517277dc42d1022136",
+        "ver-92e461a5bc53bd1bd1b6",
+        "ver-57bc639d0c659827ad1c"
       ]
     },
     {
