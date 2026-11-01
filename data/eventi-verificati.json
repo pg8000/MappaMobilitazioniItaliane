@@ -272,6 +272,18 @@
     "ver-3c0cb399bcc443fda4be": {
       "nome": "ANSA, cronaca del 30 ottobre",
       "url": "https://www.ansa.it/amp/sito/notizie/cronaca/2026/10/30/sciopero-generale-e-cortei-in-tutta-italia.-scontri-a-torino-cariche-in-piazza-castello_a6c5a68a-dc6a-450e-9dac-8c7c47dc898a.html"
+    },
+    "ver-1c3ccdf7b260bd4b541c": {
+      "nome": "Savona Netweek, cronaca del 16 ottobre",
+      "url": "https://savonanetweek.it/savona/studenti-in-piazza-a-savona-protesta-per-scuole-e-insegnanti/"
+    },
+    "ver-6a6f90367b3960812157": {
+      "nome": "La Stampa Savona, cronaca del 16 ottobre",
+      "url": "https://www.lastampa.it/savona/2026/10/16/news/studenti_hanno_tentato_occupare_liceo_della_rovere-15768741/"
+    },
+    "ver-9e62e027f5b9003ea3c5": {
+      "nome": "ANSA, conferma retrospettiva",
+      "url": "https://www.ansa.it/liguria/notizie/2026/10/26/tafferugli-in-manifestazione-studenti-denunciati-4-minori-e-un-maggiorenne_1c9d9493-879d-407c-8133-a591beeef708.html"
     }
   },
   "eventi": [
@@ -319,6 +331,28 @@
         "ver-2066dfcb93c4196a0b40",
         "ver-388d1b976fd6b3a0862c",
         "ver-feeac601a3bfae888195"
+      ]
+    },
+    {
+      "id": "ver-e11b43bc0adda70c833d",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Studenti",
+      "place": "savona",
+      "start": "2026-10-16",
+      "end": "2026-10-16",
+      "time": "Orario non indicato",
+      "title": "Corteo degli studenti per la scuola a Savona",
+      "who": "Studenti delle scuole superiori di Savona, con la partecipazione di alcuni docenti",
+      "where": "Da istituti superiori cittadini a piazza Mameli, poi piazza Sisto",
+      "event_status": "confermato",
+      "src": [
+        "ver-1c3ccdf7b260bd4b541c",
+        "ver-6a6f90367b3960812157",
+        "ver-9e62e027f5b9003ea3c5"
       ]
     },
     {
