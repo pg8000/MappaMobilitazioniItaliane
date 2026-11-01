@@ -11,10 +11,10 @@
     "sourceRows": 504,
     "officialCount": 504,
     "manualCount": 17,
-    "verifiedCount": 30,
+    "verifiedCount": 32,
     "revokedCount": 144,
     "missingCount": 0,
-    "revision": "60736977f496ab8a9266"
+    "revision": "ba0d716f6238b820c3a4"
   },
   "fonti": {
     "teleclub-giugliano-20261026": {
@@ -396,6 +396,30 @@
     "ver-57bc639d0c659827ad1c": {
       "nome": "ArezzoTV",
       "url": "https://arezzotv.it/politica-attualita/plvideo/youplay/trattori-e-tir-in-protesta-al-casello-della-a1-cosi-non-andiamo-piu-avanti.html"
+    },
+    "ver-4f9e479d82b87aec9e07": {
+      "nome": "USB, elenco piazze",
+      "url": "https://areastampa.usb.it/leggi-notizia/lista-piazze-sciopero-generale-30-ottobre-in-aggiornamento-1052.html"
+    },
+    "ver-36854de94dfc83c7cf08": {
+      "nome": "Pressenza, cronaca del 31 ottobre",
+      "url": "https://www.pressenza.com/it/2026/10/sciopero-generale-a-torino-10-000-partecipanti-divisi-in-vari-cortei/"
+    },
+    "ver-3c0cb399bcc443fda4be": {
+      "nome": "ANSA, cronaca del 30 ottobre",
+      "url": "https://www.ansa.it/amp/sito/notizie/cronaca/2026/10/30/sciopero-generale-e-cortei-in-tutta-italia.-scontri-a-torino-cariche-in-piazza-castello_a6c5a68a-dc6a-450e-9dac-8c7c47dc898a.html"
+    },
+    "ver-1c3ccdf7b260bd4b541c": {
+      "nome": "Savona Netweek, cronaca del 16 ottobre",
+      "url": "https://savonanetweek.it/savona/studenti-in-piazza-a-savona-protesta-per-scuole-e-insegnanti/"
+    },
+    "ver-6a6f90367b3960812157": {
+      "nome": "La Stampa Savona, cronaca del 16 ottobre",
+      "url": "https://www.lastampa.it/savona/2026/10/16/news/studenti_hanno_tentato_occupare_liceo_della_rovere-15768741/"
+    },
+    "ver-9e62e027f5b9003ea3c5": {
+      "nome": "ANSA, conferma retrospettiva",
+      "url": "https://www.ansa.it/liguria/notizie/2026/10/26/tafferugli-in-manifestazione-studenti-denunciati-4-minori-e-un-maggiorenne_1c9d9493-879d-407c-8133-a591beeef708.html"
     }
   },
   "luoghi": {
@@ -15369,6 +15393,31 @@
       ]
     },
     {
+      "id": "ver-e11b43bc0adda70c833d",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Studenti",
+      "place": "savona",
+      "start": "2026-10-16",
+      "end": "2026-10-16",
+      "time": "Orario non indicato",
+      "title": "Corteo degli studenti per la scuola a Savona",
+      "who": "Studenti delle scuole superiori di Savona, con la partecipazione di alcuni docenti",
+      "where": "Da istituti superiori cittadini a piazza Mameli, poi piazza Sisto",
+      "event_status": "confermato",
+      "src": [
+        "ver-1c3ccdf7b260bd4b541c",
+        "ver-6a6f90367b3960812157",
+        "ver-9e62e027f5b9003ea3c5"
+      ],
+      "regions": [
+        "Liguria"
+      ]
+    },
+    {
       "id": "bergamo-17",
       "orgs": [
         "italia-in-piazza"
@@ -16912,6 +16961,31 @@
       ],
       "regions": [
         "Friuli-Venezia Giulia"
+      ]
+    },
+    {
+      "id": "ver-d3ea9bf282c6c2dc9c6c",
+      "orgs": [
+        "usb"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Mobilitazioni",
+      "place": "torino",
+      "start": "2026-10-30",
+      "end": "2026-10-30",
+      "time": "09:30 (concentramento USB)",
+      "title": "Corteo USB contro riarmo e caro vita a Torino",
+      "who": "Unione Sindacale di Base (USB), con lavoratori e studenti aderenti",
+      "where": "Concentramento in piazza Palazzo di Città, corteo verso piazza Derna; altri spezzoni studenteschi in centro",
+      "event_status": "confermato",
+      "src": [
+        "ver-4f9e479d82b87aec9e07",
+        "ver-36854de94dfc83c7cf08",
+        "ver-3c0cb399bcc443fda4be"
+      ],
+      "regions": [
+        "Piemonte"
       ]
     },
     {
