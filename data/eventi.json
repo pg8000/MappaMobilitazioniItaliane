@@ -391,6 +391,12 @@
       "lon": 10.9476,
       "lat": 43.7179,
       "region": "Toscana"
+    },
+    "cassino": {
+      "name": "Cassino",
+      "lon": 13.8333,
+      "lat": 41.4917,
+      "region": "Lazio"
     }
   },
   "eventi": [
