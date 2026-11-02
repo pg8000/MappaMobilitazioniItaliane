@@ -284,6 +284,18 @@
     "ver-9e62e027f5b9003ea3c5": {
       "nome": "ANSA, conferma retrospettiva",
       "url": "https://www.ansa.it/liguria/notizie/2026/10/26/tafferugli-in-manifestazione-studenti-denunciati-4-minori-e-un-maggiorenne_1c9d9493-879d-407c-8133-a591beeef708.html"
+    },
+    "ver-4702792a19f142bd9092": {
+      "nome": "ANSA Lazio, annuncio del 25 ottobre 2026",
+      "url": "https://www.ansa.it/amp/lazio/notizie/2026/10/25/domani-mattina-corteo-degli-studenti-a-cassino-negozianti-blindano-vetrine_fbb52ab5-70dc-411f-80b4-c0ae9cb33fce.html"
+    },
+    "ver-d8735e52337ee1ef0519": {
+      "nome": "Leggo Cassino, intervista ai promotori del 23 ottobre 2026",
+      "url": "https://www.leggocassino.it/2026/10/23/cassino-lunedi-mille-studenti-scendono-in-piazza-contro-il-carovita-e-per-il-diritto-allo-studio"
+    },
+    "ver-bb4f98e8f8bde575c7c1": {
+      "nome": "Teleuniverso, resoconto del 26 ottobre 2026",
+      "url": "https://www.teleuniverso.it/cassino-mille-studenti-in-piazza-contro-il-carovita/"
     }
   },
   "eventi": [
@@ -854,6 +866,28 @@
       "event_status": "confermato",
       "src": [
         "ver-6c8d515e60c09c8fe71c"
+      ]
+    },
+    {
+      "id": "ver-8f6ca6560f08ba0651f8",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Mobilitazioni",
+      "place": "cassino",
+      "start": "2026-10-26",
+      "end": "2026-10-26",
+      "time": "09:00-13:00",
+      "title": "Presidio studentesco contro il carovita e per il diritto allo studio a Cassino",
+      "who": "Studenti degli istituti superiori di Cassino",
+      "where": "Piazza Labriola, Cassino (FR)",
+      "event_status": "confermato",
+      "src": [
+        "ver-4702792a19f142bd9092",
+        "ver-d8735e52337ee1ef0519",
+        "ver-bb4f98e8f8bde575c7c1"
       ]
     },
     {
