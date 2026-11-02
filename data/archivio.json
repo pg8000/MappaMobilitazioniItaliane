@@ -7,14 +7,14 @@
     "to": "2026-12-31",
     "syncedAt": "2026-11-01T11:58:08+00:00",
     "syncMethod": "automatico-tabella-annuale-relay",
-    "rssCheckedAt": "2026-11-01T11:58:09+00:00",
+    "rssCheckedAt": "2026-11-02T07:36:31+00:00",
     "sourceRows": 504,
     "officialCount": 504,
     "manualCount": 17,
-    "verifiedCount": 32,
+    "verifiedCount": 33,
     "revokedCount": 144,
     "missingCount": 0,
-    "revision": "07e73d0d270d8adbe1b3"
+    "revision": "041d4b2939857f28802f"
   },
   "fonti": {
     "teleclub-giugliano-20261026": {
@@ -420,6 +420,18 @@
     "ver-9e62e027f5b9003ea3c5": {
       "nome": "ANSA, conferma retrospettiva",
       "url": "https://www.ansa.it/liguria/notizie/2026/10/26/tafferugli-in-manifestazione-studenti-denunciati-4-minori-e-un-maggiorenne_1c9d9493-879d-407c-8133-a591beeef708.html"
+    },
+    "ver-4702792a19f142bd9092": {
+      "nome": "ANSA Lazio, annuncio del 25 ottobre 2026",
+      "url": "https://www.ansa.it/amp/lazio/notizie/2026/10/25/domani-mattina-corteo-degli-studenti-a-cassino-negozianti-blindano-vetrine_fbb52ab5-70dc-411f-80b4-c0ae9cb33fce.html"
+    },
+    "ver-d8735e52337ee1ef0519": {
+      "nome": "Leggo Cassino, intervista ai promotori del 23 ottobre 2026",
+      "url": "https://www.leggocassino.it/2026/10/23/cassino-lunedi-mille-studenti-scendono-in-piazza-contro-il-carovita-e-per-il-diritto-allo-studio"
+    },
+    "ver-bb4f98e8f8bde575c7c1": {
+      "nome": "Teleuniverso, resoconto del 26 ottobre 2026",
+      "url": "https://www.teleuniverso.it/cassino-mille-studenti-in-piazza-contro-il-carovita/"
     }
   },
   "luoghi": {
@@ -16515,6 +16527,31 @@
       ]
     },
     {
+      "id": "ver-8f6ca6560f08ba0651f8",
+      "orgs": [
+        "non-identificato"
+      ],
+      "type": "manifestazione",
+      "scope": "locale",
+      "sector": "Mobilitazioni",
+      "place": "cassino",
+      "start": "2026-10-26",
+      "end": "2026-10-26",
+      "time": "09:00-13:00",
+      "title": "Presidio studentesco contro il carovita e per il diritto allo studio a Cassino",
+      "who": "Studenti degli istituti superiori di Cassino",
+      "where": "Piazza Labriola, Cassino (FR)",
+      "event_status": "confermato",
+      "src": [
+        "ver-4702792a19f142bd9092",
+        "ver-d8735e52337ee1ef0519",
+        "ver-bb4f98e8f8bde575c7c1"
+      ],
+      "regions": [
+        "Lazio"
+      ]
+    },
+    {
       "id": "ver-b107e62f72e5a0b3c647",
       "orgs": [
         "non-identificato"
@@ -17046,7 +17083,7 @@
       "received_at": "07/09/2026 15:11",
       "verified_at": "2026-11-01",
       "mit_guid": "8548",
-      "rss_seen_at": "2026-11-01T11:58:09+00:00",
+      "rss_seen_at": "2026-11-02T07:36:31+00:00",
       "regions": []
     },
     {
@@ -17076,7 +17113,7 @@
       "received_at": "26/10/2026 12:14",
       "verified_at": "2026-11-01",
       "mit_guid": "8620",
-      "rss_seen_at": "2026-11-01T11:58:09+00:00",
+      "rss_seen_at": "2026-11-02T07:36:31+00:00",
       "regions": [
         "Campania"
       ]
@@ -17161,7 +17198,7 @@
       "received_at": "23/10/2026 17:14",
       "verified_at": "2026-11-01",
       "mit_guid": "8618",
-      "rss_seen_at": "2026-11-01T11:58:09+00:00",
+      "rss_seen_at": "2026-11-02T07:36:31+00:00",
       "regions": [
         "Sicilia"
       ]
@@ -17193,7 +17230,7 @@
       "received_at": "28/10/2026 15:17",
       "verified_at": "2026-11-01",
       "mit_guid": "8624",
-      "rss_seen_at": "2026-11-01T11:58:09+00:00",
+      "rss_seen_at": "2026-11-02T07:36:31+00:00",
       "regions": [
         "Liguria"
       ]
@@ -17259,7 +17296,7 @@
       "received_at": "27/10/2026 11:21",
       "verified_at": "2026-11-01",
       "mit_guid": "8621",
-      "rss_seen_at": "2026-11-01T11:58:09+00:00",
+      "rss_seen_at": "2026-11-02T07:36:31+00:00",
       "regions": []
     },
     {
@@ -17287,7 +17324,7 @@
       "received_at": "27/10/2026 17:36",
       "verified_at": "2026-11-01",
       "mit_guid": "8622",
-      "rss_seen_at": "2026-11-01T11:58:09+00:00",
+      "rss_seen_at": "2026-11-02T07:36:31+00:00",
       "regions": []
     },
     {
@@ -17315,7 +17352,7 @@
       "received_at": "16/10/2026 15:30",
       "verified_at": "2026-11-01",
       "mit_guid": "8608",
-      "rss_seen_at": "2026-11-01T11:58:09+00:00",
+      "rss_seen_at": "2026-11-02T07:36:31+00:00",
       "regions": []
     },
     {
@@ -17345,7 +17382,7 @@
       "received_at": "26/10/2026 11:31",
       "verified_at": "2026-11-01",
       "mit_guid": "8619",
-      "rss_seen_at": "2026-11-01T11:58:09+00:00",
+      "rss_seen_at": "2026-11-02T07:36:31+00:00",
       "regions": [
         "Calabria"
       ]
@@ -17377,7 +17414,7 @@
       "received_at": "13/10/2026 10:39",
       "verified_at": "2026-11-01",
       "mit_guid": "8602",
-      "rss_seen_at": "2026-11-01T11:58:09+00:00",
+      "rss_seen_at": "2026-11-02T07:36:31+00:00",
       "regions": [
         "Lombardia"
       ]
@@ -17410,7 +17447,7 @@
       "received_at": "08/10/2026 14:46",
       "verified_at": "2026-11-01",
       "mit_guid": "8598",
-      "rss_seen_at": "2026-11-01T11:58:09+00:00",
+      "rss_seen_at": "2026-11-02T07:36:31+00:00",
       "regions": [
         "Veneto"
       ]
@@ -17445,7 +17482,7 @@
       "received_at": "16/10/2026 11:56",
       "verified_at": "2026-11-01",
       "mit_guid": "8605",
-      "rss_seen_at": "2026-11-01T11:58:09+00:00",
+      "rss_seen_at": "2026-11-02T07:36:31+00:00",
       "regions": [
         "Puglia"
       ]
@@ -17504,7 +17541,7 @@
       "received_at": "14/10/2026 09:13",
       "verified_at": "2026-11-01",
       "mit_guid": "8603",
-      "rss_seen_at": "2026-11-01T11:58:09+00:00",
+      "rss_seen_at": "2026-11-02T07:36:31+00:00",
       "regions": [
         "Campania"
       ]
@@ -17536,7 +17573,7 @@
       "received_at": "07/10/2026 18:49",
       "verified_at": "2026-11-01",
       "mit_guid": "8592",
-      "rss_seen_at": "2026-11-01T11:58:09+00:00",
+      "rss_seen_at": "2026-11-02T07:36:31+00:00",
       "regions": []
     },
     {
@@ -17564,7 +17601,7 @@
       "received_at": "19/10/2026 16:17",
       "verified_at": "2026-11-01",
       "mit_guid": "8610",
-      "rss_seen_at": "2026-11-01T11:58:09+00:00",
+      "rss_seen_at": "2026-11-02T07:36:31+00:00",
       "regions": []
     },
     {
@@ -17644,7 +17681,7 @@
       "received_at": "28/10/2026 17:21",
       "verified_at": "2026-11-01",
       "mit_guid": "8625",
-      "rss_seen_at": "2026-11-01T11:58:09+00:00",
+      "rss_seen_at": "2026-11-02T07:36:31+00:00",
       "regions": [
         "Veneto"
       ]
@@ -17675,7 +17712,7 @@
       "received_at": "30/09/2026 17:34",
       "verified_at": "2026-11-01",
       "mit_guid": "8579",
-      "rss_seen_at": "2026-11-01T11:58:09+00:00",
+      "rss_seen_at": "2026-11-02T07:36:31+00:00",
       "regions": []
     },
     {
@@ -17703,7 +17740,7 @@
       "received_at": "05/10/2026 20:33",
       "verified_at": "2026-11-01",
       "mit_guid": "8588",
-      "rss_seen_at": "2026-11-01T11:58:09+00:00",
+      "rss_seen_at": "2026-11-02T07:36:31+00:00",
       "regions": []
     },
     {
@@ -17734,7 +17771,7 @@
       "received_at": "27/09/2026 08:37",
       "verified_at": "2026-11-01",
       "mit_guid": "8575",
-      "rss_seen_at": "2026-11-01T11:58:09+00:00",
+      "rss_seen_at": "2026-11-02T07:36:31+00:00",
       "regions": []
     },
     {
@@ -17762,7 +17799,7 @@
       "received_at": "29/10/2026 10:49",
       "verified_at": "2026-11-01",
       "mit_guid": "8626",
-      "rss_seen_at": "2026-11-01T11:58:09+00:00",
+      "rss_seen_at": "2026-11-02T07:36:31+00:00",
       "regions": []
     },
     {
@@ -17790,7 +17827,7 @@
       "received_at": "08/10/2026 00:02",
       "verified_at": "2026-11-01",
       "mit_guid": "8594",
-      "rss_seen_at": "2026-11-01T11:58:09+00:00",
+      "rss_seen_at": "2026-11-02T07:36:31+00:00",
       "regions": []
     },
     {
@@ -17819,7 +17856,7 @@
       "received_at": "16/10/2026 14:17",
       "verified_at": "2026-11-01",
       "mit_guid": "8607",
-      "rss_seen_at": "2026-11-01T11:58:09+00:00",
+      "rss_seen_at": "2026-11-02T07:36:31+00:00",
       "regions": [
         "Emilia-Romagna"
       ]
@@ -17850,7 +17887,7 @@
       "received_at": "23/10/2026 11:01",
       "verified_at": "2026-11-01",
       "mit_guid": "8616",
-      "rss_seen_at": "2026-11-01T11:58:09+00:00",
+      "rss_seen_at": "2026-11-02T07:36:31+00:00",
       "regions": []
     },
     {
