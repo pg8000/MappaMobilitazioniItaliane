@@ -1576,6 +1576,15 @@
       "regions": [
         "Toscana"
       ]
+    },
+    "cassino": {
+      "name": "Cassino",
+      "lon": 13.8333,
+      "lat": 41.4917,
+      "region": "Lazio",
+      "regions": [
+        "Lazio"
+      ]
     }
   },
   "promotori": {
