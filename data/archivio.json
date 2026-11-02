@@ -1,20 +1,20 @@
 {
   "anno": 2026,
-  "aggiornato": "2026-11-01",
+  "aggiornato": "2026-11-02",
   "copertura": {
     "year": 2026,
     "from": "2026-01-01",
     "to": "2026-12-31",
-    "syncedAt": "2026-11-01T11:58:08+00:00",
+    "syncedAt": "2026-11-02T13:45:38+00:00",
     "syncMethod": "automatico-tabella-annuale-relay",
-    "rssCheckedAt": "2026-11-02T07:36:31+00:00",
+    "rssCheckedAt": "2026-11-02T13:46:56+00:00",
     "sourceRows": 504,
     "officialCount": 504,
     "manualCount": 17,
     "verifiedCount": 33,
     "revokedCount": 144,
     "missingCount": 0,
-    "revision": "041d4b2939857f28802f"
+    "revision": "cd3c24ed74d074da8495"
   },
   "fonti": {
     "teleclub-giugliano-20261026": {
@@ -1760,7 +1760,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/01/2026",
       "received_at": "06/01/2026 12:02",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-emilia-romagna",
       "map_precision": "region",
       "regions": [
@@ -1792,7 +1792,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/01/2026",
       "received_at": "06/01/2026 13:44",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-emilia-romagna",
       "map_precision": "region",
       "regions": [
@@ -1824,7 +1824,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/01/2026",
       "received_at": "07/01/2026 11:18",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-emilia-romagna",
       "map_precision": "region",
       "regions": [
@@ -1862,7 +1862,7 @@
       "source_province": "Genova",
       "proclaimed_at": "07/01/2026",
       "received_at": "07/01/2026 11:14",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Liguria"
       ]
@@ -1896,7 +1896,7 @@
       "source_province": "Pescara",
       "proclaimed_at": "21/11/2025",
       "received_at": "21/11/2025 15:15",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Abruzzo"
       ]
@@ -1925,7 +1925,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/12/2025",
       "received_at": "15/12/2025 22:22",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-abruzzo",
       "map_precision": "region",
       "regions": [
@@ -1960,7 +1960,7 @@
       "source_province": "Teramo",
       "proclaimed_at": "10/12/2025",
       "received_at": "11/12/2025 12:03",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Abruzzo"
       ]
@@ -1992,7 +1992,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "28/12/2025",
       "received_at": "29/12/2025 08:17",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-abruzzo",
       "map_precision": "region",
       "regions": [
@@ -2027,7 +2027,7 @@
       "source_province": "Chieti",
       "proclaimed_at": "28/12/2025",
       "received_at": "30/12/2025 08:31",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Abruzzo"
       ]
@@ -2059,7 +2059,7 @@
       "source_province": "Bolzano",
       "proclaimed_at": "05/12/2025",
       "received_at": "05/12/2025 20:54",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Trentino-Alto Adige"
       ]
@@ -2089,7 +2089,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "28/11/2025",
       "received_at": "28/11/2025 12:44",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Campania"
       ]
@@ -2117,7 +2117,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "05/12/2025",
       "received_at": "05/12/2025 09:04",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -2143,7 +2143,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "10/11/2025",
       "received_at": "10/11/2025 18:13",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -2171,7 +2171,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/01/2026",
       "received_at": "06/01/2026 23:41",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -2197,7 +2197,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "19/11/2025",
       "received_at": "19/11/2025 12:19",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -2223,7 +2223,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/11/2025",
       "received_at": "24/11/2025 16:29",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -2249,7 +2249,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/12/2025",
       "received_at": "06/12/2025 09:35",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -2275,7 +2275,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "22/12/2025",
       "received_at": "22/12/2025 10:19",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -2303,7 +2303,7 @@
       "source_province": "Campobasso",
       "proclaimed_at": "24/11/2025",
       "received_at": "24/11/2025 15:26",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Molise"
       ]
@@ -2332,7 +2332,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/12/2025",
       "received_at": "02/01/2026 01:12",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -2358,7 +2358,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "23/12/2025",
       "received_at": "23/12/2025 10:13",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -2385,7 +2385,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "10/11/2025",
       "received_at": "10/11/2025 15:29",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sardegna"
       ]
@@ -2413,7 +2413,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "27/12/2025",
       "received_at": "27/12/2025 14:11",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -2440,7 +2440,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/12/2025",
       "received_at": "24/12/2025 18:41",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -2467,7 +2467,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/12/2025",
       "received_at": "24/12/2025 18:38",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -2494,7 +2494,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "21/11/2025",
       "received_at": "21/11/2025 15:04",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-lombardia",
       "map_precision": "region",
       "regions": [
@@ -2526,7 +2526,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "08/01/2026",
       "received_at": "08/01/2026 20:01",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lombardia"
       ]
@@ -2560,7 +2560,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "17/12/2025",
       "received_at": "17/12/2025 14:40",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -2587,7 +2587,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "05/12/2025",
       "received_at": "05/12/2025 12:41",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-umbria",
       "map_precision": "region",
       "regions": [
@@ -2622,7 +2622,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "11/11/2025",
       "received_at": "11/11/2025 15:53",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-emilia-romagna",
       "map_precision": "region",
       "regions": [
@@ -2654,7 +2654,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "09/12/2025",
       "received_at": "09/12/2025 12:13",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -2681,7 +2681,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "18/12/2025",
       "received_at": "18/12/2025 13:59",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lombardia"
       ]
@@ -2711,7 +2711,7 @@
       "source_province": "Palermo",
       "proclaimed_at": "18/12/2025",
       "received_at": "18/12/2025 23:40",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sicilia"
       ]
@@ -2742,7 +2742,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "13/12/2025",
       "received_at": "15/12/2025 09:52",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-molise",
       "map_precision": "region",
       "regions": [
@@ -2774,7 +2774,7 @@
       "source_province": "Enna",
       "proclaimed_at": "18/12/2025",
       "received_at": "18/12/2025 23:40",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sicilia"
       ]
@@ -2804,7 +2804,7 @@
       "source_province": "Palermo",
       "proclaimed_at": "18/12/2025",
       "received_at": "18/12/2025 23:40",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sicilia"
       ]
@@ -2834,7 +2834,7 @@
       "source_province": "Catania",
       "proclaimed_at": "18/12/2025",
       "received_at": "18/12/2025 23:40",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sicilia"
       ]
@@ -2867,7 +2867,7 @@
       "source_province": "Bolzano",
       "proclaimed_at": "01/01/2026",
       "received_at": "01/01/2026 20:22",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Trentino-Alto Adige"
       ]
@@ -2897,7 +2897,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "02/01/2026",
       "received_at": "02/01/2026 21:04",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Campania"
       ]
@@ -2927,7 +2927,7 @@
       "source_province": "Udine",
       "proclaimed_at": "08/01/2026",
       "received_at": "08/01/2026 18:15",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Friuli-Venezia Giulia"
       ]
@@ -2955,7 +2955,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "18/12/2025",
       "received_at": "19/12/2025 14:18",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -2983,7 +2983,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "17/12/2025",
       "received_at": "17/12/2025 16:18",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -3015,7 +3015,7 @@
       "source_province": "Roma",
       "proclaimed_at": "22/01/2026",
       "received_at": "22/01/2026 13:55",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lazio"
       ]
@@ -3047,7 +3047,7 @@
       "source_province": "Roma",
       "proclaimed_at": "22/01/2026",
       "received_at": "22/01/2026 14:33",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lazio"
       ]
@@ -3077,7 +3077,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "10/12/2025",
       "received_at": "10/12/2025 17:58",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Campania"
       ]
@@ -3108,7 +3108,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "14/01/2026",
       "received_at": "14/01/2026 14:16",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -3134,7 +3134,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "01/12/2025",
       "received_at": "01/12/2025 20:09",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -3162,7 +3162,7 @@
       "source_province": "Genova",
       "proclaimed_at": "15/01/2026",
       "received_at": "15/01/2026 11:45",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Liguria"
       ]
@@ -3195,7 +3195,7 @@
       "source_province": "Ancona",
       "proclaimed_at": "23/12/2025",
       "received_at": "23/12/2025 12:38",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Marche"
       ]
@@ -3225,7 +3225,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/01/2026",
       "received_at": "20/01/2026 14:38",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -3256,7 +3256,7 @@
       "source_province": "Bologna",
       "proclaimed_at": "11/12/2025",
       "received_at": "11/12/2025 16:01",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Emilia-Romagna"
       ]
@@ -3288,7 +3288,7 @@
       "source_province": "Palermo",
       "proclaimed_at": "30/12/2025",
       "received_at": "30/12/2025 21:47",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sicilia"
       ]
@@ -3320,7 +3320,7 @@
       "source_province": "Bolzano",
       "proclaimed_at": "09/01/2026",
       "received_at": "09/01/2026 00:53",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Trentino-Alto Adige"
       ]
@@ -3350,7 +3350,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "11/12/2025",
       "received_at": "11/12/2025 13:12",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Veneto"
       ]
@@ -3380,7 +3380,7 @@
       "source_province": "Brescia",
       "proclaimed_at": "16/01/2026",
       "received_at": "16/01/2026 14:48",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lombardia"
       ]
@@ -3411,7 +3411,7 @@
       "source_province": "Brescia",
       "proclaimed_at": "16/01/2026",
       "received_at": "16/01/2026 15:02",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lombardia"
       ]
@@ -3442,7 +3442,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/01/2026",
       "received_at": "15/01/2026 12:19",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -3471,7 +3471,7 @@
       "source_province": "Roma",
       "proclaimed_at": "08/01/2026",
       "received_at": "08/01/2026 10:02",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lazio"
       ]
@@ -3504,7 +3504,7 @@
       "source_province": "Roma",
       "proclaimed_at": "08/01/2026",
       "received_at": "08/01/2026 09:25",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lazio"
       ]
@@ -3536,7 +3536,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "08/01/2026",
       "received_at": "19/01/2026 11:17",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-lazio",
       "map_precision": "region",
       "regions": [
@@ -3567,7 +3567,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/01/2026",
       "received_at": "15/01/2026 20:25",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-lombardia",
       "map_precision": "region",
       "regions": [
@@ -3603,7 +3603,7 @@
       "source_province": "Rimini",
       "proclaimed_at": "20/01/2026",
       "received_at": "20/01/2026 10:34",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Emilia-Romagna"
       ]
@@ -3631,7 +3631,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "20/01/2026",
       "received_at": "20/01/2026 13:03",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -3659,7 +3659,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "22/01/2026",
       "received_at": "22/01/2026 12:35",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lombardia"
       ]
@@ -3691,7 +3691,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "27/01/2026",
       "received_at": "25/02/2026 18:01",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-abruzzo",
       "map_precision": "region",
       "regions": [
@@ -3723,7 +3723,7 @@
       "source_province": "Bari",
       "proclaimed_at": "15/01/2026",
       "received_at": "15/01/2026 13:01",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Puglia"
       ]
@@ -3752,7 +3752,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/01/2026",
       "received_at": "25/01/2026 23:26",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-abruzzo",
       "map_precision": "region",
       "regions": [
@@ -3787,7 +3787,7 @@
       "source_province": "Teramo",
       "proclaimed_at": "16/01/2026",
       "received_at": "16/01/2026 16:53",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Abruzzo"
       ]
@@ -3820,7 +3820,7 @@
       "source_province": "Chieti",
       "proclaimed_at": "27/01/2026",
       "received_at": "28/01/2026 09:46",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Abruzzo"
       ]
@@ -3851,7 +3851,7 @@
       "source_province": "Catania",
       "proclaimed_at": "02/02/2026",
       "received_at": "02/02/2026 15:13",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sicilia"
       ]
@@ -3882,7 +3882,7 @@
       "source_province": "Catania",
       "proclaimed_at": "01/02/2026",
       "received_at": "01/02/2026 22:03",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sicilia"
       ]
@@ -3912,7 +3912,7 @@
       "source_province": "Udine",
       "proclaimed_at": "23/01/2026",
       "received_at": "23/01/2026 09:55",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Friuli-Venezia Giulia"
       ]
@@ -3942,7 +3942,7 @@
       "source_province": "Campobasso",
       "proclaimed_at": "13/01/2026",
       "received_at": "13/01/2026 14:59",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Molise"
       ]
@@ -3975,7 +3975,7 @@
       "source_province": "Bolzano",
       "proclaimed_at": "22/01/2026",
       "received_at": "22/01/2026 20:21",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Trentino-Alto Adige"
       ]
@@ -4005,7 +4005,7 @@
       "source_province": "Venezia",
       "proclaimed_at": "31/01/2026",
       "received_at": "11/02/2026 18:49",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Veneto"
       ]
@@ -4033,7 +4033,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "07/01/2026",
       "received_at": "07/01/2026 09:53",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -4059,7 +4059,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/01/2026",
       "received_at": "16/01/2026 17:43",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -4087,7 +4087,7 @@
       "source_province": "Genova",
       "proclaimed_at": "02/02/2026",
       "received_at": "02/02/2026 12:01",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Liguria"
       ]
@@ -4117,7 +4117,7 @@
       "source_province": "Brescia",
       "proclaimed_at": "04/02/2026",
       "received_at": "04/02/2026 16:00",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lombardia"
       ]
@@ -4146,7 +4146,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "08/01/2026",
       "received_at": "08/01/2026 11:31",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -4172,7 +4172,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "13/01/2026",
       "received_at": "14/01/2026 10:23",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -4199,7 +4199,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "02/02/2026",
       "received_at": "02/02/2026 12:55",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -4229,7 +4229,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "22/12/2025",
       "received_at": "22/12/2025 16:57",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -4255,7 +4255,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "13/01/2026",
       "received_at": "14/01/2026 10:24",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -4284,7 +4284,7 @@
       "source_province": "Brescia",
       "proclaimed_at": "04/02/2026",
       "received_at": "04/02/2026 16:09",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lombardia"
       ]
@@ -4313,7 +4313,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "04/02/2026",
       "received_at": "04/02/2026 20:11",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -4343,7 +4343,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "04/02/2026",
       "received_at": "04/02/2026 18:08",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -4370,7 +4370,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "01/02/2026",
       "received_at": "01/02/2026 17:13",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -4396,7 +4396,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "03/02/2026",
       "received_at": "03/02/2026 10:17",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -4424,7 +4424,7 @@
       "source_province": "Verona",
       "proclaimed_at": "02/02/2026",
       "received_at": "02/02/2026 18:59",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Veneto"
       ]
@@ -4456,7 +4456,7 @@
       "source_province": "Bolzano",
       "proclaimed_at": "31/01/2026",
       "received_at": "31/01/2026 01:35",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Trentino-Alto Adige"
       ]
@@ -4487,7 +4487,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "11/02/2026",
       "received_at": "11/02/2026 12:41",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -4516,7 +4516,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "13/02/2026",
       "received_at": "13/02/2026 22:13",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -4542,7 +4542,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/02/2026",
       "received_at": "15/02/2026 13:06",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -4571,7 +4571,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "13/02/2026",
       "received_at": "13/02/2026 22:04",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -4597,7 +4597,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/02/2026",
       "received_at": "15/02/2026 13:04",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -4623,7 +4623,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "13/02/2026",
       "received_at": "13/02/2026 18:43",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -4649,7 +4649,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/02/2026",
       "received_at": "15/02/2026 13:01",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -4675,7 +4675,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "17/02/2026",
       "received_at": "17/02/2026 17:08",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -4707,7 +4707,7 @@
       "source_province": "Torino",
       "proclaimed_at": "16/02/2026",
       "received_at": "16/02/2026 11:42",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Piemonte"
       ]
@@ -4735,7 +4735,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "11/01/2026",
       "received_at": "11/01/2026 00:04",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -4766,7 +4766,7 @@
       "source_province": "Bari",
       "proclaimed_at": "20/01/2026",
       "received_at": "20/01/2026 10:01",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Puglia"
       ]
@@ -4796,7 +4796,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/02/2026",
       "received_at": "16/02/2026 23:50",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -4826,7 +4826,7 @@
       "source_province": "Bolzano",
       "proclaimed_at": "17/02/2026",
       "received_at": "17/02/2026 22:26",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Trentino-Alto Adige"
       ]
@@ -4856,7 +4856,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "18/02/2026",
       "received_at": "19/02/2026 08:56",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Campania"
       ]
@@ -4886,7 +4886,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "23/02/2026",
       "received_at": "23/02/2026 22:12",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Campania"
       ]
@@ -4920,7 +4920,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "05/03/2026",
       "received_at": "05/03/2026 14:42",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-campania",
       "map_precision": "region",
       "regions": [
@@ -4952,7 +4952,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "21/01/2026",
       "received_at": "21/01/2026 13:02",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Campania"
       ]
@@ -4981,7 +4981,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "27/01/2026",
       "received_at": "27/01/2026 17:48",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -5007,7 +5007,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "21/01/2026",
       "received_at": "21/01/2026 11:01",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -5034,7 +5034,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/01/2026",
       "received_at": "15/01/2026 13:53",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -5061,7 +5061,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "02/01/2026",
       "received_at": "02/01/2026 17:13",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -5088,7 +5088,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "19/01/2026",
       "received_at": "19/01/2026 15:55",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -5114,7 +5114,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/02/2026",
       "received_at": "24/02/2026 16:05",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -5141,7 +5141,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "11/02/2026",
       "received_at": "12/02/2026 13:56",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -5168,7 +5168,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/02/2026",
       "received_at": "16/02/2026 16:35",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -5194,7 +5194,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "26/02/2026",
       "received_at": "26/02/2026 16:53",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -5220,7 +5220,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "01/03/2026",
       "received_at": "01/03/2026 00:02",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -5248,7 +5248,7 @@
       "source_province": "Udine",
       "proclaimed_at": "17/02/2026",
       "received_at": "17/02/2026 23:11",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Friuli-Venezia Giulia"
       ]
@@ -5278,7 +5278,7 @@
       "source_province": "Verona",
       "proclaimed_at": "03/03/2026",
       "received_at": "03/03/2026 21:55",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Veneto"
       ]
@@ -5308,7 +5308,7 @@
       "source_province": "Palermo",
       "proclaimed_at": "21/02/2026",
       "received_at": "21/02/2026 16:50",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sicilia"
       ]
@@ -5338,7 +5338,7 @@
       "source_province": "Enna",
       "proclaimed_at": "21/02/2026",
       "received_at": "21/02/2026 16:50",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sicilia"
       ]
@@ -5368,7 +5368,7 @@
       "source_province": "Palermo",
       "proclaimed_at": "21/02/2026",
       "received_at": "21/02/2026 16:50",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sicilia"
       ]
@@ -5398,7 +5398,7 @@
       "source_province": "Catania",
       "proclaimed_at": "21/02/2026",
       "received_at": "21/02/2026 16:50",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sicilia"
       ]
@@ -5427,7 +5427,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "23/02/2026",
       "received_at": "23/02/2026 09:27",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-abruzzo",
       "map_precision": "region",
       "regions": [
@@ -5460,7 +5460,7 @@
       "source_province": "Brescia",
       "proclaimed_at": "19/02/2026",
       "received_at": "19/02/2026 12:53",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lombardia"
       ]
@@ -5488,7 +5488,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "13/02/2026",
       "received_at": "13/02/2026 18:27",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -5516,7 +5516,7 @@
       "source_province": "Brescia",
       "proclaimed_at": "26/02/2026",
       "received_at": "26/02/2026 17:02",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lombardia"
       ]
@@ -5544,7 +5544,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "13/02/2026",
       "received_at": "13/02/2026 12:21",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -5573,7 +5573,7 @@
       "source_province": "Brescia",
       "proclaimed_at": "26/02/2026",
       "received_at": "26/02/2026 17:05",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lombardia"
       ]
@@ -5601,7 +5601,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "20/02/2026",
       "received_at": "20/02/2026 18:12",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -5629,7 +5629,7 @@
       "source_province": "Brescia",
       "proclaimed_at": "19/02/2026",
       "received_at": "19/02/2026 12:46",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lombardia"
       ]
@@ -5657,7 +5657,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "20/02/2026",
       "received_at": "20/02/2026 18:08",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -5687,7 +5687,7 @@
       "source_province": "Roma",
       "proclaimed_at": "18/03/2026",
       "received_at": "18/03/2026 14:46",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lazio"
       ]
@@ -5715,7 +5715,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "11/02/2026",
       "received_at": "12/02/2026 09:02",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -5741,7 +5741,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "11/02/2026",
       "received_at": "12/02/2026 09:02",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -5769,7 +5769,7 @@
       "source_province": "Frosinone",
       "proclaimed_at": "28/02/2026",
       "received_at": "28/02/2026 14:44",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lazio"
       ]
@@ -5799,7 +5799,7 @@
       "source_province": "Reggio Calabria",
       "proclaimed_at": "13/03/2026",
       "received_at": "16/03/2026 09:58",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Calabria"
       ]
@@ -5828,7 +5828,7 @@
       "source_province": "Frosinone",
       "proclaimed_at": "06/03/2026",
       "received_at": "07/03/2026 00:02",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -5856,7 +5856,7 @@
       "source_province": "Novara",
       "proclaimed_at": "27/02/2026",
       "received_at": "27/02/2026 14:49",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Piemonte"
       ]
@@ -5890,7 +5890,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "10/03/2026",
       "received_at": "10/03/2026 13:26",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Campania"
       ]
@@ -5924,7 +5924,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "24/02/2026",
       "received_at": "24/02/2026 17:17",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Campania"
       ]
@@ -5957,7 +5957,7 @@
       "source_province": "Torino",
       "proclaimed_at": "06/03/2026",
       "received_at": "06/03/2026 16:04",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Piemonte"
       ]
@@ -5990,7 +5990,7 @@
       "source_province": "Parma",
       "proclaimed_at": "11/03/2026",
       "received_at": "11/03/2026 16:13",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Emilia-Romagna"
       ]
@@ -6019,7 +6019,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "20/02/2026",
       "received_at": "20/02/2026 11:45",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lombardia"
       ]
@@ -6052,7 +6052,7 @@
       "source_province": "Bari",
       "proclaimed_at": "17/02/2026",
       "received_at": "17/02/2026 10:55",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Puglia"
       ]
@@ -6083,7 +6083,7 @@
       "source_province": "Bari",
       "proclaimed_at": "20/02/2026",
       "received_at": "20/02/2026 11:15",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Puglia"
       ]
@@ -6116,7 +6116,7 @@
       "source_province": "Bari",
       "proclaimed_at": "12/03/2026",
       "received_at": "12/03/2026 10:05",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Puglia"
       ]
@@ -6149,7 +6149,7 @@
       "source_province": "Parma",
       "proclaimed_at": "19/03/2026",
       "received_at": "19/03/2026 10:17",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Emilia-Romagna"
       ]
@@ -6177,7 +6177,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "11/02/2026",
       "received_at": "11/02/2026 14:48",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -6203,7 +6203,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "17/02/2026",
       "received_at": "17/02/2026 15:46",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -6230,7 +6230,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "31/03/2026",
       "received_at": "31/03/2026 16:23",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -6256,7 +6256,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "14/02/2026",
       "received_at": "14/02/2026 11:52",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -6282,7 +6282,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/02/2026",
       "received_at": "16/02/2026 12:19",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -6308,7 +6308,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "26/02/2026",
       "received_at": "26/02/2026 09:24",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -6336,7 +6336,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "17/03/2026",
       "received_at": "17/03/2026 16:41",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -6362,7 +6362,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "26/02/2026",
       "received_at": "26/02/2026 18:52",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -6388,7 +6388,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "26/03/2026",
       "received_at": "26/03/2026 14:11",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -6416,7 +6416,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "27/02/2026",
       "received_at": "27/02/2026 15:43",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Campania"
       ]
@@ -6444,7 +6444,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "12/02/2026",
       "received_at": "12/02/2026 12:46",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -6473,7 +6473,7 @@
       "source_province": "Messina",
       "proclaimed_at": "02/03/2026",
       "received_at": "02/03/2026 16:38",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sicilia"
       ]
@@ -6501,7 +6501,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "26/03/2026",
       "received_at": "26/03/2026 13:14",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -6527,7 +6527,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "26/03/2026",
       "received_at": "26/03/2026 13:14",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -6553,7 +6553,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "11/02/2026",
       "received_at": "11/02/2026 15:13",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -6579,7 +6579,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/03/2026",
       "received_at": "24/03/2026 18:47",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -6607,7 +6607,7 @@
       "source_province": "Udine",
       "proclaimed_at": "31/03/2026",
       "received_at": "31/03/2026 09:49",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Friuli-Venezia Giulia"
       ]
@@ -6637,7 +6637,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "18/03/2026",
       "received_at": "18/03/2026 10:57",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Campania"
       ]
@@ -6669,7 +6669,7 @@
       "source_province": "Cosenza",
       "proclaimed_at": "01/04/2026",
       "received_at": "01/04/2026 10:46",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Calabria"
       ]
@@ -6698,7 +6698,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "20/03/2026",
       "received_at": "25/03/2026 19:14",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-sicilia",
       "map_precision": "region",
       "regions": [
@@ -6731,7 +6731,7 @@
       "source_province": "Brescia",
       "proclaimed_at": "13/04/2026",
       "received_at": "13/04/2026 15:56",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lombardia"
       ]
@@ -6762,7 +6762,7 @@
       "source_province": "Brescia",
       "proclaimed_at": "15/04/2026",
       "received_at": "15/04/2026 18:07",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lombardia"
       ]
@@ -6793,7 +6793,7 @@
       "source_province": "Messina",
       "proclaimed_at": "13/03/2026",
       "received_at": "13/03/2026 09:37",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sicilia"
       ]
@@ -6827,7 +6827,7 @@
       "source_province": "Salerno",
       "proclaimed_at": "09/04/2026",
       "received_at": "09/04/2026 13:56",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Campania"
       ]
@@ -6861,7 +6861,7 @@
       "source_province": "Milano",
       "proclaimed_at": "07/04/2026",
       "received_at": "07/04/2026 18:40",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lombardia"
       ]
@@ -6891,7 +6891,7 @@
       "source_province": "Firenze",
       "proclaimed_at": "20/03/2026",
       "received_at": "21/03/2026 19:43",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Toscana"
       ]
@@ -6919,7 +6919,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/03/2026",
       "received_at": "30/03/2026 12:26",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -6947,7 +6947,7 @@
       "source_province": "Chieti",
       "proclaimed_at": "23/03/2026",
       "received_at": "24/03/2026 09:51",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Abruzzo"
       ]
@@ -6980,7 +6980,7 @@
       "source_province": "Bolzano",
       "proclaimed_at": "07/04/2026",
       "received_at": "07/04/2026 01:26",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Trentino-Alto Adige"
       ]
@@ -7010,7 +7010,7 @@
       "source_province": "Frosinone",
       "proclaimed_at": "01/04/2026",
       "received_at": "01/04/2026 08:30",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lazio"
       ]
@@ -7041,7 +7041,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "12/04/2026",
       "received_at": "12/04/2026 00:00",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-calabria",
       "map_precision": "region",
       "regions": [
@@ -7075,7 +7075,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "10/04/2026",
       "received_at": "10/04/2026 21:29",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -7101,7 +7101,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "07/04/2026",
       "received_at": "15/04/2026 12:17",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -7129,7 +7129,7 @@
       "source_province": "Milano",
       "proclaimed_at": "04/03/2026",
       "received_at": "04/03/2026 14:56",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lombardia"
       ]
@@ -7162,7 +7162,7 @@
       "source_province": "Bari",
       "proclaimed_at": "03/04/2026",
       "received_at": "03/04/2026 17:09",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Puglia"
       ]
@@ -7192,7 +7192,7 @@
       "source_province": "Firenze",
       "proclaimed_at": "17/04/2026",
       "received_at": "17/04/2026 19:10",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Toscana"
       ]
@@ -7222,7 +7222,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "10/04/2026",
       "received_at": "10/04/2026 09:48",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Campania"
       ]
@@ -7254,7 +7254,7 @@
       "source_province": "Cosenza",
       "proclaimed_at": "16/04/2026",
       "received_at": "17/04/2026 09:41",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Calabria"
       ]
@@ -7283,7 +7283,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "02/03/2026",
       "received_at": "03/03/2026 02:09",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -7311,7 +7311,7 @@
       "source_province": "Milano",
       "proclaimed_at": "23/04/2026",
       "received_at": "23/04/2026 19:14",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lombardia"
       ]
@@ -7343,7 +7343,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/04/2026",
       "received_at": "16/04/2026 10:58",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -7369,7 +7369,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/04/2026",
       "received_at": "16/04/2026 00:04",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -7397,7 +7397,7 @@
       "source_province": "Firenze",
       "proclaimed_at": "08/04/2026",
       "received_at": "08/04/2026 11:15",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Toscana"
       ]
@@ -7426,7 +7426,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/04/2026",
       "received_at": "16/04/2026 13:11",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -7452,7 +7452,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "17/02/2026",
       "received_at": "17/02/2026 14:20",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -7481,7 +7481,7 @@
       "source_province": "Brescia",
       "proclaimed_at": "07/05/2026",
       "received_at": "07/05/2026 12:16",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lombardia"
       ]
@@ -7515,7 +7515,7 @@
       "source_province": "Potenza",
       "proclaimed_at": "24/04/2026",
       "received_at": "24/04/2026 21:54",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Basilicata"
       ]
@@ -7545,7 +7545,7 @@
       "source_province": "Trento",
       "proclaimed_at": "14/04/2026",
       "received_at": "14/04/2026 10:03",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Trentino-Alto Adige"
       ]
@@ -7575,7 +7575,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "17/04/2026",
       "received_at": "17/04/2026 09:10",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Campania"
       ]
@@ -7605,7 +7605,7 @@
       "source_province": "Firenze",
       "proclaimed_at": "29/04/2026",
       "received_at": "30/04/2026 18:19",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Toscana"
       ]
@@ -7633,7 +7633,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/02/2026",
       "received_at": "16/02/2026 09:47",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -7659,7 +7659,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/04/2026",
       "received_at": "16/04/2026 10:23",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -7685,7 +7685,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "02/04/2026",
       "received_at": "02/04/2026 12:33",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -7712,7 +7712,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "28/04/2026",
       "received_at": "28/04/2026 21:04",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -7741,7 +7741,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "22/04/2026",
       "received_at": "22/04/2026 15:51",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -7767,7 +7767,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "19/02/2026",
       "received_at": "19/02/2026 12:08",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -7793,7 +7793,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "13/02/2026",
       "received_at": "13/02/2026 09:46",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -7822,7 +7822,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/04/2026",
       "received_at": "24/04/2026 18:52",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -7848,7 +7848,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/04/2026",
       "received_at": "15/04/2026 15:14",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -7877,7 +7877,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/04/2026",
       "received_at": "17/04/2026 10:31",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -7905,7 +7905,7 @@
       "source_province": "Novara",
       "proclaimed_at": "10/04/2026",
       "received_at": "10/04/2026 12:25",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Piemonte"
       ]
@@ -7936,7 +7936,7 @@
       "source_province": "Catania",
       "proclaimed_at": "10/04/2026",
       "received_at": "10/04/2026 14:11",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sicilia"
       ]
@@ -7970,7 +7970,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/04/2026",
       "received_at": "24/04/2026 15:02",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-toscana",
       "map_precision": "region",
       "regions": [
@@ -8001,7 +8001,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/04/2026",
       "received_at": "15/04/2026 23:12",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lombardia"
       ]
@@ -8029,7 +8029,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/04/2026",
       "received_at": "15/04/2026 17:27",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -8058,7 +8058,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "27/04/2026",
       "received_at": "27/04/2026 10:20",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-veneto",
       "map_precision": "region",
       "regions": [
@@ -8095,7 +8095,7 @@
       "source_province": "Foggia",
       "proclaimed_at": "17/04/2026",
       "received_at": "17/04/2026 19:00",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Puglia"
       ]
@@ -8124,7 +8124,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "07/05/2026",
       "received_at": "07/05/2026 11:52",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -8152,7 +8152,7 @@
       "source_province": "Palermo",
       "proclaimed_at": "07/05/2026",
       "received_at": "07/05/2026 17:31",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sicilia"
       ]
@@ -8185,7 +8185,7 @@
       "source_province": "Bari",
       "proclaimed_at": "06/05/2026",
       "received_at": "06/05/2026 12:11",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Puglia"
       ]
@@ -8214,7 +8214,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "07/05/2026",
       "received_at": "07/05/2026 13:55",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -8243,7 +8243,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "23/04/2026",
       "received_at": "23/04/2026 19:43",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -8275,7 +8275,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "22/04/2026",
       "received_at": "22/04/2026 13:18",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Campania"
       ]
@@ -8306,7 +8306,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "20/04/2026",
       "received_at": "20/04/2026 16:13",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -8332,7 +8332,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "09/04/2026",
       "received_at": "09/04/2026 10:29",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -8360,7 +8360,7 @@
       "source_province": "Udine",
       "proclaimed_at": "04/05/2026",
       "received_at": "04/05/2026 14:41",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Friuli-Venezia Giulia"
       ]
@@ -8388,7 +8388,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "09/04/2026",
       "received_at": "09/04/2026 10:29",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -8414,7 +8414,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "20/04/2026",
       "received_at": "21/04/2026 11:09",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -8444,7 +8444,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/05/2026",
       "received_at": "06/05/2026 18:01",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-emilia-romagna",
       "map_precision": "region",
       "regions": [
@@ -8475,7 +8475,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "14/05/2026",
       "received_at": "14/05/2026 15:36",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Emilia-Romagna"
       ]
@@ -8509,7 +8509,7 @@
       "source_province": "Potenza",
       "proclaimed_at": "11/05/2026",
       "received_at": "11/05/2026 11:37",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Basilicata"
       ]
@@ -8538,7 +8538,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "18/05/2026",
       "received_at": "19/05/2026 11:28",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-calabria",
       "map_precision": "region",
       "regions": [
@@ -8568,7 +8568,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "09/04/2026",
       "received_at": "09/04/2026 22:15",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -8594,7 +8594,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "09/04/2026",
       "received_at": "09/04/2026 22:15",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -8624,7 +8624,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "09/04/2026",
       "received_at": "09/04/2026 23:22",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -8652,7 +8652,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "18/05/2026",
       "received_at": "18/05/2026 20:59",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-sardegna",
       "map_precision": "region",
       "regions": [
@@ -8682,7 +8682,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "30/03/2026",
       "received_at": "30/03/2026 16:53",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -8708,7 +8708,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "30/03/2026",
       "received_at": "30/03/2026 16:53",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -8736,7 +8736,7 @@
       "source_province": "Catania",
       "proclaimed_at": "19/05/2026",
       "received_at": "19/05/2026 22:23",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sicilia"
       ]
@@ -8766,7 +8766,7 @@
       "source_province": "Catania",
       "proclaimed_at": "16/05/2026",
       "received_at": "16/05/2026 23:17",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sicilia"
       ]
@@ -8795,7 +8795,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "21/05/2026",
       "received_at": "21/05/2026 09:43",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Emilia-Romagna"
       ]
@@ -8828,7 +8828,7 @@
       "source_province": "Catania",
       "proclaimed_at": "16/05/2026",
       "received_at": "16/05/2026 09:47",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sicilia"
       ]
@@ -8861,7 +8861,7 @@
       "source_province": "Messina",
       "proclaimed_at": "07/05/2026",
       "received_at": "08/05/2026 10:14",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sicilia"
       ]
@@ -8892,7 +8892,7 @@
       "source_province": "Foggia",
       "proclaimed_at": "21/05/2026",
       "received_at": "21/05/2026 16:40",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Puglia"
       ]
@@ -8920,7 +8920,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "07/05/2026",
       "received_at": "07/05/2026 12:53",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -8946,7 +8946,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "07/05/2026",
       "received_at": "07/05/2026 19:12",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -8976,7 +8976,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "07/05/2026",
       "received_at": "07/05/2026 10:09",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -9004,7 +9004,7 @@
       "source_province": "Cagliari",
       "proclaimed_at": "29/05/2026",
       "received_at": "29/05/2026 18:20",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sardegna"
       ]
@@ -9034,7 +9034,7 @@
       "source_province": "Ravenna",
       "proclaimed_at": "18/05/2026",
       "received_at": "18/05/2026 18:05",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Emilia-Romagna"
       ]
@@ -9062,7 +9062,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/06/2026",
       "received_at": "07/06/2026 15:36",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -9088,7 +9088,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/05/2026",
       "received_at": "06/05/2026 17:03",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -9120,7 +9120,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "30/05/2026",
       "received_at": "30/05/2026 00:00",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -9148,7 +9148,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "04/05/2026",
       "received_at": "04/05/2026 21:48",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -9177,7 +9177,7 @@
       "source_province": "Messina",
       "proclaimed_at": "05/05/2026",
       "received_at": "05/05/2026 23:15",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sicilia"
       ]
@@ -9205,7 +9205,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "01/06/2026",
       "received_at": "01/06/2026 11:50",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -9233,7 +9233,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "05/05/2026",
       "received_at": "05/05/2026 14:23",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-sicilia",
       "map_precision": "region",
       "regions": [
@@ -9263,7 +9263,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "30/05/2026",
       "received_at": "30/05/2026 16:13",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -9291,7 +9291,7 @@
       "source_province": "Palermo",
       "proclaimed_at": "09/05/2026",
       "received_at": "09/05/2026 13:16",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sicilia"
       ]
@@ -9325,7 +9325,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "11/05/2026",
       "received_at": "11/05/2026 11:20",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Campania"
       ]
@@ -9355,7 +9355,7 @@
       "source_province": "Latina",
       "proclaimed_at": "25/05/2026",
       "received_at": "25/05/2026 10:54",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lazio"
       ]
@@ -9386,7 +9386,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/04/2026",
       "received_at": "24/04/2026 14:08",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -9418,7 +9418,7 @@
       "source_province": "Potenza",
       "proclaimed_at": "18/05/2026",
       "received_at": "18/05/2026 16:44",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Basilicata"
       ]
@@ -9452,7 +9452,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "29/04/2026",
       "received_at": "29/04/2026 12:16",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Campania"
       ]
@@ -9483,7 +9483,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "29/05/2026",
       "received_at": "29/05/2026 19:36",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -9509,7 +9509,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "30/05/2026",
       "received_at": "30/05/2026 11:56",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -9537,7 +9537,7 @@
       "source_province": "Milano",
       "proclaimed_at": "07/05/2026",
       "received_at": "07/05/2026 15:59",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lombardia"
       ]
@@ -9567,7 +9567,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/05/2026",
       "received_at": "15/05/2026 20:36",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -9594,7 +9594,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "01/06/2026",
       "received_at": "01/06/2026 13:02",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sardegna"
       ]
@@ -9623,7 +9623,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "30/03/2026",
       "received_at": "30/03/2026 09:15",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -9651,7 +9651,7 @@
       "source_province": "Firenze",
       "proclaimed_at": "13/05/2026",
       "received_at": "13/05/2026 16:00",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Toscana"
       ]
@@ -9680,7 +9680,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "01/06/2026",
       "received_at": "01/06/2026 14:03",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-calabria",
       "map_precision": "region",
       "regions": [
@@ -9717,7 +9717,7 @@
       "source_province": "Bologna",
       "proclaimed_at": "14/06/2026",
       "received_at": "14/06/2026 16:43",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Emilia-Romagna"
       ]
@@ -9746,7 +9746,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "26/05/2026",
       "received_at": "27/05/2026 12:23",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-liguria",
       "map_precision": "region",
       "regions": [
@@ -9778,7 +9778,7 @@
       "source_province": "Udine",
       "proclaimed_at": "18/05/2026",
       "received_at": "19/05/2026 11:00",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Friuli-Venezia Giulia"
       ]
@@ -9807,7 +9807,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/06/2026",
       "received_at": "06/06/2026 12:44",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-calabria",
       "map_precision": "region",
       "regions": [
@@ -9839,7 +9839,7 @@
       "source_province": "Lecce",
       "proclaimed_at": "08/05/2026",
       "received_at": "08/05/2026 09:02",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Puglia"
       ]
@@ -9869,7 +9869,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "22/05/2026",
       "received_at": "22/05/2026 12:07",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Campania"
       ]
@@ -9900,7 +9900,7 @@
       "source_province": "Verona",
       "proclaimed_at": "13/05/2026",
       "received_at": "13/05/2026 17:56",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Veneto"
       ]
@@ -9930,7 +9930,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "26/05/2026",
       "received_at": "26/05/2026 19:46",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-sardegna",
       "map_precision": "region",
       "regions": [
@@ -9962,7 +9962,7 @@
       "source_province": "Torino",
       "proclaimed_at": "27/05/2026",
       "received_at": "27/05/2026 16:26",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Piemonte"
       ]
@@ -9991,7 +9991,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/06/2026",
       "received_at": "06/06/2026 18:53",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-calabria",
       "map_precision": "region",
       "regions": [
@@ -10024,7 +10024,7 @@
       "source_province": "Venezia",
       "proclaimed_at": "12/06/2026",
       "received_at": "15/06/2026 10:33",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Veneto"
       ]
@@ -10053,7 +10053,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "10/06/2026",
       "received_at": "10/06/2026 19:49",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lombardia"
       ]
@@ -10084,7 +10084,7 @@
       "source_province": "Roma",
       "proclaimed_at": "25/06/2026",
       "received_at": "25/06/2026 21:47",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lazio"
       ]
@@ -10118,7 +10118,7 @@
       "source_province": "Roma",
       "proclaimed_at": "25/06/2026",
       "received_at": "25/06/2026 17:51",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lazio"
       ]
@@ -10148,7 +10148,7 @@
       "source_province": "Barletta-Andria-Trani",
       "proclaimed_at": "03/06/2026",
       "received_at": "03/06/2026 18:43",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Puglia"
       ]
@@ -10177,7 +10177,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "18/05/2026",
       "received_at": "18/05/2026 12:27",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-piemonte",
       "map_precision": "region",
       "regions": [
@@ -10208,7 +10208,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "05/05/2026",
       "received_at": "05/05/2026 14:24",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lombardia"
       ]
@@ -10240,7 +10240,7 @@
       "source_province": "Roma",
       "proclaimed_at": "26/06/2026",
       "received_at": "26/06/2026 16:38",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lazio"
       ]
@@ -10273,7 +10273,7 @@
       "source_province": "Roma",
       "proclaimed_at": "11/06/2026",
       "received_at": "11/06/2026 11:26",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lazio"
       ]
@@ -10304,7 +10304,7 @@
       "source_province": "Firenze",
       "proclaimed_at": "24/06/2026",
       "received_at": "24/06/2026 21:28",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Toscana"
       ]
@@ -10332,7 +10332,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/06/2026",
       "received_at": "15/06/2026 15:48",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -10359,7 +10359,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "29/06/2026",
       "received_at": "29/06/2026 11:47",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-piemonte",
       "map_precision": "region",
       "regions": [
@@ -10390,7 +10390,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "08/06/2026",
       "received_at": "08/06/2026 19:02",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-puglia",
       "map_precision": "region",
       "regions": [
@@ -10424,7 +10424,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "18/06/2026",
       "received_at": "18/06/2026 17:14",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-lombardia",
       "map_precision": "region",
       "regions": [
@@ -10455,7 +10455,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "18/06/2026",
       "received_at": "14/07/2026 15:09",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sardegna"
       ]
@@ -10483,7 +10483,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "14/06/2026",
       "received_at": "14/06/2026 16:30",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -10509,7 +10509,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "20/05/2026",
       "received_at": "20/05/2026 16:25",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -10537,7 +10537,7 @@
       "source_province": "Firenze",
       "proclaimed_at": "18/06/2026",
       "received_at": "18/06/2026 15:07",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Toscana"
       ]
@@ -10565,7 +10565,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "29/05/2026",
       "received_at": "29/05/2026 11:43",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -10594,7 +10594,7 @@
       "source_province": "Palermo",
       "proclaimed_at": "22/06/2026",
       "received_at": "22/06/2026 12:47",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sicilia"
       ]
@@ -10622,7 +10622,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "19/06/2026",
       "received_at": "19/06/2026 12:07",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -10648,7 +10648,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "22/04/2026",
       "received_at": "22/04/2026 15:58",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -10674,7 +10674,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "21/04/2026",
       "received_at": "21/04/2026 11:02",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -10700,7 +10700,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "22/04/2026",
       "received_at": "22/04/2026 15:58",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -10726,7 +10726,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "21/04/2026",
       "received_at": "21/04/2026 12:26",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -10755,7 +10755,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "22/06/2026",
       "received_at": "23/06/2026 16:27",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -10781,7 +10781,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "08/06/2026",
       "received_at": "08/06/2026 19:16",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -10809,7 +10809,7 @@
       "source_province": "Catania",
       "proclaimed_at": "26/06/2026",
       "received_at": "26/06/2026 19:23",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sicilia"
       ]
@@ -10838,7 +10838,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "19/06/2026",
       "received_at": "19/06/2026 12:35",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -10869,7 +10869,7 @@
       "source_province": "Catania",
       "proclaimed_at": "18/06/2026",
       "received_at": "18/06/2026 10:04",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sicilia"
       ]
@@ -10899,7 +10899,7 @@
       "source_province": "Prato",
       "proclaimed_at": "23/06/2026",
       "received_at": "24/06/2026 09:21",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Toscana"
       ]
@@ -10929,7 +10929,7 @@
       "source_province": "Catania",
       "proclaimed_at": "21/06/2026",
       "received_at": "21/06/2026 16:21",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sicilia"
       ]
@@ -10960,7 +10960,7 @@
       "source_province": "Torino",
       "proclaimed_at": "06/07/2026",
       "received_at": "06/07/2026 08:59",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Piemonte"
       ]
@@ -10989,7 +10989,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "18/05/2026",
       "received_at": "18/05/2026 17:40",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-sicilia",
       "map_precision": "region",
       "regions": [
@@ -11019,7 +11019,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "23/06/2026",
       "received_at": "23/06/2026 00:00",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -11051,7 +11051,7 @@
       "source_province": "Genova",
       "proclaimed_at": "10/07/2026",
       "received_at": "10/07/2026 12:50",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Liguria"
       ]
@@ -11081,7 +11081,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "17/06/2026",
       "received_at": "17/06/2026 03:15",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-puglia",
       "map_precision": "region",
       "regions": [
@@ -11115,7 +11115,7 @@
       "source_province": "Bari",
       "proclaimed_at": "04/06/2026",
       "received_at": "03/07/2026 11:49",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Puglia"
       ]
@@ -11145,7 +11145,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "22/06/2026",
       "received_at": "22/06/2026 15:24",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -11173,7 +11173,7 @@
       "source_province": "Palermo",
       "proclaimed_at": "17/06/2026",
       "received_at": "17/06/2026 10:13",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sicilia"
       ]
@@ -11204,7 +11204,7 @@
       "source_province": "Genova",
       "proclaimed_at": "10/07/2026",
       "received_at": "10/07/2026 10:16",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Liguria"
       ]
@@ -11233,7 +11233,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "25/06/2026",
       "received_at": "14/07/2026 15:09",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sardegna"
       ]
@@ -11262,7 +11262,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/06/2026",
       "received_at": "15/06/2026 10:53",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Emilia-Romagna"
       ]
@@ -11296,7 +11296,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "17/06/2026",
       "received_at": "17/06/2026 15:25",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Campania"
       ]
@@ -11324,7 +11324,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/06/2026",
       "received_at": "16/06/2026 17:26",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -11350,7 +11350,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "18/06/2026",
       "received_at": "18/06/2026 16:28",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -11380,7 +11380,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/06/2026",
       "received_at": "16/06/2026 17:20",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -11407,7 +11407,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "30/06/2026",
       "received_at": "30/06/2026 11:38",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-sicilia",
       "map_precision": "region",
       "regions": [
@@ -11440,7 +11440,7 @@
       "source_province": "Venezia",
       "proclaimed_at": "29/06/2026",
       "received_at": "29/06/2026 09:32",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Veneto"
       ]
@@ -11474,7 +11474,7 @@
       "source_province": "Genova",
       "proclaimed_at": "17/07/2026",
       "received_at": "20/07/2026 09:33",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Liguria"
       ]
@@ -11503,7 +11503,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "29/06/2026",
       "received_at": "29/06/2026 11:54",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-calabria",
       "map_precision": "region",
       "regions": [
@@ -11536,7 +11536,7 @@
       "source_province": "Verona",
       "proclaimed_at": "29/06/2026",
       "received_at": "29/06/2026 17:04",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Veneto"
       ]
@@ -11566,7 +11566,7 @@
       "source_province": "Latina",
       "proclaimed_at": "18/06/2026",
       "received_at": "18/06/2026 16:39",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lazio"
       ]
@@ -11596,7 +11596,7 @@
       "source_province": "Prato",
       "proclaimed_at": "10/07/2026",
       "received_at": "10/07/2026 00:17",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Toscana"
       ]
@@ -11626,7 +11626,7 @@
       "source_province": "Firenze",
       "proclaimed_at": "24/06/2026",
       "received_at": "24/06/2026 10:40",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Toscana"
       ]
@@ -11657,7 +11657,7 @@
       "source_province": "Genova",
       "proclaimed_at": "18/07/2026",
       "received_at": "18/07/2026 09:00",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Liguria"
       ]
@@ -11687,7 +11687,7 @@
       "source_province": "Genova",
       "proclaimed_at": "08/07/2026",
       "received_at": "08/07/2026 12:42",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Liguria"
       ]
@@ -11717,7 +11717,7 @@
       "source_province": "Firenze",
       "proclaimed_at": "24/06/2026",
       "received_at": "24/06/2026 10:46",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Toscana"
       ]
@@ -11745,7 +11745,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "09/07/2026",
       "received_at": "09/07/2026 10:53",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -11772,7 +11772,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "30/06/2026",
       "received_at": "30/06/2026 18:08",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-calabria",
       "map_precision": "region",
       "regions": [
@@ -11803,7 +11803,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "10/07/2026",
       "received_at": "10/07/2026 12:39",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sardegna"
       ]
@@ -11832,7 +11832,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "05/07/2026",
       "received_at": "05/07/2026 18:32",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Campania"
       ]
@@ -11861,7 +11861,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "05/06/2026",
       "received_at": "05/06/2026 17:05",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -11888,7 +11888,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "10/07/2026",
       "received_at": "10/07/2026 12:39",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-sardegna",
       "map_precision": "region",
       "regions": [
@@ -11918,7 +11918,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "09/07/2026",
       "received_at": "09/07/2026 09:09",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -11946,7 +11946,7 @@
       "source_province": "Palermo",
       "proclaimed_at": "09/07/2026",
       "received_at": "09/07/2026 10:25",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sicilia"
       ]
@@ -11974,7 +11974,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/07/2026",
       "received_at": "06/07/2026 21:50",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -12000,7 +12000,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "30/06/2026",
       "received_at": "30/06/2026 05:45",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -12029,7 +12029,7 @@
       "source_province": "Verona",
       "proclaimed_at": "10/07/2026",
       "received_at": "10/07/2026 13:26",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Veneto"
       ]
@@ -12059,7 +12059,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "25/06/2026",
       "received_at": "25/06/2026 14:54",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -12089,7 +12089,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "13/07/2026",
       "received_at": "13/07/2026 15:55",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-lombardia",
       "map_precision": "region",
       "regions": [
@@ -12124,7 +12124,7 @@
       "source_province": "Bari",
       "proclaimed_at": "09/07/2026",
       "received_at": "09/07/2026 18:30",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Puglia"
       ]
@@ -12154,7 +12154,7 @@
       "source_province": "Salerno",
       "proclaimed_at": "08/07/2026",
       "received_at": "08/07/2026 13:42",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Campania"
       ]
@@ -12183,7 +12183,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "09/07/2026",
       "received_at": "09/07/2026 09:59",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-marche",
       "map_precision": "region",
       "regions": [
@@ -12214,7 +12214,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "14/07/2026",
       "received_at": "14/07/2026 12:31",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Sardegna"
       ]
@@ -12245,7 +12245,7 @@
       "source_province": "Savona",
       "proclaimed_at": "02/07/2026",
       "received_at": "02/07/2026 21:03",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Liguria"
       ]
@@ -12274,7 +12274,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "17/07/2026",
       "received_at": "17/07/2026 11:27",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-toscana",
       "map_precision": "region",
       "regions": [
@@ -12306,7 +12306,7 @@
       "source_province": "Livorno",
       "proclaimed_at": "31/07/2026",
       "received_at": "02/08/2026 14:59",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Toscana"
       ]
@@ -12337,7 +12337,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "22/07/2026",
       "received_at": "22/07/2026 12:53",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -12363,7 +12363,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "07/07/2026",
       "received_at": "07/07/2026 10:59",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -12389,7 +12389,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "19/07/2026",
       "received_at": "19/07/2026 11:29",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -12417,7 +12417,7 @@
       "source_province": "Livorno",
       "proclaimed_at": "09/08/2026",
       "received_at": "09/08/2026 18:17",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Toscana"
       ]
@@ -12448,7 +12448,7 @@
       "source_province": "Ascoli Piceno",
       "proclaimed_at": "31/07/2026",
       "received_at": "31/07/2026 11:09",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Marche"
       ]
@@ -12478,7 +12478,7 @@
       "source_province": "Genova",
       "proclaimed_at": "04/08/2026",
       "received_at": "05/08/2026 08:51",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Liguria"
       ]
@@ -12511,7 +12511,7 @@
       "source_province": "Venezia",
       "proclaimed_at": "24/07/2026",
       "received_at": "24/07/2026 15:40",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Veneto"
       ]
@@ -12540,7 +12540,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/07/2026",
       "received_at": "15/07/2026 14:12",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-piemonte",
       "map_precision": "region",
       "regions": [
@@ -12575,7 +12575,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "29/07/2026",
       "received_at": "29/07/2026 14:16",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-trentino-alto-adige",
       "map_precision": "region",
       "regions": [
@@ -12611,7 +12611,7 @@
       "source_province": "Bolzano",
       "proclaimed_at": "26/08/2026",
       "received_at": "26/08/2026 19:45",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Trentino-Alto Adige"
       ]
@@ -12642,7 +12642,7 @@
       "source_province": "Verona",
       "proclaimed_at": "28/08/2026",
       "received_at": "28/08/2026 18:04",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Veneto"
       ]
@@ -12672,7 +12672,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "07/08/2026",
       "received_at": "07/08/2026 14:33",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -12699,7 +12699,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "11/08/2026",
       "received_at": "11/08/2026 17:59",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -12728,7 +12728,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "17/08/2026",
       "received_at": "20/08/2026 21:01",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -12755,7 +12755,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "09/08/2026",
       "received_at": "09/08/2026 23:19",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -12782,7 +12782,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "28/08/2026",
       "received_at": "28/08/2026 12:40",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -12810,7 +12810,7 @@
       "source_province": "Trento",
       "proclaimed_at": "31/07/2026",
       "received_at": "31/07/2026 11:01",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Trentino-Alto Adige"
       ]
@@ -12841,7 +12841,7 @@
       "source_province": "Verona",
       "proclaimed_at": "04/08/2026",
       "received_at": "18/08/2026 12:27",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Veneto"
       ]
@@ -12871,7 +12871,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/08/2026",
       "received_at": "06/08/2026 14:41",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -12900,7 +12900,7 @@
       "source_province": "Foggia",
       "proclaimed_at": "11/06/2026",
       "received_at": "11/06/2026 15:51",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Puglia"
       ]
@@ -12930,7 +12930,7 @@
       "source_province": "Udine",
       "proclaimed_at": "21/08/2026",
       "received_at": "21/08/2026 11:12",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Friuli-Venezia Giulia"
       ]
@@ -12962,7 +12962,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/07/2026",
       "received_at": "16/07/2026 12:11",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-lombardia",
       "map_precision": "region",
       "regions": [
@@ -12992,7 +12992,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "27/08/2026",
       "received_at": "28/08/2026 11:30",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -13021,7 +13021,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/08/2026",
       "received_at": "24/08/2026 18:30",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -13047,7 +13047,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "27/08/2026",
       "received_at": "28/08/2026 11:29",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -13075,7 +13075,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "13/08/2026",
       "received_at": "13/08/2026 16:16",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -13101,7 +13101,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "01/09/2026",
       "received_at": "01/09/2026 18:43",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -13127,7 +13127,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "31/08/2026",
       "received_at": "31/08/2026 11:27",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -13154,7 +13154,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "19/08/2026",
       "received_at": "20/08/2026 12:21",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-toscana",
       "map_precision": "region",
       "regions": [
@@ -13184,7 +13184,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "01/09/2026",
       "received_at": "01/09/2026 16:35",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -13210,7 +13210,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "26/08/2026",
       "received_at": "26/08/2026 10:26",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -13236,7 +13236,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "31/08/2026",
       "received_at": "10/09/2026 17:52",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -13263,7 +13263,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "01/09/2026",
       "received_at": "01/09/2026 18:37",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-sardegna",
       "map_precision": "region",
       "regions": [
@@ -13296,7 +13296,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "26/08/2026",
       "received_at": "26/08/2026 16:32",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -13324,7 +13324,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "10/08/2026",
       "received_at": "10/08/2026 18:23",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-toscana",
       "map_precision": "region",
       "regions": [
@@ -13354,7 +13354,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "09/07/2026",
       "received_at": "09/07/2026 12:58",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -13385,7 +13385,7 @@
       "source_province": "Bergamo",
       "proclaimed_at": "16/07/2026",
       "received_at": "20/07/2026 11:21",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lombardia"
       ]
@@ -13416,7 +13416,7 @@
       "source_province": "Venezia",
       "proclaimed_at": "04/08/2026",
       "received_at": "05/08/2026 08:54",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Veneto"
       ]
@@ -13446,7 +13446,7 @@
       "source_province": "Firenze",
       "proclaimed_at": "24/08/2026",
       "received_at": "25/08/2026 20:01",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Toscana"
       ]
@@ -13476,7 +13476,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "07/07/2026",
       "received_at": "07/07/2026 09:57",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Campania"
       ]
@@ -13506,7 +13506,7 @@
       "source_province": "Firenze",
       "proclaimed_at": "24/07/2026",
       "received_at": "24/07/2026 13:03",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Toscana"
       ]
@@ -13537,7 +13537,7 @@
       "source_province": "Venezia",
       "proclaimed_at": "06/08/2026",
       "received_at": "06/08/2026 13:15",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Veneto"
       ]
@@ -13567,7 +13567,7 @@
       "source_province": "Firenze",
       "proclaimed_at": "13/07/2026",
       "received_at": "13/07/2026 16:58",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Toscana"
       ]
@@ -13597,7 +13597,7 @@
       "source_province": "Ravenna",
       "proclaimed_at": "06/08/2026",
       "received_at": "06/08/2026 10:25",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Emilia-Romagna"
       ]
@@ -13626,7 +13626,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "15/07/2026",
       "received_at": "15/07/2026 16:13",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Emilia-Romagna"
       ]
@@ -13661,7 +13661,7 @@
       "source_province": "Ravenna",
       "proclaimed_at": "04/08/2026",
       "received_at": "04/08/2026 13:00",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Emilia-Romagna"
       ]
@@ -13691,7 +13691,7 @@
       "source_province": "Firenze",
       "proclaimed_at": "24/07/2026",
       "received_at": "24/07/2026 13:01",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Toscana"
       ]
@@ -13721,7 +13721,7 @@
       "source_province": "Prato",
       "proclaimed_at": "24/07/2026",
       "received_at": "24/07/2026 12:40",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Toscana"
       ]
@@ -13751,7 +13751,7 @@
       "source_province": "Pisa",
       "proclaimed_at": "14/08/2026",
       "received_at": "14/08/2026 15:52",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Toscana"
       ]
@@ -13781,7 +13781,7 @@
       "source_province": "Torino",
       "proclaimed_at": "29/06/2026",
       "received_at": "29/06/2026 10:02",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Piemonte"
       ]
@@ -13811,7 +13811,7 @@
       "source_province": "Roma",
       "proclaimed_at": "08/09/2026",
       "received_at": "08/09/2026 15:01",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lazio"
       ]
@@ -13841,7 +13841,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "07/09/2026",
       "received_at": "07/09/2026 17:46",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-abruzzo",
       "map_precision": "region",
       "regions": [
@@ -13873,7 +13873,7 @@
       "source_province": "Genova",
       "proclaimed_at": "08/09/2026",
       "received_at": "08/09/2026 13:01",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Liguria"
       ]
@@ -13901,7 +13901,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "04/09/2026",
       "received_at": "04/09/2026 11:56",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -13932,7 +13932,7 @@
       "source_province": "Bologna",
       "proclaimed_at": "23/07/2026",
       "received_at": "24/07/2026 09:39",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Emilia-Romagna"
       ]
@@ -13962,7 +13962,7 @@
       "source_province": "Roma",
       "proclaimed_at": "09/09/2026",
       "received_at": "09/09/2026 15:56",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lazio"
       ]
@@ -13994,7 +13994,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "29/07/2026",
       "received_at": "29/07/2026 14:29",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-emilia-romagna",
       "map_precision": "region",
       "regions": [
@@ -14025,7 +14025,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/07/2026",
       "received_at": "06/07/2026 11:50",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-umbria",
       "map_precision": "region",
       "regions": [
@@ -14056,7 +14056,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "31/08/2026",
       "received_at": "31/08/2026 16:13",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-marche",
       "map_precision": "region",
       "regions": [
@@ -14087,7 +14087,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "14/09/2026",
       "received_at": "14/09/2026 16:50",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-campania",
       "map_precision": "region",
       "regions": [
@@ -14118,7 +14118,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "08/05/2026",
       "received_at": "17/07/2026 16:01",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -14150,7 +14150,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "29/07/2026",
       "received_at": "29/07/2026 12:28",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Campania"
       ]
@@ -14178,7 +14178,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "14/09/2026",
       "received_at": "14/09/2026 16:08",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -14207,7 +14207,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "14/09/2026",
       "received_at": "15/09/2026 09:23",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -14233,7 +14233,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "17/09/2026",
       "received_at": "17/09/2026 17:20",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -14261,7 +14261,7 @@
       "source_province": "Roma",
       "proclaimed_at": "30/07/2026",
       "received_at": "30/07/2026 15:43",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lazio"
       ]
@@ -14289,7 +14289,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "29/07/2026",
       "received_at": "29/07/2026 11:05",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -14317,7 +14317,7 @@
       "source_province": "Roma",
       "proclaimed_at": "30/07/2026",
       "received_at": "30/07/2026 10:07",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lazio"
       ]
@@ -14347,7 +14347,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "18/09/2026",
       "received_at": "18/09/2026 13:23",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-toscana",
       "map_precision": "region",
       "regions": [
@@ -14377,7 +14377,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "21/07/2026",
       "received_at": "21/07/2026 16:42",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -14403,7 +14403,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "29/07/2026",
       "received_at": "29/07/2026 11:53",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -14429,7 +14429,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "10/09/2026",
       "received_at": "10/09/2026 12:55",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -14457,7 +14457,7 @@
       "source_province": "Roma",
       "proclaimed_at": "30/07/2026",
       "received_at": "30/07/2026 09:54",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lazio"
       ]
@@ -14485,7 +14485,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "21/07/2026",
       "received_at": "21/07/2026 15:23",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -14517,7 +14517,7 @@
       "source_province": "Bolzano",
       "proclaimed_at": "17/09/2026",
       "received_at": "17/09/2026 22:04",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Trentino-Alto Adige"
       ]
@@ -14546,7 +14546,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "02/09/2026",
       "received_at": "02/09/2026 09:09",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -14574,7 +14574,7 @@
       "source_province": "Genova",
       "proclaimed_at": "23/09/2026",
       "received_at": "23/09/2026 15:15",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Liguria"
       ]
@@ -14604,7 +14604,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/07/2026",
       "received_at": "24/07/2026 14:35",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-sicilia",
       "map_precision": "region",
       "regions": [
@@ -14635,7 +14635,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/09/2026",
       "received_at": "25/09/2026 11:56",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-calabria",
       "map_precision": "region",
       "regions": [
@@ -14666,7 +14666,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "27/07/2026",
       "received_at": "27/07/2026 15:30",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lombardia"
       ]
@@ -14695,7 +14695,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "01/08/2026",
       "received_at": "01/08/2026 17:44",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lombardia"
       ]
@@ -14726,7 +14726,7 @@
       "source_province": "Forli'-Cesena",
       "proclaimed_at": "07/10/2026",
       "received_at": "07/10/2026 15:35",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Emilia-Romagna"
       ]
@@ -14761,7 +14761,7 @@
       "source_province": "Forli'-Cesena",
       "proclaimed_at": "06/10/2026",
       "received_at": "06/10/2026 14:10",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Emilia-Romagna"
       ]
@@ -14791,7 +14791,7 @@
       "source_province": "Firenze",
       "proclaimed_at": "18/09/2026",
       "received_at": "18/09/2026 00:01",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Toscana"
       ]
@@ -14820,7 +14820,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/07/2026",
       "received_at": "24/07/2026 14:13",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-sicilia",
       "map_precision": "region",
       "regions": [
@@ -14855,7 +14855,7 @@
       "source_province": "Bari",
       "proclaimed_at": "22/09/2026",
       "received_at": "22/09/2026 16:04",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Puglia"
       ]
@@ -14883,7 +14883,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "01/10/2026",
       "received_at": "01/10/2026 09:27",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -14938,7 +14938,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "17/09/2026",
       "received_at": "22/09/2026 11:01",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-toscana",
       "map_precision": "region",
       "regions": [
@@ -14971,7 +14971,7 @@
       "source_province": "Foggia",
       "proclaimed_at": "14/09/2026",
       "received_at": "14/09/2026 17:16",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Puglia"
       ]
@@ -15004,7 +15004,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "17/09/2026",
       "received_at": "01/10/2026 14:38",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Campania"
       ]
@@ -15032,7 +15032,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "11/09/2026",
       "received_at": "11/09/2026 12:46",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -15062,7 +15062,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "24/09/2026",
       "received_at": "24/09/2026 11:35",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-lombardia",
       "map_precision": "region",
       "regions": [
@@ -15092,7 +15092,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "14/09/2026",
       "received_at": "14/09/2026 10:25",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -15119,7 +15119,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "27/08/2026",
       "received_at": "27/08/2026 10:33",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -15146,7 +15146,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "28/09/2026",
       "received_at": "29/09/2026 22:11",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-toscana",
       "map_precision": "region",
       "regions": [
@@ -15178,7 +15178,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/10/2026",
       "received_at": "06/10/2026 15:33",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Abruzzo"
       ]
@@ -15207,7 +15207,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "28/09/2026",
       "received_at": "28/09/2026 13:02",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-sicilia",
       "map_precision": "region",
       "regions": [
@@ -15239,7 +15239,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "14/09/2026",
       "received_at": "14/09/2026 19:28",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Campania"
       ]
@@ -15267,7 +15267,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "22/09/2026",
       "received_at": "22/09/2026 18:07",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -15294,7 +15294,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "30/09/2026",
       "received_at": "01/10/2026 09:47",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-calabria",
       "map_precision": "region",
       "regions": [
@@ -15329,7 +15329,7 @@
       "source_province": "Bergamo",
       "proclaimed_at": "24/09/2026",
       "received_at": "26/09/2026 12:38",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lombardia"
       ]
@@ -15359,7 +15359,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "30/09/2026",
       "received_at": "30/09/2026 14:35",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -15652,7 +15652,7 @@
       "source_province": "Savona",
       "proclaimed_at": "07/10/2026",
       "received_at": "07/10/2026 20:20",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Liguria"
       ]
@@ -15682,7 +15682,7 @@
       "source_province": "Roma",
       "proclaimed_at": "09/10/2026",
       "received_at": "09/10/2026 10:06",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Lazio"
       ]
@@ -15737,7 +15737,7 @@
       "source_province": "Udine",
       "proclaimed_at": "01/10/2026",
       "received_at": "01/10/2026 09:47",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Friuli-Venezia Giulia"
       ]
@@ -15767,7 +15767,7 @@
       "source_province": "Genova",
       "proclaimed_at": "19/10/2026",
       "received_at": "19/10/2026 05:56",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Liguria"
       ]
@@ -15914,7 +15914,7 @@
       "source_province": "Bari",
       "proclaimed_at": "08/10/2026",
       "received_at": "08/10/2026 12:23",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Puglia"
       ]
@@ -15947,7 +15947,7 @@
       "source_province": "Bari",
       "proclaimed_at": "08/10/2026",
       "received_at": "08/10/2026 12:19",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Puglia"
       ]
@@ -16597,7 +16597,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "05/10/2026",
       "received_at": "05/10/2026 16:37",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8587",
       "rss_seen_at": "2026-10-26T20:25:49+00:00",
       "regions": []
@@ -16655,7 +16655,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "01/10/2026",
       "received_at": "01/10/2026 11:15",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8583",
       "rss_seen_at": "2026-10-28T13:53:15+00:00",
       "regions": [
@@ -16689,7 +16689,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/10/2026",
       "received_at": "08/10/2026 09:50",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-emilia-romagna",
       "map_precision": "region",
       "mit_guid": "8597",
@@ -16746,7 +16746,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/10/2026",
       "received_at": "16/10/2026 09:35",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -16776,7 +16776,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "01/10/2026",
       "received_at": "01/10/2026 12:32",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-emilia-romagna",
       "map_precision": "region",
       "regions": [
@@ -16807,7 +16807,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "12/10/2026",
       "received_at": "13/10/2026 08:29",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "place": "regione-toscana",
       "map_precision": "region",
       "mit_guid": "8601",
@@ -16843,7 +16843,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "20/10/2026",
       "received_at": "20/10/2026 12:18",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8611",
       "rss_seen_at": "2026-10-30T07:21:05+00:00",
       "regions": []
@@ -16871,7 +16871,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/10/2026",
       "received_at": "16/10/2026 12:13",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8606",
       "rss_seen_at": "2026-10-30T07:21:05+00:00",
       "regions": []
@@ -16900,7 +16900,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "06/10/2026",
       "received_at": "06/10/2026 16:58",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8590",
       "rss_seen_at": "2026-10-30T07:21:05+00:00",
       "regions": []
@@ -16930,7 +16930,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "03/07/2026",
       "received_at": "03/07/2026 23:38",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8453",
       "rss_seen_at": "2026-10-30T07:21:05+00:00",
       "regions": []
@@ -16959,7 +16959,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "20/10/2026",
       "received_at": "21/10/2026 10:42",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8612",
       "rss_seen_at": "2026-10-30T07:21:05+00:00",
       "regions": []
@@ -17081,9 +17081,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "07/09/2026",
       "received_at": "07/09/2026 15:11",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8548",
-      "rss_seen_at": "2026-11-02T07:36:31+00:00",
+      "rss_seen_at": "2026-11-02T13:46:56+00:00",
       "regions": []
     },
     {
@@ -17111,9 +17111,9 @@
       "source_province": "Napoli",
       "proclaimed_at": "26/10/2026",
       "received_at": "26/10/2026 12:14",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8620",
-      "rss_seen_at": "2026-11-02T07:36:31+00:00",
+      "rss_seen_at": "2026-11-02T13:46:56+00:00",
       "regions": [
         "Campania"
       ]
@@ -17142,7 +17142,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "08/09/2026",
       "received_at": "08/09/2026 17:20",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -17168,7 +17168,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "23/10/2026",
       "received_at": "23/10/2026 16:46",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": []
     },
     {
@@ -17196,9 +17196,9 @@
       "source_province": "Palermo",
       "proclaimed_at": "23/10/2026",
       "received_at": "23/10/2026 17:14",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8618",
-      "rss_seen_at": "2026-11-02T07:36:31+00:00",
+      "rss_seen_at": "2026-11-02T13:46:56+00:00",
       "regions": [
         "Sicilia"
       ]
@@ -17228,9 +17228,9 @@
       "source_province": "Genova",
       "proclaimed_at": "28/10/2026",
       "received_at": "28/10/2026 15:17",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8624",
-      "rss_seen_at": "2026-11-02T07:36:31+00:00",
+      "rss_seen_at": "2026-11-02T13:46:56+00:00",
       "regions": [
         "Liguria"
       ]
@@ -17260,7 +17260,7 @@
       "source_province": "Verona",
       "proclaimed_at": "22/10/2026",
       "received_at": "22/10/2026 14:22",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8615",
       "rss_seen_at": "2026-10-28T13:53:15+00:00",
       "regions": [
@@ -17294,9 +17294,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "27/10/2026",
       "received_at": "27/10/2026 11:21",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8621",
-      "rss_seen_at": "2026-11-02T07:36:31+00:00",
+      "rss_seen_at": "2026-11-02T13:46:56+00:00",
       "regions": []
     },
     {
@@ -17322,9 +17322,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "27/10/2026",
       "received_at": "27/10/2026 17:36",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8622",
-      "rss_seen_at": "2026-11-02T07:36:31+00:00",
+      "rss_seen_at": "2026-11-02T13:46:56+00:00",
       "regions": []
     },
     {
@@ -17350,9 +17350,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/10/2026",
       "received_at": "16/10/2026 15:30",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8608",
-      "rss_seen_at": "2026-11-02T07:36:31+00:00",
+      "rss_seen_at": "2026-11-02T13:46:56+00:00",
       "regions": []
     },
     {
@@ -17380,9 +17380,9 @@
       "source_province": "Cosenza",
       "proclaimed_at": "25/10/2026",
       "received_at": "26/10/2026 11:31",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8619",
-      "rss_seen_at": "2026-11-02T07:36:31+00:00",
+      "rss_seen_at": "2026-11-02T13:46:56+00:00",
       "regions": [
         "Calabria"
       ]
@@ -17412,9 +17412,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "13/10/2026",
       "received_at": "13/10/2026 10:39",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8602",
-      "rss_seen_at": "2026-11-02T07:36:31+00:00",
+      "rss_seen_at": "2026-11-02T13:46:56+00:00",
       "regions": [
         "Lombardia"
       ]
@@ -17445,9 +17445,9 @@
       "source_province": "Venezia",
       "proclaimed_at": "08/10/2026",
       "received_at": "08/10/2026 14:46",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8598",
-      "rss_seen_at": "2026-11-02T07:36:31+00:00",
+      "rss_seen_at": "2026-11-02T13:46:56+00:00",
       "regions": [
         "Veneto"
       ]
@@ -17480,9 +17480,9 @@
       "source_province": "Bari",
       "proclaimed_at": "16/10/2026",
       "received_at": "16/10/2026 11:56",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8605",
-      "rss_seen_at": "2026-11-02T07:36:31+00:00",
+      "rss_seen_at": "2026-11-02T13:46:56+00:00",
       "regions": [
         "Puglia"
       ]
@@ -17539,9 +17539,9 @@
       "source_province": "Napoli",
       "proclaimed_at": "14/10/2026",
       "received_at": "14/10/2026 09:13",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8603",
-      "rss_seen_at": "2026-11-02T07:36:31+00:00",
+      "rss_seen_at": "2026-11-02T13:46:56+00:00",
       "regions": [
         "Campania"
       ]
@@ -17571,9 +17571,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "07/10/2026",
       "received_at": "07/10/2026 18:49",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8592",
-      "rss_seen_at": "2026-11-02T07:36:31+00:00",
+      "rss_seen_at": "2026-11-02T13:46:56+00:00",
       "regions": []
     },
     {
@@ -17599,9 +17599,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "19/10/2026",
       "received_at": "19/10/2026 16:17",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8610",
-      "rss_seen_at": "2026-11-02T07:36:31+00:00",
+      "rss_seen_at": "2026-11-02T13:46:56+00:00",
       "regions": []
     },
     {
@@ -17649,7 +17649,7 @@
       "source_province": "Tutte",
       "proclaimed_at": "23/09/2026",
       "received_at": "23/09/2026 14:48",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8571",
       "rss_seen_at": "2026-10-29T11:41:17+00:00",
       "regions": []
@@ -17679,9 +17679,9 @@
       "source_province": "Verona",
       "proclaimed_at": "28/10/2026",
       "received_at": "28/10/2026 17:21",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8625",
-      "rss_seen_at": "2026-11-02T07:36:31+00:00",
+      "rss_seen_at": "2026-11-02T13:46:56+00:00",
       "regions": [
         "Veneto"
       ]
@@ -17710,9 +17710,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "30/09/2026",
       "received_at": "30/09/2026 17:34",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8579",
-      "rss_seen_at": "2026-11-02T07:36:31+00:00",
+      "rss_seen_at": "2026-11-02T13:46:56+00:00",
       "regions": []
     },
     {
@@ -17738,9 +17738,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "05/10/2026",
       "received_at": "05/10/2026 20:33",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8588",
-      "rss_seen_at": "2026-11-02T07:36:31+00:00",
+      "rss_seen_at": "2026-11-02T13:46:56+00:00",
       "regions": []
     },
     {
@@ -17769,9 +17769,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "27/09/2026",
       "received_at": "27/09/2026 08:37",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8575",
-      "rss_seen_at": "2026-11-02T07:36:31+00:00",
+      "rss_seen_at": "2026-11-02T13:46:56+00:00",
       "regions": []
     },
     {
@@ -17797,9 +17797,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "28/10/2026",
       "received_at": "29/10/2026 10:49",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8626",
-      "rss_seen_at": "2026-11-02T07:36:31+00:00",
+      "rss_seen_at": "2026-11-02T13:46:56+00:00",
       "regions": []
     },
     {
@@ -17825,9 +17825,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "08/10/2026",
       "received_at": "08/10/2026 00:02",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8594",
-      "rss_seen_at": "2026-11-02T07:36:31+00:00",
+      "rss_seen_at": "2026-11-02T13:46:56+00:00",
       "regions": []
     },
     {
@@ -17854,9 +17854,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "16/10/2026",
       "received_at": "16/10/2026 14:17",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8607",
-      "rss_seen_at": "2026-11-02T07:36:31+00:00",
+      "rss_seen_at": "2026-11-02T13:46:56+00:00",
       "regions": [
         "Emilia-Romagna"
       ]
@@ -17885,9 +17885,9 @@
       "source_province": "Tutte",
       "proclaimed_at": "23/10/2026",
       "received_at": "23/10/2026 11:01",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "mit_guid": "8616",
-      "rss_seen_at": "2026-11-02T07:36:31+00:00",
+      "rss_seen_at": "2026-11-02T13:46:56+00:00",
       "regions": []
     },
     {
@@ -17919,7 +17919,7 @@
       "source_province": "Napoli",
       "proclaimed_at": "02/10/2026",
       "received_at": "02/10/2026 13:35",
-      "verified_at": "2026-11-01",
+      "verified_at": "2026-11-02",
       "regions": [
         "Campania"
       ]
